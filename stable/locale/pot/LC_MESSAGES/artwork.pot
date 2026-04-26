@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 82.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-26 09:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../artwork.rst:3
+msgid "Artwork"
+msgstr ""
+
+#: ../../../artwork.rst:8
+msgid "Setuptools logo, designed in 2021 by `Anderson Bravalheri`_"
+msgstr ""
+
+#: ../../../artwork.rst:11
+msgid "Elements of Design"
+msgstr ""
+
+#: ../../../artwork.rst:13
+msgid ""
+"The main colours of the design are a dark pastel azure (``#336790``) and a "
+"pale orange (``#E5B62F``), referred in this document simply as \"blue\" and "
+"\"yellow\" respectively. The text uses the *Monoid* typeface, an open source "
+"webfont that was developed by Andreas Larsen and contributors in 2015 and is "
+"distributed under the MIT or SIL licenses (more information at https://"
+"github.com/larsenwork/monoid)"
+msgstr ""
+
+#: ../../../artwork.rst:22
+msgid "Usage"
+msgstr ""
+
+#: ../../../artwork.rst:24
+msgid ""
+"The preferred way of using the setuptools logo is over a white (or light) "
+"background. Alternatively, the following options can be considered, "
+"depending on the circumstances:"
+msgstr ""
+
+#: ../../../artwork.rst:28
+msgid ""
+"*\"negative\"* design - for dark backgrounds (e.g. website displayed in "
+"\"dark mode\"): the white colour (``#FFFFFF``) of the background and the "
+"\"blue\" (``#336790``) colour of the design can be swapped."
+msgstr ""
+
+#: ../../../artwork.rst:31
+msgid ""
+"*\"monochrome\"* - when colours are not available (e.g. black and white "
+"printed media): a completely black or white version of the logo can also be "
+"used."
+msgstr ""
+
+#: ../../../artwork.rst:33
+msgid ""
+"*\"banner\"* mode: the symbol and text can be used alongside depending on "
+"the available space."
+msgstr ""
+
+#: ../../../artwork.rst:36
+msgid "The following image illustrate these alternatives:"
+msgstr ""
+
+#: ../../../artwork.rst:41
+msgid ""
+"Please refer to the SVG files in the `setuptools repository`_ for the "
+"specific shapes and proportions between the elements of the design."
+msgstr ""
+
+#: ../../../artwork.rst:46
+msgid "Working with the Design"
+msgstr ""
+
+#: ../../../artwork.rst:48
+msgid ""
+"The `setuptools repository`_ contains a series of vector representations of "
+"the design under the ``docs/images`` directory. These representations can be "
+"manipulated via any graphic editor that support SVG files, however the free "
+"and open-source software Inkscape_ is recommended for maximum compatibility."
+msgstr ""
+
+#: ../../../artwork.rst:54
+msgid ""
+"When selecting the right file to work with, file names including ``editable-"
+"inkscape`` indicate \"more editable\" elements (e.g. editable text), while "
+"the others prioritise SVG paths for maximum reproducibility."
+msgstr ""
+
+#: ../../../artwork.rst:58
+msgid ""
+"Also notice that you might have to `install the correct fonts`_ to be able "
+"to visualise or edit some of the designs."
+msgstr ""
+
+#: ../../../artwork.rst:63
+msgid "Inspiration"
+msgstr ""
+
+#: ../../../artwork.rst:65
+msgid ""
+"This design was inspired by :user:`cajhne`'s `original proposal`_ and the "
+"ancient symbol of the ouroboros_. It features a snake moving in a circular "
+"trajectory not only as a reference to the Python programming language but "
+"also to the :pep:`wheel package format <427>` as one of the distribution "
+"formats supported by setuptools. The shape of the snake also resembles a "
+"cog, which together with the hammer is a nod to the two words that compose "
+"the name of the project."
+msgstr ""
+
+#: ../../../artwork.rst:75
+msgid "License"
+msgstr ""
+
+#: ../../../artwork.rst:78
+msgid ""
+"This logo, design variations or a modified version may be used by anyone to "
+"refer to setuptools, but does not indicate endorsement by the project."
+msgstr ""
+
+#: ../../../artwork.rst:81
+msgid ""
+"Redistribution, usage and derivative works are permitted under the same "
+"license used by the setuptools software (MIT):"
+msgstr ""
+
+#: ../../../artwork.rst:84
+msgid ""
+"Copyright (c) Anderson Bravalheri\n"
+"\n"
+"Permission is hereby granted, free of charge, to any person obtaining a "
+"copy\n"
+"of this software and associated documentation files (the \"Software\"), to\n"
+"deal in the Software without restriction, including without limitation the\n"
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or\n"
+"sell copies of the Software, and to permit persons to whom the Software is\n"
+"furnished to do so, subject to the following conditions:\n"
+"\n"
+"The above copyright notice and this permission notice shall be included in\n"
+"all copies or substantial portions of the Software.\n"
+"\n"
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS "
+"OR\n"
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n"
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n"
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n"
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\n"
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER "
+"DEALINGS\n"
+"IN THE SOFTWARE.\n"
+"\n"
+"THE USAGE OF THIS LOGO AND ARTWORK DOES NOT INDICATE ENDORSEMENT BY THE\n"
+"SETUPTOOLS PROJECT."
+msgstr ""
+
+#: ../../../artwork.rst:109
+msgid ""
+"Whenever possible, please make the image a link to https://github.com/pypa/"
+"setuptools or https://setuptools.pypa.io."
+msgstr ""

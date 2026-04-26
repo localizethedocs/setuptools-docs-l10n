@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:37
 msgid "python setup.py bdist"
-msgstr ""
+msgstr "python setup.py bdist"
 
 #: ../../../deprecated/distutils/builtdist.rst:39
 msgid ""
@@ -115,7 +115,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:66
 msgid "python setup.py bdist --format=zip"
-msgstr ""
+msgstr "python setup.py bdist --format=zip"
 
 #: ../../../deprecated/distutils/builtdist.rst:68
 msgid ""
@@ -274,7 +274,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:133
 msgid "Command"
-msgstr ""
+msgstr "命令"
 
 #: ../../../deprecated/distutils/builtdist.rst:133
 msgid "Formats"
@@ -282,7 +282,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:135
 msgid ":command:`bdist_dumb`"
-msgstr ""
+msgstr ":command:`bdist_dumb`"
 
 #: ../../../deprecated/distutils/builtdist.rst:135
 msgid "tar, gztar, bztar, xztar, ztar, zip"
@@ -304,7 +304,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:156
 msgid "Creating RPM packages"
-msgstr ""
+msgstr "建立 RPM 軟體包"
 
 #: ../../../deprecated/distutils/builtdist.rst:158
 msgid ""
@@ -325,7 +325,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:168
 msgid "python setup.py bdist_rpm"
-msgstr ""
+msgstr "python setup.py bdist_rpm"
 
 #: ../../../deprecated/distutils/builtdist.rst:170
 msgid "or the :command:`bdist` command with the :option:`!--format` option::"
@@ -333,7 +333,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:172
 msgid "python setup.py bdist --formats=rpm"
-msgstr ""
+msgstr "python setup.py bdist --formats=rpm"
 
 #: ../../../deprecated/distutils/builtdist.rst:174
 msgid ""
@@ -405,11 +405,11 @@ msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:201
 msgid "Copyright"
-msgstr ""
+msgstr "著作權"
 
 #: ../../../deprecated/distutils/builtdist.rst:201
 msgid "``license``"
-msgstr ""
+msgstr "``license``"
 
 #: ../../../deprecated/distutils/builtdist.rst:203
 msgid "Url"
@@ -436,7 +436,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:213
 msgid ":command:`bdist_rpm` option"
-msgstr ""
+msgstr ":command:`bdist_rpm` 選項"
 
 #: ../../../deprecated/distutils/builtdist.rst:213
 msgid "default value"

@@ -9816,7 +9816,7 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5929
 msgid "$ python -m setuptools.launch setup.py develop"
-msgstr ""
+msgstr "$ python -m setuptools.launch setup.py develop"
 
 #: ../../../../NEWS (links).rst:5931
 msgid ""

@@ -471,6 +471,8 @@ msgid ""
 "$ python setup.py --name\n"
 "distribute"
 msgstr ""
+"$ python setup.py --name\n"
+"distribute"
 
 #: ../../../deprecated/distutils/examples.rst:300
 msgid ""

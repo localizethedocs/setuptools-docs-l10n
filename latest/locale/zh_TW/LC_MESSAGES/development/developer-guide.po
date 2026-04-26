@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:10
 msgid "Recommended Reading"
-msgstr ""
+msgstr "推薦閱讀"
 
 #: ../../../development/developer-guide.rst:12
 msgid ""
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:21
 msgid "Project Management"
-msgstr ""
+msgstr "專案管理"
 
 #: ../../../development/developer-guide.rst:23
 msgid ""
@@ -97,7 +97,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:59
 msgid "Making a pull request"
-msgstr ""
+msgstr "提交拉取請求"
 
 #: ../../../development/developer-guide.rst:61
 msgid ""
@@ -228,7 +228,7 @@ msgstr ""
 
 #: ../../../../newsfragments/README.rst:83
 msgid "File :file:`newsfragments/2355.feature.rst`:"
-msgstr ""
+msgstr "檔案 :file:`newsfragments/2355.feature.rst`："
 
 #: ../../../../newsfragments/README.rst:85
 msgid ""
@@ -244,7 +244,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:72
 msgid "Auto-Merge Requests"
-msgstr ""
+msgstr "自動合併請求"
 
 #: ../../../development/developer-guide.rst:74
 msgid ""
@@ -270,7 +270,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:88
 msgid "$ tox"
-msgstr ""
+msgstr "$ tox"
 
 #: ../../../development/developer-guide.rst:90
 msgid ""
@@ -280,7 +280,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:95
 msgid "Semantic Versioning"
-msgstr ""
+msgstr "語意版本控制"
 
 #: ../../../development/developer-guide.rst:97
 msgid "Setuptools follows ``semver``."
@@ -302,7 +302,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:110
 msgid "$ tox -e docs"
-msgstr ""
+msgstr "$ tox -e docs"
 
 #: ../../../development/developer-guide.rst:117
 msgid "Vendored Dependencies"
@@ -330,7 +330,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:132
 msgid "$ tox -e vendor"
-msgstr ""
+msgstr "$ tox -e vendor"
 
 #: ../../../development/developer-guide.rst:137
 msgid "Code conventions and other practices"
@@ -367,7 +367,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:159
 msgid "Type annotations"
-msgstr ""
+msgstr "型別註解"
 
 #: ../../../development/developer-guide.rst:161
 msgid ""

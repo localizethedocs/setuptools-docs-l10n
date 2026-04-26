@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../userguide/development_mode.rst:2
 msgid "Development Mode (a.k.a. \"Editable Installs\")"
-msgstr ""
+msgstr "開發模式（又稱「可編輯安裝」）"
 
 #: ../../../userguide/development_mode.rst:4
 msgid ""

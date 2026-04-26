@@ -107,7 +107,7 @@ msgstr ""
 
 #: ../../../artwork.rst:63
 msgid "Inspiration"
-msgstr ""
+msgstr "靈感"
 
 #: ../../../artwork.rst:65
 msgid ""

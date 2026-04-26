@@ -1069,7 +1069,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/setupscript.rst:603
 msgid "``license``"
-msgstr ""
+msgstr "``license``"
 
 #: ../../../deprecated/distutils/setupscript.rst:603
 msgid "license for the package"

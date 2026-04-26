@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../development/releases.rst:3
 msgid "Release Process"
-msgstr ""
+msgstr "發行過程"
 
 #: ../../../development/releases.rst:5
 msgid ""

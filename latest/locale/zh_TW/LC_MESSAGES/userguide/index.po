@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../userguide/index.rst:3
 msgid "Building and Distributing Packages with Setuptools"
-msgstr ""
+msgstr "使用 Setuptools 建置並散佈軟體包"
 
 #: ../../../userguide/index.rst:5
 msgid ""

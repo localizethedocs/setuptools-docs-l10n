@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../userguide/quickstart.rst:24
 msgid "pip install --upgrade build"
-msgstr ""
+msgstr "pip install --upgrade build"
 
 #: ../../../userguide/quickstart.rst:26
 msgid "This will allow you to run the command: ``python -m build``."
@@ -148,6 +148,13 @@ msgid ""
 "    'importlib-metadata; python_version<\"3.10\"',\n"
 "]"
 msgstr ""
+"[project]\n"
+"name = \"mypackage\"\n"
+"version = \"0.0.1\"\n"
+"dependencies = [\n"
+"    \"requests\",\n"
+"    'importlib-metadata; python_version<\"3.10\"',\n"
+"]"
 
 #: ../../../userguide/quickstart.rst:101
 msgid "See :doc:`/userguide/pyproject_config` for more information."
@@ -164,6 +171,14 @@ msgid ""
 "    requests\n"
 "    importlib-metadata; python_version<\"3.10\""
 msgstr ""
+"[metadata]\n"
+"name = mypackage\n"
+"version = 0.0.1\n"
+"\n"
+"[options]\n"
+"install_requires =\n"
+"    requests\n"
+"    importlib-metadata; python_version<\"3.10\""
 
 #: ../../../userguide/quickstart.rst:117
 msgid "See :doc:`/userguide/declarative_config` for more information."
@@ -266,7 +281,7 @@ msgstr ""
 
 #: ../../../userguide/quickstart.rst:196
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../userguide/quickstart.rst:199
 msgid "Package discovery"
@@ -376,6 +391,8 @@ msgid ""
 "[project.scripts]\n"
 "cli-name = \"mypkg.mymodule:some_func\""
 msgstr ""
+"[project.scripts]\n"
+"cli-name = \"mypkg.mymodule:some_func\""
 
 #: ../../../userguide/quickstart.rst:292
 msgid ""
@@ -383,6 +400,9 @@ msgid ""
 "console_scripts =\n"
 "    cli-name = mypkg.mymodule:some_func"
 msgstr ""
+"[options.entry_points]\n"
+"console_scripts =\n"
+"    cli-name = mypkg.mymodule:some_func"
 
 #: ../../../userguide/quickstart.rst:300
 msgid ""
@@ -488,6 +508,8 @@ msgid ""
 "[options]\n"
 "include_package_data = True"
 msgstr ""
+"[options]\n"
+"include_package_data = True"
 
 #: ../../../userguide/quickstart.rst:395
 msgid ""
@@ -509,7 +531,7 @@ msgstr ""
 
 #: ../../../userguide/quickstart.rst:411
 msgid "Development mode"
-msgstr ""
+msgstr "開發模式"
 
 #: ../../../userguide/quickstart.rst:413
 msgid ""
@@ -521,7 +543,7 @@ msgstr ""
 
 #: ../../../userguide/quickstart.rst:419
 msgid "pip install --editable ."
-msgstr ""
+msgstr "pip install --editable ."
 
 #: ../../../userguide/quickstart.rst:421
 msgid "See :doc:`development_mode` for more information."

@@ -1187,7 +1187,7 @@ msgstr ""
 
 #: ../../../deprecated/pkg_resources.rst:726
 msgid "Entry Points"
-msgstr ""
+msgstr "進入點"
 
 #: ../../../deprecated/pkg_resources.rst:728
 msgid ""

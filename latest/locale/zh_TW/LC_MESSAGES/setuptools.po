@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../setuptools.rst:3
 msgid "Building and Distributing Packages with Setuptools"
-msgstr ""
+msgstr "使用 Setuptools 建置並散佈軟體包"
 
 #: ../../../setuptools.rst:5
 msgid ""
@@ -189,6 +189,11 @@ msgid ""
 "]\n"
 "build-backend = \"setuptools.build_meta\""
 msgstr ""
+"[build-system]\n"
+"requires = [\n"
+"  \"setuptools >= 40.9.0\",\n"
+"]\n"
+"build-backend = \"setuptools.build_meta\""
 
 #: ../../../setuptools.rst:156
 msgid ""
@@ -244,7 +249,7 @@ msgstr ""
 
 #: ../../../setuptools.rst:204
 msgid "Forum and Bug Tracker"
-msgstr ""
+msgstr "論壇與臭蟲追蹤器"
 
 #: ../../../setuptools.rst:206
 msgid ""

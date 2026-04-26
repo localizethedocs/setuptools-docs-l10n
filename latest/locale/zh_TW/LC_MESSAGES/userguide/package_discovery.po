@@ -594,6 +594,8 @@ msgid ""
 "[tool.setuptools.packages.find]\n"
 "where = [\"src\"]"
 msgstr ""
+"[tool.setuptools.packages.find]\n"
+"where = [\"src\"]"
 
 #: ../../../userguide/package_discovery.rst:459
 msgid ""
@@ -698,7 +700,7 @@ msgstr ""
 
 #: ../../../userguide/package_discovery.rst:526
 msgid "__import__(\"pkg_resources\").declare_namespace(__name__)"
-msgstr ""
+msgstr "__import__(\"pkg_resources\").declare_namespace(__name__)"
 
 #: ../../../userguide/package_discovery.rst:530
 msgid ""

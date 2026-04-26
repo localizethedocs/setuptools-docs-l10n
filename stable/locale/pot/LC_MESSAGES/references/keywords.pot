@@ -1,0 +1,787 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 82.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-26 09:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../references/keywords.rst:3
+msgid "Keywords"
+msgstr ""
+
+#: ../../../references/keywords.rst:5
+msgid ""
+"The following are keywords ``setuptools.setup()`` accepts. They allow "
+"configuring the build process for a Python distribution or adding metadata "
+"via a ``setup.py`` script placed at the root of your project. All of them "
+"are optional; you do not have to supply them unless you need the associated "
+"``setuptools`` feature."
+msgstr ""
+
+#: ../../../references/keywords.rst:11
+msgid ""
+"Metadata and configuration supplied via ``setup()`` is complementary to (and "
+"may be overwritten by) the information present in ``setup.cfg`` and "
+"``pyproject.toml``. Some important metadata, such as ``name`` and "
+"``version``, may assume a default *degenerate* value if not specified."
+msgstr ""
+
+#: ../../../references/keywords.rst:16
+msgid ""
+"Users are strongly encouraged to use a declarative config either via :doc:"
+"`setup.cfg </userguide/declarative_config>` or :doc:`pyproject.toml </"
+"userguide/pyproject_config>` and only rely on ``setup.py`` if they need to "
+"tap into special behaviour that requires scripting (such as building C "
+"extensions)."
+msgstr ""
+
+#: ../../../references/keywords.rst:23
+msgid ""
+"When using declarative configs via ``pyproject.toml`` with "
+"``setuptools<64.0.0``, users can still keep a very simple ``setup.py`` just "
+"to ensure editable installs are supported, for example::"
+msgstr ""
+
+#: ../../../references/keywords.rst:27
+msgid ""
+"from setuptools import setup\n"
+"\n"
+"setup()"
+msgstr ""
+
+#: ../../../references/keywords.rst:31
+msgid ""
+"Versions of ``setuptools`` ``>=64.0.0`` do not require this extra minimal "
+"``setup.py`` file."
+msgstr ""
+
+#: ../../../references/keywords.rst:36
+msgid "``name``"
+msgstr ""
+
+#: ../../../references/keywords.rst:37
+msgid "A string specifying the name of the package."
+msgstr ""
+
+#: ../../../references/keywords.rst:41
+msgid "``version``"
+msgstr ""
+
+#: ../../../references/keywords.rst:42
+msgid "A string specifying the version number of the package."
+msgstr ""
+
+#: ../../../references/keywords.rst:46
+msgid "``description``"
+msgstr ""
+
+#: ../../../references/keywords.rst:47
+msgid "A string describing the package in a single line."
+msgstr ""
+
+#: ../../../references/keywords.rst:51
+msgid "``long_description``"
+msgstr ""
+
+#: ../../../references/keywords.rst:52
+msgid "A string providing a longer description of the package."
+msgstr ""
+
+#: ../../../references/keywords.rst:56
+msgid "``long_description_content_type``"
+msgstr ""
+
+#: ../../../references/keywords.rst:57
+msgid ""
+"A string specifying the content type is used for the ``long_description`` (e."
+"g. ``text/markdown``)"
+msgstr ""
+
+#: ../../../references/keywords.rst:62
+msgid "``author``"
+msgstr ""
+
+#: ../../../references/keywords.rst:63
+msgid "A string specifying the author of the package."
+msgstr ""
+
+#: ../../../references/keywords.rst:67
+msgid "``author_email``"
+msgstr ""
+
+#: ../../../references/keywords.rst:68
+msgid "A string specifying the email address of the package author."
+msgstr ""
+
+#: ../../../references/keywords.rst:72
+msgid "``maintainer``"
+msgstr ""
+
+#: ../../../references/keywords.rst:73
+msgid ""
+"A string specifying the name of the current maintainer, if different from "
+"the author. Note that if the maintainer is provided, setuptools will use it "
+"as the author in ``PKG-INFO``."
+msgstr ""
+
+#: ../../../references/keywords.rst:79
+msgid "``maintainer_email``"
+msgstr ""
+
+#: ../../../references/keywords.rst:80
+msgid ""
+"A string specifying the email address of the current maintainer, if "
+"different from the author."
+msgstr ""
+
+#: ../../../references/keywords.rst:85
+msgid "``url``"
+msgstr ""
+
+#: ../../../references/keywords.rst:86
+msgid "A string specifying the URL for the package homepage."
+msgstr ""
+
+#: ../../../references/keywords.rst:90
+msgid "``download_url``"
+msgstr ""
+
+#: ../../../references/keywords.rst:91
+msgid "A string specifying the URL to download the package."
+msgstr ""
+
+#: ../../../references/keywords.rst:95
+msgid "``packages``"
+msgstr ""
+
+#: ../../../references/keywords.rst:96
+msgid ""
+"A list of strings specifying the packages that setuptools will manipulate."
+msgstr ""
+
+#: ../../../references/keywords.rst:100
+msgid "``py_modules``"
+msgstr ""
+
+#: ../../../references/keywords.rst:101
+msgid ""
+"A list of strings specifying the modules that setuptools will manipulate."
+msgstr ""
+
+#: ../../../references/keywords.rst:105
+msgid "``scripts``"
+msgstr ""
+
+#: ../../../references/keywords.rst:106
+msgid ""
+"A list of strings specifying the standalone script files to be built and "
+"installed."
+msgstr ""
+
+#: ../../../references/keywords.rst:111
+msgid "``ext_package``"
+msgstr ""
+
+#: ../../../references/keywords.rst:112
+msgid ""
+"A string specifying the base package name for the extensions provided by "
+"this package."
+msgstr ""
+
+#: ../../../references/keywords.rst:117
+msgid "``ext_modules``"
+msgstr ""
+
+#: ../../../references/keywords.rst:118
+msgid ""
+"A list of instances of ``setuptools.Extension`` providing the list of Python "
+"extensions to be built."
+msgstr ""
+
+#: ../../../references/keywords.rst:123
+msgid "``classifiers``"
+msgstr ""
+
+#: ../../../references/keywords.rst:124
+msgid "A list of strings describing the categories for the package."
+msgstr ""
+
+#: ../../../references/keywords.rst:128
+msgid "``distclass``"
+msgstr ""
+
+#: ../../../references/keywords.rst:129
+msgid "A subclass of ``Distribution`` to use."
+msgstr ""
+
+#: ../../../references/keywords.rst:133
+msgid "``script_name``"
+msgstr ""
+
+#: ../../../references/keywords.rst:134
+msgid ""
+"A string specifying the name of the setup.py script -- defaults to ``sys."
+"argv[0]``"
+msgstr ""
+
+#: ../../../references/keywords.rst:139
+msgid "``script_args``"
+msgstr ""
+
+#: ../../../references/keywords.rst:140
+msgid "A list of strings defining the arguments to supply to the setup script."
+msgstr ""
+
+#: ../../../references/keywords.rst:144
+msgid "``options``"
+msgstr ""
+
+#: ../../../references/keywords.rst:145
+msgid "A dictionary providing the default options for the setup script."
+msgstr ""
+
+#: ../../../references/keywords.rst:149
+msgid "``license``"
+msgstr ""
+
+#: ../../../references/keywords.rst:150
+msgid "A string specifying the license of the package."
+msgstr ""
+
+#: ../../../references/keywords.rst:154
+msgid "``license_file``"
+msgstr ""
+
+#: ../../../references/keywords.rst:156
+msgid "``license_file`` is deprecated. Use ``license_files`` instead."
+msgstr ""
+
+#: ../../../references/keywords.rst:160
+msgid "``license_files``"
+msgstr ""
+
+#: ../../../references/keywords.rst:161
+msgid ""
+"A list of glob patterns for license related files that should be included. "
+"If neither ``license_file`` nor ``license_files`` is specified, this option "
+"defaults to ``LICEN[CS]E*``, ``COPYING*``, ``NOTICE*``, and ``AUTHORS*``."
+msgstr ""
+
+#: ../../../references/keywords.rst:167
+msgid "``keywords``"
+msgstr ""
+
+#: ../../../references/keywords.rst:168
+msgid ""
+"A list of strings or a comma-separated string providing descriptive meta-"
+"data. See: :ref:`Core Metadata Specifications<core-metadata-keywords>`."
+msgstr ""
+
+#: ../../../references/keywords.rst:173
+msgid "``platforms``"
+msgstr ""
+
+#: ../../../references/keywords.rst:174
+msgid "A list of strings or comma-separated string."
+msgstr ""
+
+#: ../../../references/keywords.rst:178
+msgid "``cmdclass``"
+msgstr ""
+
+#: ../../../references/keywords.rst:179
+msgid ""
+"A dictionary providing a mapping of command names to ``Command`` subclasses."
+msgstr ""
+
+#: ../../../references/keywords.rst:184
+msgid "``data_files``"
+msgstr ""
+
+#: ../../../references/keywords.rst:186
+msgid ""
+"**DISCOURAGED** - This is an advanced feature and it is *not intended to "
+"work with absolute paths*. All files listed in ``data_files`` will be "
+"installed in paths relative to a directory decided by the package installer "
+"(e.g. `pip`). This usually results in nesting under a virtual environment. "
+"We **STRONGLY ADVISE AGAINST** using this setting for things like "
+"application launchers, desktop files or anything that requires system-wide "
+"installation [#manpages]_, unless you have extensive experience in Python "
+"packaging and have carefully considered all the drawbacks, limitations and "
+"problems of this method. Also note that this feature is provided *as is* "
+"with no plans of further changes."
+msgstr ""
+
+#: ../../../references/keywords.rst:200
+msgid ""
+"See :doc:`/userguide/datafiles` for an alternative method that uses the "
+"package directory itself and works well with :mod:`importlib.resources`, or "
+"consider using libraries such as :pypi:`platformdirs` for creating and "
+"managing files at runtime (i.e., **not** during the installation)."
+msgstr ""
+
+#: ../../../references/keywords.rst:205
+msgid ""
+"A sequence of ``(directory, files)`` pairs specifying the data files to "
+"install (``directory`` is a :class:`str`, ``files`` is a sequence of :class:"
+"`str`). Each ``(directory, files)`` pair in the sequence specifies the "
+"installation directory and the files to install there."
+msgstr ""
+
+#: ../../../references/keywords.rst:214
+msgid "``package_dir``"
+msgstr ""
+
+#: ../../../references/keywords.rst:215
+msgid ""
+"A dictionary that maps package names (as they will be imported by the end-"
+"users) into directory paths (that actually exist in the project's source "
+"tree). This configuration has two main purposes:"
+msgstr ""
+
+#: ../../../references/keywords.rst:219
+msgid ""
+"To effectively \"rename\" paths when building your package. For example, "
+"``package_dir={\"mypkg\": \"dir1/dir2/code_for_mypkg\"}`` will instruct "
+"setuptools to copy the ``dir1/dir2/code_for_mypkg/...`` files as ``mypkg/..."
+"`` when building the final :term:`wheel distribution <Wheel>`."
+msgstr ""
+
+#: ../../../references/keywords.rst:225
+msgid ""
+"While it is *possible* to specify arbitrary mappings, developers are "
+"**STRONGLY ADVISED AGAINST** that. They should try as much as possible to "
+"keep the directory names and hierarchy identical to the way they will appear "
+"in the final wheel, only deviating when absolutely necessary."
+msgstr ""
+
+#: ../../../references/keywords.rst:230
+msgid ""
+"To indicate that the relevant code is entirely contained inside a specific "
+"directory (instead of directly placed under the project's root). In this "
+"case, a special key is required (the empty string, ``\"\"``), for example: "
+"``package_dir={\"\": \"<name of the container directory>\"}``. All the "
+"directories inside the container directory will be copied directly into the "
+"final :term:`wheel distribution <Wheel>`, but the container directory itself "
+"will not."
+msgstr ""
+
+#: ../../../references/keywords.rst:238
+msgid ""
+"This practice is very common in the community to help separate the package "
+"implementation from auxiliary files (e.g. CI configuration files), and is "
+"referred to as :ref:`src-layout`, because the container directory is "
+"commonly named ``src``."
+msgstr ""
+
+#: ../../../references/keywords.rst:243
+msgid ""
+"All paths in ``package_dir`` must be relative to the project root directory "
+"and use a forward slash (``/``) as path separator regardless of the "
+"operating system."
+msgstr ""
+
+#: ../../../references/keywords.rst:248
+msgid ""
+"When using :doc:`package discovery </userguide/package_discovery>` together "
+"with :doc:`setup.cfg </userguide/declarative_config>` or :doc:`pyproject."
+"toml </userguide/pyproject_config>`, it is very likely that you don't need "
+"to specify a value for ``package_dir``.  Please have a look at the "
+"definitions of :ref:`src-layout` and :ref:`flat-layout` to learn common "
+"practices on how to design a project's directory structure and minimise the "
+"amount of configuration that is needed."
+msgstr ""
+
+#: ../../../references/keywords.rst:258
+msgid "``requires``"
+msgstr ""
+
+#: ../../../references/keywords.rst:260
+msgid ""
+"``requires`` is superseded by ``install_requires`` and should not be used "
+"anymore."
+msgstr ""
+
+#: ../../../references/keywords.rst:265
+msgid "``obsoletes``"
+msgstr ""
+
+#: ../../../references/keywords.rst:267
+msgid "``obsoletes`` is currently ignored by ``pip``."
+msgstr ""
+
+#: ../../../references/keywords.rst:269
+msgid ""
+"List of strings describing packages which this package renders obsolete, "
+"meaning that the two projects should not be installed at the same time."
+msgstr ""
+
+#: ../../../references/keywords.rst:272
+msgid ""
+"Version declarations can be supplied. Version numbers must be in the format "
+"specified in Version specifiers (e.g. ``foo (<3.0)``)."
+msgstr ""
+
+#: ../../../references/keywords.rst:275
+msgid ""
+"This field may be followed by an environment marker after a semicolon (e.g. "
+"``foo; os_name == \"posix\"``)"
+msgstr ""
+
+#: ../../../references/keywords.rst:278
+msgid ""
+"The most common use of this field will be in case a project name changes, e."
+"g. Gorgon 2.3 gets subsumed into Torqued Python 1.0. When you install "
+"Torqued Python, the Gorgon distribution should be removed."
+msgstr ""
+
+#: ../../../references/keywords.rst:284
+msgid "``provides``"
+msgstr ""
+
+#: ../../../references/keywords.rst:286
+msgid "``provides`` is currently ignored by ``pip``."
+msgstr ""
+
+#: ../../../references/keywords.rst:288
+msgid ""
+"List of strings describing package- and virtual package names contained "
+"within this package."
+msgstr ""
+
+#: ../../../references/keywords.rst:291
+msgid ""
+"A package may provide additional names, e.g. to indicate that multiple "
+"projects have been bundled together. For instance, source distributions of "
+"the ZODB project have historically included the transaction project, which "
+"is now available as a separate distribution. Installing such a source "
+"distribution satisfies requirements for both ZODB and transaction."
+msgstr ""
+
+#: ../../../references/keywords.rst:297
+msgid ""
+"A package may also provide a “virtual” project name, which does not "
+"correspond to any separately-distributed project: such a name might be used "
+"to indicate an abstract capability which could be supplied by one of "
+"multiple projects. E.g., multiple projects might supply RDBMS bindings for "
+"use by a given ORM: each project might declare that it provides ORM-"
+"bindings, allowing other projects to depend only on having at most one of "
+"them installed."
+msgstr ""
+
+#: ../../../references/keywords.rst:305
+msgid ""
+"A version declaration may be supplied and must follow the rules described in "
+"Version specifiers. The distribution’s version number will be implied if "
+"none is specified (e.g. ``foo (<3.0)``)."
+msgstr ""
+
+#: ../../../references/keywords.rst:309
+msgid ""
+"Each package may be followed by an environment marker after a semicolon (e."
+"g. ``foo; os_name == \"posix\"``)."
+msgstr ""
+
+#: ../../../references/keywords.rst:314
+msgid "``include_package_data``"
+msgstr ""
+
+#: ../../../references/keywords.rst:315
+msgid ""
+"If set to ``True``, this tells ``setuptools`` to automatically include any "
+"data files it finds inside your package directories that are specified by "
+"your ``MANIFEST.in`` file.  For more information, see the section on :ref:"
+"`Including Data Files`."
+msgstr ""
+
+#: ../../../references/keywords.rst:322
+msgid "``exclude_package_data``"
+msgstr ""
+
+#: ../../../references/keywords.rst:323
+msgid ""
+"A dictionary mapping package names to lists of glob patterns that should be "
+"*excluded* from your package directories.  You can use this to trim back any "
+"excess files included by ``include_package_data``.  For a complete "
+"description and examples, see the section on :ref:`Including Data Files`."
+msgstr ""
+
+#: ../../../references/keywords.rst:330
+msgid "``package_data``"
+msgstr ""
+
+#: ../../../references/keywords.rst:331
+msgid ""
+"A dictionary mapping package names to lists of glob patterns.  For a "
+"complete description and examples, see the section on :ref:`Including Data "
+"Files`.  You do not need to use this option if you are using "
+"``include_package_data``, unless you need to add e.g. files that are "
+"generated by your setup script and build process.  (And are therefore not in "
+"source control or are files that you don't want to include in your source "
+"distribution.)"
+msgstr ""
+
+#: ../../../references/keywords.rst:341
+msgid "``zip_safe``"
+msgstr ""
+
+#: ../../../references/keywords.rst:342
+msgid ""
+"A boolean (True or False) flag specifying whether the project can be safely "
+"installed and run from a zip file.  If this argument is not supplied, the "
+"``bdist_egg`` command will have to analyze all of your project's contents "
+"for possible problems each time it builds an egg."
+msgstr ""
+
+#: ../../../references/keywords.rst:349
+msgid "``install_requires``"
+msgstr ""
+
+#: ../../../references/keywords.rst:350
+msgid ""
+"A string or list of strings specifying what other distributions need to be "
+"installed when this one is.  See the section on :ref:`Declaring "
+"Dependencies` for details and examples of the format of this argument."
+msgstr ""
+
+#: ../../../references/keywords.rst:356
+msgid "``entry_points``"
+msgstr ""
+
+#: ../../../references/keywords.rst:357
+msgid ""
+"A dictionary mapping entry point group names to strings or lists of strings "
+"defining the entry points.  Entry points are used to support dynamic "
+"discovery of services or plugins provided by a project.  See :ref:`Dynamic "
+"Discovery of Services and Plugins` for details and examples of the format of "
+"this argument.  In addition, this keyword is used to support :ref:`Automatic "
+"Script Creation <entry_points>`."
+msgstr ""
+
+#: ../../../references/keywords.rst:366
+msgid "``extras_require``"
+msgstr ""
+
+#: ../../../references/keywords.rst:367
+msgid ""
+"A dictionary mapping names of \"extras\" (optional features of your project) "
+"to strings or lists of strings specifying what other distributions must be "
+"installed to support those features.  See the section on :ref:`Declaring "
+"Dependencies` for details and examples of the format of this argument."
+msgstr ""
+
+#: ../../../references/keywords.rst:374
+msgid "``python_requires``"
+msgstr ""
+
+#: ../../../references/keywords.rst:375
+msgid ""
+"A string corresponding to a version specifier (as defined in PEP 440) for "
+"the Python version, used to specify the Requires-Python defined in PEP 345."
+msgstr ""
+
+#: ../../../references/keywords.rst:380
+msgid "``setup_requires``"
+msgstr ""
+
+#: ../../../references/keywords.rst:382
+msgid "Using ``setup_requires`` is discouraged in favor of :pep:`518`."
+msgstr ""
+
+#: ../../../references/keywords.rst:384
+msgid ""
+"A string or list of strings specifying what other distributions need to be "
+"present in order for the *setup script* to run.  ``setuptools`` will attempt "
+"to obtain these before processing the rest of the setup script or commands.  "
+"This argument is needed if you are using distutils extensions as part of "
+"your build process; for example, extensions that process setup() arguments "
+"and turn them into EGG-INFO metadata files."
+msgstr ""
+
+#: ../../../references/keywords.rst:392
+msgid ""
+"(Note: projects listed in ``setup_requires`` will NOT be automatically "
+"installed on the system where the setup script is being run.  They are "
+"simply downloaded to the ./.eggs directory if they're not locally available "
+"already.  If you want them to be installed, as well as being available when "
+"the setup script is run, you should add them to ``install_requires`` **and** "
+"``setup_requires``.)"
+msgstr ""
+
+#: ../../../references/keywords.rst:401
+msgid "``dependency_links``"
+msgstr ""
+
+#: ../../../references/keywords.rst:403
+msgid "``dependency_links`` is deprecated. It is not supported anymore by pip."
+msgstr ""
+
+#: ../../../references/keywords.rst:405
+msgid ""
+"A list of strings naming URLs to be searched when satisfying dependencies. "
+"These links will be used if needed to install packages specified by "
+"``setup_requires`` or ``tests_require``.  They will also be written into the "
+"egg's metadata for use during install by tools that support them."
+msgstr ""
+
+#: ../../../references/keywords.rst:412
+msgid "``namespace_packages``"
+msgstr ""
+
+#: ../../../references/keywords.rst:414
+msgid ""
+"The ``namespace_packages`` implementation relies on ``pkg_resources``. "
+"However, ``pkg_resources`` has some undesirable behaviours, and Setuptools "
+"intends to obviate its usage in the future. Therefore, "
+"``namespace_packages`` was deprecated in favor of native/implicit namespaces "
+"(:pep:`420`). Check :doc:`the Python Packaging User Guide <PyPUG:guides/"
+"packaging-namespace-packages>` for more information."
+msgstr ""
+
+#: ../../../references/keywords.rst:421
+msgid ""
+"A list of strings naming the project's \"namespace packages\".  A namespace "
+"package is a package that may be split across multiple project "
+"distributions.  For example, Zope 3's ``zope`` package is a namespace "
+"package, because subpackages like ``zope.interface`` and ``zope.publisher`` "
+"may be distributed separately.  The egg runtime system can automatically "
+"merge such subpackages into a single parent package at runtime, as long as "
+"you declare them in each project that contains any subpackages of the "
+"namespace package, and as long as the namespace package's ``__init__.py`` "
+"does not contain any code other than a namespace declaration.  See the "
+"section on :ref:`Namespace Packages` for more information."
+msgstr ""
+
+#: ../../../references/keywords.rst:434
+msgid "``test_suite``"
+msgstr ""
+
+#: ../../../references/keywords.rst:435
+msgid ""
+"A string naming a ``unittest.TestCase`` subclass (or a package or module "
+"containing one or more of them, or a method of such a subclass), or naming a "
+"function that can be called with no arguments and returns a ``unittest."
+"TestSuite``.  If the named suite is a module, and the module has an "
+"``additional_tests()`` function, it is called and the results are added to "
+"the tests to be run.  If the named suite is a package, any submodules and "
+"subpackages are recursively added to the overall test suite."
+msgstr ""
+
+#: ../../../references/keywords.rst:443
+msgid ""
+"Specifying this argument enables use of the :ref:`test <test>` command to "
+"run the specified test suite, e.g. via ``setup.py test``.  See the section "
+"on the :ref:`test <test>` command below for more details."
+msgstr ""
+
+#: ../../../references/keywords.rst:448 ../../../references/keywords.rst:465
+#: ../../../references/keywords.rst:495
+msgid ""
+"The test command will be removed in a future version of ``setuptools``, "
+"alongside any test configuration parameter."
+msgstr ""
+
+#: ../../../references/keywords.rst:454
+msgid "``tests_require``"
+msgstr ""
+
+#: ../../../references/keywords.rst:455
+msgid ""
+"If your project's tests need one or more additional packages besides those "
+"needed to install it, you can use this option to specify them.  It should be "
+"a string or list of strings specifying what other distributions need to be "
+"present for the package's tests to run.  When you run the ``test`` command, "
+"``setuptools`` will  attempt to obtain these. Note that these required "
+"projects will *not* be installed on the system where the tests are run, but "
+"only downloaded to the project's setup directory if they're not already "
+"installed locally."
+msgstr ""
+
+#: ../../../references/keywords.rst:473
+msgid "``test_loader``"
+msgstr ""
+
+#: ../../../references/keywords.rst:474
+msgid ""
+"If you would like to use a different way of finding tests to run than what "
+"setuptools normally uses, you can specify a module name and class name in "
+"this argument.  The named class must be instantiable with no arguments, and "
+"its instances must support the ``loadTestsFromNames()`` method as defined in "
+"the Python ``unittest`` module's ``TestLoader`` class.  Setuptools will pass "
+"only one test \"name\" in the ``names`` argument: the value supplied for the "
+"``test_suite`` argument.  The loader you specify may interpret this string "
+"in any way it likes, as there are no restrictions on what may be contained "
+"in a ``test_suite`` string."
+msgstr ""
+
+#: ../../../references/keywords.rst:484
+msgid ""
+"The module name and class name must be separated by a ``:``.  The default "
+"value of this argument is ``\"setuptools.command.test:ScanningLoader\"``.  "
+"If you want to use the default ``unittest`` behavior, you can specify "
+"``\"unittest:TestLoader\"`` as your ``test_loader`` argument instead.  This "
+"will prevent automatic scanning of submodules and subpackages."
+msgstr ""
+
+#: ../../../references/keywords.rst:490
+msgid ""
+"The module and class you specify here may be contained in another package, "
+"as long as you use the ``tests_require`` option to ensure that the package "
+"containing the loader class is available when the ``test`` command is run."
+msgstr ""
+
+#: ../../../references/keywords.rst:501
+msgid "``eager_resources``"
+msgstr ""
+
+#: ../../../references/keywords.rst:502
+msgid ""
+"A list of strings naming resources that should be extracted together, if any "
+"of them is needed, or if any C extensions included in the project are "
+"imported.  This argument is only useful if the project will be installed as "
+"a zipfile, and there is a need to have all of the listed resources be "
+"extracted to the filesystem *as a unit*.  Resources listed here should be "
+"'/'-separated paths, relative to the source root, so to list a resource "
+"``foo.png`` in package ``bar.baz``, you would include the string ``bar/baz/"
+"foo.png`` in this argument."
+msgstr ""
+
+#: ../../../references/keywords.rst:511
+msgid ""
+"If you only need to obtain resources one at a time, or you don't have any C "
+"extensions that access other files in the project (such as data files or "
+"shared libraries), you probably do NOT need this argument and shouldn't mess "
+"with it.  For more details on how this argument works, see the section below "
+"on :ref:`Automatic Resource Extraction`."
+msgstr ""
+
+#: ../../../references/keywords.rst:519
+msgid "``project_urls``"
+msgstr ""
+
+#: ../../../references/keywords.rst:520
+msgid ""
+"An arbitrary map of URL names to hyperlinks, allowing more extensible "
+"documentation of where various resources can be found than the simple "
+"``url`` and ``download_url`` options provide."
+msgstr ""
+
+#: ../../../references/keywords.rst:525
+msgid ""
+"It is common for developers to attempt using ``data_files`` for manpages. "
+"Please note however that depending on the installation directory, this will "
+"not work out of the box - often the final user is required to change the "
+"``MANPATH`` environment variable. See the `discussion in Python discourse`_ "
+"for more details."
+msgstr ""

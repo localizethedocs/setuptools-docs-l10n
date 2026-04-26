@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../python 2 sunset.rst:4
 msgid "Python 2 Sunset"
-msgstr ""
+msgstr "Python 2 的落幕"
 
 #: ../../../python 2 sunset.rst:6
 msgid ""

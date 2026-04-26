@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../build_meta.rst:3
 msgid "Build System Support"
-msgstr ""
+msgstr "建置系統支援"
 
 #: ../../../build_meta.rst:6
 msgid "What is it?"
@@ -151,6 +151,8 @@ msgid ""
 "$ pip install -q build\n"
 "$ python -m build"
 msgstr ""
+"$ pip install -q build\n"
+"$ python -m build"
 
 #: ../../../build_meta.rst:85
 msgid ""
@@ -166,6 +168,11 @@ msgid ""
 "\n"
 "$ pip install dist/meowpkg-0.0.1.whl"
 msgstr ""
+"dist/\n"
+"    meowpkg-0.0.1.whl\n"
+"    meowpkg-0.0.1.tar.gz\n"
+"\n"
+"$ pip install dist/meowpkg-0.0.1.whl"
 
 #: ../../../build_meta.rst:94
 msgid "or::"
@@ -173,7 +180,7 @@ msgstr ""
 
 #: ../../../build_meta.rst:96
 msgid "$ pip install dist/meowpkg-0.0.1.tar.gz"
-msgstr ""
+msgstr "$ pip install dist/meowpkg-0.0.1.tar.gz"
 
 #: ../../../build_meta.rst:102
 msgid "Dynamic build dependencies and other ``build_meta`` tweaks"

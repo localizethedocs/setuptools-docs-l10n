@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:5
 msgid "Entry Points"
-msgstr ""
+msgstr "進入點"
 
 #: ../../../userguide/entry_point.rst:7
 msgid ""
@@ -75,6 +75,8 @@ msgid ""
 "def hello_world():\n"
 "    print(\"Hello world\")"
 msgstr ""
+"def hello_world():\n"
+"    print(\"Hello world\")"
 
 #: ../../../userguide/entry_point.rst:47
 msgid ""
@@ -103,6 +105,8 @@ msgid ""
 "$ python -m timmins\n"
 "Hello world"
 msgstr ""
+"$ python -m timmins\n"
+"Hello world"
 
 #: ../../../userguide/entry_point.rst:68
 msgid ""
@@ -118,6 +122,8 @@ msgid ""
 "[project.scripts]\n"
 "hello-world = \"timmins:hello_world\""
 msgstr ""
+"[project.scripts]\n"
+"hello-world = \"timmins:hello_world\""
 
 #: ../../../userguide/entry_point.rst:83
 msgid ""
@@ -125,6 +131,9 @@ msgid ""
 "console_scripts =\n"
 "    hello-world = timmins:hello_world"
 msgstr ""
+"[options.entry_points]\n"
+"console_scripts =\n"
+"    hello-world = timmins:hello_world"
 
 #: ../../../userguide/entry_point.rst:91
 msgid ""
@@ -151,6 +160,8 @@ msgid ""
 "$ hello-world\n"
 "Hello world"
 msgstr ""
+"$ hello-world\n"
+"Hello world"
 
 #: ../../../userguide/entry_point.rst:113
 msgid ""
@@ -240,7 +251,7 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:180
 msgid "$ hello-world"
-msgstr ""
+msgstr "$ hello-world"
 
 #: ../../../userguide/entry_point.rst:184
 msgid "will open a small application window with the title 'Hello world'."
@@ -312,7 +323,7 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:234
 msgid "Entry Points for Plugins"
-msgstr ""
+msgstr "插件的進入點"
 
 #: ../../../userguide/entry_point.rst:236
 msgid ""
@@ -339,6 +350,8 @@ msgid ""
 "def hello_world():\n"
 "    print('Hello world')"
 msgstr ""
+"def hello_world():\n"
+"    print('Hello world')"
 
 #: ../../../userguide/entry_point.rst:253
 msgid ""
@@ -392,6 +405,8 @@ msgid ""
 "from importlib.metadata import entry_points\n"
 "display_eps = entry_points(group='timmins.display')"
 msgstr ""
+"from importlib.metadata import entry_points\n"
+"display_eps = entry_points(group='timmins.display')"
 
 #: ../../../userguide/entry_point.rst:290
 msgid ""
@@ -409,6 +424,11 @@ msgid ""
 "    ...,\n"
 ")"
 msgstr ""
+"(\n"
+"    EntryPoint(name='excl', value='timmins_plugin_fancy:excl_display', "
+"group='timmins.display'),\n"
+"    ...,\n"
+")"
 
 #: ../../../userguide/entry_point.rst:301
 msgid ""
@@ -474,6 +494,8 @@ msgid ""
 "def excl_display(text):\n"
 "    print('!!!', text, '!!!')"
 msgstr ""
+"def excl_display(text):\n"
+"    print('!!!', text, '!!!')"
 
 #: ../../../userguide/entry_point.rst:346
 msgid ""
@@ -696,7 +718,7 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:523
 msgid "Package or module"
-msgstr ""
+msgstr "軟體包或模組"
 
 #: ../../../userguide/entry_point.rst:524
 #: ../../../userguide/entry_point.rst:538
@@ -758,6 +780,8 @@ msgid ""
 "from <package_or_module> import <object>\n"
 "parsed_value = <object>.<attr>.<nested_attr>"
 msgstr ""
+"from <package_or_module> import <object>\n"
+"parsed_value = <object>.<attr>.<nested_attr>"
 
 #: ../../../userguide/entry_point.rst:562
 msgid ""

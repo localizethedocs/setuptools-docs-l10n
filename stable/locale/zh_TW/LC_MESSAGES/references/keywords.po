@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../references/keywords.rst:3
 msgid "Keywords"
-msgstr ""
+msgstr "關鍵字"
 
 #: ../../../references/keywords.rst:5
 msgid ""
@@ -254,7 +254,7 @@ msgstr ""
 
 #: ../../../references/keywords.rst:149
 msgid "``license``"
-msgstr ""
+msgstr "``license``"
 
 #: ../../../references/keywords.rst:150
 msgid "A string specifying the license of the package."

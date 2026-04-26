@@ -23,19 +23,19 @@ msgstr ""
 
 #: :1
 msgid "PyPI"
-msgstr ""
+msgstr "PyPI"
 
 #: :1
 msgid "Links"
-msgstr ""
+msgstr "連結"
 
 #: ../../../index.rst:18
 msgid "User guide"
-msgstr ""
+msgstr "使用者指南"
 
 #: ../../../index.rst:27
 msgid "Development guide"
-msgstr ""
+msgstr "開發指南"
 
 #: ../../../index.rst:27
 msgid "Backward compatibility & deprecated practice"
@@ -43,15 +43,15 @@ msgstr ""
 
 #: ../../../index.rst:27
 msgid "Changelog"
-msgstr ""
+msgstr "變更日誌"
 
 #: ../../../index.rst:27
 msgid "Project"
-msgstr ""
+msgstr "專案"
 
 #: ../../../index.rst:5
 msgid "Documentation"
-msgstr ""
+msgstr "文件"
 
 #: ../../../index.rst:7
 msgid ""

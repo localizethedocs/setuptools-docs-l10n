@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../userguide/ext_modules.rst:3
 msgid "Building Extension Modules"
-msgstr ""
+msgstr "建置擴充模組"
 
 #: ../../../userguide/ext_modules.rst:5
 msgid ""

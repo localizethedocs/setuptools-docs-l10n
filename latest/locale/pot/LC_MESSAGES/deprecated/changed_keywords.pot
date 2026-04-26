@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 82.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-26 09:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../deprecated/changed_keywords.rst:2
+msgid "New and Changed ``setup()`` Keywords"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:4
+msgid ""
+"This document tracks historical differences between ``setuptools`` and "
+"``distutils``."
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:7
+msgid ""
+"Since ``distutils`` was scheduled for removal from the standard library in "
+"Python 3.12, and ``setuptools`` started its adoption, these differences "
+"became less relevant. Please check :doc:`/references/keywords` for a "
+"complete list of keyword arguments that can be passed to the ``setuptools."
+"setup()`` function and a their full description."
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:16
+msgid "``name`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:18
+msgid "``version`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:20
+msgid "``description`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:22
+msgid "``long_description`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:24
+msgid "``long_description_content_type`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:26
+msgid "``author`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:28
+msgid "``author_email`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:30
+msgid "``maintainer`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:32
+msgid "``maintainer_email`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:34
+msgid "``url`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:36
+msgid "``download_url`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:38
+msgid "``packages`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:40
+msgid "``py_modules`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:42
+msgid "``scripts`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:44
+msgid "``ext_package`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:46
+msgid "``ext_modules`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:48
+msgid "``classifiers`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:50
+msgid "``distclass`` Distribution subclass"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:52
+msgid "``script_name`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:54
+msgid "``script_args`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:56
+msgid "``options`` dictionary"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:58
+msgid "``license`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:60
+msgid "``license_file`` string **deprecated**"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:62
+msgid "``license_files`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:64
+msgid "``keywords`` string or list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:66
+msgid "``platforms`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:68
+msgid "``cmdclass`` dictionary"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:70
+msgid "``data_files`` list **deprecated**"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:72
+msgid "``package_dir`` dictionary"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:74
+msgid "``requires`` string or list **deprecated**"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:76
+msgid "``obsoletes`` list **deprecated**"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:78
+msgid "``provides`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:82
+msgid "``include_package_data`` bool"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:84
+msgid "``exclude_package_data`` dictionary"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:86
+msgid "``package_data`` dictionary"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:88
+msgid "``zip_safe`` bool"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:90
+msgid "``install_requires`` string or list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:92
+msgid "``entry_points`` dictionary"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:94
+msgid "``extras_require`` dictionary"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:96
+msgid "``python_requires`` string"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:98
+msgid "``setup_requires`` string or list **deprecated**"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:100
+msgid "``dependency_links`` list **deprecated**"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:102
+msgid "``namespace_packages`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:104
+msgid "``test_suite`` string or function **deprecated**"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:106
+msgid "``tests_require`` string or list **deprecated**"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:108
+msgid "``test_loader`` class **deprecated**"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:110
+msgid "``eager_resources`` list"
+msgstr ""
+
+#: ../../../deprecated/changed_keywords.rst:112
+msgid "``project_urls`` dictionary"
+msgstr ""

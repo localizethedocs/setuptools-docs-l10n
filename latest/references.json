@@ -13,22 +13,22 @@
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-04-13 05:04:56 -0400",
+        "hash" : "84ed5913724df5a12dc804e1d5efe12508e706d2",
+        "title" : "Refresh project structure (skeleton) (#5220)"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-04-13 05:04:56 -0400",
+        "hash" : "84ed5913724df5a12dc804e1d5efe12508e706d2",
+        "title" : "Refresh project structure (skeleton) (#5220)"
       }
     }
   },

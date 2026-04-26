@@ -1,0 +1,483 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 82.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-26 09:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../userguide/ext_modules.rst:3
+msgid "Building Extension Modules"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:5
+msgid ""
+"Setuptools can build C/C++ extension modules.  The keyword argument "
+"``ext_modules`` of ``setup()`` should be a list of instances of the :class:"
+"`setuptools.Extension` class."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:10
+msgid ""
+"For example, let's consider a simple project with only one extension module::"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:12
+msgid ""
+"<project_folder>\n"
+"├── pyproject.toml\n"
+"└── foo.c"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:16
+msgid "and all project metadata configuration in the ``pyproject.toml`` file:"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:18
+msgid ""
+"# pyproject.toml\n"
+"[build-system]\n"
+"requires = [\"setuptools\"]\n"
+"build-backend = \"setuptools.build_meta\"\n"
+"\n"
+"[project]\n"
+"name = \"mylib-foo\"  # as it would appear on PyPI\n"
+"version = \"0.42\""
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:29
+msgid ""
+"To instruct setuptools to compile the ``foo.c`` file into the extension "
+"module ``mylib.foo``, we need to define an appropriate configuration in "
+"either ``pyproject.toml`` [#pyproject.toml]_ or ``setup.py`` file , similar "
+"to the following:"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:36
+msgid ""
+"[tool.setuptools]\n"
+"ext-modules = [\n"
+"  {name = \"mylib.foo\", sources = [\"foo.c\"]}\n"
+"]"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:45
+msgid ""
+"from setuptools import Extension, setup\n"
+"\n"
+"setup(\n"
+"    ext_modules=[\n"
+"        Extension(\n"
+"            name=\"mylib.foo\",\n"
+"            sources=[\"foo.c\"],\n"
+"        ),\n"
+"    ]\n"
+")"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:58
+msgid ""
+"The ``name`` value corresponds to how the extension module would be imported "
+"and may include packages/namespaces separated by ``.``. The ``sources`` "
+"value is a list of all source files that are compiled into a single binary "
+"file. Optionally any other parameter of :class:`setuptools.Extension` can be "
+"defined in the configuration file (but in the case of ``pyproject.toml`` "
+"they must be written using :wiki:`kebab-case` convention)."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:67
+msgid ""
+"You can find more information on the `Python docs about C/C++ extensions`_. "
+"Alternatively, you might also be interested in learning about `Cython`_."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:70
+msgid ""
+"If you plan to distribute a package that uses extensions across multiple "
+"platforms, :pypi:`cibuildwheel` can also be helpful."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:74
+msgid ""
+"All files used to compile your extension need to be available on the system "
+"when building the package, so please make sure to include some documentation "
+"on how developers interested in building your package from source can obtain "
+"operating system level dependencies (e.g. compilers and external binary "
+"libraries/artifacts)."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:80
+msgid ""
+"You will also need to make sure that all auxiliary files that are contained "
+"inside your :term:`project` (e.g. C headers authored by you or your team) "
+"are configured to be included in your :term:`sdist <Source Distribution (or "
+"\"sdist\")>`. Please have a look on our section on :ref:`Controlling files "
+"in the distribution`."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:87
+msgid "Compiler and linker options"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:89
+msgid ""
+"The command ``build_ext`` builds C/C++ extension modules.  It creates a "
+"command line for running the compiler and linker by combining compiler and "
+"linker options from various sources:"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:95
+msgid ""
+"the ``sysconfig`` variables ``CC``, ``CXX``, ``CCSHARED``, ``LDSHARED``, and "
+"``CFLAGS``,"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:97
+msgid ""
+"the environment variables ``CC``, ``CPP``, ``CXX``, ``LDSHARED`` and "
+"``CFLAGS``, ``CPPFLAGS``, ``LDFLAGS``,"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:100
+msgid ""
+"the ``Extension`` attributes ``include_dirs``, ``library_dirs``, "
+"``extra_compile_args``, ``extra_link_args``, ``runtime_library_dirs``."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:106
+msgid ""
+"Specifically, if the environment variables ``CC``, ``CPP``, ``CXX``, and "
+"``LDSHARED`` are set, they will be used instead of the ``sysconfig`` "
+"variables of the same names."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:109
+msgid "The compiler options appear in the command line in the following order:"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:113
+msgid ""
+"first, the options provided by the environment variables ``CFLAGS`` and "
+"``CPPFLAGS``,"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:114
+msgid "then, the options provided by the ``sysconfig`` variable ``CCSHARED``,"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:115
+msgid "then, a ``-I`` option for each element of ``Extension.include_dirs``,"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:116
+msgid "finally, the options provided by ``Extension.extra_compile_args``."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:118
+msgid "The linker options appear in the command line in the following order:"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:122
+msgid ""
+"first, the options provided by environment variables and ``sysconfig`` "
+"variables,"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:123
+msgid "then, a ``-L`` option for each element of ``Extension.library_dirs``,"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:124
+msgid ""
+"then, a linker-specific option like ``-Wl,-rpath`` for each element of "
+"``Extension.runtime_library_dirs``,"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:125
+msgid "finally, the options provided by ``Extension.extra_link_args``."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:127
+msgid ""
+"The resulting command line is then processed by the compiler and linker. "
+"According to the GCC manual sections on `directory options`_ and "
+"`environment variables`_, the C/C++ compiler searches for files named in "
+"``#include <file>`` directives in the following order:"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:132
+msgid "first, in directories given by ``-I`` options (in left-to-right order),"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:133
+msgid ""
+"then, in directories given by the environment variable ``CPATH`` (in left-to-"
+"right order),"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:134
+msgid ""
+"then, in directories given by ``-isystem`` options (in left-to-right order),"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:135
+msgid ""
+"then, in directories given by the environment variable ``C_INCLUDE_PATH`` "
+"(for C) and ``CPLUS_INCLUDE_PATH`` (for C++),"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:136
+msgid "then, in standard system directories,"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:137
+msgid ""
+"finally, in directories given by ``-idirafter`` options (in left-to-right "
+"order)."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:139
+msgid "The linker searches for libraries in the following order:"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:141
+msgid "first, in directories given by ``-L`` options (in left-to-right order),"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:142
+msgid ""
+"then, in directories given by the environment variable ``LIBRARY_PATH`` (in "
+"left-to-right order)."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:146
+msgid "Distributing Extensions compiled with Cython"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:148
+msgid ""
+"When your :pypi:`Cython` extension modules *are declared using the* :class:"
+"`setuptools.Extension` *class*, ``setuptools`` will detect at build time "
+"whether Cython is installed or not."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:152
+msgid ""
+"If Cython is present, then ``setuptools`` will use it to build the ``.pyx`` "
+"files. Otherwise, ``setuptools`` will try to find and compile the equivalent "
+"``.c`` files (instead of ``.pyx``). These files can be generated using the "
+"`cython command line tool`_."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:157
+msgid ""
+"You can ensure that Cython is always automatically installed into the build "
+"environment by including it as a :ref:`build dependency <build-requires>` in "
+"your ``pyproject.toml``:"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:161
+msgid ""
+"[build-system]\n"
+"requires = [\n"
+"    # ...,\n"
+"    \"cython\",\n"
+"]"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:169
+msgid ""
+"Alternatively, you can include the ``.c`` code that is pre-compiled by "
+"Cython into your source distribution, alongside the original ``.pyx`` files "
+"(this might save a few seconds when building from an ``sdist``). To improve "
+"version compatibility, you probably also want to include current ``.c`` "
+"files in your :wiki:`revision control system`, and rebuild them whenever you "
+"check changes in for the ``.pyx`` source files. This will ensure that people "
+"tracking your project will be able to build it without installing Cython, "
+"and that there will be no variation due to small differences in the generate "
+"C files. Please checkout our docs on :ref:`controlling files in the "
+"distribution` for more information."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:184
+msgid "Extension API Reference"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:1
+msgid "Describes a single extension module."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:3
+msgid ""
+"This means that all source files will be compiled into a single binary file "
+"``<module path>.<suffix>`` (with ``<module path>`` derived from ``name`` and "
+"``<suffix>`` defined by one of the values in ``importlib.machinery."
+"EXTENSION_SUFFIXES``)."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:8
+msgid ""
+"In the case ``.pyx`` files are passed as ``sources and`` ``Cython`` is "
+"**not** installed in the build environment, ``setuptools`` may also try to "
+"look for the equivalent ``.cpp`` or ``.c`` files."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:12
+msgid ""
+"the full name of the extension, including any packages -- ie. *not* a "
+"filename or pathname, but Python dotted name"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:16
+msgid ""
+"iterable of source filenames, (except strings, which could be misinterpreted "
+"as a single filename), relative to the distribution root (where the setup "
+"script lives), in Unix form (slash-separated) for portability.  Source files "
+"may be C, C++, SWIG (.i), platform-specific resource files, or whatever else "
+"is recognized by the \"build_ext\" command as source for a Python extension."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:24
+msgid ""
+"list of directories to search for C/C++ header files (in Unix form for "
+"portability)"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:28
+msgid ""
+"list of macros to define; each macro is defined using a 2-tuple: the first "
+"item corresponding to the name of the macro and the second item either a "
+"string with its value or None to define it without a particular value "
+"(equivalent of \"#define FOO\" in source or -DFOO on Unix C compiler command "
+"line)"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:35
+msgid "list of macros to undefine explicitly"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:38
+msgid "list of directories to search for C/C++ libraries at link time"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:41
+msgid "list of library names (not filenames or paths) to link against"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:44
+msgid ""
+"list of directories to search for C/C++ libraries at run time (for shared "
+"extensions, this is when the extension is loaded). Setting this will cause "
+"an exception during build on Windows platforms."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:50
+msgid ""
+"list of extra files to link with (eg. object files not implied by 'sources', "
+"static library that must be explicitly specified, binary resource files, "
+"etc.)"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:55
+msgid ""
+"any extra platform- and compiler-specific information to use when compiling "
+"the source files in 'sources'.  For platforms and compilers where \"command "
+"line\" makes sense, this is typically a list of command-line arguments, but "
+"for other platforms it could be anything."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:62
+msgid ""
+"any extra platform- and compiler-specific information to use when linking "
+"object files together to create the extension (or to create a new static "
+"Python interpreter).  Similar interpretation as for 'extra_compile_args'."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:68
+msgid ""
+"list of symbols to be exported from a shared extension.  Not used on all "
+"platforms, and not generally necessary for Python extensions, which "
+"typically export exactly one symbol: \"init\" + extension_name."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:74
+msgid ""
+"any extra options to pass to SWIG if a source file has the .i extension."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:78
+msgid "list of files that the extension depends on"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:81
+msgid ""
+"extension language (i.e. \"c\", \"c++\", \"objc\"). Will be detected from "
+"the source extensions if not provided."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:85
+msgid ""
+"specifies that a build failure in the extension should not abort the build "
+"process, but simply not install the failing extension."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:89
+msgid ""
+"opt-in flag for the usage of :doc:`Python's limited API <python:c-api/"
+"stable>`."
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: of setuptools.extension.Extension:92
+msgid "if ``runtime_library_dirs`` is specified on Windows. (since v63)"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:192
+msgid "Notes"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:194
+msgid ""
+"Declarative configuration of extension modules via ``pyproject.toml`` was "
+"introduced recently and is still considered experimental. Therefore it might "
+"change in future versions of ``setuptools``."
+msgstr ""

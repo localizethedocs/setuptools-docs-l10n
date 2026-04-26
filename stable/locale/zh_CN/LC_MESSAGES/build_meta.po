@@ -1,0 +1,276 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 82.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-26 09:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../build_meta.rst:3
+msgid "Build System Support"
+msgstr ""
+
+#: ../../../build_meta.rst:6
+msgid "What is it?"
+msgstr ""
+
+#: ../../../build_meta.rst:8
+msgid ""
+"Python packaging has come `a long way <https://bernat.tech/posts/pep-517-518/"
+">`_."
+msgstr ""
+
+#: ../../../build_meta.rst:10
+msgid ""
+"The traditional ``setuptools`` way of packaging Python modules uses a "
+"``setup()`` function within the ``setup.py`` script. Commands such as "
+"``python setup.py bdist`` or ``python setup.py bdist_wheel`` generate a "
+"distribution bundle and ``python setup.py install`` installs the "
+"distribution. This interface makes it difficult to choose other packaging "
+"tools without an overhaul. Because ``setup.py`` scripts allow for arbitrary "
+"execution, it is difficult to provide a reliable user experience across "
+"environments and history."
+msgstr ""
+
+#: ../../../build_meta.rst:19
+msgid ""
+":pep:`517` came to the rescue and specified a new standard for packaging and "
+"distributing Python modules. Under PEP 517:"
+msgstr ""
+
+#: ../../../build_meta.rst:23
+msgid ""
+"A ``pyproject.toml`` file is used to specify which program to use to "
+"generate the distribution."
+msgstr ""
+
+#: ../../../build_meta.rst:26
+msgid ""
+"Two functions provided by the program, ``build_wheel(directory: str)`` and "
+"``build_sdist(directory: str)``, create the distribution bundle in the "
+"specified ``directory``."
+msgstr ""
+
+#: ../../../build_meta.rst:30
+msgid ""
+"The program may use its own configuration file or extend the ``.toml`` file."
+msgstr ""
+
+#: ../../../build_meta.rst:32
+msgid ""
+"The actual installation is done with ``pip install *.whl`` or ``pip install "
+"*.tar.gz``. If ``*.whl`` is available, ``pip`` will go ahead and copy its "
+"files into the ``site-packages`` directory. If not, ``pip`` will look at "
+"``pyproject.toml`` and decide which program to use to 'build from source'. "
+"(Note that if there is no ``pyproject.toml`` file or the ``build-backend`` "
+"parameter is not defined, then the fall-back behaviour is to use "
+"``setuptools``.)"
+msgstr ""
+
+#: ../../../build_meta.rst:39
+msgid "With this standard, switching between packaging tools is a lot easier."
+msgstr ""
+
+#: ../../../build_meta.rst:42
+msgid "How to use it?"
+msgstr ""
+
+#: ../../../build_meta.rst:44
+msgid ""
+"Start with a package that you want to distribute. You will need your source "
+"files, a ``pyproject.toml`` file and a ``setup.cfg`` file::"
+msgstr ""
+
+#: ../../../build_meta.rst:47
+msgid ""
+"~/meowpkg/\n"
+"    pyproject.toml\n"
+"    setup.cfg\n"
+"    meowpkg/\n"
+"        __init__.py\n"
+"        module.py"
+msgstr ""
+
+#: ../../../build_meta.rst:54
+msgid ""
+"The ``pyproject.toml`` file specifies the build system (i.e. what is being "
+"used to package your scripts and install from source). To use it with "
+"``setuptools`` the content would be::"
+msgstr ""
+
+#: ../../../build_meta.rst:58
+msgid ""
+"[build-system]\n"
+"requires = [\"setuptools\"]\n"
+"build-backend = \"setuptools.build_meta\""
+msgstr ""
+
+#: ../../../build_meta.rst:62
+msgid ""
+"``build_meta`` implements ``setuptools``' build system support. The "
+"``setuptools`` package implements the ``build_sdist`` and ``build_wheel`` "
+"commands."
+msgstr ""
+
+#: ../../../build_meta.rst:66
+msgid ""
+"Use ``setuptools``' :ref:`declarative config <declarative config>` to "
+"specify the package information in ``setup.cfg``::"
+msgstr ""
+
+#: ../../../build_meta.rst:69
+msgid ""
+"[metadata]\n"
+"name = meowpkg\n"
+"version = 0.0.1\n"
+"description = a package that meows\n"
+"\n"
+"[options]\n"
+"packages = find:"
+msgstr ""
+
+#: ../../../build_meta.rst:79
+msgid ""
+"Now generate the distribution. To build the package, use `PyPA build "
+"<https://pypa-build.readthedocs.io/en/latest/>`_::"
+msgstr ""
+
+#: ../../../build_meta.rst:82
+msgid ""
+"$ pip install -q build\n"
+"$ python -m build"
+msgstr ""
+
+#: ../../../build_meta.rst:85
+msgid ""
+"And now it's done! The ``.whl`` file  and ``.tar.gz`` can then be "
+"distributed and installed::"
+msgstr ""
+
+#: ../../../build_meta.rst:88
+msgid ""
+"dist/\n"
+"    meowpkg-0.0.1.whl\n"
+"    meowpkg-0.0.1.tar.gz\n"
+"\n"
+"$ pip install dist/meowpkg-0.0.1.whl"
+msgstr ""
+
+#: ../../../build_meta.rst:94
+msgid "or::"
+msgstr ""
+
+#: ../../../build_meta.rst:96
+msgid "$ pip install dist/meowpkg-0.0.1.tar.gz"
+msgstr ""
+
+#: ../../../build_meta.rst:102
+msgid "Dynamic build dependencies and other ``build_meta`` tweaks"
+msgstr ""
+
+#: ../../../build_meta.rst:104
+msgid ""
+"With the changes introduced by :pep:`517` and :pep:`518`, the "
+"``setup_requires`` configuration field was deprecated in ``setup.cfg`` and "
+"``setup.py``, in favour of directly listing build dependencies in the "
+"``requires`` field of the ``build-system`` table of ``pyproject.toml``. This "
+"approach has a series of advantages and gives package managers and "
+"installers the ability to inspect the build requirements in advance and "
+"perform a series of optimisations."
+msgstr ""
+
+#: ../../../build_meta.rst:112
+msgid ""
+"However, some package authors might still need to dynamically inspect the "
+"final user's machine before deciding these requirements. One way of doing "
+"that, as specified by :pep:`517`, is to \"tweak\" ``setuptools.build_meta`` "
+"by using an :pep:`in-tree backend <517#in-tree-build-backends>`."
+msgstr ""
+
+#: ../../../build_meta.rst:117
+msgid ""
+"Before implementing an *in-tree* backend, have a look at :pep:`PEP 508 "
+"<508#environment-markers>`. Most of the time, dependencies with "
+"**environment markers** are enough to differentiate operating systems and "
+"platforms."
+msgstr ""
+
+#: ../../../build_meta.rst:122
+msgid "If you put the following configuration in your ``pyproject.toml``:"
+msgstr ""
+
+#: ../../../build_meta.rst:124
+msgid ""
+"[build-system]\n"
+"requires = [\"setuptools\"]\n"
+"build-backend = \"backend\"\n"
+"backend-path = [\"_custom_build\"]"
+msgstr ""
+
+#: ../../../build_meta.rst:132
+msgid ""
+"then you can implement a thin wrapper around ``build_meta`` in the "
+"``_custom_build/backend.py`` file, as shown in the following example:"
+msgstr ""
+
+#: ../../../build_meta.rst:135
+msgid ""
+"from setuptools import build_meta as _orig\n"
+"from setuptools.build_meta import *\n"
+"\n"
+"\n"
+"def get_requires_for_build_wheel(config_settings=None):\n"
+"    return _orig.get_requires_for_build_wheel(config_settings) + [...]\n"
+"\n"
+"\n"
+"def get_requires_for_build_sdist(config_settings=None):\n"
+"    return _orig.get_requires_for_build_sdist(config_settings) + [...]"
+msgstr ""
+
+#: ../../../build_meta.rst:151
+msgid ""
+"You can override any of the functions specified in :pep:`PEP 517 <517#build-"
+"backend-interface>`, not only the ones responsible for gathering "
+"requirements. It is important to ``import *`` so that the hooks that you "
+"choose not to reimplement would be inherited from the setuptools' backend "
+"automatically. This will also cover hooks that might be added in the future "
+"like the ones that :pep:`660` declares."
+msgstr ""
+
+#: ../../../build_meta.rst:159
+msgid ""
+"Make sure your backend script is included in the :doc:`source distribution </"
+"userguide/distribution>`, otherwise the build will fail. This can be done by "
+"using a SCM_/VCS_ plugin (like :pypi:`setuptools-scm` and :pypi:`setuptools-"
+"svn`), or by correctly setting up :ref:`MANIFEST.in <manifest>`."
+msgstr ""
+
+#: ../../../build_meta.rst:165
+msgid ""
+"The generated ``.tar.gz`` and ``.whl`` files are compressed archives that "
+"can be inspected as follows: On POSIX systems, this can be done with ``tar -"
+"tf dist/*.tar.gz`` and ``unzip -l dist/*.whl``. On Windows systems, you can "
+"rename the ``.whl`` to ``.zip`` to be able to inspect it from File Explorer. "
+"You can also use the above ``tar`` command in a command prompt to inspect "
+"the ``.tar.gz`` file. Alternatively, there are GUI programs like `7-zip`_ "
+"that handle ``.tar.gz`` and ``.whl`` files."
+msgstr ""
+
+#: ../../../build_meta.rst:174
+msgid ""
+"In general, the backend script should be present in the ``.tar.gz`` (so the "
+"project can be built from the source) but not in the ``.whl`` (otherwise the "
+"backend script would end up being distributed alongside your package). See "
+"\":doc:`/userguide/package_discovery`\" for more details about package files."
+msgstr ""

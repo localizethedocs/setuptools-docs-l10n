@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/introduction.rst:5
 msgid "An Introduction to Distutils"
-msgstr ""
+msgstr "Distuils 介紹"
 
 #: ../../../deprecated/distutils/_setuptools_disclaimer.rst:3
 msgid ""
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/introduction.rst:18
 msgid "Concepts & Terminology"
-msgstr ""
+msgstr "概念與術語"
 
 #: ../../../deprecated/distutils/introduction.rst:20
 msgid ""
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/introduction.rst:49
 msgid "A Simple Example"
-msgstr ""
+msgstr "一個簡單範例"
 
 #: ../../../deprecated/distutils/introduction.rst:51
 msgid ""
@@ -178,7 +178,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/introduction.rst:103
 msgid "python setup.py install"
-msgstr ""
+msgstr "python setup.py install"
 
 #: ../../../deprecated/distutils/introduction.rst:105
 msgid ""
@@ -261,7 +261,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/introduction.rst:153
 msgid "extension module"
-msgstr ""
+msgstr "擴充模組"
 
 #: ../../../deprecated/distutils/introduction.rst:154
 msgid ""

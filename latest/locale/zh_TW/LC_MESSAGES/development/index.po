@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../development/index.rst:3
 msgid "Development on Setuptools"
-msgstr ""
+msgstr "Setuptools 的開發"
 
 #: ../../../development/index.rst:5
 msgid ""

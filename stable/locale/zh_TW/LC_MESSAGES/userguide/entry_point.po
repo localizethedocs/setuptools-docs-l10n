@@ -185,7 +185,7 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:127
 msgid "GUI Scripts"
-msgstr ""
+msgstr "GUI 腳本"
 
 #: ../../../userguide/entry_point.rst:129
 msgid ""
@@ -517,6 +517,9 @@ msgid ""
 "timmins.display =\n"
 "    excl = timmins_plugin_fancy:excl_display"
 msgstr ""
+"[options.entry_points]\n"
+"timmins.display =\n"
+"    excl = timmins_plugin_fancy:excl_display"
 
 #: ../../../userguide/entry_point.rst:368
 msgid ""
@@ -552,6 +555,9 @@ msgid ""
 ">>> hello_world()\n"
 "!!! Hello world !!!"
 msgstr ""
+">>> from timmins import hello_world\n"
+">>> hello_world()\n"
+"!!! Hello world !!!"
 
 #: ../../../userguide/entry_point.rst:394
 msgid ""
@@ -598,6 +604,9 @@ msgid ""
 "excl = \"timmins_plugin_fancy:excl_display\"\n"
 "lined = \"timmins_plugin_fancy:lined_display\""
 msgstr ""
+"[project.entry-points.\"timmins.display\"]\n"
+"excl = \"timmins_plugin_fancy:excl_display\"\n"
+"lined = \"timmins_plugin_fancy:lined_display\""
 
 #: ../../../userguide/entry_point.rst:431
 msgid ""
@@ -606,6 +615,10 @@ msgid ""
 "    excl = timmins_plugin_fancy:excl_display\n"
 "    lined = timmins_plugin_fancy:lined_display"
 msgstr ""
+"[options.entry_points]\n"
+"timmins.display =\n"
+"    excl = timmins_plugin_fancy:excl_display\n"
+"    lined = timmins_plugin_fancy:lined_display"
 
 #: ../../../userguide/entry_point.rst:440
 msgid ""
@@ -692,7 +705,7 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:508
 msgid "Entry Points Syntax"
-msgstr ""
+msgstr "進入點語法"
 
 #: ../../../userguide/entry_point.rst:510
 msgid "The syntax for entry points is specified as follows::"
@@ -700,7 +713,7 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:512
 msgid "<name> = <package_or_module>[:<object>[.<attr>[.<nested-attr>]*]]"
-msgstr ""
+msgstr "<name> = <package_or_module>[:<object>[.<attr>[.<nested-attr>]*]]"
 
 #: ../../../userguide/entry_point.rst:514
 msgid ""
@@ -728,7 +741,7 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:526
 msgid "<name> = <package_or_module>"
-msgstr ""
+msgstr "<name> = <package_or_module>"
 
 #: ../../../userguide/entry_point.rst:528
 msgid ""

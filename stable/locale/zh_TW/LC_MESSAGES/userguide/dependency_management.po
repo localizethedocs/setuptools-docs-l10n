@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../userguide/dependency_management.rst:3
 msgid "Dependencies Management in Setuptools"
-msgstr ""
+msgstr "Setuptools 中的依賴管理"
 
 #: ../../../userguide/dependency_management.rst:5
 msgid ""
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../userguide/dependency_management.rst:18
 msgid "Build system requirement"
-msgstr ""
+msgstr "建置系統要求"
 
 #: ../../../userguide/dependency_management.rst:20
 msgid ""
@@ -320,6 +320,8 @@ msgid ""
 "default. This effectively means that you can create a \"variant\" of your "
 "package with a set of extra functionalities."
 msgstr ""
+"Setuptools 允許您宣告默認不會安裝的依賴。這實際上意味著您可以為您的軟體包建立"
+"一個具有一組額外功能的「變體」。"
 
 #: ../../../userguide/dependency_management.rst:270
 msgid ""
@@ -434,6 +436,7 @@ msgid ""
 "Historically ``setuptools`` also used to support extra dependencies in "
 "console scripts, for example:"
 msgstr ""
+"從歷史上來看，``setuptools`` 也曾支援在主控台腳本中使用額外依賴，例如："
 
 #: ../../../userguide/dependency_management.rst:376
 msgid ""

@@ -48,13 +48,15 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:27
 msgid "Console Scripts"
-msgstr ""
+msgstr "主控台腳本"
 
 #: ../../../userguide/entry_point.rst:29
 msgid ""
 "Let us start with console scripts. First consider an example without entry "
 "points. Imagine a package defined thus::"
 msgstr ""
+"讓我們從主控台腳本開始。首先考慮一個不使用進入點的範例。假設有一個軟體包定義"
+"如下：\\ ::"
 
 #: ../../../userguide/entry_point.rst:33
 msgid ""
@@ -68,7 +70,7 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:40
 msgid "with ``__init__.py`` as:"
-msgstr ""
+msgstr "其中 ``__init__.py`` 內容如下："
 
 #: ../../../userguide/entry_point.rst:42
 msgid ""
@@ -92,6 +94,10 @@ msgid ""
 "if __name__ == '__main__':\n"
 "    hello_world()"
 msgstr ""
+"from . import hello_world\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    hello_world()"
 
 #: ../../../userguide/entry_point.rst:59
 msgid ""

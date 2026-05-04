@@ -26,6 +26,8 @@ msgid ""
 "a full specification for the keywords supplied to ``setup.cfg`` or ``setup."
 "py`` can be found at :doc:`keywords reference </references/keywords>`"
 msgstr ""
+"``setup.cfg`` 或 ``setup.py`` 中提供的關鍵字的完整規格可以在\\\\ :doc:`關鍵字"
+"參考 </references/keywords>`\\\\ 中找到"
 
 #: ../../../userguide/package_discovery.rst:12
 msgid ""
@@ -79,6 +81,8 @@ msgid ""
 "exactly to the directory structure, you also need to configure "
 "``package_dir``:"
 msgstr ""
+"如果您的軟體包不在儲存庫的根目錄中，或與目錄結構不完全對應，您還需要設定 "
+"``package_dir`` 組態："
 
 #: ../../../userguide/package_discovery.rst:57
 msgid ""
@@ -175,6 +179,8 @@ msgid ""
 "<declarative config>` and :doc:`py_modules </references/keywords>` "
 "configuration."
 msgstr ""
+"Setuptools 會自動掃描您的專案目錄，尋找這些配置，並嘗試猜測\\ :ref:`軟體包 "
+"<declarative config>` 和 :doc:`py_modules </references/keywords>`\\ 組態。"
 
 #: ../../../userguide/package_discovery.rst:140
 msgid ""
@@ -481,7 +487,7 @@ msgstr ""
 
 #: ../../../userguide/package_discovery.rst:377
 msgid "Finding namespace packages"
-msgstr ""
+msgstr "尋找命名空間包"
 
 #: ../../../userguide/package_discovery.rst:378
 msgid ""
@@ -494,10 +500,12 @@ msgid ""
 "Before diving in, it is important to have a good understanding of what :pep:"
 "`namespace packages <420>` are. Here is a quick recap."
 msgstr ""
+"在深入探討之前，充分理解\\ :pep:`命名空間包 <420>`\\ 的概念至關重要。以下是快"
+"速回顧。"
 
 #: ../../../userguide/package_discovery.rst:384
 msgid "When you have two packages organized as follows:"
-msgstr ""
+msgstr "當您有兩個軟體包且組織結構如下："
 
 #: ../../../userguide/package_discovery.rst:386
 msgid ""

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../userguide/interfaces.rst:2
 msgid "Supported Interfaces"
-msgstr ""
+msgstr "支援的介面"
 
 #: ../../../userguide/interfaces.rst:4
 msgid ""

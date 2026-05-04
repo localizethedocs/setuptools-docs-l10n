@@ -28,6 +28,9 @@ msgid ""
 "setuptools/issues/1458>`_). Setuptools as a project continues to support "
 "Python 2 with bugfixes and important features on Setuptools 44.x."
 msgstr ""
+"自 2020 年 1 月發行 Setuptools 45 起，最新版本已不再支援 Python 2（`討論 "
+"<https://github.com/pypa/setuptools/issues/1458>`_）。Setuptools 專案將持續透"
+"過 Setuptools 44.x 版本，為 Python 2 提供臭蟲修正與重要功能支援。"
 
 #: ../../../python 2 sunset.rst:12
 msgid ""
@@ -36,6 +39,9 @@ msgid ""
 "and installers such as pip 9 or later will honor this declaration and "
 "prevent installation of Setuptools 45 or later in Python 2 environments."
 msgstr ""
+"就設計而言，大多數使用者不會受到此變更的影響。這是因為 Setuptools 45 宣告其支"
+"援的 Python 版本不包含 Python 2.7，而 pip 9 或更新版本的安裝程式將會遵循此宣"
+"告，並防止在 Python 2 環境中安裝 Setuptools 45 或更新版本。"
 
 #: ../../../python 2 sunset.rst:17
 msgid ""
@@ -43,10 +49,12 @@ msgid ""
 "directed to this documentation to provide guidance on how to work around the "
 "issues."
 msgstr ""
+"若使用者在 Python 2 上匯入 Setuptools 45 或更新版本的任何部分，將會被引導至此"
+"文件，以提供如何解決這個議題的指引。"
 
 #: ../../../python 2 sunset.rst:22
 msgid "Workarounds"
-msgstr ""
+msgstr "權宜措施"
 
 #: ../../../python 2 sunset.rst:24
 msgid ""
@@ -54,6 +62,8 @@ msgid ""
 "possible. This project acknowledges that not all environments can drop "
 "Python 2 support, so provides other options."
 msgstr ""
+"最佳建議是避免使用 Python 2 並盡可能遷移到 Python 3。本專案也意識到並非所有環"
+"境都能放棄對 Python 2 的支援，因此提供了其他選項。"
 
 #: ../../../python 2 sunset.rst:28
 msgid ""
@@ -62,6 +72,9 @@ msgid ""
 "to first install ``setuptools<45`` to \"pin Setuptools\" to a compatible "
 "version."
 msgstr ""
+"在極少數情況下，可能會在不支援的 Python 版本上安裝較高版本的 Setuptools。在這"
+"種情況下，建議安裝程式首先安裝 ``setuptools<45`` 以「將 Setuptools 鎖定」到相"
+"容的版本。"
 
 #: ../../../python 2 sunset.rst:33
 msgid ""
@@ -81,7 +94,7 @@ msgstr ""
 
 #: ../../../python 2 sunset.rst:43
 msgid "It's still not working"
-msgstr ""
+msgstr "仍然無法運作"
 
 #: ../../../python 2 sunset.rst:45
 msgid ""

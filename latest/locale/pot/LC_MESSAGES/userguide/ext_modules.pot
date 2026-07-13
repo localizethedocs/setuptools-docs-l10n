@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 82.0.1\n"
+"Project-Id-Version: setuptools 83.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-26 09:45+0000\n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -97,17 +98,38 @@ msgstr ""
 
 #: ../../../userguide/ext_modules.rst:67
 msgid ""
+"``Extension(..., py_limited_api=True)`` and wheel tagging are configured "
+"separately. If the built wheel should be tagged with ``abi3`` for CPython's "
+"limited API, configure the ``bdist_wheel`` ``py_limited_api`` option with "
+"the minimum supported CPython tag, such as ``cp311``:"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:74
+msgid ""
+"[bdist_wheel]\n"
+"py-limited-api = cp311"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:81
+msgid ""
+"setup(\n"
+"    options={\"bdist_wheel\": {\"py_limited_api\": \"cp311\"}},\n"
+")"
+msgstr ""
+
+#: ../../../userguide/ext_modules.rst:88
+msgid ""
 "You can find more information on the `Python docs about C/C++ extensions`_. "
 "Alternatively, you might also be interested in learning about `Cython`_."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:70
+#: ../../../userguide/ext_modules.rst:91
 msgid ""
 "If you plan to distribute a package that uses extensions across multiple "
 "platforms, :pypi:`cibuildwheel` can also be helpful."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:74
+#: ../../../userguide/ext_modules.rst:95
 msgid ""
 "All files used to compile your extension need to be available on the system "
 "when building the package, so please make sure to include some documentation "
@@ -116,7 +138,7 @@ msgid ""
 "libraries/artifacts)."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:80
+#: ../../../userguide/ext_modules.rst:101
 msgid ""
 "You will also need to make sure that all auxiliary files that are contained "
 "inside your :term:`project` (e.g. C headers authored by you or your team) "
@@ -125,89 +147,89 @@ msgid ""
 "in the distribution`."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:87
+#: ../../../userguide/ext_modules.rst:108
 msgid "Compiler and linker options"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:89
+#: ../../../userguide/ext_modules.rst:110
 msgid ""
 "The command ``build_ext`` builds C/C++ extension modules.  It creates a "
 "command line for running the compiler and linker by combining compiler and "
 "linker options from various sources:"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:95
+#: ../../../userguide/ext_modules.rst:116
 msgid ""
 "the ``sysconfig`` variables ``CC``, ``CXX``, ``CCSHARED``, ``LDSHARED``, and "
 "``CFLAGS``,"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:97
+#: ../../../userguide/ext_modules.rst:118
 msgid ""
 "the environment variables ``CC``, ``CPP``, ``CXX``, ``LDSHARED`` and "
 "``CFLAGS``, ``CPPFLAGS``, ``LDFLAGS``,"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:100
+#: ../../../userguide/ext_modules.rst:121
 msgid ""
 "the ``Extension`` attributes ``include_dirs``, ``library_dirs``, "
 "``extra_compile_args``, ``extra_link_args``, ``runtime_library_dirs``."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:106
+#: ../../../userguide/ext_modules.rst:127
 msgid ""
 "Specifically, if the environment variables ``CC``, ``CPP``, ``CXX``, and "
 "``LDSHARED`` are set, they will be used instead of the ``sysconfig`` "
 "variables of the same names."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:109
+#: ../../../userguide/ext_modules.rst:130
 msgid "The compiler options appear in the command line in the following order:"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:113
+#: ../../../userguide/ext_modules.rst:134
 msgid ""
 "first, the options provided by the environment variables ``CFLAGS`` and "
 "``CPPFLAGS``,"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:114
+#: ../../../userguide/ext_modules.rst:135
 msgid "then, the options provided by the ``sysconfig`` variable ``CCSHARED``,"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:115
+#: ../../../userguide/ext_modules.rst:136
 msgid "then, a ``-I`` option for each element of ``Extension.include_dirs``,"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:116
+#: ../../../userguide/ext_modules.rst:137
 msgid "finally, the options provided by ``Extension.extra_compile_args``."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:118
+#: ../../../userguide/ext_modules.rst:139
 msgid "The linker options appear in the command line in the following order:"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:122
+#: ../../../userguide/ext_modules.rst:143
 msgid ""
 "first, the options provided by environment variables and ``sysconfig`` "
 "variables,"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:123
+#: ../../../userguide/ext_modules.rst:144
 msgid "then, a ``-L`` option for each element of ``Extension.library_dirs``,"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:124
+#: ../../../userguide/ext_modules.rst:145
 msgid ""
 "then, a linker-specific option like ``-Wl,-rpath`` for each element of "
 "``Extension.runtime_library_dirs``,"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:125
+#: ../../../userguide/ext_modules.rst:146
 msgid "finally, the options provided by ``Extension.extra_link_args``."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:127
+#: ../../../userguide/ext_modules.rst:148
 msgid ""
 "The resulting command line is then processed by the compiler and linker. "
 "According to the GCC manual sections on `directory options`_ and "
@@ -215,63 +237,63 @@ msgid ""
 "``#include <file>`` directives in the following order:"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:132
+#: ../../../userguide/ext_modules.rst:153
 msgid "first, in directories given by ``-I`` options (in left-to-right order),"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:133
+#: ../../../userguide/ext_modules.rst:154
 msgid ""
 "then, in directories given by the environment variable ``CPATH`` (in left-to-"
 "right order),"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:134
+#: ../../../userguide/ext_modules.rst:155
 msgid ""
 "then, in directories given by ``-isystem`` options (in left-to-right order),"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:135
+#: ../../../userguide/ext_modules.rst:156
 msgid ""
 "then, in directories given by the environment variable ``C_INCLUDE_PATH`` "
 "(for C) and ``CPLUS_INCLUDE_PATH`` (for C++),"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:136
+#: ../../../userguide/ext_modules.rst:157
 msgid "then, in standard system directories,"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:137
+#: ../../../userguide/ext_modules.rst:158
 msgid ""
 "finally, in directories given by ``-idirafter`` options (in left-to-right "
 "order)."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:139
+#: ../../../userguide/ext_modules.rst:160
 msgid "The linker searches for libraries in the following order:"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:141
+#: ../../../userguide/ext_modules.rst:162
 msgid "first, in directories given by ``-L`` options (in left-to-right order),"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:142
+#: ../../../userguide/ext_modules.rst:163
 msgid ""
 "then, in directories given by the environment variable ``LIBRARY_PATH`` (in "
 "left-to-right order)."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:146
+#: ../../../userguide/ext_modules.rst:167
 msgid "Distributing Extensions compiled with Cython"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:148
+#: ../../../userguide/ext_modules.rst:169
 msgid ""
 "When your :pypi:`Cython` extension modules *are declared using the* :class:"
 "`setuptools.Extension` *class*, ``setuptools`` will detect at build time "
 "whether Cython is installed or not."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:152
+#: ../../../userguide/ext_modules.rst:173
 msgid ""
 "If Cython is present, then ``setuptools`` will use it to build the ``.pyx`` "
 "files. Otherwise, ``setuptools`` will try to find and compile the equivalent "
@@ -279,14 +301,14 @@ msgid ""
 "`cython command line tool`_."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:157
+#: ../../../userguide/ext_modules.rst:178
 msgid ""
 "You can ensure that Cython is always automatically installed into the build "
 "environment by including it as a :ref:`build dependency <build-requires>` in "
 "your ``pyproject.toml``:"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:161
+#: ../../../userguide/ext_modules.rst:182
 msgid ""
 "[build-system]\n"
 "requires = [\n"
@@ -295,7 +317,7 @@ msgid ""
 "]"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:169
+#: ../../../userguide/ext_modules.rst:190
 msgid ""
 "Alternatively, you can include the ``.c`` code that is pre-compiled by "
 "Cython into your source distribution, alongside the original ``.pyx`` files "
@@ -309,7 +331,7 @@ msgid ""
 "distribution` for more information."
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:184
+#: ../../../userguide/ext_modules.rst:205
 msgid "Extension API Reference"
 msgstr ""
 
@@ -470,11 +492,11 @@ msgstr ""
 msgid "if ``runtime_library_dirs`` is specified on Windows. (since v63)"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:192
+#: ../../../userguide/ext_modules.rst:213
 msgid "Notes"
 msgstr ""
 
-#: ../../../userguide/ext_modules.rst:194
+#: ../../../userguide/ext_modules.rst:215
 msgid ""
 "Declarative configuration of extension modules via ``pyproject.toml`` was "
 "introduced recently and is still considered experimental. Therefore it might "

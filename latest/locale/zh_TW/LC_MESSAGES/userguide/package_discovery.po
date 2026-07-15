@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 82.0.1\n"
+"Project-Id-Version: setuptools 83.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-26 09:45+0000\n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,13 +78,12 @@ msgstr ""
 #: ../../../userguide/package_discovery.rst:52
 msgid ""
 "If your packages are not in the root of the repository or do not correspond "
-"exactly to the directory structure, you also need to configure "
-"``package_dir``:"
+"exactly to the directory structure (that is, the directory layout in your "
+"repository does not match the dotted package hierarchy you want installed on "
+"the end-user's machine), you also need to configure ``package_dir``:"
 msgstr ""
-"如果您的軟體包不在儲存庫的根目錄中，或與目錄結構不完全對應，您還需要設定 "
-"``package_dir`` 組態："
 
-#: ../../../userguide/package_discovery.rst:57
+#: ../../../userguide/package_discovery.rst:59
 msgid ""
 "[options]\n"
 "# ...\n"
@@ -103,7 +102,7 @@ msgid ""
 "# ..."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:76
+#: ../../../userguide/package_discovery.rst:78
 msgid ""
 "setup(\n"
 "    # ...\n"
@@ -127,7 +126,7 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:98
+#: ../../../userguide/package_discovery.rst:100
 msgid ""
 "[tool.setuptools]\n"
 "# ...\n"
@@ -146,14 +145,14 @@ msgid ""
 "# ..."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:116
+#: ../../../userguide/package_discovery.rst:118
 msgid ""
 "This can get tiresome really quickly. To speed things up, you can rely on "
 "setuptools automatic discovery, or use the provided tools, as explained in "
 "the following sections."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:121
+#: ../../../userguide/package_discovery.rst:123
 msgid ""
 "Although ``setuptools`` allows developers to create a very complex mapping "
 "between directory names and package names, it is better to *keep it simple* "
@@ -161,18 +160,18 @@ msgid ""
 "preserving the same names."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:129
+#: ../../../userguide/package_discovery.rst:131
 msgid "Automatic discovery"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:131
+#: ../../../userguide/package_discovery.rst:133
 msgid ""
 "By default ``setuptools`` will consider 2 popular project layouts, each one "
 "with its own set of advantages and disadvantages [#layout1]_ [#layout2]_ as "
 "discussed in the following sections."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:135
+#: ../../../userguide/package_discovery.rst:137
 msgid ""
 "Setuptools will automatically scan your project directory looking for these "
 "layouts and try to guess the correct values for the :ref:`packages "
@@ -182,32 +181,32 @@ msgstr ""
 "Setuptools 會自動掃描您的專案目錄，尋找這些配置，並嘗試猜測\\ :ref:`軟體包 "
 "<declarative config>` 和 :doc:`py_modules </references/keywords>`\\ 組態。"
 
-#: ../../../userguide/package_discovery.rst:140
+#: ../../../userguide/package_discovery.rst:142
 msgid ""
 "Automatic discovery will **only** be enabled if you **don't** provide any "
 "configuration for ``packages`` and ``py_modules``. If at least one of them "
 "is explicitly set, automatic discovery will not take place."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:144
+#: ../../../userguide/package_discovery.rst:146
 msgid ""
 "**Note**: specifying ``ext_modules`` might also prevent auto-discover from "
 "taking place, unless your opt into :doc:`pyproject_config` (which will "
 "disable the backward compatible behaviour)."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:151
+#: ../../../userguide/package_discovery.rst:153
 msgid "src-layout"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:152
+#: ../../../userguide/package_discovery.rst:154
 msgid ""
 "The project should contain a ``src`` directory under the project root and "
 "all modules and packages meant for distribution are placed inside this "
 "directory::"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:156
+#: ../../../userguide/package_discovery.rst:158
 msgid ""
 "project_root_directory\n"
 "├── pyproject.toml  # AND/OR setup.cfg, setup.py\n"
@@ -227,7 +226,7 @@ msgid ""
 "            └── module2.py"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:173
+#: ../../../userguide/package_discovery.rst:175
 msgid ""
 "This layout is very handy when you wish to use automatic discovery, since "
 "you don't have to worry about other Python files or folders in your project "
@@ -238,19 +237,19 @@ msgid ""
 "to be able to do that)."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:184
+#: ../../../userguide/package_discovery.rst:186
 msgid "flat-layout"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:185
+#: ../../../userguide/package_discovery.rst:187
 msgid "*(also known as \"adhoc\")*"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:187
+#: ../../../userguide/package_discovery.rst:189
 msgid "The package folder(s) are placed directly under the project root::"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:189
+#: ../../../userguide/package_discovery.rst:191
 msgid ""
 "project_root_directory\n"
 "├── pyproject.toml  # AND/OR setup.cfg, setup.py\n"
@@ -269,14 +268,14 @@ msgid ""
 "        └── module2.py"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:205
+#: ../../../userguide/package_discovery.rst:207
 msgid ""
 "This layout is very practical for using the REPL, but in some situations it "
 "can be more error-prone (e.g. during tests or if you have a bunch of folders "
 "or Python files hanging around your project root)."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:209
+#: ../../../userguide/package_discovery.rst:211
 msgid ""
 "To avoid confusion, file and folder names that are used by popular tools (or "
 "that correspond to well-known conventions, such as distributing "
@@ -294,42 +293,42 @@ msgstr ""
 msgid "Reserved top-level module names"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:219
+#: ../../../userguide/package_discovery.rst:221
 msgid ""
 "If you are using auto-discovery with *flat-layout*, ``setuptools`` will "
 "refuse to create :term:`distribution archives <Distribution Package>` with "
 "multiple top-level packages or modules."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:223
+#: ../../../userguide/package_discovery.rst:225
 msgid ""
 "This is done to prevent common errors such as accidentally publishing code "
 "not meant for distribution (e.g. maintenance-related scripts)."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:226
+#: ../../../userguide/package_discovery.rst:228
 msgid ""
 "Users that purposefully want to create multi-package distributions are "
 "advised to use :ref:`custom-discovery` or the ``src-layout``."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:229
+#: ../../../userguide/package_discovery.rst:231
 msgid ""
 "There is also a handy variation of the *flat-layout* for utilities/libraries "
 "that can be implemented with a single Python file:"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:233
+#: ../../../userguide/package_discovery.rst:235
 msgid "single-module distribution"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:235
+#: ../../../userguide/package_discovery.rst:237
 msgid ""
 "A standalone module is placed directly under the project root, instead of "
 "inside a package folder::"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:238
+#: ../../../userguide/package_discovery.rst:240
 msgid ""
 "project_root_directory\n"
 "├── pyproject.toml  # AND/OR setup.cfg, setup.py\n"
@@ -337,11 +336,11 @@ msgid ""
 "└── single_file_lib.py"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:247
+#: ../../../userguide/package_discovery.rst:249
 msgid "Custom discovery"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:249
+#: ../../../userguide/package_discovery.rst:251
 msgid ""
 "If the automatic discovery does not work for you (e.g., you want to "
 "*include* in the distribution top-level packages with reserved names such as "
@@ -350,7 +349,7 @@ msgid ""
 "package discovery:"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:257
+#: ../../../userguide/package_discovery.rst:259
 msgid ""
 "[options]\n"
 "packages = find:\n"
@@ -358,14 +357,14 @@ msgid ""
 "packages = find_namespace:"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:266
+#: ../../../userguide/package_discovery.rst:268
 msgid ""
 "from setuptools import find_packages\n"
 "# or\n"
 "from setuptools import find_namespace_packages"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:274
+#: ../../../userguide/package_discovery.rst:276
 msgid ""
 "# ...\n"
 "[tool.setuptools.packages]\n"
@@ -374,11 +373,11 @@ msgid ""
 "find = {namespaces = false}  # Disable implicit namespaces"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:284
+#: ../../../userguide/package_discovery.rst:286
 msgid "Finding simple packages"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:285
+#: ../../../userguide/package_discovery.rst:287
 msgid ""
 "Let's start with the first tool. ``find:`` (``find_packages()``) takes a "
 "source directory and two lists of package name patterns to exclude and "
@@ -386,7 +385,7 @@ msgid ""
 "could find. To use it, consider the following directory::"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:290
+#: ../../../userguide/package_discovery.rst:292
 msgid ""
 "mypkg\n"
 "├── pyproject.toml  # AND/OR setup.cfg, setup.py\n"
@@ -402,13 +401,13 @@ msgid ""
 "            └── __init__.py"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:303
+#: ../../../userguide/package_discovery.rst:305
 msgid ""
 "To have setuptools to automatically include packages found in ``src`` that "
 "start with the name ``pkg`` and not ``additional``:"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:308
+#: ../../../userguide/package_discovery.rst:310
 msgid ""
 "[options]\n"
 "packages = find:\n"
@@ -421,13 +420,13 @@ msgid ""
 "# alternatively: `exclude = additional*`"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:321
+#: ../../../userguide/package_discovery.rst:323
 msgid ""
 "``pkg`` does not contain an ``__init__.py`` file, therefore ``pkg."
 "namespace`` is ignored by ``find:`` (see ``find_namespace:`` below)."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:326
+#: ../../../userguide/package_discovery.rst:328
 msgid ""
 "setup(\n"
 "    # ...\n"
@@ -440,14 +439,14 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:340
+#: ../../../userguide/package_discovery.rst:342
 msgid ""
 "``pkg`` does not contain an ``__init__.py`` file, therefore ``pkg."
 "namespace`` is ignored by ``find_packages()`` (see "
 "``find_namespace_packages()`` below)."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:346
+#: ../../../userguide/package_discovery.rst:348
 msgid ""
 "[tool.setuptools.packages.find]\n"
 "where = [\"src\"]\n"
@@ -455,7 +454,7 @@ msgid ""
 "namespaces = false"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:354
+#: ../../../userguide/package_discovery.rst:356
 msgid ""
 "When using ``tool.setuptools.packages.find`` in ``pyproject.toml``, "
 "setuptools will consider :pep:`implicit namespaces <420>` by default when "
@@ -464,20 +463,20 @@ msgid ""
 "any folder without an ``__init__.py`` file from being scanned."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:362
+#: ../../../userguide/package_discovery.rst:364
 msgid ""
 "``include`` and ``exclude`` accept strings representing :mod:`glob` "
 "patterns. These patterns should match the **full** name of the Python module "
 "(as if it was written in an ``import`` statement)."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:366
+#: ../../../userguide/package_discovery.rst:368
 msgid ""
 "For example if you have ``util`` pattern, it will match ``util/__init__.py`` "
 "but not ``util/files/__init__.py``."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:369
+#: ../../../userguide/package_discovery.rst:371
 msgid ""
 "The fact that the parent package is matched by the pattern will not dictate "
 "if the submodule will be included or excluded from the distribution. You "
@@ -485,17 +484,17 @@ msgid ""
 "pattern to also match submodules."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:377
+#: ../../../userguide/package_discovery.rst:379
 msgid "Finding namespace packages"
 msgstr "尋找命名空間包"
 
-#: ../../../userguide/package_discovery.rst:378
+#: ../../../userguide/package_discovery.rst:380
 msgid ""
 "``setuptools``  provides ``find_namespace:`` (``find_namespace_packages()``) "
 "which behaves similarly to ``find:`` but works with namespace packages."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:381
+#: ../../../userguide/package_discovery.rst:383
 msgid ""
 "Before diving in, it is important to have a good understanding of what :pep:"
 "`namespace packages <420>` are. Here is a quick recap."
@@ -503,17 +502,17 @@ msgstr ""
 "在深入探討之前，充分理解\\ :pep:`命名空間包 <420>`\\ 的概念至關重要。以下是快"
 "速回顧。"
 
-#: ../../../userguide/package_discovery.rst:384
+#: ../../../userguide/package_discovery.rst:386
 msgid "When you have two packages organized as follows:"
 msgstr "當您有兩個軟體包且組織結構如下："
 
-#: ../../../userguide/package_discovery.rst:386
+#: ../../../userguide/package_discovery.rst:388
 msgid ""
 "/Users/Desktop/timmins/foo/__init__.py\n"
 "/Library/timmins/bar/__init__.py"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:391
+#: ../../../userguide/package_discovery.rst:393
 msgid ""
 "If both ``Desktop`` and ``Library`` are on your ``PYTHONPATH``, then a "
 "namespace package called ``timmins`` will be created automatically for you "
@@ -521,26 +520,26 @@ msgid ""
 "following:"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:395
+#: ../../../userguide/package_discovery.rst:397
 msgid ""
 ">>> import timmins.foo\n"
 ">>> import timmins.bar"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:400
+#: ../../../userguide/package_discovery.rst:402
 msgid ""
 "as if there is only one ``timmins`` on your system. The two packages can "
 "then be distributed separately and installed individually without affecting "
 "the other one."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:404
+#: ../../../userguide/package_discovery.rst:406
 msgid ""
 "Now, suppose you decide to package the ``foo`` part for distribution and "
 "start by creating a project directory organized as follows::"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:407
+#: ../../../userguide/package_discovery.rst:409
 msgid ""
 "foo\n"
 "├── pyproject.toml  # AND/OR setup.cfg, setup.py\n"
@@ -550,13 +549,13 @@ msgid ""
 "            └── __init__.py"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:414
+#: ../../../userguide/package_discovery.rst:416
 msgid ""
 "If you want the ``timmins.foo`` to be automatically included in the "
 "distribution, then you will need to specify:"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:419
+#: ../../../userguide/package_discovery.rst:421
 msgid ""
 "[options]\n"
 "package_dir =\n"
@@ -567,20 +566,20 @@ msgid ""
 "where = src"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:429
+#: ../../../userguide/package_discovery.rst:431
 msgid ""
 "``find:`` won't work because ``timmins`` doesn't contain ``__init__.py`` "
 "directly, instead, you have to use ``find_namespace:``."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:432
+#: ../../../userguide/package_discovery.rst:434
 msgid ""
 "You can think of ``find_namespace:`` as identical to ``find:`` except it "
 "would count a directory as a package even if it doesn't contain ``__init__."
 "py`` file directly."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:438
+#: ../../../userguide/package_discovery.rst:440
 msgid ""
 "setup(\n"
 "    # ...\n"
@@ -590,14 +589,14 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:447
+#: ../../../userguide/package_discovery.rst:449
 msgid ""
 "When you use ``find_packages()``, all directories without an ``__init__.py`` "
 "file will be ignored. On the other hand, ``find_namespace_packages()`` will "
 "scan all directories."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:454
+#: ../../../userguide/package_discovery.rst:456
 msgid ""
 "[tool.setuptools.packages.find]\n"
 "where = [\"src\"]"
@@ -605,20 +604,20 @@ msgstr ""
 "[tool.setuptools.packages.find]\n"
 "where = [\"src\"]"
 
-#: ../../../userguide/package_discovery.rst:459
+#: ../../../userguide/package_discovery.rst:461
 msgid ""
 "When using ``tool.setuptools.packages.find`` in ``pyproject.toml``, "
 "setuptools will consider :pep:`implicit namespaces <420>` by default when "
 "scanning your project directory."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:463
+#: ../../../userguide/package_discovery.rst:465
 msgid ""
 "After installing the package distribution, ``timmins.foo`` would become "
 "available to your interpreter."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:467
+#: ../../../userguide/package_discovery.rst:469
 msgid ""
 "Please have in mind that ``find_namespace:`` (setup.cfg), "
 "``find_namespace_packages()`` (setup.py) and ``find`` (pyproject.toml) will "
@@ -626,13 +625,13 @@ msgid ""
 "ref:`flat-layout`."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:472
+#: ../../../userguide/package_discovery.rst:474
 msgid ""
 "If used naïvely, this might result in unwanted files being added to your "
 "final wheel. For example, with a project directory organized as follows::"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:475
+#: ../../../userguide/package_discovery.rst:477
 msgid ""
 "foo\n"
 "├── docs\n"
@@ -645,43 +644,43 @@ msgid ""
 "        └── __init__.py"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:485
+#: ../../../userguide/package_discovery.rst:487
 msgid ""
 "final users will end up installing not only ``timmins.foo``, but also "
 "``docs`` and ``tests.tests_foo``."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:488
+#: ../../../userguide/package_discovery.rst:490
 msgid ""
 "A simple way to fix this is to adopt the aforementioned :ref:`src-layout`, "
 "or make sure to properly configure the ``include`` and/or ``exclude`` "
 "accordingly."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:493
+#: ../../../userguide/package_discovery.rst:495
 msgid ""
 "After :ref:`building your package <building>`, you can have a look if all "
 "the files are correct (nothing missing or extra), by running the following "
 "commands:"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:497
+#: ../../../userguide/package_discovery.rst:499
 msgid ""
 "tar tf dist/*.tar.gz\n"
 "unzip -l dist/*.whl"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:502
+#: ../../../userguide/package_discovery.rst:504
 msgid ""
 "This requires the ``tar`` and ``unzip`` to be installed in your OS. On "
 "Windows you can also use a GUI program such as 7zip_."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:507
+#: ../../../userguide/package_discovery.rst:509
 msgid "Legacy Namespace Packages"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:508
+#: ../../../userguide/package_discovery.rst:510
 msgid ""
 "The fact you can create namespace packages so effortlessly above is credited "
 "to :pep:`420`. It used to be more cumbersome to accomplish the same result. "
@@ -694,11 +693,11 @@ msgid ""
 "python.org/guides/packaging-namespace-packages/>`_."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:520
+#: ../../../userguide/package_discovery.rst:522
 msgid "``pkg_resource`` style namespace package"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:521
+#: ../../../userguide/package_discovery.rst:523
 msgid ""
 "This is the method ``setuptools`` directly supports. Starting with the same "
 "layout, there are two pieces you need to add to it. First, an ``__init__."
@@ -706,22 +705,22 @@ msgid ""
 "following:"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:526
+#: ../../../userguide/package_discovery.rst:528
 msgid "__import__(\"pkg_resources\").declare_namespace(__name__)"
 msgstr "__import__(\"pkg_resources\").declare_namespace(__name__)"
 
-#: ../../../userguide/package_discovery.rst:530
+#: ../../../userguide/package_discovery.rst:532
 msgid ""
 "And the ``namespace_packages`` keyword in your ``setup.cfg`` or ``setup.py``:"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:534
+#: ../../../userguide/package_discovery.rst:536
 msgid ""
 "[options]\n"
 "namespace_packages = timmins"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:541
+#: ../../../userguide/package_discovery.rst:543
 msgid ""
 "setup(\n"
 "    # ...\n"
@@ -729,11 +728,11 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:548
+#: ../../../userguide/package_discovery.rst:550
 msgid "And your directory should look like this"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:550
+#: ../../../userguide/package_discovery.rst:552
 msgid ""
 "foo\n"
 "├── pyproject.toml  # AND/OR setup.cfg, setup.py\n"
@@ -744,37 +743,45 @@ msgid ""
 "            └── __init__.py"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:560
+#: ../../../userguide/package_discovery.rst:562
 msgid ""
 "Repeat the same for other packages and you can achieve the same result as "
 "the previous section."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:564
+#: ../../../userguide/package_discovery.rst:566
 msgid "``pkgutil`` style namespace package"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:565
+#: ../../../userguide/package_discovery.rst:567
 msgid ""
 "This method is almost identical to the ``pkg_resource`` except that the "
 "``namespace_packages`` declaration is omitted and the ``__init__.py`` file "
 "contains the following:"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:569
+#: ../../../userguide/package_discovery.rst:571
 msgid "__path__ = __import__('pkgutil').extend_path(__path__, __name__)"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:573
+#: ../../../userguide/package_discovery.rst:575
 msgid ""
 "The project layout remains the same and ``pyproject.toml/setup.cfg`` remains "
 "the same."
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:579
+#: ../../../userguide/package_discovery.rst:581
 msgid "https://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structure"
 msgstr ""
 
-#: ../../../userguide/package_discovery.rst:580
+#: ../../../userguide/package_discovery.rst:582
 msgid "https://blog.ionelmc.ro/2017/09/25/rehashing-the-src-layout/"
 msgstr ""
+
+#~ msgid ""
+#~ "If your packages are not in the root of the repository or do not "
+#~ "correspond exactly to the directory structure, you also need to configure "
+#~ "``package_dir``:"
+#~ msgstr ""
+#~ "如果您的軟體包不在儲存庫的根目錄中，或與目錄結構不完全對應，您還需要設定 "
+#~ "``package_dir`` 組態："

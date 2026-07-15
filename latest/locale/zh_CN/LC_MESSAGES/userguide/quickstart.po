@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 82.0.1\n"
+"Project-Id-Version: setuptools 83.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-26 09:45+0000\n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgid "pip install --upgrade setuptools[core]"
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:12
-msgid "Most of the times, however, you don't have to..."
+msgid "Most of the time, however, you don't have to..."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:14
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../userguide/quickstart.rst:22
 msgid ""
-"You can also :doc:`install build <build:installation>` using :pypi:`pip`::"
+"You can also :doc:`install build <build:how-to/install>` using :pypi:`pip`::"
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:24

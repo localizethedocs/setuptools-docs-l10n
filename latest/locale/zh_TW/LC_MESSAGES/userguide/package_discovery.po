@@ -777,11 +777,3 @@ msgstr ""
 #: ../../../userguide/package_discovery.rst:582
 msgid "https://blog.ionelmc.ro/2017/09/25/rehashing-the-src-layout/"
 msgstr ""
-
-#~ msgid ""
-#~ "If your packages are not in the root of the repository or do not "
-#~ "correspond exactly to the directory structure, you also need to configure "
-#~ "``package_dir``:"
-#~ msgstr ""
-#~ "如果您的軟體包不在儲存庫的根目錄中，或與目錄結構不完全對應，您還需要設定 "
-#~ "``package_dir`` 組態："

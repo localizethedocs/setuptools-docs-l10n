@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 83.0.0\n"
+"Project-Id-Version: setuptools 84.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:59+0000\n"
+"POT-Creation-Date: 2026-08-31 15:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,15 +50,15 @@ msgstr ""
 msgid "Contents"
 msgstr ""
 
-#: ../../../userguide/index.rst:41
+#: ../../../userguide/index.rst:42
 msgid "---"
 msgstr ""
 
-#: ../../../userguide/index.rst:44
+#: ../../../userguide/index.rst:45
 msgid "Notes"
 msgstr ""
 
-#: ../../../userguide/index.rst:46
+#: ../../../userguide/index.rst:47
 msgid ""
 "A :term:`Distribution Package` is also referred in the Python community "
 "simply as \"package\" Unfortunately, this jargon might be a bit confusing "

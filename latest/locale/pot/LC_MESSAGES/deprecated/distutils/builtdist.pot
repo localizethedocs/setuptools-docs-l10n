@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 83.0.0\n"
+"Project-Id-Version: setuptools 84.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"POT-Creation-Date: 2026-08-31 15:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -360,7 +360,7 @@ msgid ""
 msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:189
-#: ../../../deprecated/distutils/builtdist.rst:213
+#: ../../../deprecated/distutils/builtdist.rst:212
 msgid "RPM :file:`.spec` file option or section"
 msgstr ""
 
@@ -393,163 +393,162 @@ msgid "``version``"
 msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:197
-#: ../../../deprecated/distutils/builtdist.rst:220
+#: ../../../deprecated/distutils/builtdist.rst:219
 msgid "Vendor"
 msgstr ""
 
 #: ../../../deprecated/distutils/builtdist.rst:197
 msgid ""
-"``author`` and ``author_email``, or  --- & ``maintainer`` and "
-"``maintainer_email``"
+"``author`` and ``author_email``, or ``maintainer`` and ``maintainer_email``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:201
+#: ../../../deprecated/distutils/builtdist.rst:200
 msgid "Copyright"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:201
+#: ../../../deprecated/distutils/builtdist.rst:200
 msgid "``license``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:203
+#: ../../../deprecated/distutils/builtdist.rst:202
 msgid "Url"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:203
+#: ../../../deprecated/distutils/builtdist.rst:202
 msgid "``url``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:205
+#: ../../../deprecated/distutils/builtdist.rst:204
 msgid "%description (section)"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:205
+#: ../../../deprecated/distutils/builtdist.rst:204
 msgid "``long_description``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:208
+#: ../../../deprecated/distutils/builtdist.rst:207
 msgid ""
 "Additionally, there are many options in :file:`.spec` files that don't have "
 "corresponding options in the setup script.  Most of these are handled "
 "through options to the :command:`bdist_rpm` command as follows:"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:213
+#: ../../../deprecated/distutils/builtdist.rst:212
 msgid ":command:`bdist_rpm` option"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:213
+#: ../../../deprecated/distutils/builtdist.rst:212
 msgid "default value"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:216
+#: ../../../deprecated/distutils/builtdist.rst:215
 msgid "Release"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:216
+#: ../../../deprecated/distutils/builtdist.rst:215
 msgid "``release``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:216
+#: ../../../deprecated/distutils/builtdist.rst:215
 msgid "\"1\""
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:218
+#: ../../../deprecated/distutils/builtdist.rst:217
 msgid "Group"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:218
+#: ../../../deprecated/distutils/builtdist.rst:217
 msgid "``group``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:218
+#: ../../../deprecated/distutils/builtdist.rst:217
 msgid "\"Development/Libraries\""
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:220
+#: ../../../deprecated/distutils/builtdist.rst:219
 msgid "``vendor``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:220
+#: ../../../deprecated/distutils/builtdist.rst:219
 msgid "(see above)"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:222
+#: ../../../deprecated/distutils/builtdist.rst:221
 msgid "Packager"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:222
+#: ../../../deprecated/distutils/builtdist.rst:221
 msgid "``packager``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:222
-#: ../../../deprecated/distutils/builtdist.rst:224
-#: ../../../deprecated/distutils/builtdist.rst:226
-#: ../../../deprecated/distutils/builtdist.rst:228
-#: ../../../deprecated/distutils/builtdist.rst:230
-#: ../../../deprecated/distutils/builtdist.rst:232
-#: ../../../deprecated/distutils/builtdist.rst:234
-#: ../../../deprecated/distutils/builtdist.rst:236
+#: ../../../deprecated/distutils/builtdist.rst:221
+#: ../../../deprecated/distutils/builtdist.rst:223
+#: ../../../deprecated/distutils/builtdist.rst:225
+#: ../../../deprecated/distutils/builtdist.rst:227
+#: ../../../deprecated/distutils/builtdist.rst:229
+#: ../../../deprecated/distutils/builtdist.rst:231
+#: ../../../deprecated/distutils/builtdist.rst:233
+#: ../../../deprecated/distutils/builtdist.rst:235
 msgid "(none)"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:224
+#: ../../../deprecated/distutils/builtdist.rst:223
 msgid "Provides"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:224
+#: ../../../deprecated/distutils/builtdist.rst:223
 msgid "``provides``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:226
+#: ../../../deprecated/distutils/builtdist.rst:225
 msgid "Requires"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:226
+#: ../../../deprecated/distutils/builtdist.rst:225
 msgid "``requires``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:228
+#: ../../../deprecated/distutils/builtdist.rst:227
 msgid "Conflicts"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:228
+#: ../../../deprecated/distutils/builtdist.rst:227
 msgid "``conflicts``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:230
+#: ../../../deprecated/distutils/builtdist.rst:229
 msgid "Obsoletes"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:230
+#: ../../../deprecated/distutils/builtdist.rst:229
 msgid "``obsoletes``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:232
+#: ../../../deprecated/distutils/builtdist.rst:231
 msgid "Distribution"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:232
+#: ../../../deprecated/distutils/builtdist.rst:231
 msgid "``distribution_name``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:234
+#: ../../../deprecated/distutils/builtdist.rst:233
 msgid "BuildRequires"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:234
+#: ../../../deprecated/distutils/builtdist.rst:233
 msgid "``build_requires``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:236
+#: ../../../deprecated/distutils/builtdist.rst:235
 msgid "Icon"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:236
+#: ../../../deprecated/distutils/builtdist.rst:235
 msgid "``icon``"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:239
+#: ../../../deprecated/distutils/builtdist.rst:238
 msgid ""
 "Obviously, supplying even a few of these options on the command-line would "
 "be tedious and error-prone, so it's usually best to put them in the setup "
@@ -561,36 +560,36 @@ msgid ""
 "`setup.py`."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:247
+#: ../../../deprecated/distutils/builtdist.rst:246
 msgid ""
 "There are three steps to building a binary RPM package, all of which are "
 "handled automatically by the Distutils:"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:250
+#: ../../../deprecated/distutils/builtdist.rst:249
 msgid ""
 "create a :file:`.spec` file, which describes the package (analogous  to the "
 "Distutils setup script; in fact, much of the information in the  setup "
 "script winds up in the :file:`.spec` file)"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:254
+#: ../../../deprecated/distutils/builtdist.rst:253
 msgid "create the source RPM"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:256
+#: ../../../deprecated/distutils/builtdist.rst:255
 msgid ""
 "create the \"binary\" RPM (which may or may not contain binary code, "
 "depending on whether your module distribution contains Python extensions)"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:259
+#: ../../../deprecated/distutils/builtdist.rst:258
 msgid ""
 "Normally, RPM bundles the last two steps together; when you use the "
 "Distutils, all three steps are typically bundled together."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:262
+#: ../../../deprecated/distutils/builtdist.rst:261
 msgid ""
 "If you wish, you can separate these three steps.  You can use the :option:"
 "`!--spec-only` option to make :command:`bdist_rpm` just create the :file:`."
@@ -601,11 +600,11 @@ msgid ""
 "command:`bdist_rpm`.)"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:289
+#: ../../../deprecated/distutils/builtdist.rst:288
 msgid "Cross-compiling on Windows"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:291
+#: ../../../deprecated/distutils/builtdist.rst:290
 msgid ""
 "Starting with Python 2.6, distutils is capable of cross-compiling between "
 "Windows platforms.  In practice, this means that with the correct tools "
@@ -613,22 +612,22 @@ msgid ""
 "and vice-versa."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:296
+#: ../../../deprecated/distutils/builtdist.rst:295
 msgid ""
 "To build for an alternate platform, specify the :option:`!--plat-name` "
-"option to the build command.  Valid values are currently 'win32', and  'win-"
+"option to the build command.  Valid values are currently 'win32', and 'win-"
 "amd64'. For example, on a 32bit version of Windows, you could execute::"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:300
+#: ../../../deprecated/distutils/builtdist.rst:299
 msgid "python setup.py build --plat-name=win-amd64"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:302
+#: ../../../deprecated/distutils/builtdist.rst:301
 msgid "to build a 64bit version of your extension."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:304
+#: ../../../deprecated/distutils/builtdist.rst:303
 msgid ""
 "To cross-compile, you must download the Python source code and cross-compile "
 "Python itself for the platform you are targeting - it is not possible from a "
@@ -640,7 +639,7 @@ msgid ""
 "is possible."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:313
+#: ../../../deprecated/distutils/builtdist.rst:312
 msgid ""
 "Note that by default, Visual Studio 2008 does not install 64bit compilers or "
 "tools.  You may need to reexecute the Visual Studio setup process and select "
@@ -648,11 +647,11 @@ msgid ""
 "to check or modify your existing install.)"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:321
-msgid "The Postinstallation script"
+#: ../../../deprecated/distutils/builtdist.rst:320
+msgid "The Post-installation script"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:323
+#: ../../../deprecated/distutils/builtdist.rst:322
 msgid ""
 "Starting with Python 2.3, a postinstallation script can be specified with "
 "the :option:`!--install-script` option.  The basename of the script must be "
@@ -660,7 +659,7 @@ msgid ""
 "argument to the setup function."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:328
+#: ../../../deprecated/distutils/builtdist.rst:327
 msgid ""
 "This script will be run at installation time on the target system after all "
 "the files have been copied, with ``argv[1]`` set to :option:`!-install`, and "
@@ -668,20 +667,20 @@ msgid ""
 "set to :option:`!-remove`."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:333
+#: ../../../deprecated/distutils/builtdist.rst:332
 msgid ""
 "The installation script runs embedded in the windows installer, every output "
 "(``sys.stdout``, ``sys.stderr``) is redirected into a buffer and will be "
 "displayed in the GUI after the script has finished."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:337
+#: ../../../deprecated/distutils/builtdist.rst:336
 msgid ""
 "Some functions especially useful in this context are available as additional "
 "built-in functions in the installation script."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:344
+#: ../../../deprecated/distutils/builtdist.rst:343
 msgid ""
 "These functions should be called when a directory or file is created by the "
 "postinstall script at installation time.  It will register *path* with the "
@@ -689,14 +688,14 @@ msgid ""
 "uninstalled. To be safe, directories are only removed if they are empty."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:352
+#: ../../../deprecated/distutils/builtdist.rst:351
 msgid ""
 "This function can be used to retrieve special folder locations on Windows "
 "like the Start Menu or the Desktop.  It returns the full path to the folder. "
 "*csidl_string* must be one of the following strings::"
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:356
+#: ../../../deprecated/distutils/builtdist.rst:355
 msgid ""
 "\"CSIDL_APPDATA\"\n"
 "\n"
@@ -715,18 +714,18 @@ msgid ""
 "\"CSIDL_FONTS\""
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:372
+#: ../../../deprecated/distutils/builtdist.rst:371
 msgid "If the folder cannot be retrieved, :exc:`OSError` is raised."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:374
+#: ../../../deprecated/distutils/builtdist.rst:373
 msgid ""
 "Which folders are available depends on the exact Windows version, and "
 "probably also the configuration.  For details refer to Microsoft's "
 "documentation of the :c:func:`SHGetSpecialFolderPath` function."
 msgstr ""
 
-#: ../../../deprecated/distutils/builtdist.rst:381
+#: ../../../deprecated/distutils/builtdist.rst:380
 msgid ""
 "This function creates a shortcut. *target* is the path to the program to be "
 "started by the shortcut. *description* is the description of the shortcut. "

@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../deprecated/functionalities.rst:2
+msgid "\"Eggsecutable\" Scripts"
+msgstr ""
+
+#: ../../../deprecated/functionalities.rst:6
+msgid ""
+"Occasionally, there are situations where it's desirable to make an ``.egg`` "
+"file directly executable.  You can do this by including an entry point such "
+"as the following::"
+msgstr ""
+
+#: ../../../deprecated/functionalities.rst:10
+msgid ""
+"setup(\n"
+"    # other arguments here...\n"
+"    entry_points={\n"
+"        \"setuptools.installation\": [\n"
+"            \"eggsecutable = my_package.some_module:main_func\",\n"
+"        ]\n"
+"    }\n"
+")"
+msgstr ""
+
+#: ../../../deprecated/functionalities.rst:19
+msgid ""
+"Any eggs built from the above setup script will include a short executable "
+"prelude that imports and calls ``main_func()`` from ``my_package."
+"some_module``. The prelude can be run on Unix-like platforms (including Mac "
+"and Linux) by invoking the egg with ``/bin/sh``, or by enabling execute "
+"permissions on the ``.egg`` file.  For the executable prelude to run, the "
+"appropriate version of Python must be available via the ``PATH`` environment "
+"variable, under its \"long\" name.  That is, if the egg is built for Python "
+"2.3, there must be a ``python2.3`` executable present in a directory on "
+"``PATH``."
+msgstr ""
+
+#: ../../../deprecated/functionalities.rst:28
+msgid ""
+"IMPORTANT NOTE: Eggs with an \"eggsecutable\" header cannot be renamed, or "
+"invoked via symlinks.  They *must* be invoked using their original filename, "
+"in order to ensure that, once running, ``pkg_resources`` will know what "
+"project and version is in use.  The header script will check this and exit "
+"with an error if the ``.egg`` file has been renamed or is invoked via a "
+"symlink that changes its base name."
+msgstr ""

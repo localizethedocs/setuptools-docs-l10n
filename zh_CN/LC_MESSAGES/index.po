@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: :1
+msgid "Home"
+msgstr ""
+
+#: :1
+msgid "PyPI"
+msgstr ""
+
+#: :1
+msgid "Links"
+msgstr ""
+
+#: ../../../index.rst:18
+msgid "User guide"
+msgstr ""
+
+#: ../../../index.rst:27
+msgid "Development guide"
+msgstr ""
+
+#: ../../../index.rst:27
+msgid "Backward compatibility & deprecated practice"
+msgstr ""
+
+#: ../../../index.rst:27
+msgid "Changelog"
+msgstr ""
+
+#: ../../../index.rst:27
+msgid "Project"
+msgstr ""
+
+#: ../../../index.rst:5
+msgid "Documentation"
+msgstr ""
+
+#: ../../../index.rst:7
+msgid ""
+"Setuptools is a fully-featured, actively-maintained, and stable library "
+"designed to facilitate packaging Python projects."
+msgstr ""
+
+#: ../../../index.rst:10
+msgid ""
+"It helps developers to easily share reusable code (in the form of a library) "
+"and programs (e.g., CLI/GUI tools implemented in Python), that can be "
+"installed with :pypi:`pip` and uploaded to `PyPI <https://pypi.org>`_."
+msgstr ""
+
+#: ../../../index.rst:39
+msgid ""
+"<div class=\"tidelift for-enterprise\" style=\"margin: 0 auto; width: 100%; "
+"max-width: 940px;\">\n"
+"\t<h2 class=\"donation\">For Enterprise</h2>\n"
+"\n"
+"\t<div style=\"float: left; padding-right: 1rem\">\n"
+"\t\t<a href=\"https://tidelift.com/subscription/pkg/pypi-setuptools?"
+"utm_source=pypi-setuptools&utm_medium=referral&utm_campaign=docs\">\n"
+"\t\t\t\t<img alt=\"Tidelift\" src=\"https://nedbatchelder.com/pix/"
+"Tidelift_Logos_RGB_Tidelift_Shorthand_On-White_small.png\" style=\"height: "
+"6rem\">\n"
+"\t\t</a>\n"
+"\t</div>\n"
+"\n"
+"\t<p>\n"
+"\t\tProfessional support for setuptools is available as part of the\n"
+"\t\t<a class=\"reference external\" href=\"https://tidelift.com/subscription/"
+"pkg/pypi-setuptools?utm_source=pypi-"
+"setuptools&utm_medium=referral&utm_campaign=docs\"\n"
+"\t\t>Tidelift Subscription</a>.\n"
+"\t\tTidelift gives software development teams a single source for\n"
+"\t\tpurchasing and maintaining their software, with professional\n"
+"\t\tgrade assurances from the experts who know it best, while\n"
+"\t\tseamlessly integrating with existing tools.\n"
+"\t</p>\n"
+"\t<p>\n"
+"\t\t<a\n"
+"\t\t\thref=\"https://tidelift.com/subscription/pkg/pypi-setuptools?"
+"utm_source=pypi-setuptools&utm_medium=referral&utm_campaign=docs\"\n"
+"\t\t\tstyle=\"background-color: rgb(246, 145, 77); border-radius: 5px; "
+"color: white; display: inline-block; font-family: sans-serif; font-size: "
+"1.2rem; font-weight: bolder; padding: 15px 0; text-align: center; text-"
+"decoration: none; text-transform: uppercase; width: 49%;\"\n"
+"\t\t>Learn more</a>\n"
+"\t\t<a\n"
+"\t\t\thref=\"https://tidelift.com/subscription/request-a-demo?"
+"utm_source=pypi-setuptools&utm_medium=referral&utm_campaign=docs\"\n"
+"\t\t\tstyle=\"background-color: rgb(246, 145, 77); border-radius: 5px; "
+"color: white; display: inline-block; font-family: sans-serif; font-size: "
+"1.2rem; font-weight: bolder; padding: 15px 0; text-align: center; text-"
+"decoration: none; text-transform: uppercase; width: 49%;\"\n"
+"\t\t>Request a Demo</a>\n"
+"\t</p>\n"
+"<div>\n"
+msgstr ""

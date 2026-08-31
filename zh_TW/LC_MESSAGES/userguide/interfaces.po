@@ -1,0 +1,438 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../userguide/interfaces.rst:2
+msgid "Supported Interfaces"
+msgstr "支援的介面"
+
+#: ../../../userguide/interfaces.rst:4
+msgid ""
+"Setuptools is a complicated library with many interface surfaces and "
+"challenges. In addition to its primary purpose as a packaging build backend, "
+"Setuptools also has historically served as a standalone builder, installer, "
+"uploader, metadata provider, and more. Additionally, because it's "
+"implemented as a Python library, its entire functionality is incidentally "
+"exposed as a library."
+msgstr ""
+"Setuptools 是一個複雜的程式庫，擁有許多介面面和挑戰。除了作為打包建置後端的主"
+"要用途外，Setuptools 在歷史上也擔任過獨立的建置工具、安裝工具、上傳工具、中繼"
+"資料提供者等角色。此外，由於它以 Python 程式庫的形式實作，其全部功能也間接地"
+"以程式庫的形式暴露出來。"
+
+#: ../../../userguide/interfaces.rst:6
+msgid ""
+"In addition to operating as a library, because newer versions of Setuptools "
+"are often used to build older (sometimes decades-old) packages, it has a "
+"high burden of stability."
+msgstr ""
+"除了作為程式庫運作之外，由於新版本的 Setuptools 常被用來建置較舊的（有時是數"
+"十年前的）軟體包，因此它承擔著很高的穩定性負擔。"
+
+#: ../../../userguide/interfaces.rst:8
+msgid ""
+"In order to have the ability to make sensible changes to the project, "
+"downstream developers and consumers should avoid depending on internal "
+"implementation details of the library and should rely only on the supported "
+"interfaces:"
+msgstr ""
+"為了能夠對專案進行合理的變更，下游開發者和使用者應避免依賴程式庫的內部實作細"
+"節，而應僅依賴受支援的介面："
+
+#: ../../../userguide/interfaces.rst:10
+msgid ""
+"*Tier 1*: APIs required by modern PyPA packaging standards (:pep:`517`, :pep:"
+"`660`) and Documented APIs for customising build behavior or creating "
+"plugins (:doc:`/userguide/extension`, :doc:`/references/keywords`):"
+msgstr ""
+"*第一層*：現代 PyPA 打包標準 (:pep:`517`, :pep:`660`) 所需的 API，以及用於自"
+"訂建置行為或建立外掛程式的已文件化 API（:doc:`/userguide/extension`、:doc:`/"
+"references/keywords`）："
+
+#: ../../../userguide/interfaces.rst:12
+msgid ""
+"These APIs are expected to be extremely stable and have deprecation notices "
+"and periods prior to backward incompatible changes or removals."
+msgstr ""
+"這些 API 預期將極為穩定，並且在向後不相容的變更或移除之前，會有棄用通知和緩衝"
+"期。"
+
+#: ../../../userguide/interfaces.rst:14
+msgid ""
+"Please note that *functional and integration tests* capture specific "
+"behaviors and expectations about how the library and system is intended to "
+"work for outside users; and *code comments and docstrings* (including in "
+"tests) may provide specific protections to limit the changes to behaviors on "
+"which a downstream consumer can rely."
+msgstr ""
+"請注意，*功能測試和整合測試* 捕捉了程式庫和系統預期如何為外部使用者運作的特定"
+"行為和期望；而*程式碼註解和文件字串*（包括測試中的）可能提供特定保護，以限制"
+"下游使用者可依賴的行為變更。"
+
+#: ../../../userguide/interfaces.rst:17
+msgid "*Tier 2*: Documented ``distutils`` APIs:"
+msgstr "*第二層*：已文件化的 ``distutils`` API："
+
+#: ../../../userguide/interfaces.rst:19
+msgid ""
+"``setuptools`` strives to honor the interfaces provided by ``distutils`` and "
+"will coordinate with the ``pypa/distutils`` repository so that the "
+"appropriate deprecation notices are issued."
+msgstr ""
+"``setuptools`` 致力於尊重 ``distutils`` 所提供的介面，並將與 ``pypa/"
+"distutils`` 倉儲協調，以便發出適當的棄用通知。"
+
+#: ../../../userguide/interfaces.rst:23
+msgid ""
+"In principle, these are documented in :doc:`/deprecated/distutils/apiref`. "
+"Please note however that when a suitable replacement is available or "
+"advised, the existing ``distutils`` API is considered deprecated and should "
+"not be used (see :pep:`632#migration-advice` and :doc:`/deprecated/distutils-"
+"legacy`)."
+msgstr ""
+"原則上，這些在 :doc:`/deprecated/distutils/apiref` 中有文件說明。但請注意，當"
+"有合適的替代方案可用或建議使用時，現有的 ``distutils`` API 將被視為已棄用，不"
+"應再使用（請參見 :pep:`632#migration-advice` 和 :doc:`/deprecated/distutils-"
+"legacy`）。"
+
+#: ../../../userguide/interfaces.rst:28
+msgid ""
+"Depending on other behaviors is risky and subject to future breakage. If a "
+"project wishes to consider using interfaces that aren't covered above, "
+"consider requesting those interfaces to be added prior to depending on them "
+"(perhaps through a pull request implementing the change and relevant "
+"regression tests)."
+msgstr ""
+"依賴其他行為是有風險的，且可能在未來遭受破壞。如果某個專案希望考慮使用上述未"
+"涵蓋的介面，請考慮在依賴它們之前，先請求將這些介面加入（例如透過提交實作該變"
+"更及相關回歸測試的拉取請求）。"
+
+#: ../../../userguide/interfaces.rst:30
+msgid ""
+"Please check further information about deprecated and unsupported behaviors "
+"in :doc:`/deprecated/index`."
+msgstr ""
+"請查閱\\ :doc:`/deprecated/index`\\ 以了解更多關於已棄用和不受支援行為的資"
+"訊。"
+
+#: ../../../userguide/interfaces.rst:34
+msgid "Support Policy Exceptions"
+msgstr "支援政策例外情況"
+
+#: ../../../userguide/interfaces.rst:36
+msgid ""
+"Behaviors and interfaces explicitly documented/advertised as deprecated, or "
+"that :obj:`issue deprecation warnings <warnings.warn>` will be supported up "
+"to the end of the announced deprecation period."
+msgstr ""
+"明確記錄或宣告為已棄用的行為和介面，或發出\\ :obj:`棄用警告 <warnings."
+"warn>`\\ 的項目，將在公告的棄用期限內繼續獲得支援。"
+
+#: ../../../userguide/interfaces.rst:40
+msgid ""
+"However there are a few circumstances in which the Setuptools' maintainers "
+"reserve the right of speeding up the deprecation cycle and shortening "
+"deprecation periods:"
+msgstr ""
+"然而，在某些情況下，Setuptools 維護者保留加快棄用週期和縮短棄用期限的權利："
+
+#: ../../../userguide/interfaces.rst:43
+msgid ""
+"When security vulnerabilities are identified in specific code paths and the "
+"reworking existing APIs is not viable."
+msgstr "當特定程式碼路徑中發現安全漏洞，且重新設計現有 API 不可行時。"
+
+#: ../../../userguide/interfaces.rst:45
+msgid ""
+"When standards in the Python packaging ecosystem externally drive non-"
+"backward compatible changes in the code base."
+msgstr "當 Python 打包生態系統中的標準從外部驅動程式碼庫中的非向後相容變更時。"
+
+#: ../../../userguide/interfaces.rst:47
+msgid ""
+"When changes in behavior are externally driven by 3rd-party dependencies and "
+"code maintained outside of the ``pypa/setuptools`` repository."
+msgstr ""
+"當行為變更由第三方依賴以及在 ``pypa/setuptools`` 倉儲之外維護的程式碼外部驅動"
+"時。"
+
+#: ../../../userguide/interfaces.rst:50
+msgid ""
+"Note that these are exceptional circumstances and that the project will "
+"carefully attempt to find alternatives before resorting to unscheduled "
+"removals."
+msgstr ""
+"請注意，這些是例外情況，專案在訴諸於非預定移除之前，將仔細嘗試尋找替代方案。"
+
+#: ../../../userguide/interfaces.rst:54
+msgid ""
+"In the context of ``setuptools``, the introduction of :py:mod:`warnings` "
+"(including deprecation warnings) is not considered a breaking change *per "
+"se*. Instead it is considered a backwards compatible *communication action* "
+"that precedes an upcoming breaking change. This is becauset code containing "
+"warnings typically does not fail and can successfully terminate execution, "
+"unless users explicitly opt into transforming those warnings into errors (e."
+"g., via Python's :external+python:ref:`-W option or PYTHONWARNINGS "
+"environment variable <using-on-warnings>`)."
+msgstr ""
+"在 ``setuptools`` 的上下文中，引入 :py:mod:`warnings`（包括棄用警告）本身 *並"
+"不* 被視為重大變更。相反地，它被視為一種向後相容的*溝通行為*，預示著即將到來"
+"的重大變更。這是因為包含警告的程式碼通常不會失敗，並且可以成功完成執行，除非"
+"使用者明確選擇將這些警告轉換為錯誤（例如，透過 Python 的 :external+python:"
+"ref:`-W 選項或 PYTHONWARNINGS 環境變數 <using-on-warnings>`）。"
+
+#: ../../../userguide/interfaces.rst:65
+msgid "What to do when deprecation periods are undefined?"
+msgstr "當棄用期限未定義時該怎麼辦？"
+
+#: ../../../userguide/interfaces.rst:67
+msgid ""
+"In some cases it is difficult to define how long Setuptools will take to "
+"remove certain features, behaviors or APIs. For example, it may be "
+"complicated to assess how wide-spread the usage of a certain feature is in "
+"the ecosystem."
+msgstr ""
+"在某些情況下，很難界定 Setuptools 需要多長時間來移除某些功能、行為或 API。例"
+"如，評估某個功能在生態系統中的使用廣泛程度可能相當複雜。"
+
+#: ../../../userguide/interfaces.rst:72
+msgid ""
+"Therefore, Setuptools may start to issue deprecation warnings without a "
+"clear due date. This occurs because we want to notify consumers about "
+"upcoming breaking changes as soon as possible so that they can start working "
+"in migration plans."
+msgstr ""
+"因此，Setuptools 可能會在沒有明確到期日的情況下開始發出棄用警告。這是因為我們"
+"希望盡快通知使用者即將到來的重大變更，以便他們可以開始制定遷移計畫。"
+
+#: ../../../userguide/interfaces.rst:76
+msgid ""
+"This does not mean that users should treat this deprecation as low priority "
+"or interpret the lack of due date as a signal that a breaking change will "
+"never happen."
+msgstr ""
+"這並不意味著使用者應將此棄用視為低優先級，或將缺乏到期日解讀為重大變更永遠不"
+"會發生的信號。"
+
+#: ../../../userguide/interfaces.rst:79
+msgid ""
+"The advised course of action is for users to create a migration plan as soon "
+"as they have identified to be subject to a Setuptools deprecation."
+msgstr ""
+"建議的做法是，使用者一旦發現自己受到 Setuptools 棄用影響，就應盡快制定遷移計"
+"畫。"
+
+#: ../../../userguide/interfaces.rst:82
+msgid ""
+"Setuptools may introduce relatively short deprecation periods (e.g. 6 "
+"months) when a deprecation warning has already been issued for a long period "
+"without a explicit due date."
+msgstr ""
+"當棄用警告已經在沒有明確到期日的情況下發出很長一段時間時，Setuptools 可能會引"
+"入相對較短的棄用期限（例如 6 個月）。"
+
+#: ../../../userguide/interfaces.rst:88
+msgid "How to stay on top of upcoming deprecations?"
+msgstr "如何掌握即將到來的棄用資訊？"
+
+#: ../../../userguide/interfaces.rst:90
+msgid ""
+"It is a good idea to employ an automated test suite with relatively good "
+"coverage in your project and keep an eye on the logs. You can also automate "
+"this process by forwarding the standard output/error streams to a log file "
+"and using heuristics to identify deprecations (e.g. by searching for the "
+"word ``deprecation`` or ``deprecated``). You may need to increase the level "
+"of verbosity of your output as some tools may hide log messages by default "
+"(e.g. via ``pip -vv install ...``)."
+msgstr ""
+"最好在專案中使用覆蓋率較佳的自動化測試軟體包，並留意日誌。你也可以透過將標準"
+"輸出/錯誤串流轉發到日誌檔案，並使用啟發式方法來識別棄用（例如搜尋 "
+"``deprecation`` 或 ``deprecated`` 字詞）來自動化此過程。你可能需要提高輸出的"
+"詳細程度，因為某些工具預設會隱藏日誌訊息（例如透過 ``pip -vv install ..."
+"``）。"
+
+#: ../../../userguide/interfaces.rst:98
+msgid ""
+"Additionally, if you are supporting a project that depends on Setuptools, "
+"you can implement a CI workflow that leverages :external+python:ref:`Python "
+"warning filters <warning-filter>` to improve the visibility of warnings."
+msgstr ""
+"此外，如果你維護的專案依賴於 Setuptools，你可以實作一個 CI 工作流程，利用 :"
+"external+python:ref:`Python 警告過濾器 <warning-filter>` 來提高警告的可見度。"
+
+#: ../../../userguide/interfaces.rst:103
+msgid ""
+"This workflow can be comprised, for example, of 3 iterative steps that "
+"require developers to acknowledge the deprecation warnings:"
+msgstr "此工作流程例如可以包含 3 個疊代步驟，要求開發者確認棄用警告："
+
+#: ../../../userguide/interfaces.rst:106
+msgid ""
+"Leverage Python Warning's Filter to transform warnings into exceptions "
+"during automated tests."
+msgstr "利用 Python 警告過濾器，在自動化測試期間將警告轉換為例外。"
+
+#: ../../../userguide/interfaces.rst:107
+msgid "Devise a migration plan:"
+msgstr "制定遷移計畫："
+
+#: ../../../userguide/interfaces.rst:109
+msgid ""
+"It is a good idea to track deprecations as if they were issues, and apply "
+"project management techniques to monitor the progress in handling them."
+msgstr "最好將棄用事項像問題一樣追蹤，並應用專案管理技術來監控處理進度。"
+
+#: ../../../userguide/interfaces.rst:111
+msgid ""
+"Determine which parts of your code are affected and understand the changes "
+"required to eliminate the warnings."
+msgstr "判斷程式碼中哪些部分受到影響，並了解消除警告所需的變更。"
+
+#: ../../../userguide/interfaces.rst:114
+msgid ""
+"Modify the warning's filter you are using in the CI to not fail with the "
+"newly identified exceptions (e.g. by using the ``default`` action with a "
+"specific category or regular expression for the warning message). This can "
+"be done globally for the whole test suite or locally in a test-by-test basis."
+msgstr ""
+"修改你在 CI 中使用的警告過濾器，使其不會因為新識別的例外而失敗（例如，使用 "
+"``default`` 動作搭配特定的類別或正規表達式來比對警告訊息）。這可以針對整個測"
+"試軟體包全域設定，也可以在逐項測試的基礎上局部設定。"
+
+#: ../../../userguide/interfaces.rst:120
+msgid ""
+"Test tools like :pypi:`pytest` offer CLI and configuration options to "
+"facilitate controlling the warning's filter (see :external+pytest:doc:`how-"
+"to/capture-warnings`)."
+msgstr ""
+"像 :pypi:`pytest` 這樣的測試工具提供了 CLI 和設定選項，以便於控制警告過濾器"
+"（請參見 :external+pytest:doc:`how-to/capture-warnings`）。"
+
+#: ../../../userguide/interfaces.rst:123
+msgid ""
+"Note that there are many ways to incorporate such workflow in your CI. For "
+"example, if you have enough deployment resources and consider deprecation "
+"warning management to be a day-to-day development test you can set the "
+"warning's filter directly on your main CI loop. On the other hand if you "
+"have critical timelines and cannot afford CI jobs occasionally failing to "
+"flag maintenance, you can consider scheduling a periodic CI run separated "
+"from your main/mission-critical workflow."
+msgstr ""
+"請注意，有許多方式可以將此工作流程整合到你的 CI 中。例如，如果你有足夠的部署"
+"資源，並將棄用警告管理視為日常開發測試，你可以直接在主要 CI 迴圈中設定警告過"
+"濾器。另一方面，如果你有嚴格的時間表，無法承受 CI 工作偶爾因標記維護而失敗，"
+"你可以考慮排程一個與主要/關鍵任務工作流程分開的定期 CI 執行。"
+
+#: ../../../userguide/interfaces.rst:133
+msgid "What does \"support\" mean?"
+msgstr "「支援」是什麼意思？"
+
+#: ../../../userguide/interfaces.rst:135
+msgid ""
+"Setuptools is a non-profit community-driven open source project and as such "
+"the word \"support\" is used in a best-effort manner and with limited scope. "
+"For example, it is not always possible to quickly provide fixes for bugs."
+msgstr ""
+"Setuptools 是一個非營利、由社群驅動的開源專案，因此「支援」一詞是以盡力而為且"
+"範圍有限的方式使用。例如，並非總能快速提供錯誤修正。"
+
+#: ../../../userguide/interfaces.rst:139
+msgid ""
+"We appreciate the patience of the community and incentivise users impacted "
+"by bugs to contribute to fixes in the form of :doc:`PR submissions </"
+"development/developer-guide>`, to speed-up the process."
+msgstr ""
+"我們感謝社群的耐心，並鼓勵受到錯誤影響的使用者以\\ :doc:`提交 PR </"
+"development/developer-guide>` 的形式貢獻修正，以加快處理速度。"
+
+#: ../../../userguide/interfaces.rst:143
+msgid ""
+"When we say \"a certain feature is supported\" we mean that we will do our "
+"best to ensure this feature keeps working as documented. Note however that, "
+"as in any system, unintended breakages may happen. We appreciate the "
+"community understand and `considerate feedback`_."
+msgstr ""
+"當我們說「某個功能受到支援」時，意思是我們會盡最大努力確保該功能按文件說明的"
+"正常運作。但請注意，與任何系統一樣，仍可能發生非預期的損壞。我們感謝社群的理"
+"解與\\ `體貼的回饋 <considerate feedback>`_\\ 。"
+
+#: ../../../userguide/interfaces.rst:152
+msgid "What to do after the deprecation period ends?"
+msgstr "棄用期限結束後該怎麼辦？"
+
+#: ../../../userguide/interfaces.rst:154
+msgid ""
+"If you have limited development resources and is not able to devise a "
+"migration plan before Setuptools removes a deprecated feature, you can still "
+"resort to restricting the version of Setuptools to be installed. This "
+"usually includes modifying ``[build-system] requires`` in ``pyproject.toml`` "
+"and/or specifying ``pip`` :external+pip:ref:`Constraints Files` via the "
+"``PIP_CONSTRAINT`` environment variable (or passing |build-constraint-uv|_). "
+"Please avoid however to preemptively add version constraints if not "
+"necessary, (you can read more about this in https://iscinumpy.dev/post/bound-"
+"version-constraints/)."
+msgstr ""
+"如果你的開發資源有限，無法在 Setuptools 移除已棄用功能之前制定遷移計畫，你仍"
+"然可以限制所安裝的 Setuptools 版本。這通常包括修改 ``pyproject.toml`` 中的 "
+"``[build-system] requires``，和/或透過 ``PIP_CONSTRAINT`` 環境變數指定 "
+"``pip`` :external+pip:ref:`約束檔案 <Constraints Files>`（或傳遞 |build-"
+"constraint-uv|_）。但請避免在沒有必要的情況下預先加入版本約束（你可以在 "
+"https://iscinumpy.dev/post/bound-version-constraints/ 閱讀更多相關資訊）。"
+
+#: ../../../userguide/interfaces.rst:168
+msgid "A note on \"Public Names\""
+msgstr "關於「公開名稱」的說明"
+
+#: ../../../userguide/interfaces.rst:170
+msgid ""
+"Python devs may be used to the convention that private members are prefixed "
+"with an ``_`` (underscore) character and that any member not marked by this "
+"public. Due to the history and legacy of Setuptools this is not necessarily "
+"the case [#private]_."
+msgstr ""
+"Python 開發者可能習慣於私有成員以 ``_``（底線）字元為前綴的慣例，並且任何未被"
+"此標記的成員即為公開。但由於 Setuptools 的歷史和遺留問題，情況並非一定如此 "
+"[#private]_。"
+
+#: ../../../userguide/interfaces.rst:175
+msgid ""
+"In this project, \"public interfaces\" are defined as interfaces explicitly "
+"documented for 3rd party consumption."
+msgstr "在此專案中，「公開介面」被定義為明確文件化供第三方使用的介面。"
+
+#: ../../../userguide/interfaces.rst:178
+msgid ""
+"When accessing a member in the ``setuptools`` package, please make sure it "
+"is documented for external usage. Also note that names imported from "
+"different modules/submodules are considered internal implementation details "
+"unless explicitly listed in ``__all__``. The fact that they are accessible "
+"in the namespace of the ``import``-er module is a mere side effect of the "
+"way Python works."
+msgstr ""
+"在存取 ``setuptools`` 軟體包中的成員時，請確保該成員已被文件化為外部用途。另"
+"請注意，從不同模組/子模組匯入的名稱被視為內部實作細節，除非它們被明確列在 "
+"``__all__`` 中。它們在執行 ``import`` 的模組命名空間中可被存取，這只是 "
+"Python 運作方式的副作用。"
+
+#: ../../../userguide/interfaces.rst:185
+msgid ""
+"While names prefixed by ``_`` are always considered private, not necessary "
+"the absence of the prefix signals public members."
+msgstr ""
+"雖然以 ``_`` 為前綴的名稱始終被視為私有，但沒有此前綴並不一定表示該成員為公"
+"開。"

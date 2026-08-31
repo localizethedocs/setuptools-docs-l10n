@@ -1,0 +1,834 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../userguide/declarative_config.rst:5
+msgid "Configuring setuptools using ``setup.cfg`` files"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:7
+msgid "New in 30.3.0 (8 Dec 2016)."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:10
+msgid ""
+"If compatibility with legacy builds (i.e. those not using the :pep:`517` "
+"build API) is desired, a ``setup.py`` file containing a ``setup()`` function "
+"call is still required even if your configuration resides in ``setup.cfg``."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:14
+msgid ""
+"``Setuptools`` allows using configuration files (for example, :file:`setup."
+"cfg`) to define a package’s metadata and other options (declarative config)."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:17
+msgid ""
+"This approach allows automation scenarios and can reduce boilerplate code."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:21
+msgid ""
+"[metadata]\n"
+"name = my_package\n"
+"version = attr: my_package.VERSION\n"
+"author = Josiah Carberry\n"
+"author_email = josiah_carberry@brown.edu\n"
+"description = My package description\n"
+"long_description = file: README.rst, CHANGELOG.rst, LICENSE.rst\n"
+"keywords = one, two\n"
+"license = BSD-3-Clause\n"
+"classifiers =\n"
+"    Framework :: Django\n"
+"    Programming Language :: Python :: 3\n"
+"\n"
+"[options]\n"
+"zip_safe = False\n"
+"include_package_data = True\n"
+"packages = find:\n"
+"python_requires = >=3.8\n"
+"install_requires =\n"
+"    requests\n"
+"    importlib-metadata; python_version<\"3.10\"\n"
+"\n"
+"[options.package_data]\n"
+"* = *.txt, *.rst\n"
+"hello = *.msg\n"
+"\n"
+"[options.entry_points]\n"
+"console_scripts =\n"
+"    executable-name = my_package.module:function\n"
+"\n"
+"[options.extras_require]\n"
+"pdf = ReportLab>=1.2; RXP\n"
+"rest = docutils>=0.3; pack ==1.1, ==1.3\n"
+"\n"
+"[options.packages.find]\n"
+"exclude =\n"
+"    examples*\n"
+"    tools*\n"
+"    docs*\n"
+"    my_package.tests*"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:64
+msgid "Metadata and options are set in the config sections of the same name."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:66
+msgid ""
+"Keys are the same as the :doc:`keyword arguments </references/keywords>` one "
+"provides to the ``setup()`` function."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:69
+msgid ""
+"Complex values can be written comma-separated or placed one per line in "
+"*dangling* config values. The following are equivalent:"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:72
+msgid ""
+"[metadata]\n"
+"keywords = one, two\n"
+"\n"
+"[metadata]\n"
+"keywords =\n"
+"    one\n"
+"    two"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:82
+msgid ""
+"In some cases, complex values can be provided in dedicated subsections for "
+"clarity."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:85
+msgid ""
+"Some keys allow ``file:``, ``attr:``, ``find:``, and ``find_namespace:`` "
+"directives in order to cover common usecases."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:88
+msgid "Unknown keys are ignored."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:92
+msgid "Using a ``src/`` layout"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:94
+msgid ""
+"One commonly used configuration has all the Python source code in a "
+"subdirectory (often called the ``src/`` layout), like this::"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:97
+msgid ""
+"├── src\n"
+"│   └── mypackage\n"
+"│       ├── __init__.py\n"
+"│       └── mod1.py\n"
+"├── setup.py\n"
+"└── setup.cfg"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:104
+msgid ""
+"You can set up your ``setup.cfg`` to automatically find all your packages in "
+"the subdirectory, using :ref:`package_dir <keyword/package_dir>`, like this:"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:107
+msgid ""
+"# This example contains just the necessary options for a src-layout, set up\n"
+"# the rest of the file as described above.\n"
+"\n"
+"[options]\n"
+"package_dir=\n"
+"    =src\n"
+"packages=find:\n"
+"\n"
+"[options.packages.find]\n"
+"where=src"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:120
+msgid ""
+"In this example, the value for the :ref:`package_dir <keyword/package_dir>` "
+"configuration (i.e. ``=src``) is parsed as ``{\"\": \"src\"}``. The ``\"\"`` "
+"key has a special meaning in this context, and indicates that all the "
+"packages are contained inside the given directory. Also note that the value "
+"for ``[options.packages.find] where`` matches the value associated with "
+"``\"\"`` in the ``package_dir`` dictionary."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:137
+msgid "Interpolation"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:139
+msgid ""
+"Config files are parsed using :mod:`configparser` with `interpolation "
+"<https://docs.python.org/3/library/configparser.html#interpolation-of-"
+"values>`_ enabled. As a result, one config value may reference another. This "
+"feature may be used, for example, in defining extras:"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:144
+msgid ""
+"[options.extras_require]\n"
+"tester =\n"
+"    pytest==3.3.2\n"
+"    pytest-sugar\n"
+"dev =\n"
+"    pytest-xdist\n"
+"    %(tester)s"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:155
+msgid "Specifying values"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:157
+msgid "Some values are treated as simple strings, some allow more logic."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:159
+msgid "Type names used below:"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:161
+msgid "``str`` - simple string"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:162
+msgid "``list-comma`` - dangling list or string of comma-separated values"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:163
+msgid "``list-semi`` - dangling list or string of semicolon-separated values"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:164
+msgid "``bool`` - ``True`` is 1, yes, true"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:165
+msgid ""
+"``dict`` - list-comma where each entry corresponds to a key/value pair, with "
+"keys separated from values by ``=``. If an entry starts with ``=``, the key "
+"is assumed to be an empty string (e.g. ``=src`` is parsed as ``{\"\": "
+"\"src\"}``)."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:169
+msgid "``section`` - values are read from a dedicated (sub)section"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:172
+msgid "Special directives:"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:174
+msgid "``attr:`` - Value is read from a module attribute."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:176
+msgid ""
+"It is advisable to use literal values together with ``attr:`` (e.g. ``str``, "
+"``tuple[str]``, see :func:`ast.literal_eval`). This is recommend in order to "
+"support the common case of a literal value assigned to a variable in a "
+"module containing (directly or indirectly) third-party imports."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:181
+msgid ""
+"``attr:`` first tries to read the value from the module by examining the "
+"module's AST.  If that fails, ``attr:`` falls back to importing the module, "
+"using :func:`importlib.util.spec_from_file_location` recommended recipe "
+"(see :ref:`example on Python docs <python:importlib-examples>` about "
+"\"Importing a source file directly\"). Note however that importing the "
+"module is error prone since your package is not installed yet. You may also "
+"need to manually add the project directory to ``sys.path`` (via ``setup."
+"py``) in order to be able to do that."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:190
+msgid ""
+"When the module is imported, ``attr:`` supports callables and iterables; "
+"unsupported types are cast using ``str()``."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:194
+msgid "``file:`` - Value is read from a list of files and then concatenated"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:197
+msgid ""
+"The ``file:`` directive is sandboxed and won't reach anything outside the "
+"project directory (i.e. the directory containing ``setup.cfg``/``pyproject."
+"toml``)."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:201
+msgid ""
+"If you are using an old version of ``setuptools``, you might need to ensure "
+"that all files referenced by the ``file:`` directive are included in the "
+"``sdist`` (you can do that via ``MANIFEST.in`` or using plugins such as "
+"``setuptools-scm``, please have a look on :doc:`/userguide/miscellaneous` "
+"for more information)."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:206
+msgid ""
+"Newer versions of ``setuptools`` will automatically add these files to the "
+"``sdist``."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:211
+msgid "Metadata"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:214
+msgid ""
+"The aliases given below are supported for compatibility reasons, but their "
+"use is not advised."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:218
+#: ../../../userguide/declarative_config.rst:255
+msgid "Key"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:218
+msgid "Aliases"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:218
+#: ../../../userguide/declarative_config.rst:255
+msgid "Type"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:218
+#: ../../../userguide/declarative_config.rst:255
+msgid "Minimum Version"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:218
+#: ../../../userguide/declarative_config.rst:255
+msgid "Notes"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:220
+msgid "name"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:220
+#: ../../../userguide/declarative_config.rst:222
+#: ../../../userguide/declarative_config.rst:223
+#: ../../../userguide/declarative_config.rst:225
+#: ../../../userguide/declarative_config.rst:226
+#: ../../../userguide/declarative_config.rst:227
+#: ../../../userguide/declarative_config.rst:228
+#: ../../../userguide/declarative_config.rst:230
+#: ../../../userguide/declarative_config.rst:234
+#: ../../../userguide/declarative_config.rst:261
+msgid "str"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:221
+msgid "version"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:221
+msgid "attr:, file:, str"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:221
+msgid "39.2.0"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:221
+msgid "[#meta-1]_"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:222
+msgid "url"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:222
+msgid "home-page"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:223
+msgid "download_url"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:223
+msgid "download-url"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:224
+msgid "project_urls"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:224
+#: ../../../userguide/declarative_config.rst:269
+msgid "dict"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:224
+msgid "38.3.0"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:225
+msgid "author"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:226
+msgid "author_email"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:226
+msgid "author-email"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:227
+msgid "maintainer"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:228
+msgid "maintainer_email"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:228
+msgid "maintainer-email"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:229
+msgid "classifiers"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:229
+msgid "classifier"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:229
+msgid "file:, list-comma"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:230
+msgid "license"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:231
+msgid "license_files"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:231
+msgid "license_file"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:231
+#: ../../../userguide/declarative_config.rst:235
+#: ../../../userguide/declarative_config.rst:236
+#: ../../../userguide/declarative_config.rst:237
+#: ../../../userguide/declarative_config.rst:238
+#: ../../../userguide/declarative_config.rst:239
+#: ../../../userguide/declarative_config.rst:263
+#: ../../../userguide/declarative_config.rst:264
+#: ../../../userguide/declarative_config.rst:265
+#: ../../../userguide/declarative_config.rst:272
+#: ../../../userguide/declarative_config.rst:273
+msgid "list-comma"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:231
+msgid "42.0.0"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:232
+msgid "description"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:232
+msgid "summary"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:232
+#: ../../../userguide/declarative_config.rst:233
+msgid "file:, str"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:233
+msgid "long_description"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:233
+msgid "long-description"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:234
+msgid "long_description_content_type"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:234
+msgid "38.6.0"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:235
+msgid "keywords"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:236
+msgid "platforms"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:236
+msgid "platform"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:237
+msgid "provides"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:238
+msgid "requires"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:239
+msgid "obsoletes"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:242
+#: ../../../userguide/declarative_config.rst:277
+msgid "**Notes**:"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:244
+msgid "The ``version`` file attribute has only been supported since 39.2.0."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:246
+msgid ""
+"A version loaded using the ``file:`` directive must comply with PEP 440. It "
+"is easy to accidentally put something other than a valid version string in "
+"such a file, so validation is stricter in this case."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:252
+msgid "Options"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:257
+msgid "zip_safe"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:257
+#: ../../../userguide/declarative_config.rst:267
+msgid "bool"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:258
+msgid "setup_requires"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:258
+#: ../../../userguide/declarative_config.rst:266
+msgid "list-semi"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:258
+msgid "36.7.0"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:259
+msgid "install_requires"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:259
+msgid "file:, list-semi"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:259
+#: ../../../userguide/declarative_config.rst:260
+msgid "**BETA** [#opt-2]_, [#opt-6]_"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:260
+msgid "extras_require"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:260
+#: ../../../userguide/declarative_config.rst:262
+msgid "file:, section"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:261
+msgid "python_requires"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:261
+#: ../../../userguide/declarative_config.rst:273
+msgid "34.4.0"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:262
+#: ../../../userguide/declarative_config.rst:346
+msgid "entry_points"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:262
+msgid "51.0.0"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:263
+msgid "scripts"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:264
+msgid "eager_resources"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:265
+msgid "dependency_links"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:266
+msgid "tests_require"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:267
+msgid "include_package_data"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:268
+msgid "packages"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:268
+msgid "find:, find_namespace:, list-comma"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:268
+msgid "[#opt-3]_"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:269
+msgid "package_dir"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:270
+msgid "package_data"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:270
+#: ../../../userguide/declarative_config.rst:271
+#: ../../../userguide/declarative_config.rst:274
+msgid "section"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:270
+msgid "[#opt-1]_"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:271
+msgid "exclude_package_data"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:272
+msgid "namespace_packages"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:272
+msgid "[#opt-5]_"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:273
+msgid "py_modules"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:274
+msgid "data_files"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:274
+msgid "40.6.0"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:274
+msgid "[#opt-4]_"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:279
+msgid ""
+"In the ``package_data`` section, a key named with a single asterisk (``*``) "
+"refers to all packages, in lieu of the empty string used in ``setup.py``."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:282
+msgid ""
+"In ``install_requires`` and ``extras_require``, values are parsed as ``list-"
+"semi``. This implies that in order to include markers, each requirement "
+"**must** be *dangling* in a new line:"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:286
+msgid ""
+"[options]\n"
+"install_requires =\n"
+"    importlib-metadata; python_version<\"3.10\"\n"
+"\n"
+"[options.extras_require]\n"
+"all =\n"
+"    importlib-metadata; python_version<\"3.10\""
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:296
+msgid ""
+"The ``find:`` and ``find_namespace:`` directive can be further configured in "
+"a dedicated subsection ``options.packages.find``. This subsection accepts "
+"the same keys as the ``setuptools.find_packages`` and the ``setuptools."
+"find_namespace_packages`` function: ``where``, ``include``, and ``exclude``."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:302
+msgid "The ``find_namespace:`` directive is supported since Python >=3.3."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:304
+msgid ""
+"``data_files`` is deprecated and should be avoided. Please check :doc:`/"
+"userguide/datafiles` for more information."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:307
+msgid ""
+"``namespace_packages`` is deprecated in favour of native/implicit namespaces "
+"(:pep:`420`). Check :doc:`the Python Packaging User Guide <PyPUG:guides/"
+"packaging-namespace-packages>` for more information."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:311
+msgid ""
+"``file:`` directives for reading requirements are supported since version "
+"62.6. The format for the file resembles a ``requirements.txt`` file, however "
+"please keep in mind that all non-comment lines must conform with :pep:`508` "
+"(``pip``-specify syntaxes, e.g. ``-c/-r/-e`` flags, are not supported). "
+"Library developers should avoid tightly pinning their dependencies to a "
+"specific version (e.g. via a \"locked\" requirements file)."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:320
+msgid "Compatibility with other tools"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:322
+msgid ""
+"Historically, several tools explored declarative package configuration in "
+"parallel. And several of them chose to place the packaging configuration "
+"within the project's :file:`setup.cfg` file. One of the first was "
+"``distutils2``, which development has stopped in 2013. Other include ``pbr`` "
+"which is still under active development or ``d2to1``, which was a plug-in "
+"that backports declarative configuration to ``distutils``, but has had no "
+"release since Oct. 2015. As a way to harmonize packaging tools, "
+"``setuptools``, having held the position of *de facto* standard, has "
+"gradually integrated those features as part of its core features."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:333
+msgid "Still this has lead to some confusion and feature incompatibilities:"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:335
+msgid "some tools support features others don't;"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:336
+msgid "some have similar features but the declarative syntax differs;"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:338
+msgid ""
+"The table below tries to summarize the differences. But, please, refer to "
+"each tool documentation for up-to-date information."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:342
+msgid "feature"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:342
+msgid "setuptools"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:342
+msgid "distutils2"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:342
+msgid "d2to1"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:342
+msgid "pbr"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:344
+msgid "[metadata] description-file"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:344
+#: ../../../userguide/declarative_config.rst:345
+#: ../../../userguide/declarative_config.rst:346
+msgid "S"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:344
+#: ../../../userguide/declarative_config.rst:345
+#: ../../../userguide/declarative_config.rst:346
+#: ../../../userguide/declarative_config.rst:347
+msgid "Y"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:345
+msgid "[files]"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:347
+msgid "[backwards_compat]"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:347
+msgid "N"
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:350
+msgid ""
+"Y: supported, N: unsupported, S: syntax differs (see :ref:`above "
+"example<example-setup-config>`)."
+msgstr ""
+
+#: ../../../userguide/declarative_config.rst:353
+msgid ""
+"Also note that some features were only recently added to ``setuptools``. "
+"Please refer to the previous sections to find out when."
+msgstr ""

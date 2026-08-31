@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../python 2 sunset.rst:4
+msgid "Python 2 Sunset"
+msgstr ""
+
+#: ../../../python 2 sunset.rst:6
+msgid ""
+"Since January 2020 and the release of Setuptools 45, Python 2 is no longer "
+"supported by the most current release (`discussion <https://github.com/pypa/"
+"setuptools/issues/1458>`_). Setuptools as a project continues to support "
+"Python 2 with bugfixes and important features on Setuptools 44.x."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:12
+msgid ""
+"By design, most users will be unaffected by this change. That's because "
+"Setuptools 45 declares its supported Python versions to exclude Python 2.7, "
+"and installers such as pip 9 or later will honor this declaration and "
+"prevent installation of Setuptools 45 or later in Python 2 environments."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:17
+msgid ""
+"Users that do import any portion of Setuptools 45 or later on Python 2 are "
+"directed to this documentation to provide guidance on how to work around the "
+"issues."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:22
+msgid "Workarounds"
+msgstr ""
+
+#: ../../../python 2 sunset.rst:24
+msgid ""
+"The best recommendation is to avoid Python 2 and move to Python 3 where "
+"possible. This project acknowledges that not all environments can drop "
+"Python 2 support, so provides other options."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:28
+msgid ""
+"In less common scenarios, later versions of Setuptools can be installed on "
+"unsupported Python versions. In these environments, the installer is advised "
+"to first install ``setuptools<45`` to \"pin Setuptools\" to a compatible "
+"version."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:33
+msgid ""
+"When using older versions of pip (before 9.0), the ``Requires-Python`` "
+"directive is not honored and invalid versions can be installed. Users are "
+"advised first to upgrade pip and retry or to pin Setuptools. Use ``pip --"
+"version`` to determine the version of pip."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:37
+msgid ""
+"When using ``easy_install``, ``Requires-Python`` is not honored and later "
+"versions can be installed. In this case, users are advised to pin "
+"Setuptools. This applies to ``setup.py install`` invocations as well, as "
+"they use Setuptools under the hood."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:43
+msgid "It's still not working"
+msgstr ""
+
+#: ../../../python 2 sunset.rst:45
+msgid ""
+"If after trying the above steps, the Python environment still has "
+"incompatible versions of Setuptools installed, here are some things to try."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:48
+msgid ""
+"Uninstall and reinstall Setuptools. Run ``pip uninstall -y setuptools`` for "
+"the relevant environment. Repeat until there is no Setuptools installed. "
+"Then ``pip install setuptools``."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:51
+msgid ""
+"If possible, attempt to replicate the problem in a second environment "
+"(virtual machine, friend's computer, etc). If the issue is isolated to just "
+"one unique environment, first determine what is different about those "
+"environments (or reinstall/reset the failing one to defaults)."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:55
+msgid ""
+"End users who are not themselves the maintainers for the package they are "
+"trying to install should contact the support channels for the relevant "
+"application. Please be considerate of those projects by searching for "
+"existing issues and following the latest guidance before reaching out for "
+"support. When filing an issue, be sure to give as much detail as possible to "
+"help the maintainers understand what factors led to the issue after "
+"following their recommended guidance."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:62
+msgid ""
+"Reach out to your local support groups. There's a good chance someone nearby "
+"has the expertise and willingness to help."
+msgstr ""
+
+#: ../../../python 2 sunset.rst:64
+msgid ""
+"If all else fails, `file this template <https://github.com/pypa/setuptools/"
+"issues/new?assignees=&labels=Python+2&template=setuptools-warns-about-"
+"python-2-incompatibility."
+"md&title=Incompatible+install+in+(summarize+your+environment)>`_ with "
+"Setuptools. Please complete the whole template, providing as much detail "
+"about what factors led to the issue. Setuptools maintainers will summarily "
+"close tickets filed without any meaningful detail or engagement with the "
+"issue."
+msgstr ""

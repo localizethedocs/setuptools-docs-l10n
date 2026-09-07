@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../userguide/index.rst:3
+msgid "Building and Distributing Packages with Setuptools"
+msgstr "使用 Setuptools 建置並散佈軟體包"
+
+#: ../../../userguide/index.rst:5
+msgid ""
+"The first step towards sharing a Python library or program is to build a "
+"distribution package [#package-overload]_. This includes adding a set of "
+"additional files containing metadata and configuration to not only instruct "
+"``setuptools`` on how the distribution should be built but also to help "
+"installer (such as :pypi:`pip`) during the installation process."
+msgstr ""
+"分享 Python 程式庫或程式的第一步，是建立一個散佈包 [#package-overload]_ 。這"
+"包括加入一組包含中繼資料和組態的額外檔案，不僅用來指示 ``setuptools`` 如何建"
+"置散佈包，也能在安裝過程中協助安裝工具（例如 :pypi:`pip`）。"
+
+#: ../../../userguide/index.rst:11
+msgid ""
+"This document contains information to help Python developers through this "
+"process. Please check the :doc:`/userguide/quickstart` for an overview of "
+"the workflow."
+msgstr ""
+"本文件包含協助 Python 開發者完成此過程的資訊。請查閱\\ :doc:`/userguide/"
+"quickstart`\\ 以了解工作流程的概覽。"
+
+#: ../../../userguide/index.rst:15
+msgid ""
+"Also note that ``setuptools`` is what is known in the community as :pep:"
+"`build backend <517#terminology-and-goals>`, user facing interfaces are "
+"provided by tools such as :pypi:`pip` and :pypi:`build`. To use "
+"``setuptools``, one must explicitly create a ``pyproject.toml`` file as "
+"described :doc:`/build_meta`."
+msgstr ""
+"另外請注意，``setuptools`` 在社群中被稱為\\ :pep:`建置後端 <517#terminology-"
+"and-goals>`\\ ，使用者面對的介面則由 :pypi:`pip` 和 :pypi:`build` 等工具提"
+"供。若要使用 ``setuptools``，必須按照 :doc:`/build_meta` 所述的方式，明確建立"
+"一個 ``pyproject.toml`` 檔案。"
+
+#: ../../../userguide/index.rst:22
+msgid "Contents"
+msgstr "目次"
+
+#: ../../../userguide/index.rst:42
+msgid "---"
+msgstr ""
+
+#: ../../../userguide/index.rst:45
+msgid "Notes"
+msgstr "備註"
+
+#: ../../../userguide/index.rst:47
+msgid ""
+"A :term:`Distribution Package` is also referred in the Python community "
+"simply as \"package\" Unfortunately, this jargon might be a bit confusing "
+"for new users because the term package can also to refer any :term:"
+"`directory <package>` (or sub directory) used to organize :term:`modules "
+"<module>` and auxiliary files."
+msgstr ""
+"在 Python 社群中，\\ :term:`散佈包（Distribution Package） <Distribution "
+"Package>`\\ 也常簡稱為「軟體包（package）」。不幸的是，這個術語對新手來說可能"
+"有點困惑，因為「軟體包」一詞也可以指用於組織\\ :term:`模組 <module>`\\ 和輔助"
+"檔案的任何\\ :term:`目錄（directory） <package>`\\ （或子目錄）。"

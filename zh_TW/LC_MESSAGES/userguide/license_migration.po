@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../userguide/license_migration.rst:5
+msgid "Migrating to PEP 639 License Expressions"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:7
+msgid ""
+"Starting with setuptools v77.0.0, the ``project.license`` field accepts an "
+"`SPDX license expression <https://spdx.org/licenses/>`_ as defined in :pep:"
+"`639`. The previous TOML-table forms (``license = {text = \"...\"}`` and "
+"``license = {file = \"...\"}``) are deprecated and will be removed in a "
+"future version."
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:13
+msgid "This guide helps you migrate your project's license configuration."
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:17
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:20
+msgid "Background"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:22
+msgid ""
+"The ``project.license`` field in ``pyproject.toml`` historically accepted a "
+"TOML table, either with a ``text`` key holding a license description or a "
+"``file`` key pointing at a license file:"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:26
+msgid ""
+"# Old format (deprecated)\n"
+"license = {text = \"Apache-2.0\"}\n"
+"# or\n"
+"license = {file = \"LICENSE\"}"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:33
+msgid ""
+"Starting with setuptools v77.0.0, ``project.license`` is instead a string "
+"containing an SPDX license expression, and the files themselves are declared "
+"separately via ``project.license-files``:"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:37
+msgid ""
+"# New format (PEP 639)\n"
+"license = \"Apache-2.0\"\n"
+"license-files = [\"LICENSE\"]"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:43
+msgid ""
+"The SPDX expression format is standardized and supports composing licenses "
+"(for example ``\"Apache-2.0 OR MIT\"`` or ``\"GPL-3.0-only WITH Classpath-"
+"exception-2.0\"``)."
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:48
+msgid "Migrating your configuration"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:51
+msgid "Replace a ``{text = ...}`` license"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:53
+msgid ""
+"If the ``text`` value was already a recognized license identifier, use it "
+"directly as an SPDX expression:"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:56
+msgid ""
+"# Before\n"
+"license = {text = \"MIT\"}\n"
+"\n"
+"# After\n"
+"license = \"MIT\""
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:64
+msgid ""
+"If the ``text`` was free-form prose rather than a license identifier, "
+"express the license as an SPDX expression and ship the full text as a "
+"license file (see below)."
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:69
+msgid "Replace a ``{file = ...}`` license"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:71
+msgid ""
+"Point ``license`` at the SPDX expression and list the file under ``license-"
+"files``:"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:74
+msgid ""
+"# Before\n"
+"license = {file = \"LICENSE\"}\n"
+"\n"
+"# After\n"
+"license = \"Apache-2.0\"\n"
+"license-files = [\"LICENSE\"]"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:83
+msgid ""
+"``license-files`` accepts glob patterns, so multiple files (for example a "
+"project license plus third-party notices) can be included:"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:86
+msgid "license-files = [\"LICENSE*\", \"NOTICE\"]"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:91
+msgid "Replace license classifiers"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:93
+msgid ""
+"The ``License :: ...`` trove classifiers are also deprecated in favor of "
+"SPDX expressions. Drop them from ``classifiers`` and record the license in "
+"``license`` instead:"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:97
+msgid ""
+"# Before\n"
+"classifiers = [\"License :: OSI Approved :: MIT License\"]\n"
+"\n"
+"# After\n"
+"license = \"MIT\""
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:106
+msgid "Requiring a compatible setuptools"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:108
+msgid ""
+"SPDX expressions and the ``license-files`` field are understood by "
+"**setuptools v77.0.0 and later**. This is a *build-time* requirement on "
+"setuptools itself; it is independent of the Python versions your project "
+"supports at runtime (``requires-python``)."
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:113
+msgid ""
+"Most build frontends (such as :pypi:`build` and :pypi:`pip`) build in an "
+"isolated environment and install the latest setuptools by default, so simply "
+"declaring the minimum in ``[build-system].requires`` is usually enough:"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:117
+msgid ""
+"[build-system]\n"
+"requires = [\"setuptools>=77\"]\n"
+"build-backend = \"setuptools.build_meta\"\n"
+"\n"
+"[project]\n"
+"name = \"my_package\"\n"
+"license = \"Apache-2.0\"\n"
+"license-files = [\"LICENSE\"]"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:128
+msgid ""
+"If you need to keep supporting builds with an older setuptools, retain the "
+"old TOML-table form (it continues to work, with a deprecation warning) until "
+"you can require setuptools v77+."
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:133
+msgid "Common SPDX License Expressions"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:135
+msgid "Here are some common SPDX expressions:"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:137
+msgid "``\"MIT\"`` -- MIT License"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:138
+msgid "``\"Apache-2.0\"`` -- Apache License 2.0"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:139
+msgid "``\"BSD-3-Clause\"`` -- BSD 3-Clause License"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:140
+msgid "``\"GPL-3.0-only\"`` -- GNU General Public License v3.0 only"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:141
+msgid "``\"Apache-2.0 OR MIT\"`` -- Dual licensed (either applies)"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:142
+msgid "``\"Apache-2.0 AND MIT\"`` -- Both licenses apply"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:144
+msgid ""
+"For the full list, see the `SPDX License List <https://spdx.org/licenses/>`_."
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:147
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:149
+msgid ""
+"``SetuptoolsDeprecationWarning: `project.license` as a TOML table is "
+"deprecated``"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:151
+msgid ""
+"This warning appears when using the old ``{text = ...}`` or ``{file = ...}`` "
+"form. Follow the migration steps above to move to an SPDX expression (and "
+"``license-files`` where needed)."
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:155
+msgid "**Invalid SPDX expression**"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:157
+msgid "Ensure your expression uses valid SPDX identifiers. Common mistakes:"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:159
+msgid ""
+"Using ``\"GPL-3\"`` instead of ``\"GPL-3.0-only\"`` (or ``\"GPL-3.0-or-"
+"later\"``)"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:160
+msgid "Using ``\"BSD\"`` instead of ``\"BSD-3-Clause\"``"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:161
+msgid "Forgetting the quotes around the expression"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:164
+msgid "References"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:166
+msgid ":pep:`639` -- Improving License Clarity with Better Package Metadata"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:167
+msgid "`SPDX License List <https://spdx.org/licenses/>`_"
+msgstr ""
+
+#: ../../../userguide/license_migration.rst:168
+msgid ""
+"`Writing your pyproject.toml <https://packaging.python.org/en/latest/guides/"
+"writing-pyproject-toml/>`_"
+msgstr ""

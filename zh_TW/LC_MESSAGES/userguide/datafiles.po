@@ -1,0 +1,870 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../userguide/datafiles.rst:3
+msgid "Data Files Support"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:5
+msgid ""
+"In the Python ecosystem, the term \"data files\" is used in various complex "
+"scenarios and can have nuanced meanings. For the purposes of this "
+"documentation, we define \"data files\" as non-Python files that are "
+"installed alongside Python modules and packages on the user's machine when "
+"they install a :term:`distribution <Distribution Package>` via :term:`wheel "
+"<Wheel>`."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:11
+msgid ""
+"These files are typically intended for use at **runtime** by the package "
+"itself or to influence the behavior of other packages or systems."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:14
+msgid ""
+"Old packaging installation methods in the Python ecosystem have "
+"traditionally allowed installation of \"data files\", which are placed in a "
+"platform-specific location.  However, the most common use case for data "
+"files distributed with a package is for use *by* the package, usually by "
+"including the data files **inside the package directory**."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:20
+msgid ""
+"Setuptools focuses on this most common type of data files and offers three "
+"ways of specifying which files should be included in your packages, as "
+"described in the following section."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:26
+msgid "Configuration Options"
+msgstr "組態選項"
+
+#: ../../../userguide/datafiles.rst:32
+msgid "1. ``include_package_data``"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:34
+msgid "First, you can use the ``include_package_data`` keyword."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:36
+msgid "For example, if the package tree looks like this::"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:38 ../../../userguide/datafiles.rst:128
+msgid ""
+"project_root_directory\n"
+"├── setup.py        # and/or setup.cfg, pyproject.toml\n"
+"└── src\n"
+"    └── mypkg\n"
+"        ├── __init__.py\n"
+"        ├── data1.rst\n"
+"        ├── data2.rst\n"
+"        ├── data1.txt\n"
+"        └── data2.txt"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:48
+msgid "When **at least one** of the following conditions are met:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:50
+msgid ""
+"These files are included via the :ref:`MANIFEST.in <Using MANIFEST.in>` "
+"file, like so::"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:53
+msgid ""
+"include src/mypkg/*.txt\n"
+"include src/mypkg/*.rst"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:56
+msgid ""
+"They are being tracked by a revision control system such as Git, Mercurial "
+"or SVN, **AND** you have configured an appropriate plugin such as :pypi:"
+"`setuptools-scm` or :pypi:`setuptools-svn`. (See the section below on :ref:"
+"`Adding Support for Revision Control Systems` for information on how to "
+"configure such plugins.)"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:62
+msgid ""
+"then all the ``.txt`` and ``.rst`` files will be included into the source "
+"distribution."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:65
+msgid ""
+"To further include them into the ``wheels``, you can use the "
+"``include_package_data`` keyword:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:70
+msgid ""
+"[tool.setuptools]\n"
+"# ...\n"
+"# By default, include-package-data is true in pyproject.toml,\n"
+"# so you do NOT have to specify this line.\n"
+"include-package-data = true\n"
+"\n"
+"[tool.setuptools.packages.find]\n"
+"where = [\"src\"]"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:83
+msgid ""
+"[options]\n"
+"# ...\n"
+"packages = find:\n"
+"package_dir =\n"
+"    = src\n"
+"include_package_data = True\n"
+"\n"
+"[options.packages.find]\n"
+"where = src"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:97
+msgid ""
+"from setuptools import setup, find_packages\n"
+"setup(\n"
+"    # ...,\n"
+"    packages=find_packages(where=\"src\"),\n"
+"    package_dir={\"\": \"src\"},\n"
+"    include_package_data=True\n"
+")"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:108
+msgid ""
+"The default value for ``tool.setuptools.include-package-data`` is ``true`` "
+"when projects are configured via ``pyproject.toml``. This behaviour differs "
+"from ``setup.cfg`` and ``setup.py`` (where ``include_package_data`` is "
+"``False`` by default), which was not changed to ensure backwards "
+"compatibility with existing projects."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:118
+msgid "2. ``package_data``"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:120
+msgid ""
+"By default, ``include_package_data`` considers **all** non ``.py`` files "
+"found inside the package directory (``src/mypkg`` in this case) as data "
+"files, and includes those that satisfy (at least) one of the above two "
+"conditions into the source distribution, and consequently in the "
+"installation of your package. If you want finer-grained control over what "
+"files are included, then you can also use the ``package_data`` keyword. For "
+"example, if the package tree looks like this::"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:138
+msgid ""
+"then you can use the following configuration to capture the ``.txt`` and ``."
+"rst`` files as data files:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:143
+msgid ""
+"[tool.setuptools.packages.find]\n"
+"where = [\"src\"]\n"
+"\n"
+"[tool.setuptools.package-data]\n"
+"mypkg = [\"*.txt\", \"*.rst\"]"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:153
+msgid ""
+"[options]\n"
+"# ...\n"
+"packages = find:\n"
+"package_dir =\n"
+"    = src\n"
+"\n"
+"[options.packages.find]\n"
+"where = src\n"
+"\n"
+"[options.package_data]\n"
+"mypkg =\n"
+"    *.txt\n"
+"    *.rst"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:171
+msgid ""
+"from setuptools import setup, find_packages\n"
+"setup(\n"
+"    # ...,\n"
+"    packages=find_packages(where=\"src\"),\n"
+"    package_dir={\"\": \"src\"},\n"
+"    package_data={\"mypkg\": [\"*.txt\", \"*.rst\"]}\n"
+")"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:181
+msgid ""
+"The ``package_data`` argument is a dictionary that maps from package names "
+"to lists of glob patterns. Note that the data files specified using the "
+"``package_data`` option neither require to be included within a :ref:"
+"`MANIFEST.in <Using MANIFEST.in>` file, nor require to be added by a "
+"revision control system plugin."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:187
+msgid ""
+"If your glob patterns use paths, you *must* use a forward slash (``/``) as "
+"the path separator, even if you are on Windows. ``setuptools`` automatically "
+"converts slashes to appropriate platform-specific separators at build time."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:192
+msgid ""
+"Glob patterns do not automatically match dotfiles, i.e., directory or file "
+"names starting with a dot (``.``). To include such files, you must "
+"explicitly start the pattern with a dot, e.g. ``.*`` to match ``.gitignore``."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:196
+msgid ""
+"If you have multiple top-level packages and a common pattern of data files "
+"for all these packages, for example::"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:199
+msgid ""
+"project_root_directory\n"
+"├── setup.py        # and/or setup.cfg, pyproject.toml\n"
+"└── src\n"
+"    ├── mypkg1\n"
+"    │   ├── data1.rst\n"
+"    │   ├── data1.txt\n"
+"    │   └── __init__.py\n"
+"    └── mypkg2\n"
+"        ├── data2.txt\n"
+"        └── __init__.py"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:210
+msgid ""
+"Here, both packages ``mypkg1`` and ``mypkg2`` share a common pattern of "
+"having ``.txt`` data files. However, only ``mypkg1`` has ``.rst`` data "
+"files. In such a case, if you want to use the ``package_data`` option, the "
+"following configuration will work:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:216
+msgid ""
+"[tool.setuptools.packages.find]\n"
+"where = [\"src\"]\n"
+"\n"
+"[tool.setuptools.package-data]\n"
+"\"*\" = [\"*.txt\"]\n"
+"mypkg1 = [\"data1.rst\"]"
+msgstr ""
+"[tool.setuptools.packages.find]\n"
+"where = [\"src\"]\n"
+"\n"
+"[tool.setuptools.package-data]\n"
+"\"*\" = [\"*.txt\"]\n"
+"mypkg1 = [\"data1.rst\"]"
+
+#: ../../../userguide/datafiles.rst:227
+msgid ""
+"[options]\n"
+"packages = find:\n"
+"package_dir =\n"
+"    = src\n"
+"\n"
+"[options.packages.find]\n"
+"where = src\n"
+"\n"
+"[options.package_data]\n"
+"* =\n"
+"  *.txt\n"
+"mypkg1 =\n"
+"  data1.rst"
+msgstr ""
+"[options]\n"
+"packages = find:\n"
+"package_dir =\n"
+"    = src\n"
+"\n"
+"[options.packages.find]\n"
+"where = src\n"
+"\n"
+"[options.package_data]\n"
+"* =\n"
+"  *.txt\n"
+"mypkg1 =\n"
+"  data1.rst"
+
+#: ../../../userguide/datafiles.rst:245
+msgid ""
+"from setuptools import setup, find_packages\n"
+"setup(\n"
+"    # ...,\n"
+"    packages=find_packages(where=\"src\"),\n"
+"    package_dir={\"\": \"src\"},\n"
+"    package_data={\"\": [\"*.txt\"], \"mypkg1\": [\"data1.rst\"]},\n"
+")"
+msgstr ""
+"from setuptools import setup, find_packages\n"
+"setup(\n"
+"    # ...,\n"
+"    packages=find_packages(where=\"src\"),\n"
+"    package_dir={\"\": \"src\"},\n"
+"    package_data={\"\": [\"*.txt\"], \"mypkg1\": [\"data1.rst\"]},\n"
+")"
+
+#: ../../../userguide/datafiles.rst:255
+msgid ""
+"Notice that if you list patterns in ``package_data`` under the empty string "
+"``\"\"`` in ``setup.py``, and the asterisk ``*`` in ``setup.cfg`` and "
+"``pyproject.toml``, these patterns are used to find files in every package. "
+"For example, we use ``\"\"`` or ``*`` to indicate that the ``.txt`` files "
+"from all packages should be captured as data files. These placeholders are "
+"treated as a special case, ``setuptools`` **do not** support glob patterns "
+"on package names for this configuration (patterns are only supported on the "
+"file paths). Also note how we can continue to specify patterns for "
+"individual packages, i.e. we specify that ``data1.rst`` from ``mypkg1`` "
+"alone should be captured as well."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:266
+msgid ""
+"When building an ``sdist``, the data files are also drawn from the "
+"``package_name.egg-info/SOURCES.txt`` file which works as a form of cache. "
+"So make sure that this file is removed if ``package_data`` is updated, "
+"before re-building the package."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:272
+msgid ""
+"In Python any directory is considered a package (even if it does not contain "
+"``__init__.py``, see *native namespaces packages* on :doc:`PyPUG:guides/"
+"packaging-namespace-packages`). Therefore, if you are not relying on :doc:"
+"`automatic discovery </userguide/package_discovery>`, you *SHOULD* ensure "
+"that **all** packages (including the ones that don't contain any Python "
+"files) are included in the ``packages`` configuration (see :doc:`/userguide/"
+"package_discovery` for more information)."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:280
+msgid ""
+"Moreover, it is advisable to use full packages name using the dot notation "
+"instead of a nested path, to avoid error prone configurations. Please check :"
+"ref:`section subdirectories <subdir-data-files>` below."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:288
+msgid "3. ``exclude_package_data``"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:290
+msgid ""
+"Sometimes, the ``include_package_data`` or ``package_data`` options alone "
+"aren't sufficient to precisely define what files you want included. For "
+"example, consider a scenario where you have ``include_package_data=True``, "
+"and you are using a revision control system with an appropriate plugin. "
+"Sometimes developers add directory-specific marker files (such as ``."
+"gitignore``, ``.gitkeep``, ``.gitattributes``, or ``.hgignore``), these "
+"files are probably being tracked by the revision control system, and "
+"therefore by default they will be included when the package is installed."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:299
+msgid ""
+"Supposing you want to prevent these files from being included in the "
+"installation (they are not relevant to Python or the package), then you "
+"could use the ``exclude_package_data`` option:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:305
+msgid ""
+"[tool.setuptools.packages.find]\n"
+"where = [\"src\"]\n"
+"\n"
+"[tool.setuptools.exclude-package-data]\n"
+"mypkg = [\".gitattributes\"]"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:315
+msgid ""
+"[options]\n"
+"# ...\n"
+"packages = find:\n"
+"package_dir =\n"
+"    = src\n"
+"include_package_data = True\n"
+"\n"
+"[options.packages.find]\n"
+"where = src\n"
+"\n"
+"[options.exclude_package_data]\n"
+"mypkg =\n"
+"    .gitattributes"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:333
+msgid ""
+"from setuptools import setup, find_packages\n"
+"setup(\n"
+"    # ...,\n"
+"    packages=find_packages(where=\"src\"),\n"
+"    package_dir={\"\": \"src\"},\n"
+"    include_package_data=True,\n"
+"    exclude_package_data={\"mypkg\": [\".gitattributes\"]},\n"
+")"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:344
+msgid ""
+"The ``exclude_package_data`` option is a dictionary mapping package names to "
+"lists of wildcard patterns, just like the ``package_data`` option.  And, "
+"just as with that option, you can use the empty string key ``\"\"`` in "
+"``setup.py`` and the asterisk ``*`` in ``setup.cfg`` and ``pyproject.toml`` "
+"to match all top-level packages."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:349
+msgid ""
+"Any files that match these patterns will be *excluded* from installation, "
+"even if they were listed in ``package_data`` or were included as a result of "
+"using ``include_package_data``."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:356
+msgid "Interplay between these keywords"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:358
+msgid ""
+"Meanwhile, to further clarify the interplay between these three keywords, to "
+"include certain data file into the source distribution, the following logic "
+"condition has to be met::"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:362
+msgid "MANIFEST.in or (package-data and not exclude-package-data)"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:364
+msgid "In plain language, the file should be either:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:366
+msgid "included in ``MANIFEST.in``; or"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:368
+msgid ""
+"selected by ``package-data`` AND not excluded by ``exclude-package-data``."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:370
+msgid "To include some data file into the ``.whl``::"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:372
+msgid ""
+"(not exclude-package-data) and ((include-package-data and MANIFEST.in) or "
+"package-data)"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:374
+msgid ""
+"In other words, the file should not be excluded by ``exclude-package-data`` "
+"(highest priority), AND should be either:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:377
+msgid "selected by ``package-data``; or"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:379
+msgid "selected by ``MANIFEST.in`` AND use ``include-package-data = true``."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:382
+msgid "Summary"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:384
+msgid "In summary, the three options allow you to:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:386
+msgid "``include_package_data``"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:387
+msgid ""
+"Accept all data files and directories matched by :ref:`MANIFEST.in <Using "
+"MANIFEST.in>` or added by a :ref:`plugin <Adding Support for Revision "
+"Control Systems>`."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:391
+msgid "``package_data``"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:392
+msgid ""
+"Specify additional patterns to match files that may or may not be matched "
+"by :ref:`MANIFEST.in <Using MANIFEST.in>` or added by a :ref:`plugin <Adding "
+"Support for Revision Control Systems>`."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:396
+msgid "``exclude_package_data``"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:397
+msgid ""
+"Specify patterns for data files and directories that should *not* be "
+"included when a package is installed, even if they would otherwise have been "
+"included due to the use of the preceding options."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:402
+msgid ""
+"Due to the way the build process works, a data file that you include in your "
+"project and then stop including may be \"orphaned\" in your project's build "
+"directories, requiring you to manually deleting them. This may also be "
+"important for your users and contributors if they track intermediate "
+"revisions of your project using Subversion; be sure to let them know when "
+"you make changes that remove files from inclusion so they can also manually "
+"delete them."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:410
+msgid ""
+"See also troubleshooting information in :ref:`Caching and Troubleshooting`."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:416
+msgid "Subdirectory for Data Files"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:418
+msgid ""
+"A common pattern is where some (or all) of the data files are placed under a "
+"separate subdirectory. For example::"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:421
+msgid ""
+"project_root_directory\n"
+"├── setup.py        # and/or setup.cfg, pyproject.toml\n"
+"└── src\n"
+"    └── mypkg\n"
+"        ├── data\n"
+"        │   ├── data1.rst\n"
+"        │   └── data2.rst\n"
+"        ├── __init__.py\n"
+"        ├── data1.txt\n"
+"        └── data2.txt"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:432
+msgid ""
+"Here, the ``.rst`` files are placed under a ``data`` subdirectory inside "
+"``mypkg``, while the ``.txt`` files are directly under ``mypkg``."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:435
+msgid ""
+"In this case, the recommended approach is to treat ``data`` as a namespace "
+"package (refer :pep:`420`). This way, you can rely on the same methods "
+"described above, using either :ref:`package-data` or :ref:`include-package-"
+"data`. For the sake of completeness, we include below configuration examples "
+"for the subdirectory structure, but please refer to the detailed information "
+"in the previous sections of this document."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:442
+msgid "With :ref:`package-data`, the configuration might look like this:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:446
+msgid ""
+"# Scanning for namespace packages in the ``src`` directory is true by\n"
+"# default in pyproject.toml, so you do NOT need to include the\n"
+"# `tool.setuptools.packages.find` if it looks like the following:\n"
+"# [tool.setuptools.packages.find]\n"
+"# namespaces = true\n"
+"# where = [\"src\"]\n"
+"\n"
+"[tool.setuptools.package-data]\n"
+"mypkg = [\"*.txt\"]\n"
+"\"mypkg.data\" = [\"*.rst\"]"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:461
+msgid ""
+"[options]\n"
+"# ...\n"
+"packages = find_namespace:\n"
+"package_dir =\n"
+"    = src\n"
+"\n"
+"[options.packages.find]\n"
+"where = src\n"
+"\n"
+"[options.package_data]\n"
+"mypkg =\n"
+"    *.txt\n"
+"mypkg.data =\n"
+"    *.rst"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:480
+msgid ""
+"from setuptools import setup, find_namespace_packages\n"
+"setup(\n"
+"    # ...,\n"
+"    packages=find_namespace_packages(where=\"src\"),\n"
+"    package_dir={\"\": \"src\"},\n"
+"    package_data={\n"
+"        \"mypkg\": [\"*.txt\"],\n"
+"        \"mypkg.data\": [\"*.rst\"],\n"
+"    }\n"
+")"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:493
+msgid ""
+"In other words, we allow ``setuptools`` to scan for namespace packages in "
+"the ``src`` directory, which enables the ``data`` directory to be "
+"identified, and then, we separately specify data files for the root package "
+"``mypkg``, and the namespace package ``data`` under the package ``mypkg``."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:498
+msgid ""
+"Alternatively, you can also rely on :ref:`include-package-data`. Note that "
+"this is the default behaviour in ``pyproject.toml``, but you need to "
+"manually enable scanning of namespace packages in ``setup.cfg`` or ``setup."
+"py``:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:504
+msgid ""
+"[tool.setuptools]\n"
+"# ...\n"
+"# By default, include-package-data is true in pyproject.toml, so you do\n"
+"# NOT have to specify this line.\n"
+"include-package-data = true\n"
+"\n"
+"[tool.setuptools.packages.find]\n"
+"# scanning for namespace packages is true by default in pyproject.toml, so\n"
+"# you need NOT include this configuration.\n"
+"namespaces = true\n"
+"where = [\"src\"]"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:520
+msgid ""
+"[options]\n"
+"packages = find_namespace:\n"
+"package_dir =\n"
+"    = src\n"
+"include_package_data = True\n"
+"\n"
+"[options.packages.find]\n"
+"where = src"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:533
+msgid ""
+"from setuptools import setup, find_namespace_packages\n"
+"setup(\n"
+"    # ... ,\n"
+"    packages=find_namespace_packages(where=\"src\"),\n"
+"    package_dir={\"\": \"src\"},\n"
+"    include_package_data=True,\n"
+")"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:543
+msgid ""
+"To avoid common mistakes with :ref:`include-package-data`, please ensure :"
+"ref:`MANIFEST.in <Using MANIFEST.in>` is properly set or use a revision "
+"control system plugin (see :doc:`/userguide/miscellaneous`)."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:551
+msgid "Accessing Data Files at Runtime"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:553
+msgid ""
+"Typically, existing programs manipulate a package's ``__file__`` attribute "
+"in order to find the location of data files. For example, if you have a "
+"structure like this::"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:557
+msgid ""
+"project_root_directory\n"
+"├── setup.py        # and/or setup.cfg, pyproject.toml\n"
+"└── src\n"
+"    └── mypkg\n"
+"        ├── data\n"
+"        │   └── data1.txt\n"
+"        ├── __init__.py\n"
+"        └── foo.py"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:566
+msgid ""
+"Then, in ``mypkg/foo.py``, you may try something like this in order to "
+"access ``mypkg/data/data1.txt``:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:569
+msgid ""
+"import os\n"
+"data_path = os.path.join(os.path.dirname(__file__), 'data', 'data1.txt')\n"
+"with open(data_path, 'r') as data_file:\n"
+"     ..."
+msgstr ""
+"import os\n"
+"data_path = os.path.join(os.path.dirname(__file__), 'data', 'data1.txt')\n"
+"with open(data_path, 'r') as data_file:\n"
+"     ..."
+
+#: ../../../userguide/datafiles.rst:576
+msgid ""
+"However, this manipulation isn't compatible with :pep:`302`-based import "
+"hooks, including importing from zip files and Python Eggs.  It is strongly "
+"recommended that, if you are using data files, you should use :mod:"
+"`importlib.resources` to access them. In this case, you would do something "
+"like this:"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:581
+msgid ""
+"from importlib.resources import files\n"
+"data_text = files('mypkg.data').joinpath('data1.txt').read_text()"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:586
+msgid ""
+":mod:`importlib.resources` was added to Python 3.7. However, the API "
+"illustrated in this code (using ``files()``) was added only in Python 3.9, "
+"[#files_api]_ and support for accessing data files via namespace packages "
+"was added only in Python 3.10 [#namespace_support]_ (the ``data`` "
+"subdirectory is a namespace package under the root package ``mypkg``). "
+"Therefore, you may find this code to work only in Python 3.10 (and above). "
+"For other versions of Python, you are recommended to use the :pypi:"
+"`importlib-resources` backport which provides the latest version of this "
+"library. In this case, the only change that has to be made to the above code "
+"is to replace ``importlib.resources`` with ``importlib_resources``, i.e."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:595
+msgid ""
+"from importlib_resources import files\n"
+"..."
+msgstr ""
+"from importlib_resources import files\n"
+"..."
+
+#: ../../../userguide/datafiles.rst:600
+msgid "See :doc:`importlib-resources:using` for detailed instructions."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:602
+msgid ""
+"Files inside the package directory should be *read-only* to avoid a series "
+"of common problems (e.g. when multiple users share a common Python "
+"installation, when the package is loaded from a zip file, or when multiple "
+"instances of a Python application run in parallel)."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:607
+msgid ""
+"If your Python package needs to write to a file for shared data or "
+"configuration, you can use standard platform/OS-specific system directories, "
+"such as ``~/.local/config/$appname`` or ``/usr/share/$appname/$version`` "
+"(Linux specific) [#system-dirs]_. A common approach is to add a read-only "
+"template file to the package directory that is then copied to the correct "
+"system directory if no pre-existing file is found."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:616
+msgid "Data Files from Plugins and Extensions"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:618
+msgid ""
+"You can resort to a :doc:`native/implicit namespace package <PyPUG:guides/"
+"packaging-namespace-packages>` (as a container for files) if you want "
+"plugins and extensions to your package to contribute with package data "
+"files. This way, all files will be listed during runtime when :doc:`using "
+"importlib.resources <importlib-resources:using>`. Note that, although not "
+"strictly guaranteed, mainstream Python package managers, like :pypi:`pip` "
+"and derived tools, will install files belong to multiple distributions that "
+"share a same namespace into the same directory in the file system. This "
+"means that the overhead for :mod:`importlib.resources` will be minimum."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:630
+msgid "Non-Package Data Files"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:632
+msgid ""
+"Historically, ``setuptools`` by way of ``easy_install`` would encapsulate "
+"data files from the distribution into the egg (see `the old docs <https://"
+"github.com/pypa/setuptools/blob/52aacd5b276fedd6849c3a648a0014f5da563e93/"
+"docs/setuptools.txt#L970-L1001>`_). As eggs are deprecated and pip-based "
+"installs fall back to the platform-specific location for installing data "
+"files, there is no supported facility to reliably retrieve these resources."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:638
+msgid ""
+"Instead, the PyPA recommends that any data files you wish to be accessible "
+"at run time be included **inside the package**."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:644
+msgid ""
+"These locations can be discovered with the help of third-party libraries "
+"such as :pypi:`platformdirs`."
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:647
+msgid ""
+"Reference: https://importlib-resources.readthedocs.io/en/latest/using."
+"html#migrating-from-legacy"
+msgstr ""
+
+#: ../../../userguide/datafiles.rst:649
+msgid ""
+"Reference: https://github.com/python/importlib_resources/"
+"pull/196#issuecomment-734520374"
+msgstr ""

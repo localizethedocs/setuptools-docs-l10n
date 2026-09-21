@@ -1,0 +1,518 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../userguide/dependency_management.rst:3
+msgid "Dependencies Management in Setuptools"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:5
+msgid ""
+"There are three types of dependency styles offered by setuptools: 1) build "
+"system requirement, 2) required dependency and 3) optional dependency."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:9
+msgid ""
+"Each dependency, regardless of type, needs to be specified according to :pep:"
+"`508` and :pep:`440`. This allows adding version :pep:`range restrictions "
+"<440#version-specifiers>` and :ref:`environment markers <environment-"
+"markers>`."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:18
+msgid "Build system requirement"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:20
+msgid ""
+"After organizing all the scripts and files and getting ready for packaging, "
+"there needs to be a way to specify what programs and libraries (build "
+"backend) are actually needed to build the package for distribution. For "
+"Setuptools, the requisite library is ``setuptools``. Specify the build "
+"backend in a ``pyproject.toml`` file (see also :doc:`/userguide/quickstart` "
+"or :doc:`/build_meta`):"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:27
+msgid ""
+"[build-system]\n"
+"requires = [\"setuptools\"]\n"
+"#..."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:33
+msgid ""
+"Also include any other ``setuptools`` plugins (e.g., :pypi:"
+"`setuptools_scm`, :pypi:`setuptools-golang`, :pypi:`setuptools-rust`) or "
+"build-time dependency (e.g., :pypi:`Cython`, :pypi:`cppy`, :pypi:`pybind11`)."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:37
+msgid ""
+"[build-system]\n"
+"requires = [\"setuptools\", \"cython\", \"setuptools_scm\"]"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:43
+msgid ""
+"If the project depends on a feature introduced in a specific version of "
+"Setuptools, it is good practice to specify it as a lower bound:"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:46
+msgid ""
+"[build-system]\n"
+"requires = [\"setuptools >= 61.2\"]"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:51
+msgid ""
+"Some may be tempted to also include an upper-bound for yet unreleased major "
+"versions (e.g. ``setuptools <= 70``) or pin to a specific version (e.g. "
+"``setuptools == 70.0.4``) in order to avoid the project being uninstallable "
+"should those backward-incompatible changes affect this release of the "
+"project. Setuptools maintainers recommend strongly against this "
+"precautionary approach. The team primarily maintains one release, the latest "
+"monotonically-increasing release, and encourages users to use that latest "
+"release (work at HEAD). As a result, the team is cognizant of and takes "
+"responsibility for making backward-incompatible changes and aims to mitigate "
+"the impact of any breaking changes prior to releasing that change. By "
+"pinning against an unreleased version, it causes toil (maintenance burden) "
+"for each and every project that does the pinning (and the consumers that use "
+"it) and increases the risk of erosion if maintenance is unsustained. This "
+"tradeoff between reproducibility and compatibility is especially stark "
+"because Setuptools frequently releases backward-incompatible releases for a "
+"variety of reasons, many of which won't affect a given project."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:69
+msgid ""
+"In previous versions of ``setuptools``, the ``setup_requires`` keyword "
+"performed a similar function but is now considered deprecated in favor of "
+"the :pep:`517` style described above. To peek into how this legacy keyword "
+"is used, consult our :doc:`guide on deprecated practice (WIP) </deprecated/"
+"index>`."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:79
+msgid "Declaring required dependency"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:80
+msgid ""
+"This is where a package declares its core dependencies, without which it "
+"won't be able to run. ``setuptools`` supports automatically downloading and "
+"installing these dependencies when the package is installed. Although there "
+"is more finesse to it, let's start with a simple example."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:87
+msgid ""
+"[project]\n"
+"# ...\n"
+"dependencies = [\n"
+"    \"docutils\",\n"
+"    \"BazSpam == 1.1\",\n"
+"]\n"
+"# ..."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:99
+msgid ""
+"[options]\n"
+"#...\n"
+"install_requires =\n"
+"    docutils\n"
+"    BazSpam ==1.1"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:109
+msgid ""
+"setup(\n"
+"    ...,\n"
+"    install_requires=[\n"
+"        'docutils',\n"
+"        'BazSpam ==1.1',\n"
+"    ],\n"
+")"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:120
+msgid ""
+"When your project is installed (e.g., using :pypi:`pip`), all of the "
+"dependencies not already installed will be located (via `PyPI`_), "
+"downloaded, built (if necessary), and installed and 2) Any scripts in your "
+"project will be installed with wrappers that verify the availability of the "
+"specified dependencies at runtime."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:129
+msgid "Platform specific dependencies"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:130
+msgid ""
+"Setuptools offers the capability to evaluate certain conditions before "
+"blindly installing everything listed in ``install_requires``. This is great "
+"for platform specific dependencies. For example, the ``enum`` package was "
+"added in Python 3.4, therefore, package that depends on it can elect to "
+"install it only when the Python version is older than 3.4. To accomplish this"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:138
+msgid ""
+"[project]\n"
+"# ...\n"
+"dependencies = [\n"
+"    \"enum34; python_version<'3.4'\",\n"
+"]\n"
+"# ..."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:149
+msgid ""
+"[options]\n"
+"#...\n"
+"install_requires =\n"
+"    enum34;python_version<'3.4'"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:158
+msgid ""
+"setup(\n"
+"    ...,\n"
+"    install_requires=[\n"
+"        \"enum34;python_version<'3.4'\",\n"
+"    ],\n"
+")"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:167
+msgid ""
+"Similarly, if you also wish to declare ``pywin32`` with a minimal version of "
+"1.0 and only install it if the user is using a Windows operating system:"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:172
+msgid ""
+"[project]\n"
+"# ...\n"
+"dependencies = [\n"
+"    \"enum34; python_version<'3.4'\",\n"
+"    \"pywin32 >= 1.0; platform_system=='Windows'\",\n"
+"]\n"
+"# ..."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:184
+msgid ""
+"[options]\n"
+"#...\n"
+"install_requires =\n"
+"    enum34;python_version<'3.4'\n"
+"    pywin32 >= 1.0;platform_system=='Windows'"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:194
+msgid ""
+"setup(\n"
+"    ...,\n"
+"    install_requires=[\n"
+"        \"enum34;python_version<'3.4'\",\n"
+"        \"pywin32 >= 1.0;platform_system=='Windows'\",\n"
+"    ],\n"
+")"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:204
+msgid ""
+"The environmental markers that may be used for testing platform types are "
+"detailed in :pep:`508`."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:208
+msgid ""
+"Alternatively, a :ref:`backend wrapper <backend-wrapper>` can be used for "
+"specific use cases where environment markers aren't sufficient."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:213
+msgid "Direct URL dependencies"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:216
+msgid ""
+"`PyPI`_ and other standards-conformant package indices **do not** accept "
+"packages that declare dependencies using direct URLs. ``pip`` will accept "
+"them when installing packages from the local filesystem or from another URL, "
+"however."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:221
+msgid ""
+"Dependencies that are not available on a package index but can be downloaded "
+"elsewhere in the form of a source repository or archive may be specified "
+"using a variant of :pep:`PEP 440's direct references <440#direct-"
+"references>`:"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:227
+msgid ""
+"[project]\n"
+"# ...\n"
+"dependencies = [\n"
+"    \"Package-A @ git+https://example.net/package-a.git@main\",\n"
+"    \"Package-B @ https://example.net/archives/package-b.whl\",\n"
+"]"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:238
+msgid ""
+"[options]\n"
+"#...\n"
+"install_requires =\n"
+"    Package-A @ git+https://example.net/package-a.git@main\n"
+"    Package-B @ https://example.net/archives/package-b.whl"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:248
+msgid ""
+"setup(\n"
+"    install_requires=[\n"
+"       \"Package-A @ git+https://example.net/package-a.git@main\",\n"
+"       \"Package-B @ https://example.net/archives/package-b.whl\",\n"
+"    ],\n"
+"    ...,\n"
+")"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:258
+msgid ""
+"For source repository URLs, a list of supported protocols and VCS-specific "
+"features such as selecting certain branches or tags can be found in pip's "
+"documentation on `VCS support <https://pip.pypa.io/en/latest/topics/vcs-"
+"support/>`_. Supported formats for archive URLs are sdists and wheels."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:265
+msgid "Optional dependencies"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:266
+msgid ""
+"Setuptools allows you to declare dependencies that are not installed by "
+"default. This effectively means that you can create a \"variant\" of your "
+"package with a set of extra functionalities."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:270
+msgid ""
+"For example, let's consider a ``Package-A`` that offers optional PDF support "
+"and requires two other dependencies for it to work:"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:275
+msgid ""
+"[project]\n"
+"name = \"Package-A\"\n"
+"# ...\n"
+"[project.optional-dependencies]\n"
+"PDF = [\"ReportLab>=1.2\", \"RXP\"]"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:285
+msgid ""
+"[metadata]\n"
+"name = Package-A\n"
+"\n"
+"[options.extras_require]\n"
+"PDF =\n"
+"    ReportLab>=1.2\n"
+"    RXP"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:298
+msgid ""
+"setup(\n"
+"    name=\"Package-A\",\n"
+"    ...,\n"
+"    extras_require={\n"
+"        \"PDF\": [\"ReportLab>=1.2\", \"RXP\"],\n"
+"    },\n"
+")"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:311
+msgid ""
+"It is also convenient to declare optional requirements for ancillary tasks "
+"such as running tests and or building docs."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:314
+msgid ""
+"The name ``PDF`` is an arbitrary :pep:`identifier <685>` of such a list of "
+"dependencies, to which other components can refer and have them installed."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:317
+msgid ""
+"A use case for this approach is that other package can use this \"extra\" "
+"for their own dependencies. For example, if ``Package-B`` needs ``Package-"
+"A`` with PDF support installed, it might declare the dependency like this:"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:323
+msgid ""
+"[project]\n"
+"name = \"Package-B\"\n"
+"# ...\n"
+"dependencies = [\n"
+"    \"Package-A[PDF]\"\n"
+"]"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:334
+msgid ""
+"[metadata]\n"
+"name = Package-B\n"
+"#...\n"
+"\n"
+"[options]\n"
+"#...\n"
+"install_requires =\n"
+"    Package-A[PDF]"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:347
+msgid ""
+"setup(\n"
+"    name=\"Package-B\",\n"
+"    install_requires=[\"Package-A[PDF]\"],\n"
+"    ...,\n"
+")"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:355
+msgid ""
+"This will cause ``ReportLab`` to be installed along with ``Package-A``, if "
+"``Package-B`` is installed -- even if ``Package-A`` was already installed.  "
+"In this way, a project can encapsulate groups of optional \"downstream "
+"dependencies\" under a feature name, so that packages that depend on it "
+"don't have to know what the downstream dependencies are.  If a later version "
+"of ``Package-A`` builds in PDF support and no longer needs ``ReportLab``, or "
+"if it ends up needing other dependencies besides ``ReportLab`` in order to "
+"provide PDF support, ``Package-B``'s setup information does not need to "
+"change, but the right packages will still be installed if needed."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:365
+msgid ""
+"Best practice: if a project ends up no longer needing any other packages to "
+"support a feature, it should keep an empty requirements list for that "
+"feature in its ``extras_require`` argument, so that packages depending on "
+"that feature don't break (due to an invalid feature name)."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:371
+msgid ""
+"Historically ``setuptools`` also used to support extra dependencies in "
+"console scripts, for example:"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:376
+msgid ""
+"[metadata]\n"
+"name = Package-A\n"
+"#...\n"
+"\n"
+"[options]\n"
+"#...\n"
+"entry_points=\n"
+"    [console_scripts]\n"
+"    rst2pdf = project_a.tools.pdfgen [PDF]\n"
+"    rst2html = project_a.tools.htmlgen"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:391
+msgid ""
+"setup(\n"
+"    name=\"Package-A\",\n"
+"    ...,\n"
+"    entry_points={\n"
+"        \"console_scripts\": [\n"
+"            \"rst2pdf = project_a.tools.pdfgen [PDF]\",\n"
+"            \"rst2html = project_a.tools.htmlgen\",\n"
+"        ],\n"
+"    },\n"
+")"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:404
+msgid ""
+"This syntax indicates that the entry point (in this case a console script) "
+"is only valid when the PDF extra is installed. It is up to the installer to "
+"determine how to handle the situation where PDF was not indicated (e.g., "
+"omit the console script, provide a warning when attempting to load the entry "
+"point, assume the extras are present and let the implementation fail later)."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:411
+msgid ""
+"**However**, ``pip`` and other tools might not support this use case for "
+"extra dependencies, therefore this practice is considered **deprecated**. "
+"See :doc:`PyPUG:specifications/entry-points`."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:417
+msgid "Python requirement"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:418
+msgid ""
+"In some cases, you might need to specify the minimum required python "
+"version. This can be configured as shown in the example below."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:423
+msgid ""
+"[project]\n"
+"name = \"Package-B\"\n"
+"requires-python = \">=3.6\"\n"
+"# ..."
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:432
+msgid ""
+"[metadata]\n"
+"name = Package-B\n"
+"#...\n"
+"\n"
+"[options]\n"
+"#...\n"
+"python_requires = >=3.6"
+msgstr ""
+
+#: ../../../userguide/dependency_management.rst:444
+msgid ""
+"setup(\n"
+"    name=\"Package-B\",\n"
+"    python_requires=\">=3.6\",\n"
+"    ...,\n"
+")"
+msgstr ""

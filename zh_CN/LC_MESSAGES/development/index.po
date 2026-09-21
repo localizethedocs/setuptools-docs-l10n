@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../development/index.rst:3
+msgid "Development on Setuptools"
+msgstr ""
+
+#: ../../../development/index.rst:5
+msgid ""
+"Setuptools is maintained by the Python community under the Python Packaging "
+"Authority (PyPA) and led by Jason R. Coombs."
+msgstr ""
+
+#: ../../../development/index.rst:8
+msgid ""
+"This document describes the process by which Setuptools is developed. This "
+"document assumes the reader has some passing familiarity with *using* "
+"setuptools, the ``pkg_resources`` module, and pip.  It does not attempt to "
+"explain basic concepts like inter-project dependencies, nor does it contain "
+"detailed lexical syntax for most file formats.  Neither does it explain "
+"concepts like \"namespace packages\" or \"resources\" in any detail, as all "
+"of these subjects are covered at length in the setuptools developer's guide "
+"and the ``pkg_resources`` reference manual."
+msgstr ""
+
+#: ../../../development/index.rst:18
+msgid ""
+"Instead, this is **internal** documentation for how those concepts and "
+"features are *implemented* in concrete terms.  It is intended for people who "
+"are working on the setuptools code base, who want to be able to troubleshoot "
+"setuptools problems, want to write code that reads the file formats "
+"involved, or want to otherwise tinker with setuptools-generated files and "
+"directories."
+msgstr ""
+
+#: ../../../development/index.rst:25
+msgid ""
+"Note, however, that these are all internal implementation details and are "
+"therefore subject to change; stick to the published API if you don't want to "
+"be responsible for keeping your code from breaking when setuptools changes.  "
+"You have been warned."
+msgstr ""

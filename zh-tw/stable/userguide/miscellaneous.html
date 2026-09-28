@@ -1,0 +1,499 @@
+<!doctype html>
+<html class="no-js" lang="zh-TW" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="../_static/logo-symbol-only.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16 24x24 32x32 48x48" href="../_static/favicon.svg"><link rel="index" title="索引" href="../genindex.html"><link rel="search" title="搜尋" href="../search.html"><link rel="next" title="Extending or Customizing Setuptools" href="extension.html"><link rel="prev" title="Specifying Your Project&#39;s Version" href="distribution.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/setuptools-docs-l10n/userguide/miscellaneous.html">
+        <link rel="prefetch" href="../_static/logo.svg" as="image">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>控制散佈包中的檔案 - setuptools 83.0.0 說明文件</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --color-brand-primary: #336790;
+  --color-brand-content: #336790;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: #E5B62F;
+  --color-brand-content: #E5B62F;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: #E5B62F;
+  --color-brand-content: #E5B62F;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">setuptools 83.0.0 說明文件</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/logo.svg" alt="Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="搜尋" name="q" aria-label="搜尋">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">連結</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/pypa/setuptools">Home</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/setuptools">PyPI</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">使用者指南</a><input aria-label="Toggle navigation of 使用者指南" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces.html">支援的介面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="package_discovery.html">Package Discovery and Namespace Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dependency_management.html">Setuptools 中的依賴管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development_mode.html">開發模式（又稱「可編輯安裝」）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="entry_point.html">進入點</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datafiles.html">Data Files Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ext_modules.html">建置擴充模組</a></li>
+<li class="toctree-l2"><a class="reference internal" href="distribution.html">Specifying Your Project's Version</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">控制散佈包中的檔案</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#caching-and-troubleshooting">快取與疑難排解</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extension.html">Extending or Customizing Setuptools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="declarative_config.html">Configuring setuptools using <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyproject_config.html">Configuring setuptools using <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../build_meta.html">建置系統支援</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references/keywords.html">關鍵字</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setuptools.html">使用 Setuptools 建置並散佈軟體包</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../roadmap.html">路線圖</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../development/index.html">開發指南</a><input aria-label="Toggle navigation of 開發指南" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../development/developer-guide.html">Developer's Guide for Setuptools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../development/releases.html">發行過程</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../deprecated/index.html">Backward compatibility &amp; deprecated practice</a><input aria-label="Toggle navigation of Backward compatibility &amp; deprecated practice" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/changed_keywords.html">New and Changed <code class="docutils literal notranslate"><span class="pre">setup()</span></code> Keywords</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/dependency_links.html">Specifying dependencies that aren't in PyPI via <code class="docutils literal notranslate"><span class="pre">dependency_links</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/python_eggs.html">The Internal Structure of Python Eggs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/easy_install.html">Easy Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/zip_safe.html">Understanding the <code class="docutils literal notranslate"><span class="pre">zip_safe</span></code> flag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/resource_extraction.html">Automatic Resource Extraction</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../deprecated/distutils/index.html">Distributing Python Modules (Legacy version)</a><input aria-label="Toggle navigation of Distributing Python Modules (Legacy version)" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/introduction.html">1. Distuils 介紹</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/setupscript.html">2. Writing the Setup Script</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/configfile.html">3. Writing the Setup Configuration File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/sourcedist.html">4. Creating a Source Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/builtdist.html">5. Creating Built Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/examples.html">6. Distutils Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/extending.html">7. Extending Distutils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/commandref.html">8. Command Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/apiref.html">9. API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/distutils-legacy.html">Porting from Distutils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/functionalities.html">"Eggsecutable" Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/commands.html">Running <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/pkg_resources.html">Package Discovery and Resource Access using <code class="docutils literal notranslate"><span class="pre">pkg_resources</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/sdist-reproducibility.html">Drawbacks of installing source distributions (<code class="docutils literal notranslate"><span class="pre">sdist</span></code>) and how to improve reproducibility</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html#credits">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../artwork.html">Artwork</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="https://github.com/pypa/setuptools/blob/main/docs/userguide/miscellaneous.rst?plain=true" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div><div class="edit-this-page">
+  <a class="muted-link" href="https://github.com/pypa/setuptools/edit/main/docs/userguide/miscellaneous.rst" rel="edit" title="Edit this page">
+    <svg><use href="#svg-pencil"></use></svg>
+    <span class="visually-hidden">Edit this page</span>
+  </a>
+</div><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="controlling-files-in-the-distribution">
+<span id="id1"></span><h1>控制散佈包中的檔案<a class="headerlink" href="#controlling-files-in-the-distribution" title="連結到這個標頭">¶</a></h1>
+<p>在最常見的使用案例中，<code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 會自動找出發布套件所需的檔案。更精確地說，來源碼散佈包預設包含以下檔案：</p>
+<ul class="simple">
+<li><p>由 <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> 中的 <code class="docutils literal notranslate"><span class="pre">py-modules</span></code> 和 <code class="docutils literal notranslate"><span class="pre">packages</span></code> 設定參數，及/或 <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code>/<code class="docutils literal notranslate"><span class="pre">setup.py</span></code> 中對應參數所隱含的<a class="reference external" href="https://packaging.python.org/en/latest/glossary/#term-Pure-Module" title="(於 Python Packaging User Guide)"><span class="xref std std-term">純 Python 模組</span></a>檔案；</p></li>
+<li><p>在 <code class="docutils literal notranslate"><span class="pre">setup()</span></code> 的 <code class="docutils literal notranslate"><span class="pre">ext_modules</span></code> 或 <code class="docutils literal notranslate"><span class="pre">libraries</span></code> 引數中提到的 C 來源碼檔案；</p></li>
+<li><p>符合下列 glob 模式的檔案：<code class="docutils literal notranslate"><span class="pre">tests/test*.py</span></code>、<code class="docutils literal notranslate"><span class="pre">test/test*.py</span></code>；</p></li>
+<li><p>由 <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> 中的 <code class="docutils literal notranslate"><span class="pre">scripts-files</span></code> 設定參數或 <code class="docutils literal notranslate"><span class="pre">setup.py</span></code>/<code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> 中的 <code class="docutils literal notranslate"><span class="pre">scripts</span></code> 指定的腳本；</p></li>
+<li><p>由 <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> 中的 <code class="docutils literal notranslate"><span class="pre">package-data</span></code> 和 <code class="docutils literal notranslate"><span class="pre">data-files</span></code> 設定參數，及/或 <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code>/<code class="docutils literal notranslate"><span class="pre">setup.py</span></code> 中對應參數所指定的所有檔案；</p></li>
+<li><p>由 <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> 中 <code class="docutils literal notranslate"><span class="pre">license_file</span></code> 選項指定的檔案；</p></li>
+<li><p>由 <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> 中的 <code class="docutils literal notranslate"><span class="pre">license-files</span></code> 設定參數，及/或 <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code>/<code class="docutils literal notranslate"><span class="pre">setup.py</span></code> 中對應參數所指定的所有檔案；請注意，如果你未明確設定此參數，<code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 將包含任何符合下列 glob 模式的檔案：<code class="docutils literal notranslate"><span class="pre">LICEN[CS]E*</span></code>、<code class="docutils literal notranslate"><span class="pre">COPYING*</span></code>、<code class="docutils literal notranslate"><span class="pre">NOTICE*</span></code>、<code class="docutils literal notranslate"><span class="pre">AUTHORS**</span></code>；</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>；</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code>；</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">setup.py</span></code>；</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">README</span></code>、<code class="docutils literal notranslate"><span class="pre">README.txt</span></code>、<code class="docutils literal notranslate"><span class="pre">README.rst</span></code> 或 <code class="docutils literal notranslate"><span class="pre">README.md</span></code>；</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MANIFEST.in</span></code></p></li>
+</ul>
+<p>請注意，上述清單保證在最新穩定版的 <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 中運作。較舊版本的行為可能有所不同。</p>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 v69.0.0 版被加入: </span><code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 預設會嘗試在散佈包中包含型別資訊檔案（<code class="docutils literal notranslate"><span class="pre">.pyi</span></code> 和 <code class="docutils literal notranslate"><span class="pre">py.typed</span></code>，如 <span class="target" id="index-2"></span><a class="pep reference external" href="https://peps.python.org/pep-0561/"><strong>PEP 561</strong></a> 所述），只要這些檔案位於套件目錄內即可（目前還不支援自動處理頂層的 <code class="docutils literal notranslate"><span class="pre">.pyi</span></code> 檔案）。</p>
+<p><em>但請注意，此功能為</em><strong>實驗性功能</strong><em>，未來可能有所變更。</em></p>
+<p>如果你的專案中有 <code class="docutils literal notranslate"><span class="pre">.pyi</span></code> 和 <code class="docutils literal notranslate"><span class="pre">py.typed</span></code> 檔案，但不希望發布它們，你可以透過設定 <a class="reference internal" href="datafiles.html"><span class="doc">exclude-package-data</span></a> 來排除。</p>
+</div>
+</div>
+<p>然而，在建置較複雜的套件時（例如包含非 Python 檔案的套件，或需要使用自訂 C 標頭檔的套件），你可能會發現專案資料夾中的檔案並非全部都會包含在套件的 <a class="reference external" href="https://packaging.python.org/en/latest/glossary/#term-Distribution-Package" title="(於 Python Packaging User Guide)"><span class="xref std std-term">發行封存檔</span></a> 中。</p>
+<p>如果你使用的是 <a class="extlink-wiki reference external" href="https://wikipedia.org/wiki/Revision Control System">版本控制系統</a>，例如 <a class="reference external" href="https://git-scm.com">git</a> 或 <a class="reference external" href="https://www.mercurial-scm.org">mercurial</a>，且你的來源碼散佈包只需要包含你在版本控制中追蹤的檔案，你可以使用 <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 的 <a class="reference internal" href="extension.html#adding-support-for-revision-control-systems"><span class="std std-ref">外掛程式</span></a>，例如 <a class="extlink-pypi reference external" href="https://pypi.org/project/setuptools-scm">setuptools-scm</a> 或 <a class="extlink-pypi reference external" href="https://pypi.org/project/setuptools-svn">setuptools-svn</a>，來自動將所有受追蹤的檔案納入 <code class="docutils literal notranslate"><span class="pre">sdist</span></code>。</p>
+<p id="using-manifest-in">或者，如果你需要對檔案進行更精細的控制（例如你不想發布與 <a class="extlink-wiki reference external" href="https://wikipedia.org/wiki/CI/CD">CI/CD</a> 相關的檔案），或者你需要自動產生的檔案，你可以在專案根目錄中加入 <code class="docutils literal notranslate"><span class="pre">MANIFEST.in</span></code> 檔案，來指定預設檔案定位演算法未捕捉到的任何檔案。</p>
+<p>此檔案包含指示，告訴 <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 哪些檔案應該（或不應該）是 <code class="docutils literal notranslate"><span class="pre">sdist</span></code> 的一部分。</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>請注意，<code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 支援的是 <code class="docutils literal notranslate"><span class="pre">MANIFEST.in</span></code>，而不是 <a href="#id1"><span class="problematic" id="id2">``</span></a>MANIFEST``（無副檔名）。任何建議使用 <a href="#id3"><span class="problematic" id="id4">``</span></a>MANIFEST``（無副檔名）的文件、教學或範例很可能都已過時。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小訣竅</p>
+<p><code class="docutils literal notranslate"><span class="pre">MANIFEST.in</span></code> 檔案包含允許你探索和操作檔案清單的指令。有許多指令可用於不同的目的，但你應盡量不要讓 <code class="docutils literal notranslate"><span class="pre">MANIFEST.in</span></code> 檔案過於細碎。</p>
+<p>一個好做法是從 <code class="docutils literal notranslate"><span class="pre">graft</span></code> 指令開始（加入一組目錄內的所有檔案），然後透過移除多餘的檔案或加入個別檔案來微調檔案選取。</p>
+</div>
+<p><code class="file docutils literal notranslate"><span class="pre">MANIFEST.in</span></code> 檔案由指令組成，每行一個指令，指示 setuptools 從 sdist 中加入或移除某些檔案。這些指令如下：</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>指令</p></th>
+<th class="head"><p>說明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="samp docutils literal notranslate"><span class="pre">include</span> <em><span class="pre">pat1</span></em> <em><span class="pre">pat2</span></em> <span class="pre">...</span></code></p></td>
+<td><p>加入符合任何列出之模式的所有檔案（必須以相對於專案根目錄的路徑指定檔案）</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="samp docutils literal notranslate"><span class="pre">exclude</span> <em><span class="pre">pat1</span></em> <em><span class="pre">pat2</span></em> <span class="pre">...</span></code></p></td>
+<td><p>移除符合任何列出之模式的所有檔案（必須以相對於專案根目錄的路徑指定檔案）</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="samp docutils literal notranslate"><span class="pre">recursive-include</span> <em><span class="pre">dir-pattern</span></em> <em><span class="pre">pat1</span></em> <em><span class="pre">pat2</span></em> <span class="pre">...</span></code></p></td>
+<td><p>加入符合 <code class="docutils literal notranslate"><span class="pre">dir-pattern</span></code> 的目錄下、且符合任何列出之模式的所有檔案</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="samp docutils literal notranslate"><span class="pre">recursive-exclude</span> <em><span class="pre">dir-pattern</span></em> <em><span class="pre">pat1</span></em> <em><span class="pre">pat2</span></em> <span class="pre">...</span></code></p></td>
+<td><p>移除符合 <code class="docutils literal notranslate"><span class="pre">dir-pattern</span></code> 的目錄下、且符合任何列出之模式的所有檔案</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="samp docutils literal notranslate"><span class="pre">global-include</span> <em><span class="pre">pat1</span></em> <em><span class="pre">pat2</span></em> <span class="pre">...</span></code></p></td>
+<td><p>加入來源碼樹中任何位置符合任何列出之模式的所有檔案</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="samp docutils literal notranslate"><span class="pre">global-exclude</span> <em><span class="pre">pat1</span></em> <em><span class="pre">pat2</span></em> <span class="pre">...</span></code></p></td>
+<td><p>移除來源碼樹中任何位置符合任何列出之模式的所有檔案</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="samp docutils literal notranslate"><span class="pre">graft</span> <em><span class="pre">dir-pattern</span></em></code></p></td>
+<td><p>加入符合 <code class="docutils literal notranslate"><span class="pre">dir-pattern</span></code> 的目錄下的所有檔案</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="samp docutils literal notranslate"><span class="pre">prune</span> <em><span class="pre">dir-pattern</span></em></code></p></td>
+<td><p>移除符合 <code class="docutils literal notranslate"><span class="pre">dir-pattern</span></code> 的目錄下的所有檔案</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>這裡的模式是 glob 樣式模式：<code class="docutils literal notranslate"><span class="pre">*</span></code> 符合零個或多個一般檔名字元（在 Unix 上，除正斜線外的所有字元；在 Windows 上，除反斜線和冒號外的所有字元）；<code class="docutils literal notranslate"><span class="pre">?</span></code> 符合單個一般檔名字元；而 <code class="docutils literal notranslate"><span class="pre">[chars]</span></code> 符合方括號內的任何一個字元（可包含字元範圍，例如 <code class="docutils literal notranslate"><span class="pre">[a-z]</span></code> 或 <code class="docutils literal notranslate"><span class="pre">[a-fA-F0-9]</span></code>）。Setuptools 也支援 <code class="docutils literal notranslate"><span class="pre">**</span></code>，可符合包含正斜線、反斜線和冒號在內的零個或多個字元。</p>
+<p>目錄模式是相對於專案目錄的根目錄；例如，<code class="docutils literal notranslate"><span class="pre">graft</span> <span class="pre">example*</span></code> 會包含專案根目錄中名為 <code class="file docutils literal notranslate"><span class="pre">examples</span></code> 的目錄，但不會包含 <code class="file docutils literal notranslate"><span class="pre">docs/examples/</span></code>。</p>
+<p><code class="file docutils literal notranslate"><span class="pre">MANIFEST.in</span></code> 中的檔案和目錄名稱應以 <code class="docutils literal notranslate"><span class="pre">/</span></code> 分隔；setuptools 會自動將斜線轉換為當地平台適用的目錄分隔符號。</p>
+<p>指令會按照它們在 <code class="file docutils literal notranslate"><span class="pre">MANIFEST.in</span></code> 檔案中出現的順序處理。例如，給定以下指令：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>graft<span class="w"> </span>tests
+global-exclude<span class="w"> </span>*.py<span class="o">[</span>cod<span class="o">]</span>
+</pre></div>
+</div>
+<p>目錄樹 <code class="file docutils literal notranslate"><span class="pre">tests</span></code> 的內容會先被加入 sdist，然後 sdist 中所有副檔名為 <code class="docutils literal notranslate"><span class="pre">.pyc</span></code>、<code class="docutils literal notranslate"><span class="pre">.pyo</span></code> 或 <code class="docutils literal notranslate"><span class="pre">.pyd</span></code> 的檔案會從 sdist 中移除。如果指令順序相反，則 <code class="docutils literal notranslate"><span class="pre">*.pyc</span></code> 等檔案只會從加入 <code class="file docutils literal notranslate"><span class="pre">tests</span></code> 之前的 sdist 中移除；如果 <code class="file docutils literal notranslate"><span class="pre">tests</span></code> 恰好包含任何 <code class="docutils literal notranslate"><span class="pre">*.pyc</span></code> 檔案，它們最終會包含在 sdist 中，因為排除是在它們被加入之前發生的。</p>
+<p>以下是按照 <a class="reference internal" href="package_discovery.html#src-layout"><span class="std std-ref">src-layout</span></a> 組織的簡單專案之 <code class="docutils literal notranslate"><span class="pre">MANIFEST.in</span></code> 範例：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># MANIFEST.in -- 僅供說明</span>
+graft<span class="w"> </span>src
+graft<span class="w"> </span>tests
+graft<span class="w"> </span>docs
+<span class="c1"># `-&gt; 加入目錄內的所有檔案</span>
+
+include<span class="w"> </span>tox.ini
+<span class="c1"># `-&gt; 比對相對於專案根目錄的檔案路徑</span>
+
+global-exclude<span class="w"> </span>*~<span class="w"> </span>*.py<span class="o">[</span>cod<span class="o">]</span><span class="w"> </span>*.so
+<span class="c1"># `-&gt; 比對檔案名稱（無論目錄為何）</span>
+</pre></div>
+</div>
+<p>一旦正確的檔案存在於 <code class="docutils literal notranslate"><span class="pre">sdist</span></code> 中，它們就可以在建置過程中被二進位擴充功能使用，或者如果你將 <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 設定為 <code class="docutils literal notranslate"><span class="pre">include_package_data=True</span></code>，則會包含在最終的 <a class="reference external" href="https://packaging.python.org/en/latest/glossary/#term-Wheel" title="(於 Python Packaging User Guide)"><span class="xref std std-term">wheel</span></a> <a class="footnote-reference brackets" href="#build-process" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> 中。</p>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>請注意，使用 <code class="docutils literal notranslate"><span class="pre">include_package_data=True</span></code> 時，預設情況下最終的 <code class="docutils literal notranslate"><span class="pre">wheel</span></code> 中只會包含<strong>軟體包目錄內</strong>的檔案。</p>
+<p>例如，如果你建立一個使用 <a class="extlink-pypi reference external" href="https://pypi.org/project/setuptools-scm">setuptools-scm</a> 的 <a class="reference external" href="https://packaging.python.org/en/latest/glossary/#term-Project" title="(於 Python Packaging User Guide)"><span class="xref std std-term">Python 專案</span></a>，且在套件資料夾外有一個 <code class="docutils literal notranslate"><span class="pre">tests</span></code> 目錄，那麼 <code class="docutils literal notranslate"><span class="pre">tests</span></code> 目錄會存在於 <code class="docutils literal notranslate"><span class="pre">sdist</span></code> 中，但不會存在於 <code class="docutils literal notranslate"><span class="pre">wheel</span></code> <a class="footnote-reference brackets" href="#wheel-vs-sdist" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> 中。</p>
+<p>更多資訊請參閱 <a class="reference internal" href="datafiles.html"><span class="doc">Data Files Support</span></a>。</p>
+</div>
+</section>
+<section id="caching-and-troubleshooting">
+<span id="id4"></span><h1>快取與疑難排解<a class="headerlink" href="#caching-and-troubleshooting" title="連結到這個標頭">¶</a></h1>
+<p>Setuptools 會自動建立一些目錄來存放建置產物和快取檔案，例如 <code class="docutils literal notranslate"><span class="pre">build</span></code>、<code class="docutils literal notranslate"><span class="pre">dist</span></code>、<code class="docutils literal notranslate"><span class="pre">*.egg-info</span></code>。雖然快取有助於加速增量建置，但在某些邊緣情況下可能會變得過時。如果你覺得快取導致建置出現問題，特別是在變更設定或目錄/檔案結構後，請考慮在重新建置或重新安裝專案之前移除 <code class="docutils literal notranslate"><span class="pre">build</span></code>、<code class="docutils literal notranslate"><span class="pre">dist</span></code>、<code class="docutils literal notranslate"><span class="pre">*.egg-info</span></code> <a class="footnote-reference brackets" href="#pkg-info" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>。</p>
+<hr class="docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="build-process" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>你可以將建置過程視為兩個階段：首先會建立 <code class="docutils literal notranslate"><span class="pre">sdist</span></code>，然後從該 <code class="docutils literal notranslate"><span class="pre">sdist</span></code> 產生 <code class="docutils literal notranslate"><span class="pre">wheel</span></code>。</p>
+</aside>
+<aside class="footnote brackets" id="wheel-vs-sdist" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>這是因為 <code class="docutils literal notranslate"><span class="pre">sdist</span></code> 可以包含在開發或建置過程中有用、但在執行時期不需要的檔案（例如測試、文件、範例等）。另一方面，<code class="docutils literal notranslate"><span class="pre">wheel</span></code> 是一種已經過最佳化的檔案格式，準備好解壓縮到正在執行中的 Python 安裝或 <a class="reference external" href="https://packaging.python.org/en/latest/glossary/#term-Virtual-Environment" title="(於 Python Packaging User Guide)"><span class="xref std std-term">虛擬環境</span></a> 中。因此它只包含執行時期所需的項目。</p>
+</aside>
+<aside class="footnote brackets" id="pkg-info" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">3</a><span class="fn-bracket">]</span></span>
+<p>當從解壓縮的 sdist 工作時（例如進行修補），你也可以考慮移除 <code class="docutils literal notranslate"><span class="pre">PKG-INFO</span></code> 檔案以強制重新建立。</p>
+</aside>
+</aside>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="extension.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Extending or Customizing Setuptools</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="distribution.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Specifying Your Project's Version</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=9670f762"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script src="../_static/translations.js?v=cbf116e0"></script>
+    </body>
+</html>

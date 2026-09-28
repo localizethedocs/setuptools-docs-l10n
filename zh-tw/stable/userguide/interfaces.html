@@ -1,0 +1,483 @@
+<!doctype html>
+<html class="no-js" lang="zh-TW" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="../_static/logo-symbol-only.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16 24x24 32x32 48x48" href="../_static/favicon.svg"><link rel="index" title="索引" href="../genindex.html"><link rel="search" title="搜尋" href="../search.html"><link rel="next" title="Package Discovery and Namespace Packages" href="package_discovery.html"><link rel="prev" title="Quickstart" href="quickstart.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/setuptools-docs-l10n/userguide/interfaces.html">
+        <link rel="prefetch" href="../_static/logo.svg" as="image">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>支援的介面 - setuptools 83.0.0 說明文件</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --color-brand-primary: #336790;
+  --color-brand-content: #336790;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: #E5B62F;
+  --color-brand-content: #E5B62F;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: #E5B62F;
+  --color-brand-content: #E5B62F;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">setuptools 83.0.0 說明文件</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/logo.svg" alt="Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="搜尋" name="q" aria-label="搜尋">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">連結</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/pypa/setuptools">Home</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/setuptools">PyPI</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">使用者指南</a><input aria-label="Toggle navigation of 使用者指南" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">支援的介面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="package_discovery.html">Package Discovery and Namespace Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dependency_management.html">Setuptools 中的依賴管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development_mode.html">開發模式（又稱「可編輯安裝」）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="entry_point.html">進入點</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datafiles.html">Data Files Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ext_modules.html">建置擴充模組</a></li>
+<li class="toctree-l2"><a class="reference internal" href="distribution.html">Specifying Your Project's Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="miscellaneous.html">控制散佈包中的檔案</a></li>
+<li class="toctree-l2"><a class="reference internal" href="miscellaneous.html#caching-and-troubleshooting">快取與疑難排解</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extension.html">Extending or Customizing Setuptools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="declarative_config.html">Configuring setuptools using <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyproject_config.html">Configuring setuptools using <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../build_meta.html">建置系統支援</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references/keywords.html">關鍵字</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setuptools.html">使用 Setuptools 建置並散佈軟體包</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">專案</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../roadmap.html">路線圖</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../development/index.html">開發指南</a><input aria-label="Toggle navigation of 開發指南" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../development/developer-guide.html">Developer's Guide for Setuptools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../development/releases.html">發行過程</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../deprecated/index.html">Backward compatibility &amp; deprecated practice</a><input aria-label="Toggle navigation of Backward compatibility &amp; deprecated practice" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/changed_keywords.html">New and Changed <code class="docutils literal notranslate"><span class="pre">setup()</span></code> Keywords</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/dependency_links.html">Specifying dependencies that aren't in PyPI via <code class="docutils literal notranslate"><span class="pre">dependency_links</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/python_eggs.html">The Internal Structure of Python Eggs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/easy_install.html">Easy Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/zip_safe.html">Understanding the <code class="docutils literal notranslate"><span class="pre">zip_safe</span></code> flag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/resource_extraction.html">Automatic Resource Extraction</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../deprecated/distutils/index.html">Distributing Python Modules (Legacy version)</a><input aria-label="Toggle navigation of Distributing Python Modules (Legacy version)" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/introduction.html">1. Distuils 介紹</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/setupscript.html">2. Writing the Setup Script</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/configfile.html">3. Writing the Setup Configuration File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/sourcedist.html">4. Creating a Source Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/builtdist.html">5. Creating Built Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/examples.html">6. Distutils Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/extending.html">7. Extending Distutils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/commandref.html">8. Command Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deprecated/distutils/apiref.html">9. API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/distutils-legacy.html">Porting from Distutils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/functionalities.html">"Eggsecutable" Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/commands.html">Running <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/pkg_resources.html">Package Discovery and Resource Access using <code class="docutils literal notranslate"><span class="pre">pkg_resources</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deprecated/sdist-reproducibility.html">Drawbacks of installing source distributions (<code class="docutils literal notranslate"><span class="pre">sdist</span></code>) and how to improve reproducibility</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html#credits">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../artwork.html">Artwork</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="https://github.com/pypa/setuptools/blob/main/docs/userguide/interfaces.rst?plain=true" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div><div class="edit-this-page">
+  <a class="muted-link" href="https://github.com/pypa/setuptools/edit/main/docs/userguide/interfaces.rst" rel="edit" title="Edit this page">
+    <svg><use href="#svg-pencil"></use></svg>
+    <span class="visually-hidden">Edit this page</span>
+  </a>
+</div><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="supported-interfaces">
+<h1>支援的介面<a class="headerlink" href="#supported-interfaces" title="連結到這個標頭">¶</a></h1>
+<p>Setuptools 是一個複雜的程式庫，擁有許多介面面和挑戰。除了作為打包建置後端的主要用途外，Setuptools 在歷史上也擔任過獨立的建置工具、安裝工具、上傳工具、中繼資料提供者等角色。此外，由於它以 Python 程式庫的形式實作，其全部功能也間接地以程式庫的形式暴露出來。</p>
+<p>除了作為程式庫運作之外，由於新版本的 Setuptools 常被用來建置較舊的（有時是數十年前的）軟體包，因此它承擔著很高的穩定性負擔。</p>
+<p>為了能夠對專案進行合理的變更，下游開發者和使用者應避免依賴程式庫的內部實作細節，而應僅依賴受支援的介面：</p>
+<ul>
+<li><p><em>第一層</em>：現代 PyPA 打包標準 (<span class="target" id="index-6"></span><a class="pep reference external" href="https://peps.python.org/pep-0517/"><strong>PEP 517</strong></a>, <span class="target" id="index-7"></span><a class="pep reference external" href="https://peps.python.org/pep-0660/"><strong>PEP 660</strong></a>) 所需的 API，以及用於自訂建置行為或建立外掛程式的已文件化 API（<a class="reference internal" href="extension.html"><span class="doc">Extending or Customizing Setuptools</span></a>、<a class="reference internal" href="../references/keywords.html"><span class="doc">關鍵字</span></a>）：</p>
+<blockquote>
+<div><p>這些 API 預期將極為穩定，並且在向後不相容的變更或移除之前，會有棄用通知和緩衝期。</p>
+<p>請注意，<em>功能測試和整合測試</em> 捕捉了程式庫和系統預期如何為外部使用者運作的特定行為和期望；而*程式碼註解和文件字串*（包括測試中的）可能提供特定保護，以限制下游使用者可依賴的行為變更。</p>
+</div></blockquote>
+</li>
+<li><p><em>第二層</em>：已文件化的 <code class="docutils literal notranslate"><span class="pre">distutils</span></code> API：</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 致力於尊重 <code class="docutils literal notranslate"><span class="pre">distutils</span></code> 所提供的介面，並將與 <code class="docutils literal notranslate"><span class="pre">pypa/distutils</span></code> 倉儲協調，以便發出適當的棄用通知。</p>
+<p>原則上，這些在 <a class="reference internal" href="../deprecated/distutils/apiref.html"><span class="doc">API Reference</span></a> 中有文件說明。但請注意，當有合適的替代方案可用或建議使用時，現有的 <code class="docutils literal notranslate"><span class="pre">distutils</span></code> API 將被視為已棄用，不應再使用（請參見 <span class="target" id="index-8"></span><a class="pep reference external" href="https://peps.python.org/pep-0632/#migration-advice"><strong>PEP 632#migration-advice</strong></a> 和 <a class="reference internal" href="../deprecated/distutils-legacy.html"><span class="doc">Porting from Distutils</span></a>）。</p>
+</div></blockquote>
+</li>
+</ul>
+<p>依賴其他行為是有風險的，且可能在未來遭受破壞。如果某個專案希望考慮使用上述未涵蓋的介面，請考慮在依賴它們之前，先請求將這些介面加入（例如透過提交實作該變更及相關回歸測試的拉取請求）。</p>
+<p>請查閱<a class="reference internal" href="../deprecated/index.html"><span class="doc">Guides on backward compatibility &amp; deprecated practice</span></a>以了解更多關於已棄用和不受支援行為的資訊。</p>
+<section id="support-policy-exceptions">
+<h2>支援政策例外情況<a class="headerlink" href="#support-policy-exceptions" title="連結到這個標頭">¶</a></h2>
+<p>明確記錄或宣告為已棄用的行為和介面，或發出<a class="reference external" href="https://docs.python.org/3.11/library/warnings.html#warnings.warn" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">棄用警告</span></code></a>的項目，將在公告的棄用期限內繼續獲得支援。</p>
+<p>然而，在某些情況下，Setuptools 維護者保留加快棄用週期和縮短棄用期限的權利：</p>
+<ol class="arabic simple">
+<li><p>當特定程式碼路徑中發現安全漏洞，且重新設計現有 API 不可行時。</p></li>
+<li><p>當 Python 打包生態系統中的標準從外部驅動程式碼庫中的非向後相容變更時。</p></li>
+<li><p>當行為變更由第三方依賴以及在 <code class="docutils literal notranslate"><span class="pre">pypa/setuptools</span></code> 倉儲之外維護的程式碼外部驅動時。</p></li>
+</ol>
+<p>請注意，這些是例外情況，專案在訴諸於非預定移除之前，將仔細嘗試尋找替代方案。</p>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 的上下文中，引入 <code class="xref py py-mod docutils literal notranslate"><span class="pre">warnings`（包括棄用警告）本身</span> <span class="pre">*並不*</span> <span class="pre">被視為重大變更。相反地，它被視為一種向後相容的*溝通行為*，預示著即將到來的重大變更。這是因為包含警告的程式碼通常不會失敗，並且可以成功完成執行，除非使用者明確選擇將這些警告轉換為錯誤（例如，透過</span> <span class="pre">Python</span> <span class="pre">的</span> <span class="pre">:external+python:ref:</span></code>-W 選項或 PYTHONWARNINGS 環境變數 &lt;using-on-warnings&gt;`）。</p>
+</div>
+</section>
+<section id="what-to-do-when-deprecation-periods-are-undefined">
+<h2>當棄用期限未定義時該怎麼辦？<a class="headerlink" href="#what-to-do-when-deprecation-periods-are-undefined" title="連結到這個標頭">¶</a></h2>
+<p>在某些情況下，很難界定 Setuptools 需要多長時間來移除某些功能、行為或 API。例如，評估某個功能在生態系統中的使用廣泛程度可能相當複雜。</p>
+<p>因此，Setuptools 可能會在沒有明確到期日的情況下開始發出棄用警告。這是因為我們希望盡快通知使用者即將到來的重大變更，以便他們可以開始制定遷移計畫。</p>
+<p>這並不意味著使用者應將此棄用視為低優先級，或將缺乏到期日解讀為重大變更永遠不會發生的信號。</p>
+<p>建議的做法是，使用者一旦發現自己受到 Setuptools 棄用影響，就應盡快制定遷移計畫。</p>
+<p>當棄用警告已經在沒有明確到期日的情況下發出很長一段時間時，Setuptools 可能會引入相對較短的棄用期限（例如 6 個月）。</p>
+</section>
+<section id="how-to-stay-on-top-of-upcoming-deprecations">
+<h2>如何掌握即將到來的棄用資訊？<a class="headerlink" href="#how-to-stay-on-top-of-upcoming-deprecations" title="連結到這個標頭">¶</a></h2>
+<p>最好在專案中使用覆蓋率較佳的自動化測試軟體包，並留意日誌。你也可以透過將標準輸出/錯誤串流轉發到日誌檔案，並使用啟發式方法來識別棄用（例如搜尋 <code class="docutils literal notranslate"><span class="pre">deprecation</span></code> 或 <code class="docutils literal notranslate"><span class="pre">deprecated</span></code> 字詞）來自動化此過程。你可能需要提高輸出的詳細程度，因為某些工具預設會隱藏日誌訊息（例如透過 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">-vv</span> <span class="pre">install</span> <span class="pre">...</span></code>）。</p>
+<p>此外，如果你維護的專案依賴於 Setuptools，你可以實作一個 CI 工作流程，利用 <a class="reference external" href="https://docs.python.org/3.11/library/warnings.html#warning-filter" title="(in Python v3.11)"><span class="xref std std-ref">Python 警告過濾器</span></a> 來提高警告的可見度。</p>
+<p>此工作流程例如可以包含 3 個疊代步驟，要求開發者確認棄用警告：</p>
+<ol class="arabic simple">
+<li><p>利用 Python 警告過濾器，在自動化測試期間將警告轉換為例外。</p></li>
+<li><p>制定遷移計畫：</p>
+<ul class="simple">
+<li><p>最好將棄用事項像問題一樣追蹤，並應用專案管理技術來監控處理進度。</p></li>
+<li><p>判斷程式碼中哪些部分受到影響，並了解消除警告所需的變更。</p></li>
+</ul>
+</li>
+<li><p>修改你在 CI 中使用的警告過濾器，使其不會因為新識別的例外而失敗（例如，使用 <code class="docutils literal notranslate"><span class="pre">default</span></code> 動作搭配特定的類別或正規表達式來比對警告訊息）。這可以針對整個測試軟體包全域設定，也可以在逐項測試的基礎上局部設定。</p></li>
+</ol>
+<p>像 <a class="extlink-pypi reference external" href="https://pypi.org/project/pytest">pytest</a> 這樣的測試工具提供了 CLI 和設定選項，以便於控制警告過濾器（請參見 <a class="reference external" href="https://docs.pytest.org/en/stable/how-to/capture-warnings.html" title="(in pytest v9.1.1)"><span>How to capture warnings</span></a>）。</p>
+<p>請注意，有許多方式可以將此工作流程整合到你的 CI 中。例如，如果你有足夠的部署資源，並將棄用警告管理視為日常開發測試，你可以直接在主要 CI 迴圈中設定警告過濾器。另一方面，如果你有嚴格的時間表，無法承受 CI 工作偶爾因標記維護而失敗，你可以考慮排程一個與主要/關鍵任務工作流程分開的定期 CI 執行。</p>
+</section>
+<section id="what-does-support-mean">
+<h2>「支援」是什麼意思？<a class="headerlink" href="#what-does-support-mean" title="連結到這個標頭">¶</a></h2>
+<p>Setuptools 是一個非營利、由社群驅動的開源專案，因此「支援」一詞是以盡力而為且範圍有限的方式使用。例如，並非總能快速提供錯誤修正。</p>
+<p>我們感謝社群的耐心，並鼓勵受到錯誤影響的使用者以<a class="reference internal" href="../development/developer-guide.html"><span class="doc">提交 PR</span></a> 的形式貢獻修正，以加快處理速度。</p>
+<p>當我們說「某個功能受到支援」時，意思是我們會盡最大努力確保該功能按文件說明的正常運作。但請注意，與任何系統一樣，仍可能發生非預期的損壞。我們感謝社群的理解與<a class="reference external" href="consideratefeedback">體貼的回饋</a>。</p>
+</section>
+<section id="what-to-do-after-the-deprecation-period-ends">
+<h2>棄用期限結束後該怎麼辦？<a class="headerlink" href="#what-to-do-after-the-deprecation-period-ends" title="連結到這個標頭">¶</a></h2>
+<p>如果你的開發資源有限，無法在 Setuptools 移除已棄用功能之前制定遷移計畫，你仍然可以限制所安裝的 Setuptools 版本。這通常包括修改 <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> 中的 <code class="docutils literal notranslate"><span class="pre">[build-system]</span> <span class="pre">requires</span></code>，和/或透過 <code class="docutils literal notranslate"><span class="pre">PIP_CONSTRAINT</span></code> 環境變數指定 <code class="docutils literal notranslate"><span class="pre">pip</span></code> :external+pip:ref:<a href="#id1"><span class="problematic" id="id2">`</span></a>約束檔案 &lt;Constraints Files&gt;`（或傳遞 <a class="reference external" href="https://docs.astral.sh/uv/concepts/projects/build/#build-constraints"><code class="docutils literal notranslate"><span class="pre">--build-constraint</span></code> to <code class="docutils literal notranslate"><span class="pre">uv</span></code></a>）。但請避免在沒有必要的情況下預先加入版本約束（你可以在 <a class="reference external" href="https://iscinumpy.dev/post/bound-version-constraints/">https://iscinumpy.dev/post/bound-version-constraints/</a> 閱讀更多相關資訊）。</p>
+</section>
+<section id="a-note-on-public-names">
+<h2>關於「公開名稱」的說明<a class="headerlink" href="#a-note-on-public-names" title="連結到這個標頭">¶</a></h2>
+<p>Python 開發者可能習慣於私有成員以 <a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">_`</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a>（底線）字元為前綴的慣例，並且任何未被此標記的成員即為公開。但由於 Setuptools 的歷史和遺留問題，情況並非一定如此 <a class="footnote-reference brackets" href="#private" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>。</p>
+<p>在此專案中，「公開介面」被定義為明確文件化供第三方使用的介面。</p>
+<p>在存取 <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> 軟體包中的成員時，請確保該成員已被文件化為外部用途。另請注意，從不同模組/子模組匯入的名稱被視為內部實作細節，除非它們被明確列在 <code class="docutils literal notranslate"><span class="pre">__all__</span></code> 中。它們在執行 <code class="docutils literal notranslate"><span class="pre">import</span></code> 的模組命名空間中可被存取，這只是 Python 運作方式的副作用。</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="private" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>雖然以 <code class="docutils literal notranslate"><span class="pre">_</span></code> 為前綴的名稱始終被視為私有，但沒有此前綴並不一定表示該成員為公開。</p>
+</aside>
+</aside>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="package_discovery.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Package Discovery and Namespace Packages</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="quickstart.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Quickstart</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">支援的介面</a><ul>
+<li><a class="reference internal" href="#support-policy-exceptions">支援政策例外情況</a></li>
+<li><a class="reference internal" href="#what-to-do-when-deprecation-periods-are-undefined">當棄用期限未定義時該怎麼辦？</a></li>
+<li><a class="reference internal" href="#how-to-stay-on-top-of-upcoming-deprecations">如何掌握即將到來的棄用資訊？</a></li>
+<li><a class="reference internal" href="#what-does-support-mean">「支援」是什麼意思？</a></li>
+<li><a class="reference internal" href="#what-to-do-after-the-deprecation-period-ends">棄用期限結束後該怎麼辦？</a></li>
+<li><a class="reference internal" href="#a-note-on-public-names">關於「公開名稱」的說明</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=9670f762"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script src="../_static/translations.js?v=cbf116e0"></script>
+    </body>
+</html>

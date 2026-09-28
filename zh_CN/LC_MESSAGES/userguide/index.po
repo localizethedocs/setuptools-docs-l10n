@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../userguide/index.rst:3
+msgid "Building and Distributing Packages with Setuptools"
+msgstr ""
+
+#: ../../../userguide/index.rst:5
+msgid ""
+"The first step towards sharing a Python library or program is to build a "
+"distribution package [#package-overload]_. This includes adding a set of "
+"additional files containing metadata and configuration to not only instruct "
+"``setuptools`` on how the distribution should be built but also to help "
+"installer (such as :pypi:`pip`) during the installation process."
+msgstr ""
+
+#: ../../../userguide/index.rst:11
+msgid ""
+"This document contains information to help Python developers through this "
+"process. Please check the :doc:`/userguide/quickstart` for an overview of "
+"the workflow."
+msgstr ""
+
+#: ../../../userguide/index.rst:15
+msgid ""
+"Also note that ``setuptools`` is what is known in the community as :pep:"
+"`build backend <517#terminology-and-goals>`, user facing interfaces are "
+"provided by tools such as :pypi:`pip` and :pypi:`build`. To use "
+"``setuptools``, one must explicitly create a ``pyproject.toml`` file as "
+"described :doc:`/build_meta`."
+msgstr ""
+
+#: ../../../userguide/index.rst:22
+msgid "Contents"
+msgstr ""
+
+#: ../../../userguide/index.rst:42
+msgid "---"
+msgstr ""
+
+#: ../../../userguide/index.rst:45
+msgid "Notes"
+msgstr ""
+
+#: ../../../userguide/index.rst:47
+msgid ""
+"A :term:`Distribution Package` is also referred in the Python community "
+"simply as \"package\" Unfortunately, this jargon might be a bit confusing "
+"for new users because the term package can also to refer any :term:"
+"`directory <package>` (or sub directory) used to organize :term:`modules "
+"<module>` and auxiliary files."
+msgstr ""

@@ -1,0 +1,409 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../development/developer-guide.rst:3
+msgid "Developer's Guide for Setuptools"
+msgstr ""
+
+#: ../../../development/developer-guide.rst:5
+msgid ""
+"If you want to know more about contributing on Setuptools, this is the place."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:10
+msgid "Recommended Reading"
+msgstr "推薦閱讀"
+
+#: ../../../development/developer-guide.rst:12
+msgid ""
+"Please read `How to write the perfect pull request <https://blog.jaraco.com/"
+"how-to-write-perfect-pull-request/>`_ for some tips on contributing to open "
+"source projects. Although the article is not authoritative, it was authored "
+"by the maintainer of Setuptools, so reflects his opinions and will improve "
+"the likelihood of acceptance and quality of contribution."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:21
+msgid "Project Management"
+msgstr "專案管理"
+
+#: ../../../development/developer-guide.rst:23
+msgid ""
+"Setuptools is maintained primarily in GitHub at `this home <https://github."
+"com/pypa/setuptools>`_. Setuptools is maintained under the Python Packaging "
+"Authority (PyPA) with several core contributors. All bugs for Setuptools are "
+"filed and the canonical source is maintained in GitHub."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:28
+msgid ""
+"User support and discussions are done through `GitHub Discussions <https://"
+"github.com/pypa/setuptools/discussions>`_, or the issue tracker (for "
+"specific issues)."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:32
+msgid ""
+"Discussions about development happen on GitHub Discussions or the "
+"``setuptools`` channel on `PyPA Discord <https://discord.com/invite/pypa>`_."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:37
+msgid "Authoring Tickets"
+msgstr ""
+
+#: ../../../development/developer-guide.rst:39
+msgid ""
+"Before authoring any source code, it's often prudent to file a ticket "
+"describing the motivation behind making changes. First search to see if a "
+"ticket already exists for your issue. If not, create one. Try to think from "
+"the perspective of the reader. Explain what behavior you expected, what you "
+"got instead, and what factors might have contributed to the unexpected "
+"behavior. In GitHub, surround a block of code or traceback with the triple "
+"backtick \"\\`\\`\\`\" so that it is formatted nicely."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:47
+msgid ""
+"Filing a ticket provides a forum for justification, discussion, and "
+"clarification. The ticket provides a record of the purpose for the change "
+"and any hard decisions that were made. It provides a single place for others "
+"to reference when trying to understand why the software operates the way it "
+"does or why certain changes were made."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:53
+msgid ""
+"Setuptools makes extensive use of hyperlinks to tickets in the changelog so "
+"that system integrators and other users can get a quick summary, but then "
+"jump to the in-depth discussion about any subject referenced."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:59
+msgid "Making a pull request"
+msgstr "提交拉取請求"
+
+#: ../../../development/developer-guide.rst:61
+msgid ""
+"When making a pull request, please :ref:`include a short summary of the "
+"changes <Adding change notes with your PRs>` and a reference to any issue "
+"tickets that the PR is intended to solve. All PRs with code changes should "
+"include tests. All changes should include a changelog entry."
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:4
+msgid "Adding change notes with your PRs"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:6
+msgid ""
+"It is very important to maintain a log for news of how updating to the new "
+"version of the software will affect end-users. This is why we enforce "
+"collection of the change fragment files in pull requests as per `Towncrier "
+"philosophy`_."
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:11
+msgid ""
+"The idea is that when somebody makes a change, they must record the bits "
+"that would affect end-users only including information that would be useful "
+"to them. Then, when the maintainers publish a new release, they'll "
+"automatically use these records to compose a change log for the respective "
+"version. It is important to understand that including unnecessary low-level "
+"implementation related details generates noise that is not particularly "
+"useful to the end-users most of the time. And so such details should be "
+"recorded in the Git history rather than a changelog."
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:22
+msgid "Alright! So how to add a news fragment?"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:24
+msgid ""
+"``setuptools`` uses :pypi:`towncrier` for changelog management. To submit a "
+"change note about your PR, add a text file into the ``newsfragments/`` "
+"folder, manually or by running ``towncrier create``."
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:29
+msgid ""
+"It should contain an explanation of what applying this PR will change in the "
+"way end-users interact with the project. One sentence is usually enough but "
+"feel free to add as many details as you feel necessary for the users to "
+"understand what it means."
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:35
+msgid ""
+"**Use the past tense** for the text in your fragment because, combined with "
+"others, it will be a part of the \"news digest\" telling the readers **what "
+"changed** in a specific version of the library *since the previous version*. "
+"You should also use reStructuredText syntax for highlighting code (inline or "
+"block), linking parts of the docs or external sites. If you wish to sign "
+"your change, feel free to add ``-- by :user:`github-username``` at the end "
+"(replace ``github-username`` with your own!)."
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:45
+msgid ""
+"Finally, name your file following the convention that Towncrier understands: "
+"it should start with the number of an issue or a PR followed by a dot, then "
+"add a patch type, like ``feature``, ``doc``, ``misc`` etc., and add ``.rst`` "
+"as a suffix. If you need to add more than one fragment, you may add an "
+"optional sequence number (delimited with another period) between the type "
+"and the suffix."
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:53
+msgid ""
+"In general the name will follow ``<pr_number>.<category>.rst`` pattern, "
+"where the categories are:"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:56
+msgid "``feature``: Any backwards compatible code change"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:57
+msgid "``bugfix``: A fix for broken behavior of a previous change"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:58
+msgid "``doc``: A change to the documentation"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:59
+msgid "``removal``: Any backwards-compatibility breaking change"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:60
+msgid "``misc``: Changes internal to the repo like CI, test and build changes"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:62
+msgid ""
+"A pull request may have more than one of these components, for example a "
+"code change may introduce a new feature that deprecates an old feature, in "
+"which case two fragments should be added. It is not necessary to make a "
+"separate documentation fragment for documentation changes accompanying the "
+"relevant code changes."
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:69
+msgid "Examples for adding changelog entries to your Pull Requests"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:71
+msgid "File :file:`newsfragments/2395.doc.1.rst`:"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:73
+msgid "Added a ``:user:`` role to Sphinx config -- by :user:`webknjaz`"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:77
+msgid "File :file:`newsfragments/1354.misc.rst`:"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:79
+msgid "Added ``towncrier`` for changelog management -- by :user:`pganssle`"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:83
+msgid "File :file:`newsfragments/2355.feature.rst`:"
+msgstr "檔案 :file:`newsfragments/2355.feature.rst`："
+
+#: ../../../../newsfragments/README.rst:85
+msgid ""
+"When pip is imported as part of a build, leave :py:mod:`distutils`\n"
+"patched -- by :user:`jaraco`"
+msgstr ""
+
+#: ../../../../newsfragments/README.rst:92
+msgid ""
+"See :file:`towncrier.toml` for all available categories (``tool.towncrier."
+"type``)."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:72
+msgid "Auto-Merge Requests"
+msgstr "自動合併請求"
+
+#: ../../../development/developer-guide.rst:74
+msgid ""
+"To support running all code through CI, even lightweight contributions, the "
+"project employs Mergify to auto-merge pull requests tagged as auto-merge."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:78
+msgid ""
+"Use ``hub pull-request -l auto-merge`` to create such a pull request from "
+"the command line after pushing a new branch."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:83
+msgid "Testing"
+msgstr ""
+
+#: ../../../development/developer-guide.rst:85
+msgid ""
+"The primary tests are run using tox.  Make sure you have tox installed, and "
+"invoke it::"
+msgstr ""
+
+#: ../../../development/developer-guide.rst:88
+msgid "$ tox"
+msgstr "$ tox"
+
+#: ../../../development/developer-guide.rst:90
+msgid ""
+"Under continuous integration, additional tests may be run. See the ``.travis."
+"yml`` file for full details on the tests run under Travis-CI."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:95
+msgid "Semantic Versioning"
+msgstr "語意版本控制"
+
+#: ../../../development/developer-guide.rst:97
+msgid "Setuptools follows ``semver``."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:103
+msgid "Building Documentation"
+msgstr ""
+
+#: ../../../development/developer-guide.rst:105
+msgid ""
+"Setuptools relies on the `Sphinx`_ system for building documentation. The "
+"`published documentation`_ is hosted on Read the Docs."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:108
+msgid "To build the docs locally, use tox::"
+msgstr ""
+
+#: ../../../development/developer-guide.rst:110
+msgid "$ tox -e docs"
+msgstr "$ tox -e docs"
+
+#: ../../../development/developer-guide.rst:117
+msgid "Vendored Dependencies"
+msgstr ""
+
+#: ../../../development/developer-guide.rst:119
+msgid ""
+"Setuptools has some dependencies, but due to `bootstrapping issues <https://"
+"github.com/pypa/setuptools/issues/980>`_, those dependencies cannot be "
+"declared as they won't be resolved soon enough to build setuptools from "
+"source. Eventually, this limitation may be lifted as PEP 517/518 reach "
+"ubiquitous adoption, but for now, Setuptools cannot declare dependencies "
+"other than through ``setuptools/_vendor/vendored.txt``."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:127
+msgid ""
+"All the dependencies specified in these files are \"vendorized\" using a "
+"simple Python script ``tools/vendor.py``."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:130
+msgid "To refresh the dependencies, run the following command::"
+msgstr ""
+
+#: ../../../development/developer-guide.rst:132
+msgid "$ tox -e vendor"
+msgstr "$ tox -e vendor"
+
+#: ../../../development/developer-guide.rst:137
+msgid "Code conventions and other practices"
+msgstr ""
+
+#: ../../../development/developer-guide.rst:139
+msgid ""
+"Setuptools utilizes the `skeleton <https://github.com/jaraco/skeleton>`_ "
+"framework as a foundation for sharing reusable maintenance tasks across "
+"different projects in the ecosystem."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:143
+msgid ""
+"This also means that the project adheres to the same coding conventions and "
+"other practices described in the `skeleton documentation <https://blog."
+"jaraco.com/skeleton/>`_."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:147
+msgid ""
+"Moreover, changes in the code base should be kept as compatible as possible "
+"to ``skeleton`` to avoid merge conflicts, or accidental regressions on "
+"periodical merges."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:151
+msgid ""
+"Finally, the ``setuptools/_distutils`` directory should not be modified "
+"directly when contributing to the ``setuptools`` project. Instead, this "
+"directory is maintained as a separated project in https://github.com/pypa/"
+"distutils, and periodically merged into ``setuptools``."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:159
+msgid "Type annotations"
+msgstr "型別註解"
+
+#: ../../../development/developer-guide.rst:161
+msgid ""
+"Most standards and best practices are enforced by `Ruff <https://docs.astral."
+"sh/ruff/rules/>`_'s ``ANN2``, ``FA``, ``PYI``, ``UP`` and ``YTT`` rules."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:165
+msgid ""
+"Explicit return types have to be added for typed public functions whose "
+"parameters are *all* annotated. This is enforced by ``ANN2``, but it's worth "
+"noting that this is due to mypy inferring ``Any`` even for simple return "
+"types. Mypy also doesn't count functions with missing parameter annotations "
+"as \"typed\". (see `python/mypy#4409 <https://github.com/python/mypy/"
+"issues/4409>`_, `python/mypy#10149 <https://github.com/python/mypy/"
+"issues/10149>`_ and `python/mypy#6646 <https://github.com/python/mypy/"
+"issues/6646>`_). Otherwise, return annotations can be omitted to reduce "
+"verbosity, especially for complex return types."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:175
+msgid ""
+"Instead of typing an explicit return type annotation as ``Generator[..., "
+"None, None]``, we'll prefer using an ``Iterator`` as it is more concise and "
+"conceptually easier to deal with. Returning a ``Generator`` with no "
+"``yield`` type or ``send`` type can sometimes be considered as exposing "
+"implementation details. See `Y058 <https://github.com/PyCQA/flake8-pyi/blob/"
+"main/ERRORCODES.md#Y058>`_."
+msgstr ""
+
+#: ../../../development/developer-guide.rst:182
+msgid ""
+"Avoid importing private type-checking-only symbols. These are often "
+"`typeshed <https://github.com/python/typeshed>`_ internal details and are "
+"not guaranteed to be stable. Importing from ``_typeshed`` or "
+"``typing_extensions`` is fine, but if you find yourself importing the same "
+"symbol in ``TYPE_CHECKING`` blocks a lot, consider implementing an alias "
+"directly in ``setuptools``."
+msgstr ""

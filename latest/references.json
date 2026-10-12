@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-12 10:22:59 -0400",
-      "hash" : "3a4fd917740b9c5785caaadb96cfcef5607e8ac5",
-      "title" : "Suppress os.path.commonprefix DeprecationWarning from pyproject_hooks on Python 3.15."
+      "date" : "2026-09-08 11:16:07 -0400",
+      "hash" : "4e612f9e44ecfad130d0b2a27a2dce0740599b4b",
+      "title" : "Ignore PyPy's deprecated check_home warning in tests"
     }
   },
   "type" : "branch",

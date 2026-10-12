@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 83.0.0\n"
+"Project-Id-Version: setuptools 84.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"POT-Creation-Date: 2026-10-12 17:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -279,12 +279,12 @@ msgid ""
 "the case of *flat-layout*:"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/discovery.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/discovery.py:docstring
 #: of setuptools.discovery.FlatLayoutPackageFinder.DEFAULT_EXCLUDE:1
 msgid "Reserved package names"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/discovery.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/discovery.py:docstring
 #: of setuptools.discovery.FlatLayoutModuleFinder.DEFAULT_EXCLUDE:1
 msgid "Reserved top-level module names"
 msgstr ""

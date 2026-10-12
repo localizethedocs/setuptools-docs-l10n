@@ -1,0 +1,493 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../userguide/miscellaneous.rst:4
+msgid "Controlling files in the distribution"
+msgstr "控制散佈包中的檔案"
+
+#: ../../../userguide/miscellaneous.rst:6
+msgid ""
+"For the most common use cases, ``setuptools`` will automatically find out "
+"which files are necessary for distributing the package. More precisely, the "
+"following files are included in a source distribution by default:"
+msgstr ""
+"在最常見的使用案例中，``setuptools`` 會自動找出發布套件所需的檔案。更精確地"
+"說，來源碼散佈包預設包含以下檔案："
+
+#: ../../../userguide/miscellaneous.rst:10
+msgid ""
+":term:`pure Python module <Pure Module>` files implied by the ``py-modules`` "
+"and ``packages`` configuration parameters in ``pyproject.toml`` and/or "
+"equivalent in ``setup.cfg``/``setup.py``;"
+msgstr ""
+"由 ``pyproject.toml`` 中的 ``py-modules`` 和 ``packages`` 設定參數，及/或 "
+"``setup.cfg``/``setup.py`` 中對應參數所隱含的\\ :term:`純 Python 模組 <Pure "
+"Module>`\\ 檔案；"
+
+#: ../../../userguide/miscellaneous.rst:13
+msgid ""
+"C source files mentioned in the ``ext_modules`` or ``libraries`` ``setup()`` "
+"arguments;"
+msgstr ""
+"在 ``setup()`` 的 ``ext_modules`` 或 ``libraries`` 引數中提到的 C 來源碼檔"
+"案；"
+
+#: ../../../userguide/miscellaneous.rst:15
+msgid ""
+"Files that match the following glob patterns: ``tests/test*.py``, ``test/"
+"test*.py``;"
+msgstr "符合下列 glob 模式的檔案：``tests/test*.py``、``test/test*.py``；"
+
+#: ../../../userguide/miscellaneous.rst:17
+msgid ""
+"Scripts specified by the ``scripts-files`` configuration parameter in "
+"``pyproject.toml`` or ``scripts`` in ``setup.py``/``setup.cfg``;"
+msgstr ""
+"由 ``pyproject.toml`` 中的 ``scripts-files`` 設定參數或 ``setup.py``/``setup."
+"cfg`` 中的 ``scripts`` 指定的腳本；"
+
+#: ../../../userguide/miscellaneous.rst:19
+msgid ""
+"All files specified by the ``package-data`` and ``data-files`` configuration "
+"parameters in ``pyproject.toml`` and/or equivalent in ``setup.cfg``/``setup."
+"py``;"
+msgstr ""
+"由 ``pyproject.toml`` 中的 ``package-data`` 和 ``data-files`` 設定參數，及/"
+"或 ``setup.cfg``/``setup.py`` 中對應參數所指定的所有檔案；"
+
+#: ../../../userguide/miscellaneous.rst:22
+msgid "The file specified by the ``license_file`` option in ``setup.cfg``;"
+msgstr "由 ``setup.cfg`` 中 ``license_file`` 選項指定的檔案；"
+
+#: ../../../userguide/miscellaneous.rst:23
+msgid ""
+"All files specified by the ``license-files`` configuration parameter in "
+"``pyproject.toml`` and/or equivalent in ``setup.cfg``/``setup.py``; note "
+"that if you don't explicitly set this parameter, ``setuptools`` will include "
+"any files that match the following glob patterns: ``LICEN[CS]E*``, "
+"``COPYING*``, ``NOTICE*``, ``AUTHORS**``;"
+msgstr ""
+"由 ``pyproject.toml`` 中的 ``license-files`` 設定參數，及/或 ``setup.cfg``/"
+"``setup.py`` 中對應參數所指定的所有檔案；請注意，如果你未明確設定此參數，"
+"``setuptools`` 將包含任何符合下列 glob 模式的檔案：``LICEN[CS]E*``、"
+"``COPYING*``、``NOTICE*``、``AUTHORS**``；"
+
+#: ../../../userguide/miscellaneous.rst:28
+msgid "``pyproject.toml``;"
+msgstr "``pyproject.toml``；"
+
+#: ../../../userguide/miscellaneous.rst:29
+msgid "``setup.cfg``;"
+msgstr "``setup.cfg``；"
+
+#: ../../../userguide/miscellaneous.rst:30
+msgid "``setup.py``;"
+msgstr "``setup.py``；"
+
+#: ../../../userguide/miscellaneous.rst:31
+msgid "``README``, ``README.txt``, ``README.rst`` or ``README.md``;"
+msgstr "``README``、``README.txt``、``README.rst`` 或 ``README.md``；"
+
+#: ../../../userguide/miscellaneous.rst:32
+msgid "``MANIFEST.in``"
+msgstr ""
+
+#: ../../../userguide/miscellaneous.rst:34
+msgid ""
+"Please note that the list above is guaranteed to work with the last stable "
+"version of ``setuptools``. The behavior of older versions might differ."
+msgstr ""
+"請注意，上述清單保證在最新穩定版的 ``setuptools`` 中運作。較舊版本的行為可能"
+"有所不同。"
+
+#: ../../../userguide/miscellaneous.rst:38
+msgid ""
+"``setuptools`` will attempt to include type information files   by default "
+"in the distribution   (``.pyi`` and ``py.typed``, as specified in :pep:"
+"`561`),   as long as they are contained inside of a package directory   (for "
+"the time being there is no automatic support for top-level ``.pyi`` files)."
+msgstr ""
+"``setuptools`` 預設會嘗試在散佈包中包含型別資訊檔案（``.pyi`` 和 ``py."
+"typed``，如 :pep:`561` 所述），只要這些檔案位於套件目錄內即可（目前還不支援自"
+"動處理頂層的 ``.pyi`` 檔案）。"
+
+#: ../../../userguide/miscellaneous.rst:45
+msgid ""
+"*Please note however that this feature is* **EXPERIMENTAL** *and may change "
+"in the future.*"
+msgstr "*但請注意，此功能為*\\ **實驗性功能**\\ *，未來可能有所變更。*"
+
+#: ../../../userguide/miscellaneous.rst:48
+msgid ""
+"If you have ``.pyi`` and ``py.typed`` files in your project, but do not wish "
+"to distribute them, you can opt out by setting :doc:`exclude-package-data </"
+"userguide/datafiles>` to remove them."
+msgstr ""
+"如果你的專案中有 ``.pyi`` 和 ``py.typed`` 檔案，但不希望發布它們，你可以透過"
+"設定 :doc:`exclude-package-data </userguide/datafiles>` 來排除。"
+
+#: ../../../userguide/miscellaneous.rst:52
+msgid ""
+"However, when building more complex packages (e.g. packages that include non-"
+"Python files, or that need to use custom C headers), you might find that not "
+"all files present in your project folder are included in package :term:"
+"`distribution archive <Distribution Package>`."
+msgstr ""
+"然而，在建置較複雜的套件時（例如包含非 Python 檔案的套件，或需要使用自訂 C 標"
+"頭檔的套件），你可能會發現專案資料夾中的檔案並非全部都會包含在套件的 :term:`"
+"發行封存檔 <Distribution Package>` 中。"
+
+#: ../../../userguide/miscellaneous.rst:57
+msgid ""
+"If you are using a :wiki:`Revision Control System`, such as git_ or "
+"mercurial_, and your source distributions only need to include files that "
+"you're tracking in revision control, you can use a ``setuptools`` :ref:"
+"`plugin <Adding Support for Revision Control Systems>`, such as :pypi:"
+"`setuptools-scm` or :pypi:`setuptools-svn` to automatically include all "
+"tracked files into the ``sdist``."
+msgstr ""
+"如果你使用的是 :wiki:`版本控制系統 <Revision Control System>`，例如 git_ 或 "
+"mercurial_，且你的來源碼散佈包只需要包含你在版本控制中追蹤的檔案，你可以使用 "
+"``setuptools`` 的 :ref:`外掛程式 <Adding Support for Revision Control "
+"Systems>`，例如 :pypi:`setuptools-scm` 或 :pypi:`setuptools-svn`，來自動將所"
+"有受追蹤的檔案納入 ``sdist``。"
+
+#: ../../../userguide/miscellaneous.rst:65
+msgid ""
+"Alternatively, if you need finer control over the files (e.g. you don't want "
+"to distribute :wiki:`CI/CD`-related files) or you need automatically "
+"generated files, you can add a ``MANIFEST.in`` file at the root of your "
+"project, to specify any files that the default file location algorithm "
+"doesn't catch."
+msgstr ""
+"或者，如果你需要對檔案進行更精細的控制（例如你不想發布與 :wiki:`CI/CD` 相關的"
+"檔案），或者你需要自動產生的檔案，你可以在專案根目錄中加入 ``MANIFEST.in`` 檔"
+"案，來指定預設檔案定位演算法未捕捉到的任何檔案。"
+
+#: ../../../userguide/miscellaneous.rst:70
+msgid ""
+"This file contains instructions that tell ``setuptools`` which files exactly "
+"should be part of the ``sdist`` (or not)."
+msgstr ""
+"此檔案包含指示，告訴 ``setuptools`` 哪些檔案應該（或不應該）是 ``sdist`` 的一"
+"部分。"
+
+#: ../../../userguide/miscellaneous.rst:74
+msgid ""
+"Please note that ``setuptools`` supports the ``MANIFEST.in``, and not "
+"``MANIFEST`` (no extension). Any documentation, tutorial or example that "
+"recommends using ``MANIFEST`` (no extension) is likely outdated."
+msgstr ""
+"請注意，``setuptools`` 支援的是 ``MANIFEST.in``，而不是 ``MANIFEST``（無副檔"
+"名）。任何建議使用 ``MANIFEST``（無副檔名）的文件、教學或範例很可能都已過時。"
+
+#: ../../../userguide/miscellaneous.rst:79
+msgid ""
+"The ``MANIFEST.in`` file contains commands that allow you to discover and "
+"manipulate lists of files. There are many commands that can be used with "
+"different objectives, but you should try to not make your ``MANIFEST.in`` "
+"file too fine grained."
+msgstr ""
+"``MANIFEST.in`` 檔案包含允許你探索和操作檔案清單的指令。有許多指令可用於不同"
+"的目的，但你應盡量不要讓 ``MANIFEST.in`` 檔案過於細碎。"
+
+#: ../../../userguide/miscellaneous.rst:84
+msgid ""
+"A good idea is to start with a ``graft`` command (to add all files inside a "
+"set of directories) and then fine tune the file selection by removing the "
+"excess or adding isolated files."
+msgstr ""
+"一個好做法是從 ``graft`` 指令開始（加入一組目錄內的所有檔案），然後透過移除多"
+"餘的檔案或加入個別檔案來微調檔案選取。"
+
+#: ../../../userguide/miscellaneous.rst:89
+msgid ""
+"A :file:`MANIFEST.in` file consists of commands, one per line, instructing "
+"setuptools to add or remove some set of files from the sdist.  The commands "
+"are:"
+msgstr ""
+":file:`MANIFEST.in` 檔案由指令組成，每行一個指令，指示 setuptools 從 sdist 中"
+"加入或移除某些檔案。這些指令如下："
+
+#: ../../../userguide/miscellaneous.rst:94
+msgid "Command"
+msgstr "指令"
+
+#: ../../../userguide/miscellaneous.rst:94
+msgid "Description"
+msgstr "說明"
+
+#: ../../../userguide/miscellaneous.rst:96
+msgid ":samp:`include {pat1} {pat2} ...`"
+msgstr ""
+
+#: ../../../userguide/miscellaneous.rst:96
+msgid ""
+"Add all files matching any of the listed patterns (Files must be given as "
+"paths relative to the root of the project)"
+msgstr ""
+"加入符合任何列出之模式的所有檔案（必須以相對於專案根目錄的路徑指定檔案）"
+
+#: ../../../userguide/miscellaneous.rst:98
+msgid ":samp:`exclude {pat1} {pat2} ...`"
+msgstr ""
+
+#: ../../../userguide/miscellaneous.rst:98
+msgid ""
+"Remove all files matching any of the listed patterns (Files must be given as "
+"paths relative to the root of the project)"
+msgstr ""
+"移除符合任何列出之模式的所有檔案（必須以相對於專案根目錄的路徑指定檔案）"
+
+#: ../../../userguide/miscellaneous.rst:100
+msgid ":samp:`recursive-include {dir-pattern} {pat1} {pat2} ...`"
+msgstr ""
+
+#: ../../../userguide/miscellaneous.rst:100
+msgid ""
+"Add all files under directories matching ``dir-pattern`` that match any of "
+"the listed patterns"
+msgstr "加入符合 ``dir-pattern`` 的目錄下、且符合任何列出之模式的所有檔案"
+
+#: ../../../userguide/miscellaneous.rst:101
+msgid ":samp:`recursive-exclude {dir-pattern} {pat1} {pat2} ...`"
+msgstr ""
+
+#: ../../../userguide/miscellaneous.rst:101
+msgid ""
+"Remove all files under directories matching ``dir-pattern`` that match any "
+"of the listed patterns"
+msgstr "移除符合 ``dir-pattern`` 的目錄下、且符合任何列出之模式的所有檔案"
+
+#: ../../../userguide/miscellaneous.rst:102
+msgid ":samp:`global-include {pat1} {pat2} ...`"
+msgstr ""
+
+#: ../../../userguide/miscellaneous.rst:102
+msgid ""
+"Add all files anywhere in the source tree matching any of the listed patterns"
+msgstr "加入來源碼樹中任何位置符合任何列出之模式的所有檔案"
+
+#: ../../../userguide/miscellaneous.rst:103
+msgid ":samp:`global-exclude {pat1} {pat2} ...`"
+msgstr ""
+
+#: ../../../userguide/miscellaneous.rst:103
+msgid ""
+"Remove all files anywhere in the source tree matching any of the listed "
+"patterns"
+msgstr "移除來源碼樹中任何位置符合任何列出之模式的所有檔案"
+
+#: ../../../userguide/miscellaneous.rst:104
+msgid ":samp:`graft {dir-pattern}`"
+msgstr ""
+
+#: ../../../userguide/miscellaneous.rst:104
+msgid "Add all files under directories matching ``dir-pattern``"
+msgstr "加入符合 ``dir-pattern`` 的目錄下的所有檔案"
+
+#: ../../../userguide/miscellaneous.rst:105
+msgid ":samp:`prune {dir-pattern}`"
+msgstr ""
+
+#: ../../../userguide/miscellaneous.rst:105
+msgid "Remove all files under directories matching ``dir-pattern``"
+msgstr "移除符合 ``dir-pattern`` 的目錄下的所有檔案"
+
+#: ../../../userguide/miscellaneous.rst:108
+msgid ""
+"The patterns here are glob-style patterns: ``*`` matches zero or more "
+"regular filename characters (on Unix, everything except forward slash; on "
+"Windows, everything except backslash and colon); ``?`` matches a single "
+"regular filename character, and ``[chars]`` matches any one of the "
+"characters between the square brackets (which may contain character ranges, "
+"e.g., ``[a-z]`` or ``[a-fA-F0-9]``).  Setuptools also has support for ``**`` "
+"matching zero or more characters including forward slash, backslash, and "
+"colon."
+msgstr ""
+"這裡的模式是 glob 樣式模式：``*`` 符合零個或多個一般檔名字元（在 Unix 上，除"
+"正斜線外的所有字元；在 Windows 上，除反斜線和冒號外的所有字元）；``?`` 符合單"
+"個一般檔名字元；而 ``[chars]`` 符合方括號內的任何一個字元（可包含字元範圍，例"
+"如 ``[a-z]`` 或 ``[a-fA-F0-9]``）。Setuptools 也支援 ``**``，可符合包含正斜"
+"線、反斜線和冒號在內的零個或多個字元。"
+
+#: ../../../userguide/miscellaneous.rst:116
+msgid ""
+"Directory patterns are relative to the root of the project directory; e.g., "
+"``graft example*`` will include a directory named :file:`examples` in the "
+"project root but will not include :file:`docs/examples/`."
+msgstr ""
+"目錄模式是相對於專案目錄的根目錄；例如，``graft example*`` 會包含專案根目錄中"
+"名為 :file:`examples` 的目錄，但不會包含 :file:`docs/examples/`。"
+
+#: ../../../userguide/miscellaneous.rst:120
+msgid ""
+"File & directory names in :file:`MANIFEST.in` should be ``/``-separated; "
+"setuptools will automatically convert the slashes to the local platform's "
+"appropriate directory separator."
+msgstr ""
+":file:`MANIFEST.in` 中的檔案和目錄名稱應以 ``/`` 分隔；setuptools 會自動將斜"
+"線轉換為當地平台適用的目錄分隔符號。"
+
+#: ../../../userguide/miscellaneous.rst:124
+msgid ""
+"Commands are processed in the order they appear in the :file:`MANIFEST.in` "
+"file.  For example, given the commands:"
+msgstr ""
+"指令會按照它們在 :file:`MANIFEST.in` 檔案中出現的順序處理。例如，給定以下指"
+"令："
+
+#: ../../../userguide/miscellaneous.rst:127
+msgid ""
+"graft tests\n"
+"global-exclude *.py[cod]"
+msgstr ""
+
+#: ../../../userguide/miscellaneous.rst:132
+msgid ""
+"the contents of the directory tree :file:`tests` will first be added to the "
+"sdist, and then after that all files in the sdist with a ``.pyc``, ``.pyo``, "
+"or ``.pyd`` extension will be removed from the sdist.  If the commands were "
+"in the opposite order, then ``*.pyc`` files etc. would be only be removed "
+"from what was already in the sdist before adding :file:`tests`, and if :file:"
+"`tests` happened to contain any ``*.pyc`` files, they would end up included "
+"in the sdist because the exclusion happened before they were included."
+msgstr ""
+"目錄樹 :file:`tests` 的內容會先被加入 sdist，然後 sdist 中所有副檔名為 ``."
+"pyc``、``.pyo`` 或 ``.pyd`` 的檔案會從 sdist 中移除。如果指令順序相反，則 "
+"``*.pyc`` 等檔案只會從加入 :file:`tests` 之前的 sdist 中移除；如果 :file:"
+"`tests` 恰好包含任何 ``*.pyc`` 檔案，它們最終會包含在 sdist 中，因為排除是在"
+"它們被加入之前發生的。"
+
+#: ../../../userguide/miscellaneous.rst:140
+msgid ""
+"An example of ``MANIFEST.in`` for a simple project that organized according "
+"to a :ref:`src-layout` is:"
+msgstr "以下是按照 :ref:`src-layout` 組織的簡單專案之 ``MANIFEST.in`` 範例："
+
+#: ../../../userguide/miscellaneous.rst:143
+msgid ""
+"# MANIFEST.in -- just for illustration\n"
+"graft src\n"
+"graft tests\n"
+"graft docs\n"
+"# `-> adds all files inside a directory\n"
+"\n"
+"include tox.ini\n"
+"# `-> matches file paths relative to the root of the project\n"
+"\n"
+"global-exclude *~ *.py[cod] *.so\n"
+"# `-> matches file names (regardless of directory)"
+msgstr ""
+"# MANIFEST.in -- 僅供說明\n"
+"graft src\n"
+"graft tests\n"
+"graft docs\n"
+"# `-> 加入目錄內的所有檔案\n"
+"\n"
+"include tox.ini\n"
+"# `-> 比對相對於專案根目錄的檔案路徑\n"
+"\n"
+"global-exclude *~ *.py[cod] *.so\n"
+"# `-> 比對檔案名稱（無論目錄為何）"
+
+#: ../../../userguide/miscellaneous.rst:157
+msgid ""
+"Once the correct files are present in the ``sdist``, they can then be used "
+"by binary extensions during the build process, or included in the final :"
+"term:`wheel <Wheel>` [#build-process]_ if you configure ``setuptools`` with "
+"``include_package_data=True``."
+msgstr ""
+"一旦正確的檔案存在於 ``sdist`` 中，它們就可以在建置過程中被二進位擴充功能使"
+"用，或者如果你將 ``setuptools`` 設定為 ``include_package_data=True``，則會包"
+"含在最終的 :term:`wheel <Wheel>` [#build-process]_ 中。"
+
+#: ../../../userguide/miscellaneous.rst:163
+msgid ""
+"Please note that, when using ``include_package_data=True``, only files "
+"**inside the package directory** are included in the final ``wheel``, by "
+"default."
+msgstr ""
+"請注意，使用 ``include_package_data=True`` 時，預設情況下最終的 ``wheel`` 中"
+"只會包含\\ **軟體包目錄內**\\ 的檔案。"
+
+#: ../../../userguide/miscellaneous.rst:166
+msgid ""
+"So for example, if you create a :term:`Python project <Project>` that uses :"
+"pypi:`setuptools-scm` and have a ``tests`` directory outside of the package "
+"folder, the ``tests`` directory will be present in the ``sdist`` but not in "
+"the ``wheel`` [#wheel-vs-sdist]_."
+msgstr ""
+"例如，如果你建立一個使用 :pypi:`setuptools-scm` 的 :term:`Python 專案 "
+"<Project>`，且在套件資料夾外有一個 ``tests`` 目錄，那麼 ``tests`` 目錄會存在"
+"於 ``sdist`` 中，但不會存在於 ``wheel`` [#wheel-vs-sdist]_ 中。"
+
+#: ../../../userguide/miscellaneous.rst:171
+msgid "See :doc:`/userguide/datafiles` for more information."
+msgstr "更多資訊請參閱 :doc:`/userguide/datafiles`。"
+
+#: ../../../userguide/miscellaneous.rst:177
+msgid "Caching and Troubleshooting"
+msgstr "快取與疑難排解"
+
+#: ../../../userguide/miscellaneous.rst:179
+msgid ""
+"Setuptools automatically creates a few directories to host build artefacts "
+"and cache files, such as ``build``, ``dist``, ``*.egg-info``.  While cache "
+"is useful to speed up incremental builds, in some edge cases it might become "
+"stale.  If you feel that caching is causing problems to your build, "
+"specially after changes in configuration or in the directory/file "
+"structure., consider removing ``build``, ``dist``, ``*.egg-info`` [#PKG-"
+"INFO]_ before rebuilding or reinstalling your project."
+msgstr ""
+"Setuptools 會自動建立一些目錄來存放建置產物和快取檔案，例如 ``build``、"
+"``dist``、``*.egg-info``。雖然快取有助於加速增量建置，但在某些邊緣情況下可能"
+"會變得過時。如果你覺得快取導致建置出現問題，特別是在變更設定或目錄/檔案結構"
+"後，請考慮在重新建置或重新安裝專案之前移除 ``build``、``dist``、``*.egg-"
+"info`` [#PKG-INFO]_。"
+
+#: ../../../userguide/miscellaneous.rst:190
+msgid ""
+"You can think about the build process as two stages: first the ``sdist`` "
+"will be created and then the ``wheel`` will be produced from that ``sdist``."
+msgstr ""
+"你可以將建置過程視為兩個階段：首先會建立 ``sdist``，然後從該 ``sdist`` 產生 "
+"``wheel``。"
+
+#: ../../../userguide/miscellaneous.rst:194
+msgid ""
+"This happens because the ``sdist`` can contain files that are useful during "
+"development or the build process itself, but not in runtime (e.g. tests, "
+"docs, examples, etc...). The ``wheel``, on the other hand, is a file format "
+"that has been optimized and is ready to be unpacked into a running "
+"installation of Python or :term:`Virtual Environment`. Therefore it only "
+"contains items that are required during runtime."
+msgstr ""
+"這是因為 ``sdist`` 可以包含在開發或建置過程中有用、但在執行時期不需要的檔案"
+"（例如測試、文件、範例等）。另一方面，``wheel`` 是一種已經過最佳化的檔案格"
+"式，準備好解壓縮到正在執行中的 Python 安裝或 :term:`虛擬環境 <Virtual "
+"Environment>` 中。因此它只包含執行時期所需的項目。"
+
+#: ../../../userguide/miscellaneous.rst:203
+msgid ""
+"When working from an extracted sdist (e.g. for patching), you might also "
+"consider removing the ``PKG-INFO`` file to force its recreation."
+msgstr ""
+"當從解壓縮的 sdist 工作時（例如進行修補），你也可以考慮移除 ``PKG-INFO`` 檔案"
+"以強制重新建立。"

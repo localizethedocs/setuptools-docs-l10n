@@ -39,7 +39,7 @@ msgstr "開發指南"
 
 #: ../../../index.rst:27
 msgid "Backward compatibility & deprecated practice"
-msgstr ""
+msgstr "向後相容性與棄用的作法"
 
 #: ../../../index.rst:27
 msgid "Changelog"
@@ -58,6 +58,8 @@ msgid ""
 "Setuptools is a fully-featured, actively-maintained, and stable library "
 "designed to facilitate packaging Python projects."
 msgstr ""
+"Setuptools 是一套功能完整、持續維護且穩定的程式庫，專為協助 Python 專案進行封"
+"裝而設計。"
 
 #: ../../../index.rst:10
 msgid ""
@@ -65,6 +67,9 @@ msgid ""
 "and programs (e.g., CLI/GUI tools implemented in Python), that can be "
 "installed with :pypi:`pip` and uploaded to `PyPI <https://pypi.org>`_."
 msgstr ""
+"它能幫助開發者輕鬆分享可重複使用的程式碼（以程式庫的形式）和程式（例如：以 "
+"Python 實現的 CLI/GUI 工具），這些內容都可以透過 :pypi:`pip` 安裝並上傳至 "
+"`PyPI <https://pypi.org>`_。"
 
 #: ../../../index.rst:39
 msgid ""

@@ -19,15 +19,15 @@ msgstr ""
 
 #: ../../../artwork.rst:3
 msgid "Artwork"
-msgstr ""
+msgstr "美術作品"
 
 #: ../../../artwork.rst:8
 msgid "Setuptools logo, designed in 2021 by `Anderson Bravalheri`_"
-msgstr ""
+msgstr "Setuptools 標誌，由 `Anderson Bravalheri`_ 於 2021 年設計"
 
 #: ../../../artwork.rst:11
 msgid "Elements of Design"
-msgstr ""
+msgstr "設計元素"
 
 #: ../../../artwork.rst:13
 msgid ""
@@ -49,6 +49,8 @@ msgid ""
 "background. Alternatively, the following options can be considered, "
 "depending on the circumstances:"
 msgstr ""
+"建議將 setuptools 標誌使用在白色（或淺色）背景上。視情況而定，也可以考慮以下"
+"選項："
 
 #: ../../../artwork.rst:28
 msgid ""

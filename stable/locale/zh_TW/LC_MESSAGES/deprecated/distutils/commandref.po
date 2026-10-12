@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../deprecated/distutils/commandref.rst:5
 msgid "Command Reference"
-msgstr ""
+msgstr "命令參考"
 
 #: ../../../deprecated/distutils/_setuptools_disclaimer.rst:3
 msgid ""

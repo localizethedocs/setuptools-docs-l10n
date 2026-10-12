@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../userguide/datafiles.rst:3
 msgid "Data Files Support"
-msgstr ""
+msgstr "資料檔案支援"
 
 #: ../../../userguide/datafiles.rst:5
 msgid ""
@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../userguide/datafiles.rst:34
 msgid "First, you can use the ``include_package_data`` keyword."
-msgstr ""
+msgstr "首先，您可以使用 ``include_package_data`` 關鍵字。"
 
 #: ../../../userguide/datafiles.rst:36
 msgid "For example, if the package tree looks like this::"
@@ -91,6 +91,8 @@ msgid ""
 "These files are included via the :ref:`MANIFEST.in <Using MANIFEST.in>` "
 "file, like so::"
 msgstr ""
+"這些檔案會透過 :ref:`MANIFEST.in <Using MANIFEST.in>` 檔案納入，如下所示："
+"\\ ::"
 
 #: ../../../userguide/datafiles.rst:53
 msgid ""
@@ -111,13 +113,15 @@ msgstr ""
 msgid ""
 "then all the ``.txt`` and ``.rst`` files will be included into the source "
 "distribution."
-msgstr ""
+msgstr "接著，所有 ``.txt`` 和 ``.rst`` 檔案都會包含在來源散佈版中。"
 
 #: ../../../userguide/datafiles.rst:65
 msgid ""
 "To further include them into the ``wheels``, you can use the "
 "``include_package_data`` keyword:"
 msgstr ""
+"若要進一步將這些檔案納入 ``wheels``，您可以使用 ``include_package_data`` 關鍵"
+"字："
 
 #: ../../../userguide/datafiles.rst:70
 msgid ""

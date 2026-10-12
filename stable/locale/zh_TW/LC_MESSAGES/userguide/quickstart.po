@@ -446,6 +446,13 @@ msgid ""
 "]\n"
 "# ..."
 msgstr ""
+"[project]\n"
+"# ...\n"
+"dependencies = [\n"
+"    \"docutils\",\n"
+"    \"requests <= 0.4\",\n"
+"]\n"
+"# ..."
 
 #: ../../../userguide/quickstart.rst:339
 msgid ""

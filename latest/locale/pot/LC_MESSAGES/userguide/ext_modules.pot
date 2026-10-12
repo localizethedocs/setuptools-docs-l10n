@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 83.0.0\n"
+"Project-Id-Version: setuptools 84.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"POT-Creation-Date: 2026-10-12 17:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -335,12 +335,12 @@ msgstr ""
 msgid "Extension API Reference"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:1
 msgid "Describes a single extension module."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:3
 msgid ""
 "This means that all source files will be compiled into a single binary file "
@@ -349,7 +349,7 @@ msgid ""
 "EXTENSION_SUFFIXES``)."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:8
 msgid ""
 "In the case ``.pyx`` files are passed as ``sources and`` ``Cython`` is "
@@ -361,14 +361,14 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:12
 msgid ""
 "the full name of the extension, including any packages -- ie. *not* a "
 "filename or pathname, but Python dotted name"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:16
 msgid ""
 "iterable of source filenames, (except strings, which could be misinterpreted "
@@ -378,14 +378,14 @@ msgid ""
 "is recognized by the \"build_ext\" command as source for a Python extension."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:24
 msgid ""
 "list of directories to search for C/C++ header files (in Unix form for "
 "portability)"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:28
 msgid ""
 "list of macros to define; each macro is defined using a 2-tuple: the first "
@@ -395,22 +395,22 @@ msgid ""
 "line)"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:35
 msgid "list of macros to undefine explicitly"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:38
 msgid "list of directories to search for C/C++ libraries at link time"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:41
 msgid "list of library names (not filenames or paths) to link against"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:44
 msgid ""
 "list of directories to search for C/C++ libraries at run time (for shared "
@@ -418,7 +418,7 @@ msgid ""
 "an exception during build on Windows platforms."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:50
 msgid ""
 "list of extra files to link with (eg. object files not implied by 'sources', "
@@ -426,7 +426,7 @@ msgid ""
 "etc.)"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:55
 msgid ""
 "any extra platform- and compiler-specific information to use when compiling "
@@ -435,7 +435,7 @@ msgid ""
 "for other platforms it could be anything."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:62
 msgid ""
 "any extra platform- and compiler-specific information to use when linking "
@@ -443,7 +443,7 @@ msgid ""
 "Python interpreter).  Similar interpretation as for 'extra_compile_args'."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:68
 msgid ""
 "list of symbols to be exported from a shared extension.  Not used on all "
@@ -451,32 +451,32 @@ msgid ""
 "typically export exactly one symbol: \"init\" + extension_name."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:74
 msgid ""
 "any extra options to pass to SWIG if a source file has the .i extension."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:78
 msgid "list of files that the extension depends on"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:81
 msgid ""
 "extension language (i.e. \"c\", \"c++\", \"objc\"). Will be detected from "
 "the source extensions if not provided."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:85
 msgid ""
 "specifies that a build failure in the extension should not abort the build "
 "process, but simply not install the failing extension."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:89
 msgid ""
 "opt-in flag for the usage of :doc:`Python's limited API <python:c-api/"
@@ -487,7 +487,7 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/extension.py:docstring
 #: of setuptools.extension.Extension:92
 msgid "if ``runtime_library_dirs`` is specified on Windows. (since v63)"
 msgstr ""

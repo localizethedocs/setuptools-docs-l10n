@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:3
 msgid "Developer's Guide for Setuptools"
-msgstr ""
+msgstr "Setuptools 的開發者指南"
 
 #: ../../../development/developer-guide.rst:5
 msgid ""
@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:83
 msgid "Testing"
-msgstr ""
+msgstr "測試"
 
 #: ../../../development/developer-guide.rst:85
 msgid ""
@@ -288,7 +288,7 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:103
 msgid "Building Documentation"
-msgstr ""
+msgstr "建置文件"
 
 #: ../../../development/developer-guide.rst:105
 msgid ""

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../deprecated/commands.rst:3
 msgid "Running ``setuptools`` commands"
-msgstr ""
+msgstr "執行 ``setuptools`` 命令"
 
 #: ../../../deprecated/commands.rst:5
 msgid ""
@@ -38,12 +38,14 @@ msgstr ""
 
 #: ../../../deprecated/commands.rst:14
 msgid "You could also run commands in other circumstances:"
-msgstr ""
+msgstr "您也可以在其他情況下執行命令："
 
 #: ../../../deprecated/commands.rst:16
 msgid ""
 "``setuptools`` projects without ``setup.py`` (e.g., ``setup.cfg``-only)::"
 msgstr ""
+"未使用 ``setup.py`` 的 ``setuptools`` 專案（例如：僅使用 ``setup.cfg``）："
+"\\ ::"
 
 #: ../../../deprecated/commands.rst:18
 msgid "python -c \"from setuptools import setup; setup()\" --help"
@@ -102,7 +104,7 @@ msgstr ""
 msgid ""
 "If you want to install a package, you can use :pypi:`pip` or :pypi:"
 "`installer`::"
-msgstr ""
+msgstr "若要安裝軟體包，可以使用 :pypi:`pip` 或 :pypi:`installer`\\ ：\\ ::"
 
 #: ../../../deprecated/commands.rst:49
 msgid ""
@@ -117,11 +119,11 @@ msgstr ""
 
 #: ../../../deprecated/commands.rst:59
 msgid "Command Reference"
-msgstr ""
+msgstr "命令參考"
 
 #: ../../../deprecated/commands.rst:64
 msgid "``alias`` - Define shortcuts for commonly used commands"
-msgstr ""
+msgstr "``alias`` - 為常用命令定義捷徑"
 
 #: ../../../deprecated/commands.rst:66
 msgid ""
@@ -152,7 +154,7 @@ msgstr ""
 msgid ""
 "Once the alias is defined, it can then be used with other setup commands, e."
 "g.::"
-msgstr ""
+msgstr "一旦定義別名後，就可以將它與其他 setup 命令搭配使用，例如：\\ ::"
 
 #: ../../../deprecated/commands.rst:86
 msgid ""
@@ -175,6 +177,10 @@ msgid ""
 "about an unknown command.  Second, it allows you to define an alias for a "
 "command, that uses that command.  For example, this (project-local) alias::"
 msgstr ""
+"請注意，setuptools 在同一個命令行中，每個別名 *最多只會展開一次* 。這有兩個目"
+"的。首先，如果您不小心建立了別名迴圈，該迴圈不會造成任何影響；您會改為收到一"
+"則關於未知命令的錯誤訊息。其次，您可以為某個命令定義一個別名，而該別名會使用"
+"該命令。例如，以下這個（專案本機）別名：\\ ::"
 
 #: ../../../deprecated/commands.rst:99
 msgid "setup.py alias bdist_egg bdist_egg rotate -k1 -m.egg"
@@ -192,7 +198,7 @@ msgstr ""
 msgid ""
 "You can remove a defined alias with the ``--remove`` (or ``-r``) option, e."
 "g.::"
-msgstr ""
+msgstr "你可以使用 ``--remove``（或 ``-r`` ）選項移除已定義的別名，例如：\\ ::"
 
 #: ../../../deprecated/commands.rst:108
 msgid "setup.py alias --global-config --remove daily"

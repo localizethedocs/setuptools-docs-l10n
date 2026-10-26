@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 83.0.0\n"
+"Project-Id-Version: setuptools 84.2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:59+0000\n"
+"POT-Creation-Date: 2026-10-26 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgid ""
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:60
-msgid "and the setup script might be  ::"
+msgid "and the setup script might be ::"
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:62
@@ -143,7 +143,7 @@ msgid ""
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:85
-msgid "The setup script from the last example could also be written as  ::"
+msgid "The setup script from the last example could also be written as ::"
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:87
@@ -225,8 +225,8 @@ msgstr ""
 #: ../../../deprecated/distutils/examples.rst:134
 msgid ""
 "If you want to put modules in directories not named for their package, then "
-"you need to use the ``package_dir`` option again.  For example, if the :file:"
-"`src` directory holds modules in the ``foobar`` package::"
+"you need to use the ``package_dir`` option again.  For example, if "
+"the :file:`src` directory holds modules in the ``foobar`` package::"
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:138
@@ -240,7 +240,7 @@ msgid ""
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:145
-msgid "an appropriate setup script would be  ::"
+msgid "an appropriate setup script would be ::"
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:147
@@ -269,7 +269,7 @@ msgid ""
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:163
-msgid "in which case your setup script would be  ::"
+msgid "in which case your setup script would be ::"
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:165
@@ -291,8 +291,9 @@ msgid ""
 "If you have sub-packages, they must be explicitly listed in ``packages``, "
 "but any entries in ``package_dir`` automatically extend to sub-packages. (In "
 "other words, the Distutils does *not* scan your source tree, trying to "
-"figure out which directories correspond to Python packages by looking for :"
-"file:`__init__.py` files.)  Thus, if the default layout grows a sub-package::"
+"figure out which directories correspond to Python packages by looking "
+"for :file:`__init__.py` files.)  Thus, if the default layout grows a sub-"
+"package::"
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:180
@@ -309,7 +310,7 @@ msgid ""
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:190
-msgid "then the corresponding setup script would be  ::"
+msgid "then the corresponding setup script would be ::"
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:192
@@ -343,7 +344,7 @@ msgstr ""
 #: ../../../deprecated/distutils/examples.rst:213
 msgid ""
 "If the ``foo`` extension belongs in the root package, the setup script for "
-"this could be  ::"
+"this could be ::"
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:216
@@ -474,21 +475,22 @@ msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:300
 msgid ""
-"This call reads the ``name`` metadata by running the :func:`distutils.core."
-"setup`  function. Although, when a source or binary distribution is created "
-"with Distutils, the metadata fields are written in a static file called :"
-"file:`PKG-INFO`. When a Distutils-based project is installed in Python, the :"
-"file:`PKG-INFO` file is copied alongside the modules and packages of the "
-"distribution under :file:`NAME-VERSION-pyX.X.egg-info`, where ``NAME`` is "
-"the name of the project, ``VERSION`` its version as defined in the Metadata, "
-"and ``pyX.X`` the major and minor version of Python like ``2.7`` or ``3.2``."
+"This call reads the ``name`` metadata by running "
+"the :func:`distutils.core.setup`  function. Although, when a source or "
+"binary distribution is created with Distutils, the metadata fields are "
+"written in a static file called :file:`PKG-INFO`. When a Distutils-based "
+"project is installed in Python, the :file:`PKG-INFO` file is copied "
+"alongside the modules and packages of the distribution under :file:`NAME-"
+"VERSION-pyX.X.egg-info`, where ``NAME`` is the name of the project, "
+"``VERSION`` its version as defined in the Metadata, and ``pyX.X`` the major "
+"and minor version of Python like ``2.7`` or ``3.2``."
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:310
 msgid ""
-"You can read back this static file, by using the :class:`distutils.dist."
-"DistributionMetadata` class and its :func:`~distutils.dist."
-"DistributionMetadata.read_pkg_file` method::"
+"You can read back this static file, by using "
+"the :class:`distutils.dist.DistributionMetadata` class and "
+"its :func:`~distutils.dist.DistributionMetadata.read_pkg_file` method::"
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:314
@@ -507,7 +509,7 @@ msgstr ""
 #: ../../../deprecated/distutils/examples.rst:324
 msgid ""
 "Notice that the class can also be instantiated with a metadata file path to "
-"loads its values::"
+"load its values::"
 msgstr ""
 
 #: ../../../deprecated/distutils/examples.rst:327

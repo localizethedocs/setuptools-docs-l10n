@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 83.0.0\n"
+"Project-Id-Version: setuptools 84.2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:59+0000\n"
+"POT-Creation-Date: 2026-10-26 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,8 +40,9 @@ msgstr ""
 
 #: ../../../setuptools.rst:14
 msgid ""
-"Create `Python Eggs <http://peak.telecommunity.com/DevCenter/PythonEggs>`_ - "
-"a single-file importable distribution format"
+"Create `Python Eggs <https://web.archive.org/web/20191118162524/http://"
+"peak.telecommunity.com/DevCenter/PythonEggs>`_ - a single-file importable "
+"distribution format"
 msgstr ""
 
 #: ../../../setuptools.rst:17
@@ -137,13 +138,13 @@ msgstr ""
 #: ../../../setuptools.rst:98
 msgid ""
 "During the remainder of the current development cycle, therefore, setuptools "
-"will warn you about missing ``declare_namespace()`` calls in your ``__init__."
-"py`` files, and you should correct these as soon as possible before the "
-"compatibility support is removed. Namespace packages without declaration "
-"lines will not work correctly once a user has upgraded to a later version, "
-"so it's important that you make this change now in order to avoid having "
-"your code break in the field. Our apologies for the inconvenience, and thank "
-"you for your patience."
+"will warn you about missing ``declare_namespace()`` calls in your "
+"``__init__.py`` files, and you should correct these as soon as possible "
+"before the compatibility support is removed. Namespace packages without "
+"declaration lines will not work correctly once a user has upgraded to a "
+"later version, so it's important that you make this change now in order to "
+"avoid having your code break in the field. Our apologies for the "
+"inconvenience, and thank you for your patience."
 msgstr ""
 
 #: ../../../setuptools.rst:124
@@ -177,8 +178,8 @@ msgstr ""
 
 #: ../../../setuptools.rst:144
 msgid ""
-"Specify build requirements and :pep:`517` build backend in ``pyproject."
-"toml``. For example:"
+"Specify build requirements and :pep:`517` build backend in "
+"``pyproject.toml``. For example:"
 msgstr ""
 
 #: ../../../setuptools.rst:148
@@ -258,7 +259,7 @@ msgstr ""
 msgid ""
 "The default behaviour for ``setuptools`` will work well for pure Python "
 "packages, or packages with simple C extensions (that don't require any "
-"special C header). See :ref:`Controlling files in the distribution` and :doc:"
-"`userguide/datafiles` for more information about complex scenarios, if you "
-"want to include other types of files."
+"special C header). See :ref:`Controlling files in the distribution` "
+"and :doc:`userguide/datafiles` for more information about complex scenarios, "
+"if you want to include other types of files."
 msgstr ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 83.0.0\n"
+"Project-Id-Version: setuptools 84.2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:59+0000\n"
+"POT-Creation-Date: 2026-10-26 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgid "pip install --upgrade setuptools[core]"
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:12
-msgid "Most of the times, however, you don't have to..."
+msgid "Most of the time, however, you don't have to..."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:14
@@ -66,8 +66,8 @@ msgid ""
 "Please note that some operating systems might be equipped with the "
 "``python3`` and ``pip3`` commands instead of ``python`` and ``pip`` (but "
 "they should be equivalent). If you don't have ``pip`` or ``pip3`` available "
-"in your system, please check out :doc:`pip installation docs <pip:"
-"installation>`."
+"in your system, please check out :doc:`pip installation docs "
+"<pip:installation>`."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:36
@@ -119,16 +119,16 @@ msgid ""
 "as the backend no longer requires the ``wheel`` package, and listing it "
 "explicitly causes it to be unnecessarily required for source distribution "
 "builds. You should only include ``wheel`` in ``requires`` if you need to "
-"explicitly access it during build time (e.g. if your project needs a ``setup."
-"py`` script that imports ``wheel``)."
+"explicitly access it during build time (e.g. if your project needs a "
+"``setup.py`` script that imports ``wheel``)."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:80
 msgid ""
 "In addition to specifying a build system, you also will need to add some "
 "package information such as metadata, contents, dependencies, etc. This can "
-"be done in the same ``pyproject.toml`` file, or in a separated one: ``setup."
-"cfg`` or ``setup.py`` [#setup.py]_."
+"be done in the same ``pyproject.toml`` file, or in a separated one: "
+"``setup.cfg`` or ``setup.py`` [#setup.py]_."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:85
@@ -246,18 +246,18 @@ msgstr ""
 
 #: ../../../userguide/quickstart.rst:180
 msgid ""
-"It is important to remember, however, that running this file as a script (e."
-"g. ``python setup.py sdist``) is strongly **discouraged**, and that the "
-"majority of the command line interfaces are (or will be) **deprecated** (e."
-"g. ``python setup.py install``, ``python setup.py bdist_wininst``, ...)."
+"It is important to remember, however, that running this file as a script "
+"(e.g. ``python setup.py sdist``) is strongly **discouraged**, and that the "
+"majority of the command line interfaces are (or will be) **deprecated** "
+"(e.g. ``python setup.py install``, ``python setup.py bdist_wininst``, ...)."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:185
 msgid ""
 "We also recommend users to expose as much as possible configuration in a "
-"more *declarative* way via the :doc:`pyproject.toml <pyproject_config>` or :"
-"doc:`setup.cfg <declarative_config>`, and keep the ``setup.py`` minimal with "
-"only the dynamic parts (or even omit it completely if applicable)."
+"more *declarative* way via the :doc:`pyproject.toml <pyproject_config>` "
+"or :doc:`setup.cfg <declarative_config>`, and keep the ``setup.py`` minimal "
+"with only the dynamic parts (or even omit it completely if applicable)."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:190
@@ -275,10 +275,10 @@ msgstr ""
 #: ../../../userguide/quickstart.rst:200
 msgid ""
 "For projects that follow a simple directory structure, ``setuptools`` should "
-"be able to automatically detect all :term:`packages <package>` and :term:"
-"`namespaces <namespace package>`. However, complex projects might include "
-"additional folders and supporting files that not necessarily should be "
-"distributed (or that can confuse ``setuptools`` auto discovery algorithm)."
+"be able to automatically detect all :term:`packages <package>` "
+"and :term:`namespaces <namespace package>`. However, complex projects might "
+"include additional folders and supporting files that not necessarily should "
+"be distributed (or that can confuse ``setuptools`` auto discovery algorithm)."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:206
@@ -399,10 +399,11 @@ msgstr ""
 #: ../../../userguide/quickstart.rst:311
 msgid ""
 "When this project is installed, a ``cli-name`` executable will be created. "
-"``cli-name`` will invoke the function ``some_func`` in the ``mypkg/mymodule."
-"py`` file when called by the user. Note that you can also use the ``entry-"
-"points`` mechanism to advertise components between installed packages and "
-"implement plugin systems. For detailed usage, go to :doc:`entry_point`."
+"``cli-name`` will invoke the function ``some_func`` in the ``mypkg/"
+"mymodule.py`` file when called by the user. Note that you can also use the "
+"``entry-points`` mechanism to advertise components between installed "
+"packages and implement plugin systems. For detailed usage, go "
+"to :doc:`entry_point`."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:320
@@ -448,8 +449,8 @@ msgstr ""
 msgid ""
 "Each dependency is represented by a string that can optionally contain "
 "version requirements (e.g. one of the operators <, >, <=, >=, == or !=, "
-"followed by a version identifier), and/or conditional environment markers, e."
-"g. ``sys_platform == \"win32\"`` (see :doc:`PyPUG:specifications/version-"
+"followed by a version identifier), and/or conditional environment markers, "
+"e.g. ``sys_platform == \"win32\"`` (see :doc:`PyPUG:specifications/version-"
 "specifiers` for more information)."
 msgstr ""
 
@@ -501,10 +502,10 @@ msgstr ""
 #: ../../../userguide/quickstart.rst:403
 msgid ""
 "This tells setuptools to install any data files it finds in your packages. "
-"The data files must be specified via the :ref:`MANIFEST.in <Using MANIFEST."
-"in>` file or automatically added by a :ref:`Revision Control System plugin "
-"<Adding Support for Revision Control Systems>`. For more details, see :doc:"
-"`datafiles`."
+"The data files must be specified via the :ref:`MANIFEST.in <Using "
+"MANIFEST.in>` file or automatically added by a :ref:`Revision Control System "
+"plugin <Adding Support for Revision Control Systems>`. For more details, "
+"see :doc:`datafiles`."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:411
@@ -564,9 +565,9 @@ msgid ""
 "When building from source code (for example, by ``python -m build`` or ``pip "
 "install -e .``) some directories hosting build artefacts and cache files may "
 "be created, such as ``build``, ``dist``, ``*.egg-info`` [#cache]_. You can "
-"configure your version control system to ignore them (see `GitHub's ."
-"gitignore template <https://github.com/github/gitignore/blob/main/Python."
-"gitignore>`_ for an example)."
+"configure your version control system to ignore them (see "
+"`GitHub's .gitignore template <https://github.com/github/gitignore/blob/main/"
+"Python.gitignore>`_ for an example)."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:459
@@ -576,9 +577,9 @@ msgstr ""
 #: ../../../userguide/quickstart.rst:460
 msgid ""
 "After generating the distribution files, the next step would be to upload "
-"your distribution so others can use it. This functionality is provided by :"
-"pypi:`twine` and is documented in the :doc:`Python packaging tutorial <PyPUG:"
-"tutorials/packaging-projects>`."
+"your distribution so others can use it. This functionality is provided "
+"by :pypi:`twine` and is documented in the :doc:`Python packaging tutorial "
+"<PyPUG:tutorials/packaging-projects>`."
 msgstr ""
 
 #: ../../../userguide/quickstart.rst:467

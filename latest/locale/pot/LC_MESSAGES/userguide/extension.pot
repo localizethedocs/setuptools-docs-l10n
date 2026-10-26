@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 83.0.0\n"
+"Project-Id-Version: setuptools 84.2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"POT-Creation-Date: 2026-10-26 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,14 +52,14 @@ msgstr ""
 
 #: ../../../userguide/extension.rst:24
 msgid ""
-"Any entry-point defined in your ``setup.cfg``, ``setup.py`` or ``pyproject."
-"toml`` files are not immediately available for use.  Your package needs to "
-"be installed first, then ``setuptools`` will be able to access these entry "
-"points.  For example consider a ``Project-A`` that defines entry points. "
-"When building ``Project-A``, these will not be available.  If ``Project-B`` "
-"declares a :doc:`build system requirement </userguide/"
-"dependency_management>` on ``Project-A``, then ``setuptools`` will be able "
-"to use ``Project-A``' customizations."
+"Any entry-point defined in your ``setup.cfg``, ``setup.py`` or "
+"``pyproject.toml`` files are not immediately available for use.  Your "
+"package needs to be installed first, then ``setuptools`` will be able to "
+"access these entry points.  For example consider a ``Project-A`` that "
+"defines entry points. When building ``Project-A``, these will not be "
+"available.  If ``Project-B`` declares a :doc:`build system requirement </"
+"userguide/dependency_management>` on ``Project-A``, then ``setuptools`` will "
+"be able to use ``Project-A``' customizations."
 msgstr ""
 
 #: ../../../userguide/extension.rst:34
@@ -108,11 +108,11 @@ msgstr ""
 
 #: ../../../userguide/extension.rst:62
 msgid ""
-"Once a project containing such entry points has been activated on ``sys."
-"path``, (e.g. by running ``pip install``) the command(s) will be available "
-"to any ``setuptools``-based project. In fact, this is how setuptools' own "
-"commands are installed: the setuptools project's setup script defines entry "
-"points for them!"
+"Once a project containing such entry points has been activated on "
+"``sys.path``, (e.g. by running ``pip install``) the command(s) will be "
+"available to any ``setuptools``-based project. In fact, this is how "
+"setuptools' own commands are installed: the setuptools project's setup "
+"script defines entry points for them!"
 msgstr ""
 
 #: ../../../userguide/extension.rst:68
@@ -131,7 +131,7 @@ msgid ""
 "the ``setuptools.errors`` module."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/__init__.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/__init__.py:docstring
 #: of setuptools.Command:1
 msgid ""
 "Setuptools internal actions are organized using a *command design pattern*. "
@@ -139,7 +139,7 @@ msgid ""
 "during the build should be implemented as a ``Command`` subclass."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/__init__.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/__init__.py:docstring
 #: of setuptools.Command:5
 msgid ""
 "These commands are abstractions and do not necessarily correspond to a "
@@ -147,31 +147,31 @@ msgid ""
 "(although historically they would)."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/__init__.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/__init__.py:docstring
 #: of setuptools.Command:9
 msgid ""
 "When creating a new command from scratch, custom defined classes **SHOULD** "
 "inherit from ``setuptools.Command`` and implement a few mandatory methods. "
-"Between these mandatory methods, are listed: :meth:`initialize_options`, :"
-"meth:`finalize_options` and :meth:`run`."
+"Between these mandatory methods, are "
+"listed: :meth:`initialize_options`, :meth:`finalize_options` and :meth:`run`."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/__init__.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/__init__.py:docstring
 #: of setuptools.Command:14
 msgid ""
 "A useful analogy for command classes is to think of them as subroutines with "
-"local variables called \"options\".  The options are \"declared\" in :meth:"
-"`initialize_options` and \"defined\" (given their final values, aka "
+"local variables called \"options\".  The options are \"declared\" "
+"in :meth:`initialize_options` and \"defined\" (given their final values, aka "
 "\"finalized\") in :meth:`finalize_options`, both of which must be defined by "
 "every command class. The \"body\" of the subroutine, (where it does all the "
-"work) is the :meth:`run` method. Between :meth:`initialize_options` and :"
-"meth:`finalize_options`, ``setuptools`` may set the values for options/"
+"work) is the :meth:`run` method. Between :meth:`initialize_options` "
+"and :meth:`finalize_options`, ``setuptools`` may set the values for options/"
 "attributes based on user's input (or circumstance), which means that the "
-"implementation should be careful to not overwrite values in :meth:"
-"`finalize_options` unless necessary."
+"implementation should be careful to not overwrite values "
+"in :meth:`finalize_options` unless necessary."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/__init__.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/__init__.py:docstring
 #: of setuptools.Command:24
 msgid ""
 "Please note that other commands (or other parts of setuptools) may also "
@@ -182,7 +182,7 @@ msgid ""
 "other attributes) **SHOULD** be recomputed in :meth:`finalize_options`."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/__init__.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/__init__.py:docstring
 #: of setuptools.Command:32
 msgid ""
 "When overwriting existing commands, custom defined classes **MUST** abide by "
@@ -190,14 +190,14 @@ msgid ""
 "inherit from the original class."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/__init__.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/__init__.py:docstring
 #: of setuptools.Command.dry_run:1
 msgid ""
 "For compatibility with vendored bdist_wheel. https://github.com/pypa/"
 "setuptools/pull/4872/files#r1986395142"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/__init__.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/__init__.py:docstring
 #: of setuptools.Command.finalize_options:1
 msgid ""
 "Set final values for all options/attributes used by the command. Most of the "
@@ -205,14 +205,14 @@ msgid ""
 "value yet (e.g. ``if self.attr is None: self.attr = val``)."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/__init__.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/__init__.py:docstring
 #: of setuptools.Command.initialize_options:1
 msgid ""
 "Set or (reset) all options/attributes/caches used by the command to their "
 "default values. Note that these values may be overwritten during the build."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/__init__.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/__init__.py:docstring
 #: of setuptools.Command.run:1
 msgid ""
 "Execute the actions intended by the command. (Side effects **SHOULD** only "
@@ -230,7 +230,7 @@ msgid ""
 "to implement the following protocol:"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand:1
 msgid ""
 "In order to support editable installations (see :pep:`660`) all build "
@@ -238,31 +238,31 @@ msgid ""
 "from ``setuptools.Command``."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand:5
 msgid ""
 "When creating an :pep:`editable wheel <660>`, ``setuptools`` will try to "
 "evaluate custom ``build`` subcommands using the following procedure:"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand:8
 msgid "``setuptools`` will set the ``editable_mode`` attribute to ``True``"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand:9
 msgid "``setuptools`` will execute the ``run()`` command."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand:12
 msgid ""
 "Subcommands **SHOULD** take advantage of ``editable_mode=True`` to adequate "
 "its behaviour or perform optimisations."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand:15
 msgid ""
 "For example, if a subcommand doesn't need to generate an extra file and all "
@@ -270,7 +270,7 @@ msgid ""
 "**SHOULD** simply \"early return\"."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand:19
 msgid ""
 "Similarly, if the subcommand creates files that would be placed alongside "
@@ -281,7 +281,7 @@ msgid ""
 "place\" builds accordingly."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand:26
 msgid ""
 "``setuptools`` use any knowledge it can derive from the return values of "
@@ -293,7 +293,7 @@ msgid ""
 "files built in place."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand:33
 msgid ""
 "Please note that custom sub-commands **SHOULD NOT** rely on ``run()`` being "
@@ -302,7 +302,7 @@ msgid ""
 "should work independently of ``run()``."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand.build_lib:1
 msgid ""
 "String representing the directory where the build artifacts should be "
@@ -313,7 +313,7 @@ msgid ""
 "one of the directories in :obj:`site.PREFIXES` upon installation."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand.build_lib:9
 msgid ""
 "A command that produces platform-independent files (e.g. compiling text "
@@ -325,7 +325,7 @@ msgid ""
 "the ``set_undefined_options`` command::"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand.build_lib:16
 msgid ""
 "def finalize_options(self):\n"
@@ -334,7 +334,7 @@ msgid ""
 "    ..."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand.editable_mode:1
 msgid ""
 "Boolean flag that will be set to ``True`` when setuptools is used for an "
@@ -344,14 +344,14 @@ msgid ""
 "their behaviour accordingly."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand.finalize_options:1
 #: setuptools.command.build.SubCommand.initialize_options:1
 #: setuptools.command.build.SubCommand.run:1
 msgid "(Required by the original :class:`setuptools.Command` interface)"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand.get_output_mapping:1
 msgid ""
 "Return a mapping between destination files as they would be produced by the "
@@ -361,7 +361,7 @@ msgid ""
 "``\"{build_lib}/destination/file/path\"``."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand.get_outputs:1
 msgid ""
 "Return a list of files intended for distribution as they would have been "
@@ -369,7 +369,7 @@ msgid ""
 "``\"{build_lib}/destination/file/path\"``."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand.get_outputs:7
 msgid ""
 "The return value of ``get_output()`` should include all files used as keys "
@@ -377,7 +377,7 @@ msgid ""
 "and don't correspond to any source file already present in the project."
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/command/build.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/command/build.py:docstring
 #: of setuptools.command.build.SubCommand.get_source_files:1
 msgid ""
 "Return a list of all files that are used by the command to create the "
@@ -402,10 +402,10 @@ msgstr ""
 #: ../../../userguide/extension.rst:99
 msgid ""
 "Sometimes, your commands may need additional arguments to the ``setup()`` "
-"call.  You can enable this by defining entry points in the ``distutils."
-"setup_keywords`` group.  For example, if you wanted a ``setup()`` argument "
-"called ``bar_baz``, you might add something like this to your extension "
-"project:"
+"call.  You can enable this by defining entry points in the "
+"``distutils.setup_keywords`` group.  For example, if you wanted a "
+"``setup()`` argument called ``bar_baz``, you might add something like this "
+"to your extension project:"
 msgstr ""
 
 #: ../../../userguide/extension.rst:105
@@ -493,13 +493,14 @@ msgstr ""
 #: ../../../userguide/extension.rst:164
 msgid ""
 "Some extensible applications and frameworks may need to define their own "
-"kinds of metadata, which they can then access using the :mod:`importlib."
-"metadata` APIs. Ordinarily, this is done by having plugin developers include "
-"additional files in their ``ProjectName.egg-info`` directory.  However, "
-"since it can be tedious to create such files by hand, you may want to create "
-"an extension that will create the necessary files from arguments to "
-"``setup()``, in much the same way that ``setuptools`` does for many of the "
-"``setup()`` arguments it adds.  See the section below for more details."
+"kinds of metadata, which they can then access using "
+"the :mod:`importlib.metadata` APIs. Ordinarily, this is done by having "
+"plugin developers include additional files in their ``ProjectName.egg-info`` "
+"directory.  However, since it can be tedious to create such files by hand, "
+"you may want to create an extension that will create the necessary files "
+"from arguments to ``setup()``, in much the same way that ``setuptools`` does "
+"for many of the ``setup()`` arguments it adds.  See the section below for "
+"more details."
 msgstr ""
 
 #: ../../../userguide/extension.rst:178
@@ -519,11 +520,11 @@ msgstr ""
 
 #: ../../../userguide/extension.rst:188
 msgid ""
-"The ``egg_info`` command looks for extension points in an ``egg_info."
-"writers`` group, and calls them to write the files.  Here's a simple example "
-"of an extension defining a setup argument ``foo_bar``, which is a list of "
-"lines that will be written to ``foo_bar.txt`` in the EGG-INFO directory of "
-"any project that uses the argument:"
+"The ``egg_info`` command looks for extension points in an "
+"``egg_info.writers`` group, and calls them to write the files.  Here's a "
+"simple example of an extension defining a setup argument ``foo_bar``, which "
+"is a list of lines that will be written to ``foo_bar.txt`` in the EGG-INFO "
+"directory of any project that uses the argument:"
 msgstr ""
 
 #: ../../../userguide/extension.rst:194

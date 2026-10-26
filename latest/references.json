@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-12 10:22:59 -0400",
-      "hash" : "3a4fd917740b9c5785caaadb96cfcef5607e8ac5",
-      "title" : "Suppress os.path.commonprefix DeprecationWarning from pyproject_hooks on Python 3.15."
+      "date" : "2026-10-20 15:21:56 -0700",
+      "hash" : "52fb1ffd1147ea076f4215cb1708403da3779c62",
+      "title" : "Merge pull request #5364 from pypa/distutils-6af719e20"
     }
   },
   "type" : "branch",

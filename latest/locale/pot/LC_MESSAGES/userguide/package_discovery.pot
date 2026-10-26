@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setuptools 83.0.0\n"
+"Project-Id-Version: setuptools 84.2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"POT-Creation-Date: 2026-10-26 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../userguide/package_discovery.rst:8
 msgid ""
-"a full specification for the keywords supplied to ``setup.cfg`` or ``setup."
-"py`` can be found at :doc:`keywords reference </references/keywords>`"
+"a full specification for the keywords supplied to ``setup.cfg`` or "
+"``setup.py`` can be found at :doc:`keywords reference </references/keywords>`"
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:12
@@ -279,12 +279,12 @@ msgid ""
 "the case of *flat-layout*:"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/discovery.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/discovery.py:docstring
 #: of setuptools.discovery.FlatLayoutPackageFinder.DEFAULT_EXCLUDE:1
 msgid "Reserved package names"
 msgstr ""
 
-#: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/discovery.py:docstring
+#: ../../../../../../.conda/lib/python3.15/site-packages/setuptools/discovery.py:docstring
 #: of setuptools.discovery.FlatLayoutModuleFinder.DEFAULT_EXCLUDE:1
 msgid "Reserved top-level module names"
 msgstr ""
@@ -418,8 +418,8 @@ msgstr ""
 
 #: ../../../userguide/package_discovery.rst:323
 msgid ""
-"``pkg`` does not contain an ``__init__.py`` file, therefore ``pkg."
-"namespace`` is ignored by ``find:`` (see ``find_namespace:`` below)."
+"``pkg`` does not contain an ``__init__.py`` file, therefore "
+"``pkg.namespace`` is ignored by ``find:`` (see ``find_namespace:`` below)."
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:328
@@ -437,8 +437,8 @@ msgstr ""
 
 #: ../../../userguide/package_discovery.rst:342
 msgid ""
-"``pkg`` does not contain an ``__init__.py`` file, therefore ``pkg."
-"namespace`` is ignored by ``find_packages()`` (see "
+"``pkg`` does not contain an ``__init__.py`` file, therefore "
+"``pkg.namespace`` is ignored by ``find_packages()`` (see "
 "``find_namespace_packages()`` below)."
 msgstr ""
 
@@ -492,8 +492,8 @@ msgstr ""
 
 #: ../../../userguide/package_discovery.rst:383
 msgid ""
-"Before diving in, it is important to have a good understanding of what :pep:"
-"`namespace packages <420>` are. Here is a quick recap."
+"Before diving in, it is important to have a good understanding of "
+"what :pep:`namespace packages <420>` are. Here is a quick recap."
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:386
@@ -569,8 +569,8 @@ msgstr ""
 #: ../../../userguide/package_discovery.rst:434
 msgid ""
 "You can think of ``find_namespace:`` as identical to ``find:`` except it "
-"would count a directory as a package even if it doesn't contain ``__init__."
-"py`` file directly."
+"would count a directory as a package even if it doesn't contain "
+"``__init__.py`` file directly."
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:440
@@ -613,8 +613,8 @@ msgstr ""
 msgid ""
 "Please have in mind that ``find_namespace:`` (setup.cfg), "
 "``find_namespace_packages()`` (setup.py) and ``find`` (pyproject.toml) will "
-"scan **all** folders that you have in your project directory if you use a :"
-"ref:`flat-layout`."
+"scan **all** folders that you have in your project directory if you use "
+"a :ref:`flat-layout`."
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:474
@@ -681,8 +681,8 @@ msgid ""
 "being ``pkgutils`` style offered by ``pkgutils`` module in Python. Both are "
 "now considered *deprecated* despite the fact they still linger in many "
 "existing packages. These two differ in many subtle yet significant aspects "
-"and you can find out more on `Python packaging user guide <https://packaging."
-"python.org/guides/packaging-namespace-packages/>`_."
+"and you can find out more on `Python packaging user guide <https://"
+"packaging.python.org/guides/packaging-namespace-packages/>`_."
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:522
@@ -692,9 +692,9 @@ msgstr ""
 #: ../../../userguide/package_discovery.rst:523
 msgid ""
 "This is the method ``setuptools`` directly supports. Starting with the same "
-"layout, there are two pieces you need to add to it. First, an ``__init__."
-"py`` file directly under your namespace package directory that contains the "
-"following:"
+"layout, there are two pieces you need to add to it. First, an "
+"``__init__.py`` file directly under your namespace package directory that "
+"contains the following:"
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:528

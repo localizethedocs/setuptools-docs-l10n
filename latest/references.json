@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-12 10:22:59 -0400",
-      "hash" : "3a4fd917740b9c5785caaadb96cfcef5607e8ac5",
-      "title" : "Suppress os.path.commonprefix DeprecationWarning from pyproject_hooks on Python 3.15."
+      "date" : "2026-10-29 10:38:12 -0400",
+      "hash" : "049ae8e3083514378aedb352a2017fbc306bd126",
+      "title" : "Merge branch 'main' of https://github.com/jaraco/tidelift"
     }
   },
   "type" : "branch",

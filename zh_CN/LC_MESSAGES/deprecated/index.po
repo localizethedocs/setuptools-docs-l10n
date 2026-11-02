@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../deprecated/index.rst:3
+msgid "Guides on backward compatibility & deprecated practice"
+msgstr ""
+
+#: ../../../deprecated/index.rst:5
+msgid ""
+"``Setuptools`` has undergone tremendous changes since its first debut. As "
+"its development continues to roll forward, many of the practice and "
+"mechanisms it had established are now considered deprecated. But they still "
+"remain relevant as a plethora of libraries continue to depend on them. Many "
+"people also find it necessary to equip themselves with the knowledge to "
+"better support backward compatibility. This guide aims to provide the "
+"essential information for such objectives."
+msgstr ""
+
+#: ../../../deprecated/index.rst:29
+msgid "Notes for Consumers of Packages Built with Setuptools"
+msgstr ""

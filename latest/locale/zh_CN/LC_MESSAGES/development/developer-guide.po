@@ -45,10 +45,10 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:23
 msgid ""
-"Setuptools is maintained primarily in GitHub at `this home <https://github."
-"com/pypa/setuptools>`_. Setuptools is maintained under the Python Packaging "
-"Authority (PyPA) with several core contributors. All bugs for Setuptools are "
-"filed and the canonical source is maintained in GitHub."
+"Setuptools is maintained primarily in GitHub at `this home <https://"
+"github.com/pypa/setuptools>`_. Setuptools is maintained under the Python "
+"Packaging Authority (PyPA) with several core contributors. All bugs for "
+"Setuptools are filed and the canonical source is maintained in GitHub."
 msgstr ""
 
 #: ../../../development/developer-guide.rst:28
@@ -238,8 +238,8 @@ msgstr ""
 
 #: ../../../../newsfragments/README.rst:92
 msgid ""
-"See :file:`towncrier.toml` for all available categories (``tool.towncrier."
-"type``)."
+"See :file:`towncrier.toml` for all available categories "
+"(``tool.towncrier.type``)."
 msgstr ""
 
 #: ../../../development/developer-guide.rst:72
@@ -274,8 +274,8 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:90
 msgid ""
-"Under continuous integration, additional tests may be run. See the ``.travis."
-"yml`` file for full details on the tests run under Travis-CI."
+"Under continuous integration, additional tests may be run. See the "
+"``.travis.yml`` file for full details on the tests run under Travis-CI."
 msgstr ""
 
 #: ../../../development/developer-guide.rst:95
@@ -346,8 +346,8 @@ msgstr ""
 #: ../../../development/developer-guide.rst:143
 msgid ""
 "This also means that the project adheres to the same coding conventions and "
-"other practices described in the `skeleton documentation <https://blog."
-"jaraco.com/skeleton/>`_."
+"other practices described in the `skeleton documentation <https://"
+"blog.jaraco.com/skeleton/>`_."
 msgstr ""
 
 #: ../../../development/developer-guide.rst:147
@@ -371,8 +371,9 @@ msgstr ""
 
 #: ../../../development/developer-guide.rst:161
 msgid ""
-"Most standards and best practices are enforced by `Ruff <https://docs.astral."
-"sh/ruff/rules/>`_'s ``ANN2``, ``FA``, ``PYI``, ``UP`` and ``YTT`` rules."
+"Most standards and best practices are enforced by `Ruff <https://"
+"docs.astral.sh/ruff/rules/>`_'s ``ANN2``, ``FA``, ``PYI``, ``UP`` and "
+"``YTT`` rules."
 msgstr ""
 
 #: ../../../development/developer-guide.rst:165
@@ -381,11 +382,11 @@ msgid ""
 "parameters are *all* annotated. This is enforced by ``ANN2``, but it's worth "
 "noting that this is due to mypy inferring ``Any`` even for simple return "
 "types. Mypy also doesn't count functions with missing parameter annotations "
-"as \"typed\". (see `python/mypy#4409 <https://github.com/python/mypy/"
-"issues/4409>`_, `python/mypy#10149 <https://github.com/python/mypy/"
-"issues/10149>`_ and `python/mypy#6646 <https://github.com/python/mypy/"
-"issues/6646>`_). Otherwise, return annotations can be omitted to reduce "
-"verbosity, especially for complex return types."
+"as \"typed\". (see `python/mypy#4409 <https://github.com/python/mypy/issues/"
+"4409>`_, `python/mypy#10149 <https://github.com/python/mypy/issues/10149>`_ "
+"and `python/mypy#6646 <https://github.com/python/mypy/issues/6646>`_). "
+"Otherwise, return annotations can be omitted to reduce verbosity, especially "
+"for complex return types."
 msgstr ""
 
 #: ../../../development/developer-guide.rst:175

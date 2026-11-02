@@ -79,8 +79,8 @@ msgid ""
 "Note that the instructions on the setuptools PyPI page assume that you are "
 "are installing to Python's primary ``site-packages`` directory.  If this is "
 "not the case, you should consult the section below on `Custom Installation "
-"Locations`_ before installing.  (And, on Windows, you should not use the ``."
-"exe`` installer when installing to an alternate location.)"
+"Locations`_ before installing.  (And, on Windows, you should not use the "
+"``.exe`` installer when installing to an alternate location.)"
 msgstr ""
 
 #: ../../../deprecated/easy_install.rst:50
@@ -238,9 +238,10 @@ msgstr ""
 #: ../../../deprecated/easy_install.rst:142
 msgid ""
 "When downloading or processing downloaded files, Easy Install recognizes "
-"distutils source distribution files with extensions of .tgz, .tar, .tar.gz, ."
-"tar.bz2, or .zip.  And of course it handles already-built .egg distributions "
-"as well as ``.win32.exe`` installers built using distutils."
+"distutils source distribution files with extensions "
+"of .tgz, .tar, .tar.gz, .tar.bz2, or .zip.  And of course it handles already-"
+"built .egg distributions as well as ``.win32.exe`` installers built using "
+"distutils."
 msgstr ""
 
 #: ../../../deprecated/easy_install.rst:147
@@ -403,8 +404,8 @@ msgstr ""
 #: ../../../deprecated/easy_install.rst:243
 msgid ""
 "If you have replaced a package with another version, then you can just "
-"delete the package(s) you don't need by deleting the PackageName-versioninfo."
-"egg file or directory (found in the installation directory)."
+"delete the package(s) you don't need by deleting the PackageName-"
+"versioninfo.egg file or directory (found in the installation directory)."
 msgstr ""
 
 #: ../../../deprecated/easy_install.rst:247
@@ -618,9 +619,9 @@ msgstr ""
 
 #: ../../../deprecated/easy_install.rst:386
 msgid ""
-"The above example would then allow downloads only from hosts in the ``python."
-"org`` and ``myintranet.example.com`` domains, unless overridden on the "
-"command line."
+"The above example would then allow downloads only from hosts in the "
+"``python.org`` and ``myintranet.example.com`` domains, unless overridden on "
+"the command line."
 msgstr ""
 
 #: ../../../deprecated/easy_install.rst:392
@@ -1176,8 +1177,8 @@ msgstr ""
 #: ../../../deprecated/easy_install.rst:745
 msgid ""
 "Set the installation directory. It is up to you to ensure that this "
-"directory is on ``sys.path`` at runtime, and to use ``pkg_resources."
-"require()`` to enable the installed package(s) that you need."
+"directory is on ``sys.path`` at runtime, and to use "
+"``pkg_resources.require()`` to enable the installed package(s) that you need."
 msgstr ""
 
 #: ../../../deprecated/easy_install.rst:750
@@ -1439,8 +1440,8 @@ msgid ""
 "Specify one or more custom \"site\" directories (separated by commas). "
 "\"Site\" directories are directories where ``.pth`` files are processed, "
 "such as the main Python ``site-packages`` directory.  As of 0.6a10, "
-"EasyInstall automatically detects whether a given directory processes ``."
-"pth`` files (or can be made to do so), so you should not normally need to "
+"EasyInstall automatically detects whether a given directory processes "
+"``.pth`` files (or can be made to do so), so you should not normally need to "
 "use this option.  It is is now only necessary if you want to override "
 "EasyInstall's judgment and force an installation directory to be treated as "
 "if it supported ``.pth`` files."
@@ -1610,9 +1611,9 @@ msgid ""
 "distributions support an alternative install location that is specific to a "
 "user [3]_. The Default location for each OS is explained in the python "
 "documentation for the ``site.USER_BASE`` variable.  This mode of "
-"installation can be turned on by specifying the ``--user`` option to ``setup."
-"py install`` or ``easy_install``. This approach serves the need to have a "
-"user-specific stash of packages."
+"installation can be turned on by specifying the ``--user`` option to "
+"``setup.py install`` or ``easy_install``. This approach serves the need to "
+"have a user-specific stash of packages."
 msgstr ""
 
 #: ../../../deprecated/easy_install.rst:1004
@@ -1629,9 +1630,9 @@ msgstr ""
 #: ../../../deprecated/easy_install.rst:1008
 msgid ""
 "The User scheme install location can be customized by setting the "
-"``PYTHONUSERBASE`` environment variable, which updates the value of ``site."
-"USER_BASE``.  To isolate packages to a specific application, simply set the "
-"OS environment of that application to a specific value of "
+"``PYTHONUSERBASE`` environment variable, which updates the value of "
+"``site.USER_BASE``.  To isolate packages to a specific application, simply "
+"set the OS environment of that application to a specific value of "
 "``PYTHONUSERBASE``, that contains just those packages."
 msgstr ""
 

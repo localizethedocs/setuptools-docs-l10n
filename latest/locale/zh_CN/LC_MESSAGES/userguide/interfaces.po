@@ -48,9 +48,10 @@ msgstr ""
 
 #: ../../../userguide/interfaces.rst:10
 msgid ""
-"*Tier 1*: APIs required by modern PyPA packaging standards (:pep:`517`, :pep:"
-"`660`) and Documented APIs for customising build behavior or creating "
-"plugins (:doc:`/userguide/extension`, :doc:`/references/keywords`):"
+"*Tier 1*: APIs required by modern PyPA packaging standards "
+"(:pep:`517`, :pep:`660`) and Documented APIs for customising build behavior "
+"or creating plugins (:doc:`/userguide/extension`, :doc:`/references/"
+"keywords`):"
 msgstr ""
 
 #: ../../../userguide/interfaces.rst:12
@@ -153,8 +154,8 @@ msgid ""
 "se*. Instead it is considered a backwards compatible *communication action* "
 "that precedes an upcoming breaking change. This is becauset code containing "
 "warnings typically does not fail and can successfully terminate execution, "
-"unless users explicitly opt into transforming those warnings into errors (e."
-"g., via Python's :external+python:ref:`-W option or PYTHONWARNINGS "
+"unless users explicitly opt into transforming those warnings into errors "
+"(e.g., via Python's :external+python:ref:`-W option or PYTHONWARNINGS "
 "environment variable <using-on-warnings>`)."
 msgstr ""
 

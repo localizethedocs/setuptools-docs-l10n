@@ -24,9 +24,9 @@ msgstr ""
 #: ../../../userguide/license_migration.rst:7
 msgid ""
 "Starting with setuptools v77.0.0, the ``project.license`` field accepts an "
-"`SPDX license expression <https://spdx.org/licenses/>`_ as defined in :pep:"
-"`639`. The previous TOML-table forms (``license = {text = \"...\"}`` and "
-"``license = {file = \"...\"}``) are deprecated and will be removed in a "
+"`SPDX license expression <https://spdx.org/licenses/>`_ as defined "
+"in :pep:`639`. The previous TOML-table forms (``license = {text = \"...\"}`` "
+"and ``license = {file = \"...\"}``) are deprecated and will be removed in a "
 "future version."
 msgstr ""
 

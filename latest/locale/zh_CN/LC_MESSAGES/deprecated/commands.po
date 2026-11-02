@@ -55,8 +55,8 @@ msgstr ""
 
 #: ../../../deprecated/commands.rst:22
 msgid ""
-"python -c \"import setuptools; with open('setup.py') as f: exec(compile(f."
-"read(), 'setup.py', 'exec'))\" develop"
+"python -c \"import setuptools; with open('setup.py') as f: "
+"exec(compile(f.read(), 'setup.py', 'exec'))\" develop"
 msgstr ""
 
 #: ../../../deprecated/commands.rst:24
@@ -76,8 +76,8 @@ msgstr ""
 
 #: ../../../deprecated/commands.rst:33
 msgid ""
-"If you want to create :term:`sdist <Source Distribution (or \"sdist\")>` or :"
-"term:`wheel` distributions the recommendation is to use the command line "
+"If you want to create :term:`sdist <Source Distribution (or \"sdist\")>` "
+"or :term:`wheel` distributions the recommendation is to use the command line "
 "tool provided by :pypi:`build`::"
 msgstr ""
 
@@ -100,8 +100,8 @@ msgstr ""
 
 #: ../../../deprecated/commands.rst:47
 msgid ""
-"If you want to install a package, you can use :pypi:`pip` or :pypi:"
-"`installer`::"
+"If you want to install a package, you can use :pypi:`pip` "
+"or :pypi:`installer`::"
 msgstr ""
 
 #: ../../../deprecated/commands.rst:49
@@ -150,8 +150,8 @@ msgstr ""
 
 #: ../../../deprecated/commands.rst:83
 msgid ""
-"Once the alias is defined, it can then be used with other setup commands, e."
-"g.::"
+"Once the alias is defined, it can then be used with other setup commands, "
+"e.g.::"
 msgstr ""
 
 #: ../../../deprecated/commands.rst:86
@@ -190,8 +190,8 @@ msgstr ""
 
 #: ../../../deprecated/commands.rst:106
 msgid ""
-"You can remove a defined alias with the ``--remove`` (or ``-r``) option, e."
-"g.::"
+"You can remove a defined alias with the ``--remove`` (or ``-r``) option, "
+"e.g.::"
 msgstr ""
 
 #: ../../../deprecated/commands.rst:108
@@ -234,9 +234,9 @@ msgid ""
 "Eggs are the preferred binary distribution format for EasyInstall, because "
 "they are cross-platform (for \"pure\" packages), directly importable, and "
 "contain project metadata including scripts and information about the "
-"project's dependencies.  They can be simply downloaded and added to ``sys."
-"path`` directly, or they can be placed in a directory on ``sys.path`` and "
-"then automatically discovered by the egg runtime system."
+"project's dependencies.  They can be simply downloaded and added to "
+"``sys.path`` directly, or they can be placed in a directory on ``sys.path`` "
+"and then automatically discovered by the egg runtime system."
 msgstr ""
 
 #: ../../../deprecated/commands.rst:139
@@ -316,8 +316,8 @@ msgstr ""
 
 #: ../../../deprecated/commands.rst:185
 msgid ""
-"Keep the contents of the ``--bdist-dir`` tree around after creating the ``."
-"egg`` file."
+"Keep the contents of the ``--bdist-dir`` tree around after creating the "
+"``.egg`` file."
 msgstr ""
 
 #: ../../../deprecated/commands.rst:188
@@ -538,8 +538,8 @@ msgid ""
 "automatically by the ``sdist``, ``bdist_egg``, ``develop``, and ``test`` "
 "commands in order to update the project's metadata, but you can also specify "
 "it explicitly in order to temporarily change the project's version string "
-"while executing other commands.  (It also generates the ``.egg-info/SOURCES."
-"txt`` manifest file, which is used when you are building source "
+"while executing other commands.  (It also generates the ``.egg-info/"
+"SOURCES.txt`` manifest file, which is used when you are building source "
 "distributions.)"
 msgstr ""
 

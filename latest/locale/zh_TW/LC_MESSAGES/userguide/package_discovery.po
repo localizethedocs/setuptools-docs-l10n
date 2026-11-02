@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../userguide/package_discovery.rst:8
 msgid ""
-"a full specification for the keywords supplied to ``setup.cfg`` or ``setup."
-"py`` can be found at :doc:`keywords reference </references/keywords>`"
+"a full specification for the keywords supplied to ``setup.cfg`` or "
+"``setup.py`` can be found at :doc:`keywords reference </references/keywords>`"
 msgstr ""
 "``setup.cfg`` 或 ``setup.py`` 中提供的關鍵字的完整規格可以在\\\\ :doc:`關鍵字"
 "參考 </references/keywords>`\\\\ 中找到"
@@ -422,8 +422,8 @@ msgstr ""
 
 #: ../../../userguide/package_discovery.rst:323
 msgid ""
-"``pkg`` does not contain an ``__init__.py`` file, therefore ``pkg."
-"namespace`` is ignored by ``find:`` (see ``find_namespace:`` below)."
+"``pkg`` does not contain an ``__init__.py`` file, therefore "
+"``pkg.namespace`` is ignored by ``find:`` (see ``find_namespace:`` below)."
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:328
@@ -441,8 +441,8 @@ msgstr ""
 
 #: ../../../userguide/package_discovery.rst:342
 msgid ""
-"``pkg`` does not contain an ``__init__.py`` file, therefore ``pkg."
-"namespace`` is ignored by ``find_packages()`` (see "
+"``pkg`` does not contain an ``__init__.py`` file, therefore "
+"``pkg.namespace`` is ignored by ``find_packages()`` (see "
 "``find_namespace_packages()`` below)."
 msgstr ""
 
@@ -496,8 +496,8 @@ msgstr ""
 
 #: ../../../userguide/package_discovery.rst:383
 msgid ""
-"Before diving in, it is important to have a good understanding of what :pep:"
-"`namespace packages <420>` are. Here is a quick recap."
+"Before diving in, it is important to have a good understanding of "
+"what :pep:`namespace packages <420>` are. Here is a quick recap."
 msgstr ""
 "在深入探討之前，充分理解\\ :pep:`命名空間包 <420>`\\ 的概念至關重要。以下是快"
 "速回顧。"
@@ -575,8 +575,8 @@ msgstr ""
 #: ../../../userguide/package_discovery.rst:434
 msgid ""
 "You can think of ``find_namespace:`` as identical to ``find:`` except it "
-"would count a directory as a package even if it doesn't contain ``__init__."
-"py`` file directly."
+"would count a directory as a package even if it doesn't contain "
+"``__init__.py`` file directly."
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:440
@@ -621,8 +621,8 @@ msgstr ""
 msgid ""
 "Please have in mind that ``find_namespace:`` (setup.cfg), "
 "``find_namespace_packages()`` (setup.py) and ``find`` (pyproject.toml) will "
-"scan **all** folders that you have in your project directory if you use a :"
-"ref:`flat-layout`."
+"scan **all** folders that you have in your project directory if you use "
+"a :ref:`flat-layout`."
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:474
@@ -689,8 +689,8 @@ msgid ""
 "being ``pkgutils`` style offered by ``pkgutils`` module in Python. Both are "
 "now considered *deprecated* despite the fact they still linger in many "
 "existing packages. These two differ in many subtle yet significant aspects "
-"and you can find out more on `Python packaging user guide <https://packaging."
-"python.org/guides/packaging-namespace-packages/>`_."
+"and you can find out more on `Python packaging user guide <https://"
+"packaging.python.org/guides/packaging-namespace-packages/>`_."
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:522
@@ -700,9 +700,9 @@ msgstr ""
 #: ../../../userguide/package_discovery.rst:523
 msgid ""
 "This is the method ``setuptools`` directly supports. Starting with the same "
-"layout, there are two pieces you need to add to it. First, an ``__init__."
-"py`` file directly under your namespace package directory that contains the "
-"following:"
+"layout, there are two pieces you need to add to it. First, an "
+"``__init__.py`` file directly under your namespace package directory that "
+"contains the following:"
 msgstr ""
 
 #: ../../../userguide/package_discovery.rst:528

@@ -94,8 +94,8 @@ msgstr ""
 #: ../../../userguide/entry_point.rst:59
 msgid ""
 "Then, after installing the package ``timmins``, we may invoke the "
-"``hello_world()`` function as follows, through the `runpy <https://docs."
-"python.org/3/library/runpy.html>`_ module:"
+"``hello_world()`` function as follows, through the `runpy <https://"
+"docs.python.org/3/library/runpy.html>`_ module:"
 msgstr ""
 
 #: ../../../userguide/entry_point.rst:63
@@ -259,8 +259,8 @@ msgstr ""
 msgid ""
 "The difference between ``console_scripts`` and ``gui_scripts`` only affects "
 "Windows systems. [#use_for_scripts]_ ``console_scripts`` are wrapped in a "
-"console executable, so they are attached to a console and can use ``sys."
-"stdin``, ``sys.stdout`` and ``sys.stderr`` for input and output. "
+"console executable, so they are attached to a console and can use "
+"``sys.stdin``, ``sys.stdout`` and ``sys.stderr`` for input and output. "
 "``gui_scripts`` are wrapped in a GUI executable, so they can be started "
 "without a console, but cannot use standard streams unless application code "
 "redirects them. Other platforms do not have the same distinction."
@@ -268,11 +268,11 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:203
 msgid ""
-"Console and GUI scripts work because behind the scenes, installers like :"
-"pypi:`pip` create wrapper scripts around the function(s) being invoked. For "
-"example, the ``hello-world`` entry point in the above two examples would "
-"create a command ``hello-world`` launching a script like this: "
-"[#use_for_scripts]_"
+"Console and GUI scripts work because behind the scenes, installers "
+"like :pypi:`pip` create wrapper scripts around the function(s) being "
+"invoked. For example, the ``hello-world`` entry point in the above two "
+"examples would create a command ``hello-world`` launching a script like "
+"this: [#use_for_scripts]_"
 msgstr ""
 
 #: ../../../userguide/entry_point.rst:208
@@ -551,8 +551,8 @@ msgstr ""
 #: ../../../userguide/entry_point.rst:405
 msgid ""
 "Our plugin could have also defined multiple entry points under the group "
-"``timmins.display``. For example, in ``src/timmins_plugin_fancy/__init__."
-"py`` we could have two ``display()``-like functions, as follows:"
+"``timmins.display``. For example, in ``src/timmins_plugin_fancy/"
+"__init__.py`` we could have two ``display()``-like functions, as follows:"
 msgstr ""
 
 #: ../../../userguide/entry_point.rst:409
@@ -645,12 +645,12 @@ msgstr ""
 
 #: ../../../userguide/entry_point.rst:487
 msgid ""
-"The recommended approach for loading and importing entry points is the :mod:"
-"`importlib.metadata` module, which is a part of the standard library since "
-"Python 3.8 and is non-provisional since Python 3.10. For older versions of "
-"Python, its backport :pypi:`importlib_metadata` should be used. While using "
-"the backport, the only change that has to be made is to replace ``importlib."
-"metadata`` with ``importlib_metadata``, i.e."
+"The recommended approach for loading and importing entry points is "
+"the :mod:`importlib.metadata` module, which is a part of the standard "
+"library since Python 3.8 and is non-provisional since Python 3.10. For older "
+"versions of Python, its backport :pypi:`importlib_metadata` should be used. "
+"While using the backport, the only change that has to be made is to replace "
+"``importlib.metadata`` with ``importlib_metadata``, i.e."
 msgstr ""
 
 #: ../../../userguide/entry_point.rst:495

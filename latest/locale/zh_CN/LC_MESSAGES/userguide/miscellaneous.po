@@ -56,8 +56,8 @@ msgstr ""
 #: ../../../userguide/miscellaneous.rst:19
 msgid ""
 "All files specified by the ``package-data`` and ``data-files`` configuration "
-"parameters in ``pyproject.toml`` and/or equivalent in ``setup.cfg``/``setup."
-"py``;"
+"parameters in ``pyproject.toml`` and/or equivalent in ``setup.cfg``/"
+"``setup.py``;"
 msgstr ""
 
 #: ../../../userguide/miscellaneous.rst:22
@@ -102,9 +102,10 @@ msgstr ""
 #: ../../../userguide/miscellaneous.rst:38
 msgid ""
 "``setuptools`` will attempt to include type information files   by default "
-"in the distribution   (``.pyi`` and ``py.typed``, as specified in :pep:"
-"`561`),   as long as they are contained inside of a package directory   (for "
-"the time being there is no automatic support for top-level ``.pyi`` files)."
+"in the distribution   (``.pyi`` and ``py.typed``, as specified "
+"in :pep:`561`),   as long as they are contained inside of a package "
+"directory   (for the time being there is no automatic support for top-level "
+"``.pyi`` files)."
 msgstr ""
 
 #: ../../../userguide/miscellaneous.rst:45
@@ -124,18 +125,18 @@ msgstr ""
 msgid ""
 "However, when building more complex packages (e.g. packages that include non-"
 "Python files, or that need to use custom C headers), you might find that not "
-"all files present in your project folder are included in package :term:"
-"`distribution archive <Distribution Package>`."
+"all files present in your project folder are included in "
+"package :term:`distribution archive <Distribution Package>`."
 msgstr ""
 
 #: ../../../userguide/miscellaneous.rst:57
 msgid ""
 "If you are using a :wiki:`Revision Control System`, such as git_ or "
 "mercurial_, and your source distributions only need to include files that "
-"you're tracking in revision control, you can use a ``setuptools`` :ref:"
-"`plugin <Adding Support for Revision Control Systems>`, such as :pypi:"
-"`setuptools-scm` or :pypi:`setuptools-svn` to automatically include all "
-"tracked files into the ``sdist``."
+"you're tracking in revision control, you can use a "
+"``setuptools`` :ref:`plugin <Adding Support for Revision Control Systems>`, "
+"such as :pypi:`setuptools-scm` or :pypi:`setuptools-svn` to automatically "
+"include all tracked files into the ``sdist``."
 msgstr ""
 
 #: ../../../userguide/miscellaneous.rst:65
@@ -309,9 +310,10 @@ msgid ""
 "sdist, and then after that all files in the sdist with a ``.pyc``, ``.pyo``, "
 "or ``.pyd`` extension will be removed from the sdist.  If the commands were "
 "in the opposite order, then ``*.pyc`` files etc. would be only be removed "
-"from what was already in the sdist before adding :file:`tests`, and if :file:"
-"`tests` happened to contain any ``*.pyc`` files, they would end up included "
-"in the sdist because the exclusion happened before they were included."
+"from what was already in the sdist before adding :file:`tests`, and "
+"if :file:`tests` happened to contain any ``*.pyc`` files, they would end up "
+"included in the sdist because the exclusion happened before they were "
+"included."
 msgstr ""
 
 #: ../../../userguide/miscellaneous.rst:140
@@ -338,9 +340,9 @@ msgstr ""
 #: ../../../userguide/miscellaneous.rst:157
 msgid ""
 "Once the correct files are present in the ``sdist``, they can then be used "
-"by binary extensions during the build process, or included in the final :"
-"term:`wheel <Wheel>` [#build-process]_ if you configure ``setuptools`` with "
-"``include_package_data=True``."
+"by binary extensions during the build process, or included in the "
+"final :term:`wheel <Wheel>` [#build-process]_ if you configure "
+"``setuptools`` with ``include_package_data=True``."
 msgstr ""
 
 #: ../../../userguide/miscellaneous.rst:163
@@ -352,10 +354,10 @@ msgstr ""
 
 #: ../../../userguide/miscellaneous.rst:166
 msgid ""
-"So for example, if you create a :term:`Python project <Project>` that uses :"
-"pypi:`setuptools-scm` and have a ``tests`` directory outside of the package "
-"folder, the ``tests`` directory will be present in the ``sdist`` but not in "
-"the ``wheel`` [#wheel-vs-sdist]_."
+"So for example, if you create a :term:`Python project <Project>` that "
+"uses :pypi:`setuptools-scm` and have a ``tests`` directory outside of the "
+"package folder, the ``tests`` directory will be present in the ``sdist`` but "
+"not in the ``wheel`` [#wheel-vs-sdist]_."
 msgstr ""
 
 #: ../../../userguide/miscellaneous.rst:171

@@ -49,8 +49,8 @@ msgstr ""
 
 #: ../../../[towncrier-fragments]:7
 msgid ""
-"Setuptools wheels no longer bundled the project's own test modules. -- by :"
-"user:`itscloud0` (#5212)"
+"Setuptools wheels no longer bundled the project's own test modules. -- "
+"by :user:`itscloud0` (#5212)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:39 (links).rst:987 (links).rst:1149
@@ -123,8 +123,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:34
 msgid ""
-"Fix the loading of ``launcher manifest.xml`` file. (`#5047 <https://github."
-"com/pypa/setuptools/issues/5047>`_)"
+"Fix the loading of ``launcher manifest.xml`` file. (`#5047 <https://"
+"github.com/pypa/setuptools/issues/5047>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:35
@@ -183,8 +183,8 @@ msgstr ""
 msgid ""
 "`#4941 <https://github.com/pypa/setuptools/issues/4941>`_, `#5157 <https://"
 "github.com/pypa/setuptools/issues/5157>`_, `#5169 <https://github.com/pypa/"
-"setuptools/issues/5169>`_, `#5175 <https://github.com/pypa/setuptools/"
-"issues/5175>`_"
+"setuptools/issues/5169>`_, `#5175 <https://github.com/pypa/setuptools/issues/"
+"5175>`_"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:51
@@ -195,11 +195,12 @@ msgstr ""
 msgid ""
 "``pkg_resources`` has been removed from Setuptools. Most common uses of "
 "``pkg_resources`` have been superseded by the `importlib.resources <https://"
-"docs.python.org/3/library/importlib.resources.html>`_ and `importlib."
-"metadata <https://docs.python.org/3/library/importlib.metadata.html>`_ "
-"projects. Projects and environments relying on ``pkg_resources`` for "
-"namespace packages or other behavior should depend on older versions of "
-"``setuptools``. (`#3085 <https://github.com/pypa/setuptools/issues/3085>`_)"
+"docs.python.org/3/library/importlib.resources.html>`_ and "
+"`importlib.metadata <https://docs.python.org/3/library/"
+"importlib.metadata.html>`_ projects. Projects and environments relying on "
+"``pkg_resources`` for namespace packages or other behavior should depend on "
+"older versions of ``setuptools``. (`#3085 <https://github.com/pypa/"
+"setuptools/issues/3085>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:60
@@ -215,8 +216,8 @@ msgid ""
 "of distutils. These changes do affect some class and function signatures, so "
 "any derivative functionality may require some compatibility shims to support "
 "their expected interface. Please report any issues to the Setuptools project "
-"for investigation. (`#4872 <https://github.com/pypa/setuptools/"
-"issues/4872>`_)"
+"for investigation. (`#4872 <https://github.com/pypa/setuptools/issues/"
+"4872>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:69
@@ -249,8 +250,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:98
 msgid ""
-"Remove post-release tags on setuptools' own build. (`#4530 <https://github."
-"com/pypa/setuptools/issues/4530>`_)"
+"Remove post-release tags on setuptools' own build. (`#4530 <https://"
+"github.com/pypa/setuptools/issues/4530>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:99
@@ -339,8 +340,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:160
 msgid ""
 "Added a build dependency on coherent.licensed to inject the declared license "
-"text at build time. (`#4981 <https://github.com/pypa/setuptools/"
-"issues/4981>`_)"
+"text at build time. (`#4981 <https://github.com/pypa/setuptools/issues/"
+"4981>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:166
@@ -367,8 +368,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:190
 msgid ""
-"Simplified the error reporting in editable installs. (`#4984 <https://github."
-"com/pypa/setuptools/issues/4984>`_)"
+"Simplified the error reporting in editable installs. (`#4984 <https://"
+"github.com/pypa/setuptools/issues/4984>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:194
@@ -430,8 +431,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:242
 msgid ""
-"Fixed index_url logic in develop compatibility shim. (`#4966 <https://github."
-"com/pypa/setuptools/issues/4966>`_)"
+"Fixed index_url logic in develop compatibility shim. (`#4966 <https://"
+"github.com/pypa/setuptools/issues/4966>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:246
@@ -453,12 +454,12 @@ msgstr ""
 #: ../../../../NEWS (links).rst:258
 msgid ""
 "Develop command no longer uses easy_install, but instead defers execution to "
-"pip (which then will re-invoke Setuptools via `PEP 517 <https://peps.python."
-"org/pep-0517/>`_ to build the editable wheel). Most of the options to "
-"develop are dropped. This is the final warning before the command is dropped "
-"completely in a few months. Use-cases relying on 'setup.py develop' should "
-"pin to older Setuptools version or migrate to modern build tooling. (`#4955 "
-"<https://github.com/pypa/setuptools/issues/4955>`_)"
+"pip (which then will re-invoke Setuptools via `PEP 517 <https://"
+"peps.python.org/pep-0517/>`_ to build the editable wheel). Most of the "
+"options to develop are dropped. This is the final warning before the command "
+"is dropped completely in a few months. Use-cases relying on 'setup.py "
+"develop' should pin to older Setuptools version or migrate to modern build "
+"tooling. (`#4955 <https://github.com/pypa/setuptools/issues/4955>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:262
@@ -468,8 +469,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:267
 msgid ""
 "Merge with `pypa/distutils@24bd3179b <https://github.com/pypa/distutils/"
-"commit/24bd3179b>`_ including fix for `pypa/distutils#355 <https://github."
-"com/pypa/distutils/issues/355>`_."
+"commit/24bd3179b>`_ including fix for `pypa/distutils#355 <https://"
+"github.com/pypa/distutils/issues/355>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:271
@@ -539,8 +540,8 @@ msgid ""
 "``install-requires => install_requires``). This is a follow-up on "
 "deprecations introduced in `v54.1.0 <https://setuptools.pypa.io/en/latest/"
 "history.html#v54-1-0>`_ (see `#1608 <https://github.com/pypa/setuptools/"
-"issues/1608>`_) and `v54.1.1 <https://setuptools.pypa.io/en/latest/history."
-"html#v54-1-1>`_ (see `#2592 <https://github.com/pypa/setuptools/"
+"issues/1608>`_) and `v54.1.1 <https://setuptools.pypa.io/en/latest/"
+"history.html#v54-1-1>`_ (see `#2592 <https://github.com/pypa/setuptools/"
 "issues/2592>`_)."
 msgstr ""
 
@@ -595,8 +596,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:369
 msgid ""
-"Fixed copy pasta in ``msvc.shared_lib_format``\\. (`#4885 <https://github."
-"com/pypa/setuptools/issues/4885>`_)"
+"Fixed copy pasta in ``msvc.shared_lib_format``\\. (`#4885 <https://"
+"github.com/pypa/setuptools/issues/4885>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:373
@@ -624,8 +625,8 @@ msgstr ""
 msgid ""
 "Store ``License-File``\\s in ``.dist-info/licenses`` subfolder and added "
 "support for recursive globs for ``license_files`` (PEP :pep:`639 <639#add-"
-"license-expression-field>`). -- by :user:`cdce8p` (`#4728 <https://github."
-"com/pypa/setuptools/issues/4728>`_)"
+"license-expression-field>`). -- by :user:`cdce8p` (`#4728 <https://"
+"github.com/pypa/setuptools/issues/4728>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:389
@@ -636,8 +637,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:390
 msgid ""
-"Updated vendored copy of ``wheel`` to ``v0.45.1``\\. (`#4869 <https://github."
-"com/pypa/setuptools/issues/4869>`_)"
+"Updated vendored copy of ``wheel`` to ``v0.45.1``\\. (`#4869 <https://"
+"github.com/pypa/setuptools/issues/4869>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:396
@@ -659,9 +660,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:403
 msgid ""
 "Deprecated ``tools.setuptools.license-files`` in favor of ``project.license-"
-"files`` and added exception if ``project.license-files`` and ``tools."
-"setuptools.license-files`` are used together. -- by :user:`cdce8p` (`#4837 "
-"<https://github.com/pypa/setuptools/issues/4837>`_)"
+"files`` and added exception if ``project.license-files`` and "
+"``tools.setuptools.license-files`` are used together. -- by :user:`cdce8p` "
+"(`#4837 <https://github.com/pypa/setuptools/issues/4837>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:406
@@ -741,8 +742,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:470
 msgid ""
-"Fix wheel file naming to follow binary distribution specification -- by :"
-"user:`di` (`#4877 <https://github.com/pypa/setuptools/issues/4877>`_)"
+"Fix wheel file naming to follow binary distribution specification -- "
+"by :user:`di` (`#4877 <https://github.com/pypa/setuptools/issues/4877>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:474
@@ -788,8 +789,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:506
 msgid ""
 "Fixed ``pkg_resources.require(...)`` to also consider standardised ``dist-"
-"info`` directories. (`#4856 <https://github.com/pypa/setuptools/"
-"issues/4856>`_)"
+"info`` directories. (`#4856 <https://github.com/pypa/setuptools/issues/"
+"4856>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:511
@@ -798,8 +799,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:516
 msgid ""
-"Fix wheel file naming to follow binary distribution specification -- by :"
-"user:`di` (`#4766 <https://github.com/pypa/setuptools/issues/4766>`_)"
+"Fix wheel file naming to follow binary distribution specification -- "
+"by :user:`di` (`#4766 <https://github.com/pypa/setuptools/issues/4766>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:517
@@ -811,8 +812,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:519
 msgid ""
-"Fix documentation for recent CFLAGS distutils change. -- by :user:"
-"`thesamesam` (`#4836 <https://github.com/pypa/setuptools/issues/4836>`_)"
+"Fix documentation for recent CFLAGS distutils change. -- "
+"by :user:`thesamesam` (`#4836 <https://github.com/pypa/setuptools/issues/"
+"4836>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:523
@@ -835,8 +837,8 @@ msgstr ""
 msgid ""
 "Synced with `pypa/distutils@c97a3db2f <https://github.com/pypa/distutils/"
 "commit/c97a3db2f>`_ including better support for free threaded Python on "
-"Windows (`pypa/distutils#310 <https://github.com/pypa/distutils/"
-"issues/310>`_), improved typing support, and linter accommodations. (`#4478 "
+"Windows (`pypa/distutils#310 <https://github.com/pypa/distutils/issues/"
+"310>`_), improved typing support, and linter accommodations. (`#4478 "
 "<https://github.com/pypa/setuptools/issues/4478>`_)"
 msgstr ""
 
@@ -857,16 +859,17 @@ msgstr ""
 msgid ""
 "Preserve original ``PKG-INFO`` into ``METADATA`` when creating wheel "
 "(instead of calling ``wheel.metadata.pkginfo_to_metadata``). This helps to "
-"be more compliant with the flow specified in `PEP 517 <https://peps.python."
-"org/pep-0517/>`_. (`#4701 <https://github.com/pypa/setuptools/issues/4701>`_)"
+"be more compliant with the flow specified in `PEP 517 <https://"
+"peps.python.org/pep-0517/>`_. (`#4701 <https://github.com/pypa/setuptools/"
+"issues/4701>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:552
 msgid ""
 "Changed the ``WindowsSdkVersion``, ``FrameworkVersion32`` and "
 "``FrameworkVersion64`` properties of ``setuptools.msvc.PlatformInfo`` to "
-"return an empty `tuple` instead of `None` as a fallthrough case --  by :user:"
-"`Avasam` (`#4754 <https://github.com/pypa/setuptools/issues/4754>`_)"
+"return an empty `tuple` instead of `None` as a fallthrough case --  "
+"by :user:`Avasam` (`#4754 <https://github.com/pypa/setuptools/issues/4754>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:556
@@ -909,9 +912,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:583
 msgid ""
 "Remove dependency on ``importlib_resources`` and the vendored copy of the "
-"library. Instead, ``setuptools`` consistently rely on stdlib's ``importlib."
-"resources`` (available on Python 3.9+). (`#4718 <https://github.com/pypa/"
-"setuptools/issues/4718>`_)"
+"library. Instead, ``setuptools`` consistently rely on stdlib's "
+"``importlib.resources`` (available on Python 3.9+). (`#4718 <https://"
+"github.com/pypa/setuptools/issues/4718>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:587
@@ -941,9 +944,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:605
 msgid ""
-"Allowed using `dict` as an ordered type in ``setuptools.dist."
-"check_requirements`` -- by :user:`Avasam` (`#4575 <https://github.com/pypa/"
-"setuptools/issues/4575>`_)"
+"Allowed using `dict` as an ordered type in "
+"``setuptools.dist.check_requirements`` -- by :user:`Avasam` (`#4575 <https://"
+"github.com/pypa/setuptools/issues/4575>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:611
@@ -964,9 +967,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:616
 msgid ""
 "Fix clashes for ``optional-dependencies`` in ``pyproject.toml`` and "
-"``extra_requires`` in ``setup.cfg/setup.py``. As per `PEP 621 <https://peps."
-"python.org/pep-0621/>`_, ``optional-dependencies`` have to be honoured and "
-"dynamic behaviour is not allowed. (`#4696 <https://github.com/pypa/"
+"``extra_requires`` in ``setup.cfg/setup.py``. As per `PEP 621 <https://"
+"peps.python.org/pep-0621/>`_, ``optional-dependencies`` have to be honoured "
+"and dynamic behaviour is not allowed. (`#4696 <https://github.com/pypa/"
 "setuptools/issues/4696>`_)"
 msgstr ""
 
@@ -1017,8 +1020,8 @@ msgid ""
 "directory while iterating over entry-points. This avoids triggering "
 "integration problems with ``importlib.metadata``/``importlib_metadata`` "
 "(reference: `pypa/pyproject-hooks#206 <https://github.com/pypa/pyproject-"
-"hooks/issues/206>`_). (`#4680 <https://github.com/pypa/setuptools/"
-"issues/4680>`_)"
+"hooks/issues/206>`_). (`#4680 <https://github.com/pypa/setuptools/issues/"
+"4680>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:659
@@ -1027,8 +1030,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:664
 msgid ""
-"Deprecated ``bdist_wheel.universal`` configuration. (`#4617 <https://github."
-"com/pypa/setuptools/issues/4617>`_)"
+"Deprecated ``bdist_wheel.universal`` configuration. (`#4617 <https://"
+"github.com/pypa/setuptools/issues/4617>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:670
@@ -1054,13 +1057,13 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:686
 msgid ""
-"Merge with `pypa/distutils@7283751 <https://github.com/pypa/distutils/"
-"commit/7283751>`_. Removed the register and upload commands and the config "
-"module that backs them (`pypa/distutils#294 <https://github.com/pypa/"
-"distutils/issues/294>`_). Removed the borland compiler. Replaced vendored "
-"dependencies with natural dependencies. Cygwin C compiler now gets compilers "
-"from sysconfig (`pypa/distutils#296 <https://github.com/pypa/distutils/"
-"issues/296>`_). (`#4649 <https://github.com/pypa/setuptools/issues/4649>`_)"
+"Merge with `pypa/distutils@7283751 <https://github.com/pypa/distutils/commit/"
+"7283751>`_. Removed the register and upload commands and the config module "
+"that backs them (`pypa/distutils#294 <https://github.com/pypa/distutils/"
+"issues/294>`_). Removed the borland compiler. Replaced vendored dependencies "
+"with natural dependencies. Cygwin C compiler now gets compilers from "
+"sysconfig (`pypa/distutils#296 <https://github.com/pypa/distutils/issues/"
+"296>`_). (`#4649 <https://github.com/pypa/setuptools/issues/4649>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:690
@@ -1069,9 +1072,10 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:695
 msgid ""
-"Fix cross-platform compilation using ``distutils._msvccompiler."
-"MSVCCompiler`` -- by :user:`saschanaz` and :user:`Avasam` (`#4648 <https://"
-"github.com/pypa/setuptools/issues/4648>`_)"
+"Fix cross-platform compilation using "
+"``distutils._msvccompiler.MSVCCompiler`` -- by :user:`saschanaz` "
+"and :user:`Avasam` (`#4648 <https://github.com/pypa/setuptools/issues/"
+"4648>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:699
@@ -1081,8 +1085,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:704
 msgid ""
 "Fixed TypeError in sdist filelist processing by adding support for pathlib "
-"Paths for the build_base. (`#4615 <https://github.com/pypa/setuptools/"
-"issues/4615>`_)"
+"Paths for the build_base. (`#4615 <https://github.com/pypa/setuptools/issues/"
+"4615>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:705
@@ -1109,8 +1113,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:723
 msgid ""
 "Added support for defining ``ext-modules`` via ``pyproject.toml`` "
-"(**EXPERIMENTAL**, may change in future releases). (`#4568 <https://github."
-"com/pypa/setuptools/issues/4568>`_)"
+"(**EXPERIMENTAL**, may change in future releases). (`#4568 <https://"
+"github.com/pypa/setuptools/issues/4568>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:730
@@ -1132,10 +1136,10 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:740
 msgid ""
-"Changed the type of error raised by ``setuptools.command.easy_install."
-"CommandSpec.from_param`` on unsupported argument from `AttributeError` to "
-"`TypeError` -- by :user:`Avasam` (`#4548 <https://github.com/pypa/setuptools/"
-"issues/4548>`_)"
+"Changed the type of error raised by "
+"``setuptools.command.easy_install.CommandSpec.from_param`` on unsupported "
+"argument from `AttributeError` to `TypeError` -- by :user:`Avasam` (`#4548 "
+"<https://github.com/pypa/setuptools/issues/4548>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:741
@@ -1146,21 +1150,21 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:742
 msgid ""
-"Made ``setuptools.package_index.Credential`` a `typing.NamedTuple` -- by :"
-"user:`Avasam` (`#4585 <https://github.com/pypa/setuptools/issues/4585>`_)"
+"Made ``setuptools.package_index.Credential`` a `typing.NamedTuple` -- "
+"by :user:`Avasam` (`#4585 <https://github.com/pypa/setuptools/issues/4585>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:743
 msgid ""
 "Reraise error from ``setuptools.command.easy_install.auto_chmod`` instead of "
-"nonsensical ``TypeError: 'Exception' object is not subscriptable`` -- by :"
-"user:`Avasam` (`#4593 <https://github.com/pypa/setuptools/issues/4593>`_)"
+"nonsensical ``TypeError: 'Exception' object is not subscriptable`` -- "
+"by :user:`Avasam` (`#4593 <https://github.com/pypa/setuptools/issues/4593>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:744
 msgid ""
-"Fully typed all collection attributes in ``pkg_resources`` -- by :user:"
-"`Avasam` (`#4598 <https://github.com/pypa/setuptools/issues/4598>`_)"
+"Fully typed all collection attributes in ``pkg_resources`` -- "
+"by :user:`Avasam` (`#4598 <https://github.com/pypa/setuptools/issues/4598>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:745
@@ -1182,12 +1186,12 @@ msgid ""
 "commit/58fe058e4>`_, including consolidating Visual Studio 2017 support "
 "(`#4600 <https://github.com/pypa/setuptools/issues/4600>`_, `pypa/"
 "distutils#289 <https://github.com/pypa/distutils/issues/289>`_), removal of "
-"deprecated legacy MSVC compiler modules (`pypa/distutils#287 <https://github."
-"com/pypa/distutils/issues/287>`_), suppressing of errors when the home "
-"directory is missing (`pypa/distutils#278 <https://github.com/pypa/distutils/"
-"issues/278>`_), removal of wininst binaries (`pypa/distutils#282 <https://"
-"github.com/pypa/distutils/issues/282>`_). (`#4606 <https://github.com/pypa/"
-"setuptools/issues/4606>`_)"
+"deprecated legacy MSVC compiler modules (`pypa/distutils#287 <https://"
+"github.com/pypa/distutils/issues/287>`_), suppressing of errors when the "
+"home directory is missing (`pypa/distutils#278 <https://github.com/pypa/"
+"distutils/issues/278>`_), removal of wininst binaries (`pypa/distutils#282 "
+"<https://github.com/pypa/distutils/issues/282>`_). (`#4606 <https://"
+"github.com/pypa/setuptools/issues/4606>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:758
@@ -1204,8 +1208,8 @@ msgid ""
 "<https://github.com/pypa/setuptools/issues/4503>`_ <https://github.com/pypa/"
 "setuptools/pull/4503>`_ had an unintended consequence of causing potential "
 "``TypeError: metaclass conflict: the metaclass of a derived class must be a "
-"(non-strict) subclass of the metaclasses of all its bases`` -- by :user:"
-"`Avasam` (`#4579 <https://github.com/pypa/setuptools/issues/4579>`_)"
+"(non-strict) subclass of the metaclasses of all its bases`` -- "
+"by :user:`Avasam` (`#4579 <https://github.com/pypa/setuptools/issues/4579>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:771
@@ -1214,17 +1218,17 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:776
 msgid ""
-"Mark abstract base classes and methods with `abc.ABC` and `abc."
-"abstractmethod` -- by :user:`Avasam` (`#4503 <https://github.com/pypa/"
+"Mark abstract base classes and methods with `abc.ABC` and "
+"`abc.abstractmethod` -- by :user:`Avasam` (`#4503 <https://github.com/pypa/"
 "setuptools/issues/4503>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:777
 msgid ""
-"Changed the order of type checks in ``setuptools.command.easy_install."
-"CommandSpec.from_param`` to support any `collections.abc.Iterable` of `str` "
-"param -- by :user:`Avasam` (`#4505 <https://github.com/pypa/setuptools/"
-"issues/4505>`_)"
+"Changed the order of type checks in "
+"``setuptools.command.easy_install.CommandSpec.from_param`` to support any "
+"`collections.abc.Iterable` of `str` param -- by :user:`Avasam` (`#4505 "
+"<https://github.com/pypa/setuptools/issues/4505>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:783
@@ -1261,8 +1265,8 @@ msgstr ""
 msgid ""
 "`#4534 <https://github.com/pypa/setuptools/issues/4534>`_, `#4546 <https://"
 "github.com/pypa/setuptools/issues/4546>`_, `#4554 <https://github.com/pypa/"
-"setuptools/issues/4554>`_, `#4559 <https://github.com/pypa/setuptools/"
-"issues/4559>`_, `#4565 <https://github.com/pypa/setuptools/issues/4565>`_"
+"setuptools/issues/4554>`_, `#4559 <https://github.com/pypa/setuptools/issues/"
+"4559>`_, `#4565 <https://github.com/pypa/setuptools/issues/4565>`_"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:805
@@ -1274,11 +1278,11 @@ msgid ""
 "Merged with `pypa/distutils@b7ee725f3 <https://github.com/pypa/distutils/"
 "commit/b7ee725f3>`_ including: Support for Pathlike objects in data files "
 "and extensions (`pypa/distutils#272 <https://github.com/pypa/distutils/"
-"issues/272>`_, `pypa/distutils#237 <https://github.com/pypa/distutils/"
-"issues/237>`_), native support for C++ compilers (`pypa/distutils#228 "
-"<https://github.com/pypa/distutils/issues/228>`_) and removed unused "
-"get_msvcr() (`pypa/distutils#274 <https://github.com/pypa/distutils/"
-"issues/274>`_). (`#4538 <https://github.com/pypa/setuptools/issues/4538>`_)"
+"issues/272>`_, `pypa/distutils#237 <https://github.com/pypa/distutils/issues/"
+"237>`_), native support for C++ compilers (`pypa/distutils#228 <https://"
+"github.com/pypa/distutils/issues/228>`_) and removed unused get_msvcr() "
+"(`pypa/distutils#274 <https://github.com/pypa/distutils/issues/274>`_). "
+"(`#4538 <https://github.com/pypa/setuptools/issues/4538>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:814
@@ -1288,8 +1292,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:819
 msgid ""
 "Restore the tests command and deprecate access to the module. (`#4519 "
-"<https://github.com/pypa/setuptools/issues/4519>`_) (`#4520 <https://github."
-"com/pypa/setuptools/issues/4520>`_)"
+"<https://github.com/pypa/setuptools/issues/4519>`_) (`#4520 <https://"
+"github.com/pypa/setuptools/issues/4520>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:823
@@ -1429,8 +1433,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:939
 msgid ""
-"Adopted the ``bdist_wheel`` command from the ``wheel`` project -- by :user:"
-"`agronholm` (`#1386 <https://github.com/pypa/setuptools/issues/1386>`_)"
+"Adopted the ``bdist_wheel`` command from the ``wheel`` project -- "
+"by :user:`agronholm` (`#1386 <https://github.com/pypa/setuptools/issues/"
+"1386>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:940
@@ -1449,16 +1454,16 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:944
 msgid ""
-"Migrated Setuptools' own config to pyproject.toml (`#4310 <https://github."
-"com/pypa/setuptools/issues/4310>`_)"
+"Migrated Setuptools' own config to pyproject.toml (`#4310 <https://"
+"github.com/pypa/setuptools/issues/4310>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:950
 msgid ""
 "Prevent a ``TypeError: 'NoneType' object is not callable`` when "
 "``shutil_rmtree`` is called without an ``onexc`` parameter on Python<=3.11 "
-"-- by :user:`Avasam` (`#4382 <https://github.com/pypa/setuptools/"
-"issues/4382>`_)"
+"-- by :user:`Avasam` (`#4382 <https://github.com/pypa/setuptools/issues/"
+"4382>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:951
@@ -1499,17 +1504,18 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:970
 msgid ""
-"Improved `AttributeError` error message if ``pkg_resources.EntryPoint."
-"require`` is called without extras or distribution Gracefully \"do nothing\" "
-"when trying to activate a ``pkg_resources.Distribution`` with a `None` "
-"location, rather than raising a `TypeError` -- by :user:`Avasam` (`#4262 "
-"<https://github.com/pypa/setuptools/issues/4262>`_)"
+"Improved `AttributeError` error message if "
+"``pkg_resources.EntryPoint.require`` is called without extras or "
+"distribution Gracefully \"do nothing\" when trying to activate a "
+"``pkg_resources.Distribution`` with a `None` location, rather than raising a "
+"`TypeError` -- by :user:`Avasam` (`#4262 <https://github.com/pypa/setuptools/"
+"issues/4262>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:973
 msgid ""
-"Typed the dynamically defined variables from ``pkg_resources`` -- by :user:"
-"`Avasam` (`#4267 <https://github.com/pypa/setuptools/issues/4267>`_)"
+"Typed the dynamically defined variables from ``pkg_resources`` -- "
+"by :user:`Avasam` (`#4267 <https://github.com/pypa/setuptools/issues/4267>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:974
@@ -1578,23 +1584,23 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:1008
 msgid ""
-"Removed ``typing_extensions`` from vendored dependencies -- by :user:"
-"`Avasam` (`#4324 <https://github.com/pypa/setuptools/issues/4324>`_)"
+"Removed ``typing_extensions`` from vendored dependencies -- "
+"by :user:`Avasam` (`#4324 <https://github.com/pypa/setuptools/issues/4324>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1009
 msgid ""
 "Remove deprecated ``setuptools.dep_util``. The provided alternative is "
-"``setuptools.modified``. (`#4360 <https://github.com/pypa/setuptools/"
-"issues/4360>`_)"
+"``setuptools.modified``. (`#4360 <https://github.com/pypa/setuptools/issues/"
+"4360>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1016
 msgid ""
 "`#4255 <https://github.com/pypa/setuptools/issues/4255>`_, `#4280 <https://"
 "github.com/pypa/setuptools/issues/4280>`_, `#4282 <https://github.com/pypa/"
-"setuptools/issues/4282>`_, `#4308 <https://github.com/pypa/setuptools/"
-"issues/4308>`_, `#4348 <https://github.com/pypa/setuptools/issues/4348>`_"
+"setuptools/issues/4282>`_, `#4308 <https://github.com/pypa/setuptools/issues/"
+"4308>`_, `#4348 <https://github.com/pypa/setuptools/issues/4348>`_"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1020
@@ -1644,18 +1650,18 @@ msgstr ""
 msgid ""
 "Merged with `pypa/distutils@55982565e <https://github.com/pypa/distutils/"
 "commit/55982565e>`_, including interoperability improvements for "
-"rfc822_escape (`pypa/distutils#213 <https://github.com/pypa/distutils/"
-"issues/213>`_), dynamic resolution of config_h_filename for Python 3.13 "
-"compatibility (`pypa/distutils#219 <https://github.com/pypa/distutils/"
-"issues/219>`_), added support for the z/OS compiler (`pypa/distutils#216 "
-"<https://github.com/pypa/distutils/issues/216>`_), modernized compiler "
-"options in unixcompiler (`pypa/distutils#214 <https://github.com/pypa/"
-"distutils/issues/214>`_), fixed accumulating flags bug after compile/link "
-"(`pypa/distutils#207 <https://github.com/pypa/distutils/issues/207>`_), "
-"fixed enconding warnings (`pypa/distutils#236 <https://github.com/pypa/"
-"distutils/issues/236>`_), and general quality improvements (`pypa/"
-"distutils#234 <https://github.com/pypa/distutils/issues/234>`_). (`#4298 "
-"<https://github.com/pypa/setuptools/issues/4298>`_)"
+"rfc822_escape (`pypa/distutils#213 <https://github.com/pypa/distutils/issues/"
+"213>`_), dynamic resolution of config_h_filename for Python 3.13 "
+"compatibility (`pypa/distutils#219 <https://github.com/pypa/distutils/issues/"
+"219>`_), added support for the z/OS compiler (`pypa/distutils#216 <https://"
+"github.com/pypa/distutils/issues/216>`_), modernized compiler options in "
+"unixcompiler (`pypa/distutils#214 <https://github.com/pypa/distutils/issues/"
+"214>`_), fixed accumulating flags bug after compile/link (`pypa/"
+"distutils#207 <https://github.com/pypa/distutils/issues/207>`_), fixed "
+"enconding warnings (`pypa/distutils#236 <https://github.com/pypa/distutils/"
+"issues/236>`_), and general quality improvements (`pypa/distutils#234 "
+"<https://github.com/pypa/distutils/issues/234>`_). (`#4298 <https://"
+"github.com/pypa/setuptools/issues/4298>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1060
@@ -1675,9 +1681,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:1074
 msgid ""
 "Support `PEP 625 <https://peps.python.org/pep-0625/>`_ by canonicalizing "
-"package name and version in filenames per `the spec <https://packaging."
-"python.org/en/latest/specifications/source-distribution-format/#source-"
-"distribution-file-name>`_. Projects whose names contain uppercase "
+"package name and version in filenames per `the spec <https://"
+"packaging.python.org/en/latest/specifications/source-distribution-format/"
+"#source-distribution-file-name>`_. Projects whose names contain uppercase "
 "characters, dashes, or periods will now see their sdist names normalized to "
 "match the standard and the format previously seen in wheels. For example:"
 msgstr ""
@@ -1722,26 +1728,26 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:1104
 msgid ""
-"Return an empty ``list`` by default in ``pkg_resources.ResourceManager."
-"cleanup_resources`` -- by :user:`Avasam` (`#4244 <https://github.com/pypa/"
-"setuptools/issues/4244>`_)"
+"Return an empty ``list`` by default in "
+"``pkg_resources.ResourceManager.cleanup_resources`` -- by :user:`Avasam` "
+"(`#4244 <https://github.com/pypa/setuptools/issues/4244>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1105
 msgid ""
 "Made ``pkg_resoursces.NullProvider``'s ``has_metadata`` and "
 "``metadata_isdir`` methods return actual booleans like all other Providers. "
-"-- by :user:`Avasam` (`#4254 <https://github.com/pypa/setuptools/"
-"issues/4254>`_)"
+"-- by :user:`Avasam` (`#4254 <https://github.com/pypa/setuptools/issues/"
+"4254>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1111
 msgid ""
 "`#4237 <https://github.com/pypa/setuptools/issues/4237>`_, `#4238 <https://"
 "github.com/pypa/setuptools/issues/4238>`_, `#4241 <https://github.com/pypa/"
-"setuptools/issues/4241>`_, `#4260 <https://github.com/pypa/setuptools/"
-"issues/4260>`_, `#4261 <https://github.com/pypa/setuptools/issues/4261>`_, "
-"`#4263 <https://github.com/pypa/setuptools/issues/4263>`_"
+"setuptools/issues/4241>`_, `#4260 <https://github.com/pypa/setuptools/issues/"
+"4260>`_, `#4261 <https://github.com/pypa/setuptools/issues/4261>`_, `#4263 "
+"<https://github.com/pypa/setuptools/issues/4263>`_"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1115
@@ -1765,8 +1771,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:1136
 msgid ""
-"Updated and removed obsolete Python < 3.8 code and comments. -- by :user:"
-"`Avasam` (`#4096 <https://github.com/pypa/setuptools/issues/4096>`_)"
+"Updated and removed obsolete Python < 3.8 code and comments. -- "
+"by :user:`Avasam` (`#4096 <https://github.com/pypa/setuptools/issues/4096>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1137
@@ -1778,16 +1784,16 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:1143
 msgid ""
-"In tests, rely on pytest-home for reusable fixture. (`#4072 <https://github."
-"com/pypa/setuptools/issues/4072>`_)"
+"In tests, rely on pytest-home for reusable fixture. (`#4072 <https://"
+"github.com/pypa/setuptools/issues/4072>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1144
 msgid ""
 "Explicitly marked as ``Protocol`` and fixed missing ``self`` argument in "
-"interfaces ``pkg_resources.IMetadataProvider`` and ``pkg_resources."
-"IResourceProvider`` -- by :user:`Avasam` (`#4144 <https://github.com/pypa/"
-"setuptools/issues/4144>`_)"
+"interfaces ``pkg_resources.IMetadataProvider`` and "
+"``pkg_resources.IResourceProvider`` -- by :user:`Avasam` (`#4144 <https://"
+"github.com/pypa/setuptools/issues/4144>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1145
@@ -1799,8 +1805,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:1151
 msgid ""
-"Updated documentation referencing obsolete Python 3.7 code. -- by :user:"
-"`Avasam` (`#4096 <https://github.com/pypa/setuptools/issues/4096>`_)"
+"Updated documentation referencing obsolete Python 3.7 code. -- "
+"by :user:`Avasam` (`#4096 <https://github.com/pypa/setuptools/issues/4096>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1152
@@ -1838,8 +1844,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:1172
 msgid ""
 "Added missing estimated date for removing ``setuptools.dep_util`` "
-"(deprecated in v69.0.0). (`#4131 <https://github.com/pypa/setuptools/"
-"issues/4131>`_)"
+"(deprecated in v69.0.0). (`#4131 <https://github.com/pypa/setuptools/issues/"
+"4131>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1176
@@ -1900,18 +1906,18 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:1213
 msgid ""
-"The parsing of the deprecated ``metadata.license_file`` and ``metadata."
-"requires`` fields in ``setup.cfg`` is no longer supported. Users are "
-"expected to move to ``metadata.license_files`` and ``options."
-"install_requires`` (respectively). (`#4066 <https://github.com/pypa/"
-"setuptools/issues/4066>`_)"
+"The parsing of the deprecated ``metadata.license_file`` and "
+"``metadata.requires`` fields in ``setup.cfg`` is no longer supported. Users "
+"are expected to move to ``metadata.license_files`` and "
+"``options.install_requires`` (respectively). (`#4066 <https://github.com/"
+"pypa/setuptools/issues/4066>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1217
 msgid ""
 "Passing ``config_settings`` to ``setuptools.build_meta`` with deprecated "
-"values for ``--global-option`` is no longer allowed. (`#4066 <https://github."
-"com/pypa/setuptools/issues/4066>`_)"
+"values for ``--global-option`` is no longer allowed. (`#4066 <https://"
+"github.com/pypa/setuptools/issues/4066>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1219
@@ -1927,8 +1933,8 @@ msgid ""
 "Added strict enforcement for ``project.dynamic`` in ``pyproject.toml``. This "
 "removes the transitional ability of users configuring certain parameters via "
 "``setup.py`` without making the necessary changes to ``pyproject.toml`` (as "
-"mandated by :pep:`621`). (`#4066 <https://github.com/pypa/setuptools/"
-"issues/4066>`_)"
+"mandated by :pep:`621`). (`#4066 <https://github.com/pypa/setuptools/issues/"
+"4066>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1227
@@ -1936,9 +1942,9 @@ msgid ""
 "Removed handling of ``--config-settings[\"--build-option\"]`` in "
 "``setuptools.build_meta`` from build-backend API hooks *other than* "
 "``build_wheel``. This was motivate by `errors caused when passing this "
-"option <https://github.com/pypa/setuptools/"
-"issues/2491#issuecomment-1742859314>`_. (`#4079 <https://github.com/pypa/"
-"setuptools/issues/4079>`_)"
+"option <https://github.com/pypa/setuptools/issues/"
+"2491#issuecomment-1742859314>`_. (`#4079 <https://github.com/pypa/setuptools/"
+"issues/4079>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1234
@@ -2033,8 +2039,8 @@ msgstr ""
 msgid ""
 "Fix editable install finder handling of nested packages, by only handling 1 "
 "level of nesting and relying on ``importlib.machinery`` to find the "
-"remaining modules based on the parent package path. (`#4020 <https://github."
-"com/pypa/setuptools/issues/4020>`_)"
+"remaining modules based on the parent package path. (`#4020 <https://"
+"github.com/pypa/setuptools/issues/4020>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1311
@@ -2052,8 +2058,8 @@ msgid ""
 "Promote ``pyproject.toml``'s ``[tool.setuptools]`` out of beta. Note that "
 "some fields are still considered deprecated and/or obsolete, and these might "
 "be removed in future versions (i.e., there is no guarantee for long term "
-"support and backward compatibility on those fields). (`#3962 <https://github."
-"com/pypa/setuptools/issues/3962>`_)"
+"support and backward compatibility on those fields). (`#3962 <https://"
+"github.com/pypa/setuptools/issues/3962>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1321
@@ -2082,17 +2088,17 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:1331
 msgid ""
-"Detects (and complain about) ``scripts`` and ``gui-scripts`` set via ``setup."
-"py`` when ``pyproject.toml`` does not include them in ``dynamic``. (`#4012 "
-"<https://github.com/pypa/setuptools/issues/4012>`_)"
+"Detects (and complain about) ``scripts`` and ``gui-scripts`` set via "
+"``setup.py`` when ``pyproject.toml`` does not include them in ``dynamic``. "
+"(`#4012 <https://github.com/pypa/setuptools/issues/4012>`_)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1338
 msgid ""
 "`#3833 <https://github.com/pypa/setuptools/issues/3833>`_, `#3960 <https://"
 "github.com/pypa/setuptools/issues/3960>`_, `#4001 <https://github.com/pypa/"
-"setuptools/issues/4001>`_, `#4007 <https://github.com/pypa/setuptools/"
-"issues/4007>`_"
+"setuptools/issues/4001>`_, `#4007 <https://github.com/pypa/setuptools/issues/"
+"4007>`_"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1342
@@ -2270,9 +2276,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:1409
 msgid ""
-"`#3898 <https://github.com/pypa/setuptools/issues/3898>`_: Fixes setuptools."
-"dist:invalid_unless_false when value is false don't raise error -- by :user:"
-"`jammarher`"
+"`#3898 <https://github.com/pypa/setuptools/issues/3898>`_: Fixes "
+"setuptools.dist:invalid_unless_false when value is false don't raise error "
+"-- by :user:`jammarher`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1413
@@ -2311,8 +2317,8 @@ msgstr ""
 msgid ""
 "`#3893 <https://github.com/pypa/setuptools/issues/3893>`_: Improved the "
 "documentation example regarding making a thin :pep:`517` in-tree backend "
-"wrapper of ``setuptools.build_meta`` that is future-proof and supports :pep:"
-"`660` hook too -- by :user:`webknjaz`."
+"wrapper of ``setuptools.build_meta`` that is future-proof and "
+"supports :pep:`660` hook too -- by :user:`webknjaz`."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1430
@@ -2517,8 +2523,8 @@ msgstr ""
 msgid ""
 "`#3798 <https://github.com/pypa/setuptools/issues/3798>`_: Updated "
 "validations for ``pyproject.toml`` using ``validate-pyproject==0.12.1`` to "
-"allow stub packages (:pep:`561`) to be listed in ``tool.setuptools."
-"packages`` and ``tool.setuptools.package-dir``."
+"allow stub packages (:pep:`561`) to be listed in "
+"``tool.setuptools.packages`` and ``tool.setuptools.package-dir``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1576
@@ -2537,8 +2543,8 @@ msgid ""
 "`#3790 <https://github.com/pypa/setuptools/issues/3790>`_: Bump vendored "
 "version of :pypi:`packaging` to 23.0 (:pypi:`pyparsing` is no longer "
 "required and was removed). As a consequence, users will experience a more "
-"strict parsing of requirements. Specifications that don't comply with :pep:"
-"`440` and :pep:`508` will result in build errors."
+"strict parsing of requirements. Specifications that don't comply "
+"with :pep:`440` and :pep:`508` will result in build errors."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1591
@@ -2565,9 +2571,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:1607
 msgid ""
 "`#3779 <https://github.com/pypa/setuptools/issues/3779>`_: Files referenced "
-"by ``file:`` in ``setup.cfg`` and by ``project.readme.file``, ``project."
-"license.file`` or ``tool.setuptools.dynamic.*.file`` in ``pyproject.toml`` "
-"are now automatically included in the generated sdists."
+"by ``file:`` in ``setup.cfg`` and by ``project.readme.file``, "
+"``project.license.file`` or ``tool.setuptools.dynamic.*.file`` in "
+"``pyproject.toml`` are now automatically included in the generated sdists."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1613
@@ -2660,8 +2666,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:1674
 msgid ""
 "`#3690 <https://github.com/pypa/setuptools/issues/3690>`_: Fixed logging "
-"errors: 'underlying buffer has been detached' (issue `#1631 <https://github."
-"com/pypa/setuptools/issues/1631>`_)."
+"errors: 'underlying buffer has been detached' (issue `#1631 <https://"
+"github.com/pypa/setuptools/issues/1631>`_)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1675
@@ -2675,8 +2681,8 @@ msgstr ""
 msgid ""
 "`#3695 <https://github.com/pypa/setuptools/issues/3695>`_, `#3697 <https://"
 "github.com/pypa/setuptools/issues/3697>`_, `#3698 <https://github.com/pypa/"
-"setuptools/issues/3698>`_, `#3699 <https://github.com/pypa/setuptools/"
-"issues/3699>`_: Changed minor text details (spelling, spaces ...)"
+"setuptools/issues/3698>`_, `#3699 <https://github.com/pypa/setuptools/issues/"
+"3699>`_: Changed minor text details (spelling, spaces ...)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1677
@@ -2699,8 +2705,8 @@ msgstr ""
 msgid ""
 "`#3674 <https://github.com/pypa/setuptools/issues/3674>`_: Sync with `pypa/"
 "distutils@e0787fa <https://github.com/pypa/distutils/commit/e0787fa>`_, "
-"including `pypa/distutils#183 <https://github.com/pypa/distutils/"
-"issues/183>`_ updating distutils to use the Python logging framework."
+"including `pypa/distutils#183 <https://github.com/pypa/distutils/issues/"
+"183>`_ updating distutils to use the Python logging framework."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1691
@@ -2710,8 +2716,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:1696
 msgid ""
 "`#3638 <https://github.com/pypa/setuptools/issues/3638>`_: Drop a test "
-"dependency on the ``mock`` package, always use :external+python:py:mod:"
-"`unittest.mock` -- by :user:`hroncok`"
+"dependency on the ``mock`` package, always "
+"use :external+python:py:mod:`unittest.mock` -- by :user:`hroncok`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1697
@@ -2739,9 +2745,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:1711
 msgid ""
 "`#3419 <https://github.com/pypa/setuptools/issues/3419>`_: Updated the "
-"example version numbers to be compliant with `PEP-440 <https://peps.python."
-"org/pep-0440/>`_ on the \"Specifying Your Project’s Version\" page of the "
-"user guide."
+"example version numbers to be compliant with `PEP-440 <https://"
+"peps.python.org/pep-0440/>`_ on the \"Specifying Your Project’s Version\" "
+"page of the user guide."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1715
@@ -2803,8 +2809,8 @@ msgstr ""
 msgid ""
 "`#3554 <https://github.com/pypa/setuptools/issues/3554>`_: Changed requires "
 "to requests in the pyproject.toml example in the :doc:`Dependency management "
-"section of the Quickstart guide <userguide/quickstart>` -- by :user:"
-"`mfbutner`"
+"section of the Quickstart guide <userguide/quickstart>` -- "
+"by :user:`mfbutner`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1753
@@ -2883,9 +2889,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:1810
 msgid ""
-"`#3528 <https://github.com/pypa/setuptools/issues/3528>`_: Fixed ``buid_meta."
-"prepare_metadata_for_build_wheel`` when given ``metadata_directory`` is ``\"."
-"\"``."
+"`#3528 <https://github.com/pypa/setuptools/issues/3528>`_: Fixed "
+"``buid_meta.prepare_metadata_for_build_wheel`` when given "
+"``metadata_directory`` is ``\".\"``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1815
@@ -3013,8 +3019,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:1892
 msgid ""
 "`#3265 <https://github.com/pypa/setuptools/issues/3265>`_: Added "
-"implementation for *editable install* hooks (`PEP 660 <https://peps.python."
-"org/pep-0660/>`_)."
+"implementation for *editable install* hooks (`PEP 660 <https://"
+"peps.python.org/pep-0660/>`_)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1894
@@ -3047,9 +3053,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:1914
 msgid ""
 "`#3380 <https://github.com/pypa/setuptools/issues/3380>`_: Improved the "
-"handling of the ``config_settings`` parameter in both `PEP 517 <https://peps."
-"python.org/pep-0517/>`_ and `PEP 660 <https://peps.python.org/pep-0660/>`_ "
-"interfaces:"
+"handling of the ``config_settings`` parameter in both `PEP 517 <https://"
+"peps.python.org/pep-0517/>`_ and `PEP 660 <https://peps.python.org/pep-0660/"
+">`_ interfaces:"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1917
@@ -3089,9 +3095,9 @@ msgstr ""
 msgid ""
 "`#3414 <https://github.com/pypa/setuptools/issues/3414>`_: Users can "
 "*temporarily* specify an environment variable "
-"``SETUPTOOLS_ENABLE_FEATURES=legacy-editable`` as a escape hatch for the :"
-"pep:`660` behavior. This setting is **transitional** and may be removed in "
-"the future."
+"``SETUPTOOLS_ENABLE_FEATURES=legacy-editable`` as a escape hatch for "
+"the :pep:`660` behavior. This setting is **transitional** and may be removed "
+"in the future."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1936
@@ -3106,9 +3112,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:1945
 msgid ""
-"`#3414 <https://github.com/pypa/setuptools/issues/3414>`_: Updated :doc:"
-"`Development Mode </userguide/development_mode>` to reflect on the "
-"implementation of :pep:`660`."
+"`#3414 <https://github.com/pypa/setuptools/issues/3414>`_: "
+"Updated :doc:`Development Mode </userguide/development_mode>` to reflect on "
+"the implementation of :pep:`660`."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1950
@@ -3120,8 +3126,8 @@ msgid ""
 "`#3496 <https://github.com/pypa/setuptools/issues/3496>`_: Update to `pypa/"
 "distutils@b65aa40 <https://github.com/pypa/distutils/commit/b65aa40>`_ "
 "including more robust support for library/include dir handling in "
-"msvccompiler (`pypa/distutils#153 <https://github.com/pypa/distutils/"
-"issues/153>`_) and test suite improvements."
+"msvccompiler (`pypa/distutils#153 <https://github.com/pypa/distutils/issues/"
+"153>`_) and test suite improvements."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1959
@@ -3180,8 +3186,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:1992
 msgid ""
 "`#3444 <https://github.com/pypa/setuptools/issues/3444>`_: Installed "
-"``sphinx-notfound-page`` extension to generate nice 404 pages. -- by :user:"
-"`humitos`"
+"``sphinx-notfound-page`` extension to generate nice 404 pages. -- "
+"by :user:`humitos`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:1997
@@ -3210,8 +3216,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2015
 msgid ""
 "`#3395 <https://github.com/pypa/setuptools/issues/3395>`_: Included a "
-"performance optimization: ``setuptools.build_meta`` no longer tries to :func:"
-"`compile` the setup script code before :func:`exec`-ing it."
+"performance optimization: ``setuptools.build_meta`` no longer tries "
+"to :func:`compile` the setup script code before :func:`exec`-ing it."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2020
@@ -3229,12 +3235,12 @@ msgstr ""
 msgid ""
 "`#3430 <https://github.com/pypa/setuptools/issues/3430>`_: Merge with `pypa/"
 "distutils@152c13d <https://github.com/pypa/distutils/commit/152c13d>`_ "
-"including `pypa/distutils#155 <https://github.com/pypa/distutils/"
-"issues/155>`_ (improved compatibility for editable installs on homebrew "
-"Python 3.9), `pypa/distutils#150 <https://github.com/pypa/distutils/"
-"issues/150>`_ (better handling of runtime_library_dirs on cygwin), and `pypa/"
-"distutils#151 <https://github.com/pypa/distutils/issues/151>`_ (remove "
-"warnings for namespace packages)."
+"including `pypa/distutils#155 <https://github.com/pypa/distutils/issues/"
+"155>`_ (improved compatibility for editable installs on homebrew Python "
+"3.9), `pypa/distutils#150 <https://github.com/pypa/distutils/issues/150>`_ "
+"(better handling of runtime_library_dirs on cygwin), and `pypa/distutils#151 "
+"<https://github.com/pypa/distutils/issues/151>`_ (remove warnings for "
+"namespace packages)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2033
@@ -3300,8 +3306,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2065
 msgid ""
 "`#3391 <https://github.com/pypa/setuptools/issues/3391>`_: Updated ``attr:`` "
-"to also extract simple constants with type annotations -- by :user:"
-"`karlotness`"
+"to also extract simple constants with type annotations -- "
+"by :user:`karlotness`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2069
@@ -3385,8 +3391,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:2109
 msgid ""
-"`#3256 <https://github.com/pypa/setuptools/issues/3256>`_: Added setuptools."
-"command.build command to match distutils.command.build -- by :user:`isuruf`"
+"`#3256 <https://github.com/pypa/setuptools/issues/3256>`_: Added "
+"setuptools.command.build command to match distutils.command.build -- "
+"by :user:`isuruf`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2110
@@ -3466,8 +3473,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2143
 msgid ""
 "`#3350 <https://github.com/pypa/setuptools/issues/3350>`_: Added note "
-"explaining ``package_data`` glob pattern matching for dotfiles -- by :user:"
-"`comabrewer`"
+"explaining ``package_data`` glob pattern matching for dotfiles -- "
+"by :user:`comabrewer`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2144
@@ -3502,8 +3509,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2159
 msgid ""
 "`#3335 <https://github.com/pypa/setuptools/issues/3335>`_: Changes to code "
-"snippets and other examples in the Data Files page of the User Guide -- by :"
-"user:`codeandfire`"
+"snippets and other examples in the Data Files page of the User Guide -- "
+"by :user:`codeandfire`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2163
@@ -3672,8 +3679,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2271
 msgid ""
 "`#3167 <https://github.com/pypa/setuptools/issues/3167>`_: Honor unix file "
-"mode in ZipFile when installing wheel via ``install_as_egg`` -- by :user:"
-"`delijati`"
+"mode in ZipFile when installing wheel via ``install_as_egg`` -- "
+"by :user:`delijati`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2275
@@ -3799,8 +3806,8 @@ msgid ""
 "`#3212 <https://github.com/pypa/setuptools/issues/3212>`_: Fixed missing "
 "dependencies when running ``setup.py install``. Note that calling ``setup.py "
 "install`` directly is still deprecated and will be removed in future "
-"versions of ``setuptools``. Please check the release notes for :ref:"
-"`setup_install_deprecation_note`."
+"versions of ``setuptools``. Please check the release notes "
+"for :ref:`setup_install_deprecation_note`."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2355
@@ -3848,8 +3855,8 @@ msgid ""
 "`#3211 <https://github.com/pypa/setuptools/issues/3211>`_: Disabled auto-"
 "discovery when distribution class has a ``configuration`` attribute (e.g. "
 "when the ``setup.py`` script contains ``setup(..., configuration=...)``).  "
-"This is done to ensure extension-only packages created with ``numpy."
-"distutils.misc_util.Configuration`` are not broken by the safe guard "
+"This is done to ensure extension-only packages created with "
+"``numpy.distutils.misc_util.Configuration`` are not broken by the safe guard "
 "behaviour to avoid accidental multiple top-level packages in a flat-layout."
 msgstr ""
 
@@ -3874,17 +3881,18 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2398
 msgid ""
 "`#3068 <https://github.com/pypa/setuptools/issues/3068>`_: Deprecated "
-"``setuptools.config.read_configuration``, ``setuptools.config."
-"parse_configuration`` and other functions or classes from ``setuptools."
-"config``."
+"``setuptools.config.read_configuration``, "
+"``setuptools.config.parse_configuration`` and other functions or classes "
+"from ``setuptools.config``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2402
 msgid ""
 "Users that still need to parse and process configuration from ``setup.cfg`` "
 "can import a direct replacement from ``setuptools.config.setupcfg``, however "
-"this module is transitional and might be removed in the future (the ``setup."
-"cfg`` configuration format itself is likely to be deprecated in the future)."
+"this module is transitional and might be removed in the future (the "
+"``setup.cfg`` configuration format itself is likely to be deprecated in the "
+"future)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2409
@@ -4050,8 +4058,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2486
 msgid ""
 "To disable this behaviour, use ``namespaces = False`` when explicitly "
-"setting the ``[tool.setuptools.packages.find]`` section in ``pyproject."
-"toml``."
+"setting the ``[tool.setuptools.packages.find]`` section in "
+"``pyproject.toml``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2489
@@ -4147,8 +4155,8 @@ msgstr ""
 msgid ""
 "`#3120 <https://github.com/pypa/setuptools/issues/3120>`_: Added workaround "
 "for intermittent failures of backend tests on PyPy. These tests now are "
-"marked with `XFAIL <https://docs.pytest.org/en/stable/how-to/skipping."
-"html>`_, instead of erroring out directly."
+"marked with `XFAIL <https://docs.pytest.org/en/stable/how-to/"
+"skipping.html>`_, instead of erroring out directly."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2538
@@ -4274,10 +4282,11 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:2606
 msgid ""
-"`#3091 <https://github.com/pypa/setuptools/issues/3091>`_: Make ``concurrent."
-"futures`` import lazy in vendored ``more_itertools`` package to a  avoid "
-"importing threading as a side effect (which caused `gevent/gevent#1865 "
-"<https://github.com/gevent/gevent/issues/1865>`__). -- by :user:`maciejp-ro`"
+"`#3091 <https://github.com/pypa/setuptools/issues/3091>`_: Make "
+"``concurrent.futures`` import lazy in vendored ``more_itertools`` package to "
+"a  avoid importing threading as a side effect (which caused `gevent/"
+"gevent#1865 <https://github.com/gevent/gevent/issues/1865>`__). -- "
+"by :user:`maciejp-ro`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2613
@@ -4319,15 +4328,15 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:2645
 msgid ""
-"`#3061 <https://github.com/pypa/setuptools/issues/3061>`_: Vendored jaraco."
-"text and use line processing from that library in pkg_resources."
+"`#3061 <https://github.com/pypa/setuptools/issues/3061>`_: Vendored "
+"jaraco.text and use line processing from that library in pkg_resources."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2649
 msgid ""
 "`#3070 <https://github.com/pypa/setuptools/issues/3070>`_: Avoid "
-"AttributeError in easy_install.create_home_path when sysconfig."
-"get_config_vars values are not strings."
+"AttributeError in easy_install.create_home_path when "
+"sysconfig.get_config_vars values are not strings."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2653
@@ -4345,8 +4354,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2659
 msgid ""
 "`#3057 <https://github.com/pypa/setuptools/issues/3057>`_: Don't include "
-"optional ``Home-page`` in metadata if no ``url`` is specified. -- by :user:"
-"`cdce8p`"
+"optional ``Home-page`` in metadata if no ``url`` is specified. -- "
+"by :user:`cdce8p`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2660
@@ -4375,8 +4384,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2671
 msgid ""
 "`#3056 <https://github.com/pypa/setuptools/issues/3056>`_: The documentation "
-"has stopped suggesting to add ``wheel`` to :pep:`517` requirements -- by :"
-"user:`webknjaz`"
+"has stopped suggesting to add ``wheel`` to :pep:`517` requirements -- "
+"by :user:`webknjaz`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2676
@@ -4437,8 +4446,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:2722
 msgid ""
-"`#2990 <https://github.com/pypa/setuptools/issues/2990>`_: Set the ``."
-"origin`` attribute of the ``distutils`` module to the module's ``__file__``."
+"`#2990 <https://github.com/pypa/setuptools/issues/2990>`_: Set the "
+"``.origin`` attribute of the ``distutils`` module to the module's "
+"``__file__``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2726
@@ -4499,9 +4509,9 @@ msgstr ""
 msgid ""
 "`#2968 <https://github.com/pypa/setuptools/issues/2968>`_: Improved "
 "isolation for some tests that where inadvertently using the project root for "
-"builds, and therefore creating directories (e.g. ``build``, ``dist``, ``*."
-"egg-info``) that could interfere with the outcome of other tests -- by :user:"
-"`abravalheri`."
+"builds, and therefore creating directories (e.g. ``build``, ``dist``, "
+"``*.egg-info``) that could interfere with the outcome of other tests -- "
+"by :user:`abravalheri`."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2752
@@ -4618,9 +4628,9 @@ msgstr ""
 msgid ""
 "`#2963 <https://github.com/pypa/setuptools/issues/2963>`_: Merge with `pypa/"
 "distutils@a5af364910 <https://github.com/pypa/distutils/commit/"
-"a5af364910>`_. Includes revisited fix for `pypa/distutils#15 <https://github."
-"com/pypa/distutils/issues/15>`_ and improved MinGW/Cygwin support from `pypa/"
-"distutils#77 <https://github.com/pypa/distutils/issues/77>`_."
+"a5af364910>`_. Includes revisited fix for `pypa/distutils#15 <https://"
+"github.com/pypa/distutils/issues/15>`_ and improved MinGW/Cygwin support "
+"from `pypa/distutils#77 <https://github.com/pypa/distutils/issues/77>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2824
@@ -4744,8 +4754,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2928
 msgid ""
 "`#2902 <https://github.com/pypa/setuptools/issues/2902>`_: Merge with `pypa/"
-"distutils@85db7a41242 <https://github.com/pypa/distutils/"
-"commit/85db7a41242>`_."
+"distutils@85db7a41242 <https://github.com/pypa/distutils/commit/"
+"85db7a41242>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2932
@@ -4762,8 +4772,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2941
 msgid ""
 "`#2875 <https://github.com/pypa/setuptools/issues/2875>`_: Introduce changes "
-"from `pypa/distutils@514e9d0 <https://github.com/pypa/distutils/"
-"commit/514e9d0>`_, including support for overrides from Debian and pkgsrc, "
+"from `pypa/distutils@514e9d0 <https://github.com/pypa/distutils/commit/"
+"514e9d0>`_, including support for overrides from Debian and pkgsrc, "
 "unlocking the possibility of making SETUPTOOLS_USE_DISTUTILS=local the "
 "default again."
 msgstr ""
@@ -4842,8 +4852,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:2991
 msgid ""
 "`#2870 <https://github.com/pypa/setuptools/issues/2870>`_: Started failing "
-"on invalid inline description with line breaks :class:`ValueError` -- by :"
-"user:`webknjaz`"
+"on invalid inline description with line breaks :class:`ValueError` -- "
+"by :user:`webknjaz`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:2995
@@ -4869,8 +4879,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:3002
 msgid ""
 "`#2227 <https://github.com/pypa/setuptools/issues/2227>`_: Added new "
-"setuptools logo, including editable files and artwork documentation -- by :"
-"user:`abravalheri`"
+"setuptools logo, including editable files and artwork documentation -- "
+"by :user:`abravalheri`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3004
@@ -4911,8 +4921,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:3031
 msgid ""
-"`#2847 <https://github.com/pypa/setuptools/issues/2847>`_: Suppress 'setup."
-"py install' warning under bdist_wheel."
+"`#2847 <https://github.com/pypa/setuptools/issues/2847>`_: Suppress "
+"'setup.py install' warning under bdist_wheel."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3035
@@ -4974,8 +4984,9 @@ msgid ""
 "install`` and ``easy_install`` commands are now officially deprecated. Use "
 "other standards-based installers (like pip) and builders (like build). "
 "Workloads reliant on this behavior should pin to this major version of "
-"Setuptools. See `Why you shouldn't invoke setup.py directly <https://blog."
-"ganssle.io/articles/2021/10/setup-py-deprecated.html>`_ for more background."
+"Setuptools. See `Why you shouldn't invoke setup.py directly <https://"
+"blog.ganssle.io/articles/2021/10/setup-py-deprecated.html>`_ for more "
+"background."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3080
@@ -4996,15 +5007,15 @@ msgstr ""
 msgid ""
 "`#2823 <https://github.com/pypa/setuptools/issues/2823>`_: Officially "
 "deprecated support for ``setup_requires``. Users are encouraged instead to "
-"migrate to `PEP 518 <https://peps.python.org/pep-0518/>`_ ``build-system."
-"requires`` in ``pyproject.toml``. Users reliant on ``setup_requires`` should "
-"consider pinning to this major version to avoid disruption."
+"migrate to `PEP 518 <https://peps.python.org/pep-0518/>`_ ``build-"
+"system.requires`` in ``pyproject.toml``. Users reliant on ``setup_requires`` "
+"should consider pinning to this major version to avoid disruption."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3088
 msgid ""
-"`#2762 <https://github.com/pypa/setuptools/issues/2762>`_: Changed codecov."
-"yml to configure the threshold to be lower -- by :user:`tanvimoharir`"
+"`#2762 <https://github.com/pypa/setuptools/issues/2762>`_: Changed "
+"codecov.yml to configure the threshold to be lower -- by :user:`tanvimoharir`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3093
@@ -5078,9 +5089,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:3150
 msgid ""
-"`#2765 <https://github.com/pypa/setuptools/issues/2765>`_: In Distribution."
-"finalize_options, suppress known removed entry points to avoid issues with "
-"older Setuptools."
+"`#2765 <https://github.com/pypa/setuptools/issues/2765>`_: In "
+"Distribution.finalize_options, suppress known removed entry points to avoid "
+"issues with older Setuptools."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3154
@@ -5217,8 +5228,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:3244
 msgid ""
-"`#2680 <https://github.com/pypa/setuptools/issues/2680>`_: Vendored :pypi:"
-"`more_itertools` for Setuptools."
+"`#2680 <https://github.com/pypa/setuptools/issues/2680>`_: "
+"Vendored :pypi:`more_itertools` for Setuptools."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3245
@@ -5232,8 +5243,8 @@ msgstr ""
 msgid ""
 "`#2650 <https://github.com/pypa/setuptools/issues/2650>`_: Updated the docs "
 "build tooling to support the latest version of Towncrier and show the "
-"previews of not-yet-released setuptools versions in the changelog -- :user:"
-"`webknjaz`"
+"previews of not-yet-released setuptools versions in the changelog "
+"-- :user:`webknjaz`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3255
@@ -5278,8 +5289,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:3277
 msgid ""
 "`#2644 <https://github.com/pypa/setuptools/issues/2644>`_: Fixed "
-"``DeprecationWarning`` due to ``threading.Thread.setDaemon`` in tests -- by :"
-"user:`tirkarthi`"
+"``DeprecationWarning`` due to ``threading.Thread.setDaemon`` in tests -- "
+"by :user:`tirkarthi`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3278
@@ -5325,8 +5336,8 @@ msgstr ""
 msgid ""
 "`#2632 <https://github.com/pypa/setuptools/issues/2632>`_: Implemented "
 "``VendorImporter.find_spec()`` method to get rid of ``ImportWarning`` that "
-"Python 3.10 emits when only the old-style importer hooks are present -- by :"
-"user:`webknjaz`"
+"Python 3.10 emits when only the old-style importer hooks are present -- "
+"by :user:`webknjaz`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3308
@@ -5398,12 +5409,12 @@ msgstr ""
 #: ../../../../NEWS (links).rst:3366
 msgid ""
 "`#1608 <https://github.com/pypa/setuptools/issues/1608>`_: Removed the "
-"conversion of dashes to underscores in the :code:`extras_require` and :code:"
-"`data_files` of :code:`setup.cfg` to support the usage of dashes. Method "
-"will warn users when they use a dash-separated key which in the future will "
-"only allow an underscore. Note: the method performs the dash to underscore "
-"conversion to preserve compatibility, but future versions will no longer "
-"support it -- by :user:`melissa-kun-li`"
+"conversion of dashes to underscores in the :code:`extras_require` "
+"and :code:`data_files` of :code:`setup.cfg` to support the usage of dashes. "
+"Method will warn users when they use a dash-separated key which in the "
+"future will only allow an underscore. Note: the method performs the dash to "
+"underscore conversion to preserve compatibility, but future versions will no "
+"longer support it -- by :user:`melissa-kun-li`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3370
@@ -5422,10 +5433,10 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:3379
 msgid ""
-"`#1932 <https://github.com/pypa/setuptools/issues/1932>`_: Handled :code:"
-"`AttributeError` by raising :code:`DistutilsSetupError` in :code:`dist."
-"check_specifier()` when specifier is not a string -- by :user:`melissa-kun-"
-"li`"
+"`#1932 <https://github.com/pypa/setuptools/issues/1932>`_: "
+"Handled :code:`AttributeError` by raising :code:`DistutilsSetupError` "
+"in :code:`dist.check_specifier()` when specifier is not a string -- "
+"by :user:`melissa-kun-li`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3380
@@ -5571,8 +5582,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:3469
 msgid ""
-"`#2493 <https://github.com/pypa/setuptools/issues/2493>`_: Use importlib."
-"import_module() rather than the deprecated loader.load_module() in "
+"`#2493 <https://github.com/pypa/setuptools/issues/2493>`_: Use "
+"importlib.import_module() rather than the deprecated loader.load_module() in "
 "pkg_resources namespace declaration -- by :user:`encukou`"
 msgstr ""
 
@@ -5686,8 +5697,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:3547
 msgid ""
 "`#2427 <https://github.com/pypa/setuptools/issues/2427>`_: Started enforcing "
-"strict syntax and reference validation in the Sphinx docs -- by :user:"
-"`webknjaz`"
+"strict syntax and reference validation in the Sphinx docs -- "
+"by :user:`webknjaz`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3549
@@ -5744,15 +5755,15 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:3571
 msgid ""
-"`#2395 <https://github.com/pypa/setuptools/issues/2395>`_: Added a ``:user:"
-"`` role to Sphinx config -- by :user:`webknjaz`"
+"`#2395 <https://github.com/pypa/setuptools/issues/2395>`_: Added a "
+"``:user:`` role to Sphinx config -- by :user:`webknjaz`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3572
 msgid ""
 "`#2395 <https://github.com/pypa/setuptools/issues/2395>`_: Added an "
-"illustrative explanation about the change notes to fragments dir -- by :user:"
-"`webknjaz`"
+"illustrative explanation about the change notes to fragments dir -- "
+"by :user:`webknjaz`"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3576
@@ -5793,8 +5804,8 @@ msgid ""
 "`#2380 <https://github.com/pypa/setuptools/issues/2380>`_: There are some "
 "setuptools specific changes in the ``setuptools.command.bdist_rpm`` module "
 "that are no longer needed, because they are part of the ``bdist_rpm`` module "
-"in distutils in Python 3.5.0. Therefore, code was removed from ``setuptools."
-"command.bdist_rpm``."
+"in distutils in Python 3.5.0. Therefore, code was removed from "
+"``setuptools.command.bdist_rpm``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3605
@@ -5841,8 +5852,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:3641
 msgid ""
 "`#2357 <https://github.com/pypa/setuptools/issues/2357>`_: Restored Python "
-"3.5 support in distutils.util for missing ``subprocess."
-"_optim_args_from_interpreter_flags``."
+"3.5 support in distutils.util for missing "
+"``subprocess._optim_args_from_interpreter_flags``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3642
@@ -5854,8 +5865,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:3643
 msgid ""
 "`#2361 <https://github.com/pypa/setuptools/issues/2361>`_: Add Python 3.10 "
-"support to _distutils_hack. Get the 'Loader' abstract class from importlib."
-"abc rather than importlib.util.abc (alias removed in Python 3.10)."
+"support to _distutils_hack. Get the 'Loader' abstract class from "
+"importlib.abc rather than importlib.util.abc (alias removed in Python 3.10)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3649
@@ -6055,9 +6066,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:3810
 msgid ""
 "`#2137 <https://github.com/pypa/setuptools/issues/2137>`_: Removed (private) "
-"pkg_resources.RequirementParseError, now replaced by packaging.requirements."
-"InvalidRequirement. Kept the name for compatibility, but users should catch "
-"InvalidRequirement instead."
+"pkg_resources.RequirementParseError, now replaced by "
+"packaging.requirements.InvalidRequirement. Kept the name for compatibility, "
+"but users should catch InvalidRequirement instead."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3811
@@ -6091,8 +6102,8 @@ msgid ""
 "happens by default when using ``pip install`` or ``pep517.build``. Workflows "
 "that rely on ``setup.py (anything)`` will need to first ensure setuptools is "
 "imported. One way to achieve this behavior without modifying code is to "
-"invoke Python thus: ``python -c \"import setuptools; exec(open('setup.py')."
-"read())\" (anything)``."
+"invoke Python thus: ``python -c \"import setuptools; "
+"exec(open('setup.py').read())\" (anything)``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3830
@@ -6112,8 +6123,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:3846
 msgid ""
 "`#1973 <https://github.com/pypa/setuptools/issues/1973>`_: Removed "
-"``pkg_resources.py31compat.makedirs`` in favor of the stdlib. Use ``os."
-"makedirs()`` instead."
+"``pkg_resources.py31compat.makedirs`` in favor of the stdlib. Use "
+"``os.makedirs()`` instead."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3847
@@ -6290,8 +6301,8 @@ msgstr ""
 msgid ""
 "`#2082 <https://github.com/pypa/setuptools/issues/2082>`_: Filter "
 "``lib2to3`` ``PendingDeprecationWarning`` and ``DeprecationWarning`` in "
-"tests, because ``lib2to3`` is `deprecated in Python 3.9 <https://bugs.python."
-"org/issue40360>`_."
+"tests, because ``lib2to3`` is `deprecated in Python 3.9 <https://"
+"bugs.python.org/issue40360>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:3981
@@ -6331,8 +6342,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:4011
 msgid ""
-"`#1431 <https://github.com/pypa/setuptools/issues/1431>`_: In ``easy_install."
-"check_site_dir``, ensure the installation directory exists."
+"`#1431 <https://github.com/pypa/setuptools/issues/1431>`_: In "
+"``easy_install.check_site_dir``, ensure the installation directory exists."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4012
@@ -6640,8 +6651,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:4192
 msgid ""
 "`#479 <https://github.com/pypa/setuptools/issues/479>`_: Replace usage of "
-"deprecated ``imp`` module with local re-implementation in ``setuptools."
-"_imp``."
+"deprecated ``imp`` module with local re-implementation in "
+"``setuptools._imp``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4196
@@ -6758,8 +6769,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:4264
 msgid ""
 "`#1565 <https://github.com/pypa/setuptools/issues/1565>`_: Changed "
-"html_sidebars from string to list of string as per https://www.sphinx-doc."
-"org/en/master/changes.html#id58"
+"html_sidebars from string to list of string as per https://www.sphinx-"
+"doc.org/en/master/changes.html#id58"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4269
@@ -6835,8 +6846,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:4296
 msgid ""
-"`#1709 <https://github.com/pypa/setuptools/issues/1709>`_: In test."
-"paths_on_python_path, avoid adding unnecessary duplicates to the PYTHONPATH."
+"`#1709 <https://github.com/pypa/setuptools/issues/1709>`_: In "
+"test.paths_on_python_path, avoid adding unnecessary duplicates to the "
+"PYTHONPATH."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4297
@@ -6878,8 +6890,8 @@ msgstr ""
 msgid ""
 "`#1720 <https://github.com/pypa/setuptools/issues/1720>`_: Added support for "
 "``pkg_resources.parse_requirements``-style requirements in "
-"``setup_requires`` when ``setup.py`` is invoked from the ``setuptools."
-"build_meta`` build backend."
+"``setup_requires`` when ``setup.py`` is invoked from the "
+"``setuptools.build_meta`` build backend."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4319
@@ -6974,16 +6986,17 @@ msgstr ""
 #: ../../../../NEWS (links).rst:4380
 msgid ""
 "`#1180 <https://github.com/pypa/setuptools/issues/1180>`_: Add support for "
-"non-ASCII in setup.cfg (`#1062 <https://github.com/pypa/setuptools/"
-"issues/1062>`_). Add support for native strings on some parameters (`#1136 "
-"<https://github.com/pypa/setuptools/issues/1136>`_)."
+"non-ASCII in setup.cfg (`#1062 <https://github.com/pypa/setuptools/issues/"
+"1062>`_). Add support for native strings on some parameters (`#1136 <https://"
+"github.com/pypa/setuptools/issues/1136>`_)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4381
 msgid ""
-"`#1499 <https://github.com/pypa/setuptools/issues/1499>`_: ``setuptools."
-"package_index`` no longer relies on the deprecated ``urllib.parse."
-"splituser`` per `Python #27485 <https://bugs.python.org/issue27485>`_."
+"`#1499 <https://github.com/pypa/setuptools/issues/1499>`_: "
+"``setuptools.package_index`` no longer relies on the deprecated "
+"``urllib.parse.splituser`` per `Python #27485 <https://bugs.python.org/"
+"issue27485>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4382
@@ -7060,16 +7073,17 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:4429
 msgid ""
-"`#1554 <https://github.com/pypa/setuptools/issues/1554>`_: ``build_meta."
-"build_sdist`` now includes ``setup.py`` in source distributions by default."
+"`#1554 <https://github.com/pypa/setuptools/issues/1554>`_: "
+"``build_meta.build_sdist`` now includes ``setup.py`` in source distributions "
+"by default."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4430
 msgid ""
 "`#1576 <https://github.com/pypa/setuptools/issues/1576>`_: Started monkey-"
-"patching ``get_metadata_version`` and ``read_pkg_file`` onto ``distutils."
-"DistributionMetadata`` to retain the correct version on the ``PKG-INFO`` "
-"file in the (deprecated) ``upload`` command."
+"patching ``get_metadata_version`` and ``read_pkg_file`` onto "
+"``distutils.DistributionMetadata`` to retain the correct version on the "
+"``PKG-INFO`` file in the (deprecated) ``upload`` command."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4434
@@ -7105,8 +7119,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:4439
 msgid ""
 "`#1553 <https://github.com/pypa/setuptools/issues/1553>`_: Updated "
-"installation instructions to point to ``pip install`` instead of ``ez_setup."
-"py``."
+"installation instructions to point to ``pip install`` instead of "
+"``ez_setup.py``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4440
@@ -7232,9 +7246,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:4516
 msgid ""
-"`#1474 <https://github.com/pypa/setuptools/issues/1474>`_: ``build_meta."
-"get_requires_for_build_sdist`` now does not include the ``wheel`` package "
-"anymore."
+"`#1474 <https://github.com/pypa/setuptools/issues/1474>`_: "
+"``build_meta.get_requires_for_build_sdist`` now does not include the "
+"``wheel`` package anymore."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4517
@@ -7611,8 +7625,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:4697
 msgid ""
-"`#1257 <https://github.com/pypa/setuptools/issues/1257>`_: In bdist_egg."
-"scan_module, fix ValueError on Python 3.7."
+"`#1257 <https://github.com/pypa/setuptools/issues/1257>`_: In "
+"bdist_egg.scan_module, fix ValueError on Python 3.7."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4700
@@ -7853,8 +7867,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:4828
 msgid ""
 "`#196 <https://github.com/pypa/setuptools/issues/196>`_: Remove caching of "
-"easy_install command in fetch_build_egg. Fixes issue where ``pytest-runner-N."
-"N`` would satisfy the installation of ``pytest``."
+"easy_install command in fetch_build_egg. Fixes issue where ``pytest-runner-"
+"N.N`` would satisfy the installation of ``pytest``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4832
@@ -7898,8 +7912,8 @@ msgstr ""
 msgid ""
 "fix `#1105 <https://github.com/pypa/setuptools/issues/1105>`_: Fix handling "
 "of requirements with environment markers when declared in ``setup.cfg`` "
-"(same treatment as for `#1081 <https://github.com/pypa/setuptools/"
-"issues/1081>`_)."
+"(same treatment as for `#1081 <https://github.com/pypa/setuptools/issues/"
+"1081>`_)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4856
@@ -8087,10 +8101,10 @@ msgstr ""
 #: ../../../../NEWS (links).rst:4957
 msgid ""
 "`#1016 <https://github.com/pypa/setuptools/issues/1016>`_: Revert change "
-"introduced in v35.0.0 per `#1014 <https://github.com/pypa/setuptools/"
-"issues/1014>`_, referencing `#436 <https://github.com/pypa/setuptools/"
-"issues/436>`_. The approach had unintended consequences, causing sdist "
-"installs to be missing files."
+"introduced in v35.0.0 per `#1014 <https://github.com/pypa/setuptools/issues/"
+"1014>`_, referencing `#436 <https://github.com/pypa/setuptools/issues/"
+"436>`_. The approach had unintended consequences, causing sdist installs to "
+"be missing files."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4963
@@ -8099,10 +8113,10 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:4965
 msgid ""
-"`#436 <https://github.com/pypa/setuptools/issues/436>`_: In egg_info."
-"manifest_maker, no longer read the file list from the manifest file, and "
-"instead re-build it on each build. In this way, files removed from the "
-"specification will not linger in the manifest. As a result, any files "
+"`#436 <https://github.com/pypa/setuptools/issues/436>`_: In "
+"egg_info.manifest_maker, no longer read the file list from the manifest "
+"file, and instead re-build it on each build. In this way, files removed from "
+"the specification will not linger in the manifest. As a result, any files "
 "manually added to the manifest will be removed on subsequent egg_info "
 "invocations. No projects should be manually adding files to the manifest and "
 "should instead use MANIFEST.in or SCM file finders to force inclusion of "
@@ -8127,9 +8141,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:4982
 msgid ""
-"`#992 <https://github.com/pypa/setuptools/issues/992>`_: In msvc."
-"msvc9_query_vcvarsall, ensure the returned dicts have str values and not "
-"Unicode for compatibility with os.environ."
+"`#992 <https://github.com/pypa/setuptools/issues/992>`_: In "
+"msvc.msvc9_query_vcvarsall, ensure the returned dicts have str values and "
+"not Unicode for compatibility with os.environ."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:4987
@@ -8372,8 +8386,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5133
 msgid ""
-"`#866 <https://github.com/pypa/setuptools/issues/866>`_: Use ``dis."
-"Bytecode`` on Python 3.4 and later in ``setuptools.depends``."
+"`#866 <https://github.com/pypa/setuptools/issues/866>`_: Use "
+"``dis.Bytecode`` on Python 3.4 and later in ``setuptools.depends``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5137
@@ -8432,9 +8446,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5169
 msgid ""
-"`#712 <https://github.com/pypa/setuptools/issues/712>`_: In 'sandbox."
-"run_setup', ensure that ``__file__`` is always a ``str``, modeling the "
-"behavior observed by the interpreter when invoking scripts and modules."
+"`#712 <https://github.com/pypa/setuptools/issues/712>`_: In "
+"'sandbox.run_setup', ensure that ``__file__`` is always a ``str``, modeling "
+"the behavior observed by the interpreter when invoking scripts and modules."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5174
@@ -8479,15 +8493,16 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5197
 msgid ""
-"`#250 <https://github.com/pypa/setuptools/issues/250>`_: Install '-nspkg."
-"pth' files for packages installed with 'setup.py develop'. These .pth files "
-"allow namespace packages installed by pip or develop to co-mingle. This "
-"change required the removal of the change for `#805 <https://github.com/pypa/"
-"setuptools/issues/805>`_ and pip `#1924 <https://github.com/pypa/setuptools/"
-"issues/1924>`_, introduced in 28.3.0 and implicated in `#870 <https://github."
-"com/pypa/setuptools/issues/870>`_, but means that namespace packages not in "
-"a site packages directory will no longer work on Python earlier than 3.5, "
-"whereas before they would work on Python not earlier than 3.3."
+"`#250 <https://github.com/pypa/setuptools/issues/250>`_: Install '-"
+"nspkg.pth' files for packages installed with 'setup.py develop'. These .pth "
+"files allow namespace packages installed by pip or develop to co-mingle. "
+"This change required the removal of the change for `#805 <https://github.com/"
+"pypa/setuptools/issues/805>`_ and pip `#1924 <https://github.com/pypa/"
+"setuptools/issues/1924>`_, introduced in 28.3.0 and implicated in `#870 "
+"<https://github.com/pypa/setuptools/issues/870>`_, but means that namespace "
+"packages not in a site packages directory will no longer work on Python "
+"earlier than 3.5, whereas before they would work on Python not earlier than "
+"3.3."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5208
@@ -8543,8 +8558,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:5232
 msgid ""
 "`#854 <https://github.com/pypa/setuptools/issues/854>`_: Bump to vendored "
-"`Packaging 16.8 <https://github.com/pypa/packaging/blob/16.8/CHANGELOG."
-"rst>`_."
+"`Packaging 16.8 <https://github.com/pypa/packaging/blob/16.8/"
+"CHANGELOG.rst>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5235
@@ -8553,8 +8568,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5237
 msgid ""
-"`#846 <https://github.com/pypa/setuptools/issues/846>`_: Also trap 'socket."
-"error' when opening URLs in package_index."
+"`#846 <https://github.com/pypa/setuptools/issues/846>`_: Also trap "
+"'socket.error' when opening URLs in package_index."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5240
@@ -8756,8 +8771,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5346
 msgid ""
-"`#805 <https://github.com/pypa/setuptools/issues/805>`_: Disable ``-nspkg."
-"pth`` behavior on Python 3.3+ where `PEP-420 <https://peps.python.org/"
+"`#805 <https://github.com/pypa/setuptools/issues/805>`_: Disable ``-"
+"nspkg.pth`` behavior on Python 3.3+ where `PEP-420 <https://peps.python.org/"
 "pep-0420/>`_ functionality is adequate. Fixes pip `#1924 <https://github.com/"
 "pypa/setuptools/issues/1924>`_."
 msgstr ""
@@ -8817,8 +8832,8 @@ msgstr ""
 msgid ""
 "`#794 <https://github.com/pypa/setuptools/issues/794>`_: In test command, "
 "add installed eggs to PYTHONPATH when invoking tests so that subprocesses "
-"will also have the dependencies available. Fixes `tox 330 <https://github."
-"com/tox-dev/tox/issues/330>`_."
+"will also have the dependencies available. Fixes `tox 330 <https://"
+"github.com/tox-dev/tox/issues/330>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5385
@@ -8878,8 +8893,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5414
 msgid ""
-"Now use Warehouse by default for ``upload``, patching ``distutils.config."
-"PyPIRCCommand`` to affect default behavior."
+"Now use Warehouse by default for ``upload``, patching "
+"``distutils.config.PyPIRCCommand`` to affect default behavior."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5418
@@ -8940,9 +8955,10 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5448
 msgid ""
-"`#763 <https://github.com/pypa/setuptools/issues/763>`_: ``pkg_resources."
-"get_default_cache`` now defers to the :pypi:`appdirs` project to resolve the "
-"cache directory. Adds a vendored dependency on appdirs to pkg_resources."
+"`#763 <https://github.com/pypa/setuptools/issues/763>`_: "
+"``pkg_resources.get_default_cache`` now defers to the :pypi:`appdirs` "
+"project to resolve the cache directory. Adds a vendored dependency on "
+"appdirs to pkg_resources."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5454
@@ -8994,9 +9010,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:5483
 msgid ""
 "`#739 <https://github.com/pypa/setuptools/issues/739>`_ Fix unquoted "
-"libpaths by fixing compatibility between ``numpy.distutils`` and ``distutils."
-"_msvccompiler`` for numpy < 1.11.2 (Fix issue `#728 <https://github.com/pypa/"
-"setuptools/issues/728>`_, error also fixed in Numpy)."
+"libpaths by fixing compatibility between ``numpy.distutils`` and "
+"``distutils._msvccompiler`` for numpy < 1.11.2 (Fix issue `#728 <https://"
+"github.com/pypa/setuptools/issues/728>`_, error also fixed in Numpy)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5485
@@ -9008,8 +9024,8 @@ msgid ""
 "Style updates. See `#740 <https://github.com/pypa/setuptools/issues/740>`_, "
 "`#741 <https://github.com/pypa/setuptools/issues/741>`_, `#743 <https://"
 "github.com/pypa/setuptools/issues/743>`_, `#744 <https://github.com/pypa/"
-"setuptools/issues/744>`_, `#742 <https://github.com/pypa/setuptools/"
-"issues/742>`_, `#747 <https://github.com/pypa/setuptools/issues/747>`_."
+"setuptools/issues/744>`_, `#742 <https://github.com/pypa/setuptools/issues/"
+"742>`_, `#747 <https://github.com/pypa/setuptools/issues/747>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5489
@@ -9086,9 +9102,10 @@ msgstr ""
 msgid ""
 "`#714 <https://github.com/pypa/setuptools/issues/714>`_ and `#704 <https://"
 "github.com/pypa/setuptools/issues/704>`_: Revert fix as it breaks other "
-"components downstream that can't handle unicode. See `#709 <https://github."
-"com/pypa/setuptools/issues/709>`_, `#710 <https://github.com/pypa/setuptools/"
-"issues/710>`_, and `#712 <https://github.com/pypa/setuptools/issues/712>`_."
+"components downstream that can't handle unicode. See `#709 <https://"
+"github.com/pypa/setuptools/issues/709>`_, `#710 <https://github.com/pypa/"
+"setuptools/issues/710>`_, and `#712 <https://github.com/pypa/setuptools/"
+"issues/712>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5524
@@ -9120,8 +9137,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5537
 msgid ""
-"`#686 <https://github.com/pypa/setuptools/issues/686>`_: Fix issue in sys."
-"path ordering by pkg_resources when rewrite technique is \"raw\"."
+"`#686 <https://github.com/pypa/setuptools/issues/686>`_: Fix issue in "
+"sys.path ordering by pkg_resources when rewrite technique is \"raw\"."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5539
@@ -9169,11 +9186,11 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5564
 msgid ""
-"More style cleanup. See `#677 <https://github.com/pypa/setuptools/"
-"issues/677>`_, `#678 <https://github.com/pypa/setuptools/issues/678>`_, "
-"`#679 <https://github.com/pypa/setuptools/issues/679>`_, `#681 <https://"
-"github.com/pypa/setuptools/issues/681>`_, `#685 <https://github.com/pypa/"
-"setuptools/issues/685>`_."
+"More style cleanup. See `#677 <https://github.com/pypa/setuptools/issues/"
+"677>`_, `#678 <https://github.com/pypa/setuptools/issues/678>`_, `#679 "
+"<https://github.com/pypa/setuptools/issues/679>`_, `#681 <https://github.com/"
+"pypa/setuptools/issues/681>`_, `#685 <https://github.com/pypa/setuptools/"
+"issues/685>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5567
@@ -9182,10 +9199,10 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5569
 msgid ""
-"`#674 <https://github.com/pypa/setuptools/issues/674>`_: Default ``sys."
-"path`` manipulation by easy-install.pth is now \"raw\", meaning that when "
-"writing easy-install.pth during any install operation, the ``sys.path`` will "
-"not be rewritten and will no longer give preference to easy_installed "
+"`#674 <https://github.com/pypa/setuptools/issues/674>`_: Default "
+"``sys.path`` manipulation by easy-install.pth is now \"raw\", meaning that "
+"when writing easy-install.pth during any install operation, the ``sys.path`` "
+"will not be rewritten and will no longer give preference to easy_installed "
 "packages."
 msgstr ""
 
@@ -9264,9 +9281,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5618
 msgid ""
-"More style updates. See `#660 <https://github.com/pypa/setuptools/"
-"issues/660>`_, `#661 <https://github.com/pypa/setuptools/issues/661>`_, "
-"`#641 <https://github.com/pypa/setuptools/issues/641>`_."
+"More style updates. See `#660 <https://github.com/pypa/setuptools/issues/"
+"660>`_, `#661 <https://github.com/pypa/setuptools/issues/661>`_, `#641 "
+"<https://github.com/pypa/setuptools/issues/641>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5621
@@ -9282,12 +9299,12 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5625
 msgid ""
-"More style updates. See `#656 <https://github.com/pypa/setuptools/"
-"issues/656>`_, `#635 <https://github.com/pypa/setuptools/issues/635>`_, "
-"`#640 <https://github.com/pypa/setuptools/issues/640>`_, `#644 <https://"
-"github.com/pypa/setuptools/issues/644>`_, `#650 <https://github.com/pypa/"
-"setuptools/issues/650>`_, `#652 <https://github.com/pypa/setuptools/"
-"issues/652>`_, and `#655 <https://github.com/pypa/setuptools/issues/655>`_."
+"More style updates. See `#656 <https://github.com/pypa/setuptools/issues/"
+"656>`_, `#635 <https://github.com/pypa/setuptools/issues/635>`_, `#640 "
+"<https://github.com/pypa/setuptools/issues/640>`_, `#644 <https://github.com/"
+"pypa/setuptools/issues/644>`_, `#650 <https://github.com/pypa/setuptools/"
+"issues/650>`_, `#652 <https://github.com/pypa/setuptools/issues/652>`_, and "
+"`#655 <https://github.com/pypa/setuptools/issues/655>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5629
@@ -9299,11 +9316,11 @@ msgid ""
 "Updated style in much of the codebase to match community expectations. See "
 "`#632 <https://github.com/pypa/setuptools/issues/632>`_, `#633 <https://"
 "github.com/pypa/setuptools/issues/633>`_, `#634 <https://github.com/pypa/"
-"setuptools/issues/634>`_, `#637 <https://github.com/pypa/setuptools/"
-"issues/637>`_, `#639 <https://github.com/pypa/setuptools/issues/639>`_, "
-"`#638 <https://github.com/pypa/setuptools/issues/638>`_, `#642 <https://"
-"github.com/pypa/setuptools/issues/642>`_, `#648 <https://github.com/pypa/"
-"setuptools/issues/648>`_."
+"setuptools/issues/634>`_, `#637 <https://github.com/pypa/setuptools/issues/"
+"637>`_, `#639 <https://github.com/pypa/setuptools/issues/639>`_, `#638 "
+"<https://github.com/pypa/setuptools/issues/638>`_, `#642 <https://github.com/"
+"pypa/setuptools/issues/642>`_, `#648 <https://github.com/pypa/setuptools/"
+"issues/648>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5636
@@ -9520,8 +9537,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:5766
 msgid ""
 "`#556 <https://github.com/pypa/setuptools/issues/556>`_: Update to "
-"`Packaging 16.7 <https://github.com/pypa/packaging/blob/16.7/CHANGELOG."
-"rst>`_, restoring support for deprecated ``python_implmentation`` marker."
+"`Packaging 16.7 <https://github.com/pypa/packaging/blob/16.7/"
+"CHANGELOG.rst>`_, restoring support for deprecated ``python_implmentation`` "
+"marker."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5768
@@ -9652,11 +9670,11 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5837
 msgid ""
-"`BB Pull Request #185 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/185>`_, `#470 <https://github.com/pypa/setuptools/issues/470>`_: Add "
-"support for environment markers in requirements in install_requires, "
-"setup_requires, tests_require as well as adding a test for the existing "
-"extra_requires machinery."
+"`BB Pull Request #185 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"185>`_, `#470 <https://github.com/pypa/setuptools/issues/470>`_: Add support "
+"for environment markers in requirements in install_requires, setup_requires, "
+"tests_require as well as adding a test for the existing extra_requires "
+"machinery."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5843
@@ -9687,9 +9705,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5860
 msgid ""
-"`BB Pull Request #184 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/184>`_: Update documentation in ``pkg_resources`` around new "
-"``Requirement`` implementation."
+"`BB Pull Request #184 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"184>`_: Update documentation in ``pkg_resources`` around new ``Requirement`` "
+"implementation."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5864
@@ -9698,17 +9716,17 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5866
 msgid ""
-"`BB Pull Request #179 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/179>`_: ``pkg_resources.Requirement`` objects are now a subclass of "
+"`BB Pull Request #179 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"179>`_: ``pkg_resources.Requirement`` objects are now a subclass of "
 "``packaging.requirements.Requirement``, allowing any environment markers and "
 "url (if any) to be affiliated with the requirement"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5870
 msgid ""
-"`BB Pull Request #179 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/179>`_: Restore use of RequirementParseError exception "
-"unintentionally dropped in 20.2."
+"`BB Pull Request #179 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"179>`_: Restore use of RequirementParseError exception unintentionally "
+"dropped in 20.2."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5874
@@ -9743,16 +9761,17 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5889
 msgid ""
-"`BB Pull Request #173 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/173>`_: Replace dual `PEP 345 <https://peps.python.org/pep-0345/>`_ "
+"`BB Pull Request #173 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"173>`_: Replace dual `PEP 345 <https://peps.python.org/pep-0345/>`_ "
 "_markerlib implementation and `PEP 426 <https://peps.python.org/pep-0426/>`_ "
 "implementation of environment marker support from `packaging 16.1 <https://"
 "github.com/pypa/packaging/blob/16.1/CHANGELOG.rst>`_ and `PEP 508 <https://"
 "peps.python.org/pep-0508/>`_. Fixes `Issue #122 <https://github.com/pypa/"
-"setuptools/issues/122>`_. See also `BB Pull Request #175 <https://bitbucket."
-"org/pypa/setuptools/pull-request/175>`_, `BB Pull Request #168 <https://"
-"bitbucket.org/pypa/setuptools/pull-request/168>`_, and `BB Pull Request #164 "
-"<https://bitbucket.org/pypa/setuptools/pull-request/164>`_. Additionally:"
+"setuptools/issues/122>`_. See also `BB Pull Request #175 <https://"
+"bitbucket.org/pypa/setuptools/pull-request/175>`_, `BB Pull Request #168 "
+"<https://bitbucket.org/pypa/setuptools/pull-request/168>`_, and `BB Pull "
+"Request #164 <https://bitbucket.org/pypa/setuptools/pull-request/164>`_. "
+"Additionally:"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5895
@@ -9762,10 +9781,10 @@ msgstr ""
 #: ../../../../NEWS (links).rst:5896
 msgid ""
 "``parse_requirements`` now requires that all versions be `PEP-440 <https://"
-"peps.python.org/pep-0440/>`_ compliant, as revealed in `#499 <https://github."
-"com/pypa/setuptools/issues/499>`_. Packages released with invalid local "
-"versions should be re-released using the proper local version syntax, e.g. "
-"``mypkg-1.0+myorg.1``."
+"peps.python.org/pep-0440/>`_ compliant, as revealed in `#499 <https://"
+"github.com/pypa/setuptools/issues/499>`_. Packages released with invalid "
+"local versions should be re-released using the proper local version syntax, "
+"e.g. ``mypkg-1.0+myorg.1``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5902
@@ -9784,8 +9803,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:5910
 msgid ""
 "Added support for using passwords from keyring in the upload command. See "
-"`the upload docs <https://setuptools.pypa.io/en/latest/setuptools."
-"html#upload-upload-source-and-or-egg-distributions-to-pypi>`_ for details."
+"`the upload docs <https://setuptools.pypa.io/en/latest/"
+"setuptools.html#upload-upload-source-and-or-egg-distributions-to-pypi>`_ for "
+"details."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5916
@@ -9806,12 +9826,11 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5925
 msgid ""
-"Off-project PR: `0dcee79 <https://github.com/pypa/setuptools/"
-"commit/0dcee791dfdcfacddaaec79b29f30a347a147413>`_ and `f9bd9b9 <https://"
-"github.com/pypa/setuptools/commit/"
-"f9bd9b9f5df54ef5a0bf8d16c3a889ab8c640580>`_ For FreeBSD, also `honor root "
-"certificates from ca_root_nss <https://github.com/pypa/setuptools/"
-"commit/3ae46c30225eb46e1f5aada1a19e88b79f04dc72>`_."
+"Off-project PR: `0dcee79 <https://github.com/pypa/setuptools/commit/"
+"0dcee791dfdcfacddaaec79b29f30a347a147413>`_ and `f9bd9b9 <https://github.com/"
+"pypa/setuptools/commit/f9bd9b9f5df54ef5a0bf8d16c3a889ab8c640580>`_ For "
+"FreeBSD, also `honor root certificates from ca_root_nss <https://github.com/"
+"pypa/setuptools/commit/3ae46c30225eb46e1f5aada1a19e88b79f04dc72>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5929
@@ -9885,9 +9904,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:5969
 msgid ""
-"`BB Pull Request #169 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/169>`_: Removed special handling of command spec in scripts for "
-"Jython."
+"`BB Pull Request #169 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"169>`_: Removed special handling of command spec in scripts for Jython."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5973
@@ -9918,10 +9936,10 @@ msgid ""
 "`Issue #141 <https://github.com/pypa/setuptools/issues/141>`_, `Issue #207 "
 "<https://github.com/pypa/setuptools/issues/207>`_, and `BB Pull Request #167 "
 "<https://bitbucket.org/pypa/setuptools/pull-request/167>`_: Another "
-"implementation of ``pkg_resources.WorkingSet`` and ``pkg_resources."
-"Distribution`` that supports replacing an extant package with a new one, "
-"allowing for setup_requires dependencies to supersede installed packages for "
-"the session."
+"implementation of ``pkg_resources.WorkingSet`` and "
+"``pkg_resources.Distribution`` that supports replacing an extant package "
+"with a new one, allowing for setup_requires dependencies to supersede "
+"installed packages for the session."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:5992
@@ -9941,14 +9959,14 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6001
 msgid ""
-"`BB Pull Request #163 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/163>`_: Add get_command_list method to Distribution."
+"`BB Pull Request #163 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"163>`_: Add get_command_list method to Distribution."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6002
 msgid ""
-"`BB Pull Request #162 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/162>`_: Add missing whitespace to multiline string literals."
+"`BB Pull Request #162 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"162>`_: Add missing whitespace to multiline string literals."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6006
@@ -10056,9 +10074,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6058
 msgid ""
-"`BB Pull Request #160 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/160>`_: Improve detection of gui script in ``easy_install."
-"_adjust_header``."
+"`BB Pull Request #160 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"160>`_: Improve detection of gui script in ``easy_install._adjust_header``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6060
@@ -10077,9 +10094,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6064
 msgid ""
-"`BB Pull Request #158 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/158>`_: Honor `PEP-488 <https://peps.python.org/pep-0488/>`_ when "
-"excluding files for namespace packages."
+"`BB Pull Request #158 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"158>`_: Honor `PEP-488 <https://peps.python.org/pep-0488/>`_ when excluding "
+"files for namespace packages."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6066
@@ -10124,8 +10141,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:6089
 msgid ""
 "`Add support for python_platform_implementation environment marker <https://"
-"github.com/pypa/setuptools/"
-"commit/94416707fd59a65f4a8f7f70541d6b3fc018b626>`_."
+"github.com/pypa/setuptools/commit/"
+"94416707fd59a65f4a8f7f70541d6b3fc018b626>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6091
@@ -10170,10 +10187,10 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6114
 msgid ""
-"`BB Pull Request #135 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/135>`_: Setuptools now allows disabling of the manipulation of the "
-"sys.path during the processing of the easy-install.pth file. To do so, set "
-"the environment variable ``SETUPTOOLS_SYS_PATH_TECHNIQUE`` to anything but "
+"`BB Pull Request #135 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"135>`_: Setuptools now allows disabling of the manipulation of the sys.path "
+"during the processing of the easy-install.pth file. To do so, set the "
+"environment variable ``SETUPTOOLS_SYS_PATH_TECHNIQUE`` to anything but "
 "\"rewrite\" (consider \"raw\"). During any install operation with "
 "manipulation disabled, setuptools packages will be appended to sys.path "
 "naturally."
@@ -10215,8 +10232,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6140
 msgid ""
-"Upgrade to vendored `packaging 15.3 <https://github.com/pypa/packaging/"
-"blob/15.3/CHANGELOG.rst>`_."
+"Upgrade to vendored `packaging 15.3 <https://github.com/pypa/packaging/blob/"
+"15.3/CHANGELOG.rst>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6143
@@ -10247,8 +10264,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6156
 msgid ""
-"ext = setuptools.Extension('mylib', ['src/CythonStuff.pyx', 'src/CStuff."
-"c'])\n"
+"ext = setuptools.Extension('mylib', ['src/CythonStuff.pyx', 'src/"
+"CStuff.c'])\n"
 "setuptools.setup(\n"
 "    ...\n"
 "    ext_modules=[ext],\n"
@@ -10272,8 +10289,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6169
 msgid ""
-"`BB Pull Request #136 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/136>`_: Remove excessive quoting from shebang headers for Jython."
+"`BB Pull Request #136 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"136>`_: Remove excessive quoting from shebang headers for Jython."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6173
@@ -10320,20 +10337,20 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6196
 msgid ""
-"`BB Pull Request #130 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/130>`_: Better error messages for errors in parsed requirements."
+"`BB Pull Request #130 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"130>`_: Better error messages for errors in parsed requirements."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6198
 msgid ""
-"`BB Pull Request #133 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/133>`_: Removed ``setuptools.tests`` from the installed packages."
+"`BB Pull Request #133 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"133>`_: Removed ``setuptools.tests`` from the installed packages."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6200
 msgid ""
-"`BB Pull Request #129 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/129>`_: Address deprecation warning due to usage of imp module."
+"`BB Pull Request #129 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"129>`_: Address deprecation warning due to usage of imp module."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6204
@@ -10368,9 +10385,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6219
 msgid ""
-"`BB Pull Request #126 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/126>`_: DistributionNotFound message now lists the package or "
-"packages that required it. E.g.::"
+"`BB Pull Request #126 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"126>`_: DistributionNotFound message now lists the package or packages that "
+"required it. E.g.::"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6222
@@ -10444,8 +10461,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6260
 msgid ""
-"`BB Pull Request #125 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/125>`_: Add ``__ne__`` to Requirement class."
+"`BB Pull Request #125 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"125>`_: Add ``__ne__`` to Requirement class."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6261
@@ -10521,9 +10538,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6302
 msgid ""
-"`BB Pull Request #119 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/119>`_: Restore writing of ``setup_requires`` to metadata "
-"(previously added in 8.4 and removed in 9.0)."
+"`BB Pull Request #119 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"119>`_: Restore writing of ``setup_requires`` to metadata (previously added "
+"in 8.4 and removed in 9.0)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6306
@@ -10574,8 +10591,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6327
 msgid ""
-"`BB Pull Request #118 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/118>`_: Soften warning for non-normalized versions in Distribution."
+"`BB Pull Request #118 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"118>`_: Soften warning for non-normalized versions in Distribution."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6331
@@ -10671,8 +10688,8 @@ msgstr ""
 msgid ""
 "Expose ``EntryPoint.resolve`` in place of EntryPoint._load, implementing the "
 "simple, non-requiring load. Deprecated all uses of ``EntryPoint._load`` "
-"except for calling with no parameters, which is just a shortcut for ``ep."
-"require(); ep.resolve();``."
+"except for calling with no parameters, which is just a shortcut for "
+"``ep.require(); ep.resolve();``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6383
@@ -10702,9 +10719,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:6396
 msgid ""
 "`Issue #281 <https://github.com/pypa/setuptools/issues/281>`_: Since "
-"Setuptools 6.1 (`Issue #268 <https://github.com/pypa/setuptools/"
-"issues/268>`_), a ValueError would be raised in certain cases where "
-"VersionConflict was raised with two arguments, which occurred in "
+"Setuptools 6.1 (`Issue #268 <https://github.com/pypa/setuptools/issues/"
+"268>`_), a ValueError would be raised in certain cases where VersionConflict "
+"was raised with two arguments, which occurred in "
 "``pkg_resources.WorkingSet.find``. This release adds support for indicating "
 "the dependent packages while maintaining support for a VersionConflict when "
 "no dependent package context is known. New unit tests now capture the "
@@ -10740,8 +10757,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:6417
 msgid ""
 "Deprecated use of EntryPoint.load(require=False). Passing a boolean to a "
-"function to select behavior is an anti-pattern. Instead use ``Entrypoint."
-"_load()``."
+"function to select behavior is an anti-pattern. Instead use "
+"``Entrypoint._load()``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6420
@@ -10829,8 +10846,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6467
 msgid ""
-"`BB Pull Request #106 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/106>`_: Now write ``setup_requires`` metadata."
+"`BB Pull Request #106 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"106>`_: Now write ``setup_requires`` metadata."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6470
@@ -10861,8 +10878,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6484
 msgid ""
-"`BB Pull Request #85 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/85>`_: Search egg-base when adding egg-info to manifest."
+"`BB Pull Request #85 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"85>`_: Search egg-base when adding egg-info to manifest."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6487
@@ -10958,12 +10975,12 @@ msgstr ""
 msgid ""
 "`Issue #80 <https://github.com/pypa/setuptools/issues/80>`_, `Issue #209 "
 "<https://github.com/pypa/setuptools/issues/209>`_: Eggs that are downloaded "
-"for ``setup_requires``, ``test_requires``, etc. are now placed in a ``./."
-"eggs`` directory instead of directly in the current directory. This choice "
-"of location means the files can be readily managed (removed, ignored). "
-"Additionally, later phases or invocations of setuptools will not detect the "
-"package as already installed and ignore it for permanent install (See `#209 "
-"<https://github.com/pypa/setuptools/issues/209>`_)."
+"for ``setup_requires``, ``test_requires``, etc. are now placed in a "
+"``./.eggs`` directory instead of directly in the current directory. This "
+"choice of location means the files can be readily managed (removed, "
+"ignored). Additionally, later phases or invocations of setuptools will not "
+"detect the package as already installed and ignore it for permanent install "
+"(See `#209 <https://github.com/pypa/setuptools/issues/209>`_)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6543
@@ -11052,17 +11069,16 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6587
 msgid ""
-"`BB Pull Request #72 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/72>`_: When using ``single_version_externally_managed``, the "
-"exclusion list now includes Python 3.2 ``__pycache__`` entries."
+"`BB Pull Request #72 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"72>`_: When using ``single_version_externally_managed``, the exclusion list "
+"now includes Python 3.2 ``__pycache__`` entries."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6589
 msgid ""
-"`BB Pull Request #76 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/76>`_ and `BB Pull Request #78 <https://bitbucket.org/pypa/"
-"setuptools/pull-request/78>`_: lines in top_level.txt are now ordered "
-"deterministically."
+"`BB Pull Request #76 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"76>`_ and `BB Pull Request #78 <https://bitbucket.org/pypa/setuptools/pull-"
+"request/78>`_: lines in top_level.txt are now ordered deterministically."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6591
@@ -11351,8 +11367,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:6744
 msgid ""
 "`Issue #197 <https://github.com/pypa/setuptools/issues/197>`_: On Python "
-"3.1, PKG-INFO is now saved in a UTF-8 encoding instead of ``sys."
-"getpreferredencoding`` to match the behavior on Python 2.6-3.4."
+"3.1, PKG-INFO is now saved in a UTF-8 encoding instead of "
+"``sys.getpreferredencoding`` to match the behavior on Python 2.6-3.4."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6746
@@ -11435,8 +11451,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6788
 msgid ""
-"`BB Pull Request #39 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/39>`_: Add support for C++ targets from Cython ``.pyx`` files."
+"`BB Pull Request #39 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"39>`_: Add support for C++ targets from Cython ``.pyx`` files."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6789
@@ -11530,9 +11546,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6831
 msgid ""
-"`BB Pull Request #28 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/28>`_: Remove backport of ``_bytecode_filenames`` which is available "
-"in Python 2.6 and later, but also has better compatibility with Python 3 "
+"`BB Pull Request #28 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"28>`_: Remove backport of ``_bytecode_filenames`` which is available in "
+"Python 2.6 and later, but also has better compatibility with Python 3 "
 "environments."
 msgstr ""
 
@@ -11667,8 +11683,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6896
 msgid ""
-"`Issue #114 <https://github.com/pypa/setuptools/issues/114>`_: Use ``sys."
-"getfilesystemencoding`` for decoding config in ``bdist_wininst`` "
+"`Issue #114 <https://github.com/pypa/setuptools/issues/114>`_: Use "
+"``sys.getfilesystemencoding`` for decoding config in ``bdist_wininst`` "
 "distributions."
 msgstr ""
 
@@ -11715,9 +11731,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:6927
 msgid ""
-"`BB Pull Request #21 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/21>`_: Omit unwanted newlines in ``package_index._encode_auth`` when "
-"the username/password pair length indicates wrapping."
+"`BB Pull Request #21 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"21>`_: Omit unwanted newlines in ``package_index._encode_auth`` when the "
+"username/password pair length indicates wrapping."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:6931
@@ -11944,9 +11960,9 @@ msgstr ""
 msgid ""
 "`Issue #50 <https://github.com/pypa/setuptools/issues/50>`_: Normalized API "
 "of environment marker support. Specifically, removed line number and "
-"filename from SyntaxErrors when returned from ``pkg_resources."
-"invalid_marker``. Any clients depending on the specific string "
-"representation of exceptions returned by that function may need to be "
+"filename from SyntaxErrors when returned from "
+"``pkg_resources.invalid_marker``. Any clients depending on the specific "
+"string representation of exceptions returned by that function may need to be "
 "updated to account for this change."
 msgstr ""
 
@@ -12237,8 +12253,8 @@ msgstr ""
 msgid ""
 "Move warning check in ``get_cache_path`` to follow the directory creation to "
 "avoid errors when the cache path does not yet exist. Fixes the error "
-"reported in `Distribute #375 <https://bitbucket.org/tarek/distribute/"
-"issue/375>`_."
+"reported in `Distribute #375 <https://bitbucket.org/tarek/distribute/issue/"
+"375>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7184
@@ -12391,8 +12407,8 @@ msgid ""
 "Launcher scripts, including easy_install itself, are now accompanied by a "
 "manifest on 32-bit Windows environments to avoid the Installer Detection "
 "Technology and thus undesirable UAC elevation described in `this Microsoft "
-"article <http://technet.microsoft.com/en-us/library/cc709628%28WS.10%29."
-"aspx>`_."
+"article <http://technet.microsoft.com/en-us/library/"
+"cc709628%28WS.10%29.aspx>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7266
@@ -12401,12 +12417,12 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7268
 msgid ""
-"`BB Pull Request #35 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/35>`_: In `Buildout #64 <https://github.com/buildout/buildout/"
-"issues/64>`_, it was reported that under Python 3, installation of distutils "
-"scripts could attempt to copy the ``__pycache__`` directory as a file, "
-"causing an error, apparently only under Windows. Easy_install now skips all "
-"directories when processing metadata scripts."
+"`BB Pull Request #35 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"35>`_: In `Buildout #64 <https://github.com/buildout/buildout/issues/64>`_, "
+"it was reported that under Python 3, installation of distutils scripts could "
+"attempt to copy the ``__pycache__`` directory as a file, causing an error, "
+"apparently only under Windows. Easy_install now skips all directories when "
+"processing metadata scripts."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7275
@@ -12517,9 +12533,9 @@ msgstr ""
 msgid ""
 "`Distribute #334 <https://bitbucket.org/tarek/distribute/issue/334>`_: "
 "Provide workaround for packages that reference ``sys.__stdout__`` such as "
-"numpy does. This change should address `pypa/virtualenv#359 <https://github."
-"com/pypa/virtualenv/issues/359>`_ as long as the system encoding is UTF-8 or "
-"the IO encoding is specified in the environment, i.e.::"
+"numpy does. This change should address `pypa/virtualenv#359 <https://"
+"github.com/pypa/virtualenv/issues/359>`_ as long as the system encoding is "
+"UTF-8 or the IO encoding is specified in the environment, i.e.::"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7322
@@ -12562,8 +12578,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7342
 msgid ""
-"`BB Pull Request #14 <https://bitbucket.org/pypa/setuptools/pull-"
-"request/14>`_: Honor file permissions in zip files."
+"`BB Pull Request #14 <https://bitbucket.org/pypa/setuptools/pull-request/"
+"14>`_: Honor file permissions in zip files."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7343
@@ -12692,8 +12708,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7373
 msgid ""
-"`Distribute #294 <https://bitbucket.org/tarek/distribute/issue/294>`_: setup."
-"py can now be invoked from any directory."
+"`Distribute #294 <https://bitbucket.org/tarek/distribute/issue/294>`_: "
+"setup.py can now be invoked from any directory."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7374
@@ -13145,8 +13161,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7523
 msgid ""
-"Reverted change made for the DistributionNotFound exception because zc."
-"buildout uses the exception message to get the name of the distribution."
+"Reverted change made for the DistributionNotFound exception because "
+"zc.buildout uses the exception message to get the name of the distribution."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7528
@@ -13161,9 +13177,9 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7531
 msgid ""
-"`Distribute #87 <https://bitbucket.org/tarek/distribute/issue/87>`_: setupt."
-"py doesn't try to convert distribute_setup.py anymore Initial Patch by "
-"arfrever."
+"`Distribute #87 <https://bitbucket.org/tarek/distribute/issue/87>`_: "
+"setupt.py doesn't try to convert distribute_setup.py anymore Initial Patch "
+"by arfrever."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7533
@@ -13286,8 +13302,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:7571
 msgid ""
 "`Distribute #21 <https://bitbucket.org/tarek/distribute/issue/21>`_: Allow "
-"PackageIndex.open_url to gracefully handle all cases of a httplib."
-"HTTPException instead of just InvalidURL and BadStatusLine."
+"PackageIndex.open_url to gracefully handle all cases of a "
+"httplib.HTTPException instead of just InvalidURL and BadStatusLine."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7573
@@ -13426,8 +13442,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:7640
 msgid ""
 "Added option to run 2to3 automatically when installing on Python 3. This "
-"closes issue `Distribute #31 <https://bitbucket.org/tarek/distribute/"
-"issue/31>`_."
+"closes issue `Distribute #31 <https://bitbucket.org/tarek/distribute/issue/"
+"31>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7643
@@ -13456,8 +13472,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7657
 msgid ""
-"Fixed 2.6 dependencies. This closes issue `Distribute #50 <https://bitbucket."
-"org/tarek/distribute/issue/50>`_."
+"Fixed 2.6 dependencies. This closes issue `Distribute #50 <https://"
+"bitbucket.org/tarek/distribute/issue/50>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7659
@@ -13473,9 +13489,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:7668
 msgid ""
 "package_index.urlopen now catches BadStatusLine and malformed url errors. "
-"This closes `Distribute #16 <https://bitbucket.org/tarek/distribute/"
-"issue/16>`_ and `Distribute #18 <https://bitbucket.org/tarek/distribute/"
-"issue/18>`_."
+"This closes `Distribute #16 <https://bitbucket.org/tarek/distribute/issue/"
+"16>`_ and `Distribute #18 <https://bitbucket.org/tarek/distribute/issue/"
+"18>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7671
@@ -13486,8 +13502,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7673
 msgid ""
-"Fixed invalid URL error catching. `Old Setuptools #20 <https://bugs.python."
-"org/setuptools/issue20>`_."
+"Fixed invalid URL error catching. `Old Setuptools #20 <https://"
+"bugs.python.org/setuptools/issue20>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7675
@@ -13517,8 +13533,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:7695
 msgid ""
 "Packages required at build time where not fully present at install time. "
-"This closes `Distribute #12 <https://bitbucket.org/tarek/distribute/"
-"issue/12>`_."
+"This closes `Distribute #12 <https://bitbucket.org/tarek/distribute/issue/"
+"12>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7698
@@ -13571,8 +13587,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:7718
 msgid ""
 "Allow to find_on_path on systems with tight permissions to fail gracefully. "
-"This closes `Distribute #9 <https://bitbucket.org/tarek/distribute/"
-"issue/9>`_."
+"This closes `Distribute #9 <https://bitbucket.org/tarek/distribute/issue/"
+"9>`_."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7721
@@ -13642,8 +13658,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7760
 msgid ""
-"Fixed ``bdist_egg`` putting a ``native_libs.txt`` in the source package's ``."
-"egg-info``, when it should only be in the built egg's ``EGG-INFO``."
+"Fixed ``bdist_egg`` putting a ``native_libs.txt`` in the source package's "
+"``.egg-info``, when it should only be in the built egg's ``EGG-INFO``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7763
@@ -13708,14 +13724,14 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7794
 msgid ""
-"Fix Jython script installation to handle ``#!`` lines better when ``sys."
-"executable`` is a script."
+"Fix Jython script installation to handle ``#!`` lines better when "
+"``sys.executable`` is a script."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7799
 msgid ""
-"Keep site directories (e.g. ``site-packages``) from being included in ``."
-"pth`` files."
+"Keep site directories (e.g. ``site-packages``) from being included in "
+"``.pth`` files."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7803
@@ -13751,8 +13767,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7820
 msgid ""
-"Added ``--egg-path`` option to ``develop`` command, allowing you to force ``."
-"egg-link`` files to use relative paths (allowing them to be shared across "
+"Added ``--egg-path`` option to ``develop`` command, allowing you to force "
+"``.egg-link`` files to use relative paths (allowing them to be shared across "
 "platforms on a networked drive)."
 msgstr ""
 
@@ -13881,10 +13897,10 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7893
 msgid ""
-"Added support for HTTP \"Basic\" authentication using ``http://user:"
-"pass@host`` URLs.  If a password-protected page contains links to the same "
-"host (and protocol), those links will inherit the credentials used to access "
-"the original page."
+"Added support for HTTP \"Basic\" authentication using ``http://"
+"user:pass@host`` URLs.  If a password-protected page contains links to the "
+"same host (and protocol), those links will inherit the credentials used to "
+"access the original page."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7898
@@ -13954,8 +13970,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:7934
 msgid ""
-"The ``ez_setup.py`` script now actually works when you put a setuptools ``."
-"egg`` alongside it for bootstrapping an offline machine."
+"The ``ez_setup.py`` script now actually works when you put a setuptools "
+"``.egg`` alongside it for bootstrapping an offline machine."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:7937
@@ -14120,8 +14136,8 @@ msgstr ""
 #: ../../../../NEWS (links).rst:8026
 msgid ""
 "Don't install or update a ``site.py`` patch when installing to a "
-"``PYTHONPATH`` directory with ``--multi-version``, unless an ``easy-install."
-"pth`` file is already in use there."
+"``PYTHONPATH`` directory with ``--multi-version``, unless an ``easy-"
+"install.pth`` file is already in use there."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:8030
@@ -14205,8 +14221,8 @@ msgstr ""
 msgid ""
 "Support namespace packages in conjunction with system packagers, by omitting "
 "the installation of any ``__init__.py`` files for namespace packages, and "
-"adding a special ``.pth`` file to create a working package in ``sys."
-"modules``."
+"adding a special ``.pth`` file to create a working package in "
+"``sys.modules``."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:8077
@@ -14321,10 +14337,11 @@ msgstr ""
 #: ../../../../NEWS (links).rst:8139
 msgid ""
 "EasyInstall can now download bare ``.py`` files and wrap them in an egg, as "
-"long as you include an ``#egg=name-version`` suffix on the URL, or if the ``."
-"py`` file is listed as the \"Download URL\" on the project's PyPI page. This "
-"allows third parties to \"package\" trivial Python modules just by linking "
-"to them (e.g. from within their own PyPI page or download links page)."
+"long as you include an ``#egg=name-version`` suffix on the URL, or if the "
+"``.py`` file is listed as the \"Download URL\" on the project's PyPI page. "
+"This allows third parties to \"package\" trivial Python modules just by "
+"linking to them (e.g. from within their own PyPI page or download links "
+"page)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:8146
@@ -14495,16 +14512,16 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:8242
 msgid ""
-"Fixed some problems with fresh checkouts of projects that don't include ``."
-"egg-info/PKG-INFO`` under revision control and put the project's source code "
-"directly in the project directory. If such a package had any requirements "
-"that get processed before the ``egg_info`` command can be run, the setup "
-"scripts would fail with a \"Missing 'Version:' header and/or PKG-INFO file\" "
-"error, because the egg runtime interpreted the unbuilt metadata in a "
-"directory on ``sys.path`` (i.e. the current directory) as being a corrupted "
-"egg. Setuptools now monkeypatches the distribution metadata cache to pretend "
-"that the egg has valid version information, until it has a chance to make it "
-"actually be so (via the ``egg_info`` command)."
+"Fixed some problems with fresh checkouts of projects that don't include "
+"``.egg-info/PKG-INFO`` under revision control and put the project's source "
+"code directly in the project directory. If such a package had any "
+"requirements that get processed before the ``egg_info`` command can be run, "
+"the setup scripts would fail with a \"Missing 'Version:' header and/or PKG-"
+"INFO file\" error, because the egg runtime interpreted the unbuilt metadata "
+"in a directory on ``sys.path`` (i.e. the current directory) as being a "
+"corrupted egg. Setuptools now monkeypatches the distribution metadata cache "
+"to pretend that the egg has valid version information, until it has a chance "
+"to make it actually be so (via the ``egg_info`` command)."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:8253
@@ -14702,9 +14719,9 @@ msgstr ""
 msgid ""
 "``setuptools`` now finds its commands, ``setup()`` argument validators, and "
 "metadata writers using entry points, so that they can be extended by third-"
-"party packages. See `Creating distutils Extensions <https://setuptools.pypa."
-"io/en/latest/setuptools.html#creating-distutils-extensions>`_ for more "
-"details."
+"party packages. See `Creating distutils Extensions <https://"
+"setuptools.pypa.io/en/latest/setuptools.html#creating-distutils-"
+"extensions>`_ for more details."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:8373
@@ -15092,9 +15109,9 @@ msgstr ""
 #: ../../../../NEWS (links).rst:8611
 msgid ""
 "Added ``--always-copy/-a`` option to always copy needed packages to the "
-"installation directory, even if they're already present elsewhere on sys."
-"path. (In previous versions, this was the default behavior, but now you must "
-"request it.)"
+"installation directory, even if they're already present elsewhere on "
+"sys.path. (In previous versions, this was the default behavior, but now you "
+"must request it.)"
 msgstr ""
 
 #: ../../../../NEWS (links).rst:8616
@@ -15131,8 +15148,8 @@ msgstr ""
 
 #: ../../../../NEWS (links).rst:8636
 msgid ""
-"Improved sandboxing so that setup scripts that want a temporary directory (e."
-"g. pychecker) can still run in the sandbox."
+"Improved sandboxing so that setup scripts that want a temporary directory "
+"(e.g. pychecker) can still run in the sandbox."
 msgstr ""
 
 #: ../../../../NEWS (links).rst:8640

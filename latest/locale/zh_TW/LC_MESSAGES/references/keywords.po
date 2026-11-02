@@ -40,9 +40,9 @@ msgstr ""
 
 #: ../../../references/keywords.rst:16
 msgid ""
-"Users are strongly encouraged to use a declarative config either via :doc:"
-"`setup.cfg </userguide/declarative_config>` or :doc:`pyproject.toml </"
-"userguide/pyproject_config>` and only rely on ``setup.py`` if they need to "
+"Users are strongly encouraged to use a declarative config either "
+"via :doc:`setup.cfg </userguide/declarative_config>` or :doc:`pyproject.toml "
+"</userguide/pyproject_config>` and only rely on ``setup.py`` if they need to "
 "tap into special behaviour that requires scripting (such as building C "
 "extensions)."
 msgstr ""
@@ -105,8 +105,8 @@ msgstr ""
 
 #: ../../../references/keywords.rst:57
 msgid ""
-"A string specifying the content type is used for the ``long_description`` (e."
-"g. ``text/markdown``)"
+"A string specifying the content type is used for the ``long_description`` "
+"(e.g. ``text/markdown``)"
 msgstr ""
 
 #: ../../../references/keywords.rst:62
@@ -232,8 +232,8 @@ msgstr ""
 
 #: ../../../references/keywords.rst:134
 msgid ""
-"A string specifying the name of the setup.py script -- defaults to ``sys."
-"argv[0]``"
+"A string specifying the name of the setup.py script -- defaults to "
+"``sys.argv[0]``"
 msgstr ""
 
 #: ../../../references/keywords.rst:139
@@ -335,9 +335,9 @@ msgstr ""
 #: ../../../references/keywords.rst:205
 msgid ""
 "A sequence of ``(directory, files)`` pairs specifying the data files to "
-"install (``directory`` is a :class:`str`, ``files`` is a sequence of :class:"
-"`str`). Each ``(directory, files)`` pair in the sequence specifies the "
-"installation directory and the files to install there."
+"install (``directory`` is a :class:`str`, ``files`` is a sequence "
+"of :class:`str`). Each ``(directory, files)`` pair in the sequence specifies "
+"the installation directory and the files to install there."
 msgstr ""
 
 #: ../../../references/keywords.rst:214
@@ -355,8 +355,8 @@ msgstr ""
 msgid ""
 "To effectively \"rename\" paths when building your package. For example, "
 "``package_dir={\"mypkg\": \"dir1/dir2/code_for_mypkg\"}`` will instruct "
-"setuptools to copy the ``dir1/dir2/code_for_mypkg/...`` files as ``mypkg/..."
-"`` when building the final :term:`wheel distribution <Wheel>`."
+"setuptools to copy the ``dir1/dir2/code_for_mypkg/...`` files as "
+"``mypkg/...`` when building the final :term:`wheel distribution <Wheel>`."
 msgstr ""
 
 #: ../../../references/keywords.rst:225
@@ -396,12 +396,12 @@ msgstr ""
 #: ../../../references/keywords.rst:248
 msgid ""
 "When using :doc:`package discovery </userguide/package_discovery>` together "
-"with :doc:`setup.cfg </userguide/declarative_config>` or :doc:`pyproject."
-"toml </userguide/pyproject_config>`, it is very likely that you don't need "
-"to specify a value for ``package_dir``.  Please have a look at the "
-"definitions of :ref:`src-layout` and :ref:`flat-layout` to learn common "
-"practices on how to design a project's directory structure and minimise the "
-"amount of configuration that is needed."
+"with :doc:`setup.cfg </userguide/declarative_config>` "
+"or :doc:`pyproject.toml </userguide/pyproject_config>`, it is very likely "
+"that you don't need to specify a value for ``package_dir``.  Please have a "
+"look at the definitions of :ref:`src-layout` and :ref:`flat-layout` to learn "
+"common practices on how to design a project's directory structure and "
+"minimise the amount of configuration that is needed."
 msgstr ""
 
 #: ../../../references/keywords.rst:258
@@ -442,8 +442,8 @@ msgstr ""
 
 #: ../../../references/keywords.rst:278
 msgid ""
-"The most common use of this field will be in case a project name changes, e."
-"g. Gorgon 2.3 gets subsumed into Torqued Python 1.0. When you install "
+"The most common use of this field will be in case a project name changes, "
+"e.g. Gorgon 2.3 gets subsumed into Torqued Python 1.0. When you install "
 "Torqued Python, the Gorgon distribution should be removed."
 msgstr ""
 
@@ -490,8 +490,8 @@ msgstr ""
 
 #: ../../../references/keywords.rst:309
 msgid ""
-"Each package may be followed by an environment marker after a semicolon (e."
-"g. ``foo; os_name == \"posix\"``)."
+"Each package may be followed by an environment marker after a semicolon "
+"(e.g. ``foo; os_name == \"posix\"``)."
 msgstr ""
 
 #: ../../../references/keywords.rst:314
@@ -502,8 +502,8 @@ msgstr ""
 msgid ""
 "If set to ``True``, this tells ``setuptools`` to automatically include any "
 "data files it finds inside your package directories that are specified by "
-"your ``MANIFEST.in`` file.  For more information, see the section on :ref:"
-"`Including Data Files`."
+"your ``MANIFEST.in`` file.  For more information, see the section "
+"on :ref:`Including Data Files`."
 msgstr ""
 
 #: ../../../references/keywords.rst:322
@@ -672,10 +672,10 @@ msgstr ""
 msgid ""
 "A string naming a ``unittest.TestCase`` subclass (or a package or module "
 "containing one or more of them, or a method of such a subclass), or naming a "
-"function that can be called with no arguments and returns a ``unittest."
-"TestSuite``.  If the named suite is a module, and the module has an "
-"``additional_tests()`` function, it is called and the results are added to "
-"the tests to be run.  If the named suite is a package, any submodules and "
+"function that can be called with no arguments and returns a "
+"``unittest.TestSuite``.  If the named suite is a module, and the module has "
+"an ``additional_tests()`` function, it is called and the results are added "
+"to the tests to be run.  If the named suite is a package, any submodules and "
 "subpackages are recursively added to the overall test suite."
 msgstr ""
 

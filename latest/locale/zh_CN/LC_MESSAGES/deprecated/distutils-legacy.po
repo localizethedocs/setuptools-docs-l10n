@@ -73,14 +73,14 @@ msgstr ""
 
 #: ../../../deprecated/distutils-legacy.rst:27
 msgid ""
-"``distutils.cmd.Command`` or ``distutils.core.Command`` → ``setuptools."
-"Command``"
+"``distutils.cmd.Command`` or ``distutils.core.Command`` → "
+"``setuptools.Command``"
 msgstr ""
 
 #: ../../../deprecated/distutils-legacy.rst:29
 msgid ""
-"``distutils.command.{build_clib,build_ext,build_py,sdist}`` → ``setuptools."
-"command.*``"
+"``distutils.command.{build_clib,build_ext,build_py,sdist}`` → "
+"``setuptools.command.*``"
 msgstr ""
 
 #: ../../../deprecated/distutils-legacy.rst:31

@@ -24,8 +24,8 @@ msgstr ""
 #: ../../../userguide/ext_modules.rst:5
 msgid ""
 "Setuptools can build C/C++ extension modules.  The keyword argument "
-"``ext_modules`` of ``setup()`` should be a list of instances of the :class:"
-"`setuptools.Extension` class."
+"``ext_modules`` of ``setup()`` should be a list of instances of "
+"the :class:`setuptools.Extension` class."
 msgstr ""
 
 #: ../../../userguide/ext_modules.rst:10
@@ -288,9 +288,9 @@ msgstr ""
 
 #: ../../../userguide/ext_modules.rst:169
 msgid ""
-"When your :pypi:`Cython` extension modules *are declared using the* :class:"
-"`setuptools.Extension` *class*, ``setuptools`` will detect at build time "
-"whether Cython is installed or not."
+"When your :pypi:`Cython` extension modules *are declared using "
+"the* :class:`setuptools.Extension` *class*, ``setuptools`` will detect at "
+"build time whether Cython is installed or not."
 msgstr ""
 
 #: ../../../userguide/ext_modules.rst:173
@@ -345,8 +345,8 @@ msgstr ""
 msgid ""
 "This means that all source files will be compiled into a single binary file "
 "``<module path>.<suffix>`` (with ``<module path>`` derived from ``name`` and "
-"``<suffix>`` defined by one of the values in ``importlib.machinery."
-"EXTENSION_SUFFIXES``)."
+"``<suffix>`` defined by one of the values in "
+"``importlib.machinery.EXTENSION_SUFFIXES``)."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.14/site-packages/setuptools/extension.py:docstring

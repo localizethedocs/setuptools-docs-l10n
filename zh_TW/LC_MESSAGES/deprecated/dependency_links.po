@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../deprecated/dependency_links.rst:2
+msgid "Specifying dependencies that aren't in PyPI via ``dependency_links``"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:5
+msgid ""
+"Dependency links support has been dropped by pip starting with version 19.0 "
+"(released 2019-01-22)."
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:8
+msgid ""
+"If your project depends on packages that don't exist on PyPI, you *may* "
+"still be able to depend on them if they are available for download as:"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:11
+msgid "an egg, in the standard distutils ``sdist`` format,"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:12
+msgid "a single ``.py`` file, or"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:13
+msgid "a VCS repository (Subversion, Mercurial, or Git)."
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:15
+msgid ""
+"You need to add some URLs to the ``dependency_links`` argument to "
+"``setup()``."
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:17
+msgid "The URLs must be either:"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:19
+msgid "direct download URLs,"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:20
+msgid "the URLs of web pages that contain direct download links, or"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:21
+msgid "the repository's URL"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:23
+msgid ""
+"In general, it's better to link to web pages, because it is usually less "
+"complex to update a web page than to release a new version of your project. "
+"You can also use a SourceForge ``showfiles.php`` link in the case where a "
+"package you depend on is distributed via SourceForge."
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:28
+msgid ""
+"If you depend on a package that's distributed as a single ``.py`` file, you "
+"must include an ``\"#egg=project-version\"`` suffix to the URL, to give a "
+"project name and version number.  (Be sure to escape any dashes in the name "
+"or version by replacing them with underscores.)  EasyInstall will recognize "
+"this suffix and automatically create a trivial ``setup.py`` to wrap the "
+"single ``.py`` file as an egg."
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:35
+msgid ""
+"In the case of a VCS checkout, you should also append ``#egg=project-"
+"version`` in order to identify for what package that checkout should be "
+"used. You can append ``@REV`` to the URL's path (before the fragment) to "
+"specify a revision. Additionally, you can also force the VCS being used by "
+"prepending the URL with a certain prefix. Currently available are:"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:41
+msgid "``svn+URL`` for Subversion,"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:42
+msgid "``git+URL`` for Git, and"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:43
+msgid "``hg+URL`` for Mercurial"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:45
+msgid "A more complete example would be:"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:47
+msgid "``vcs+proto://host/path@revision#egg=project-version``"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:49
+msgid ""
+"Be careful with the version. It should match the one inside the project "
+"files. If you want to disregard the version, you have to omit it both in the "
+"``requires`` and in the URL's fragment."
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:53
+msgid ""
+"This will do a checkout (or a clone, in Git and Mercurial parlance) to a "
+"temporary folder and run ``setup.py bdist_egg``."
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:56
+msgid ""
+"The ``dependency_links`` option takes the form of a list of URL strings.  "
+"For example, this will cause a search of the specified page for eggs or "
+"source distributions, if the package's dependencies aren't already installed:"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:62
+msgid ""
+"[options]\n"
+"#...\n"
+"dependency_links = http://peak.telecommunity.com/snapshots/"
+msgstr ""
+
+#: ../../../deprecated/dependency_links.rst:70
+msgid ""
+"setup(\n"
+"    ...,\n"
+"    dependency_links=[\n"
+"        \"http://peak.telecommunity.com/snapshots/\",\n"
+"    ],\n"
+")"
+msgstr ""

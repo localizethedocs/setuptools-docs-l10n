@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 
+# This file is distributed under the same license as the setuptools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: setuptools 83.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 10:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../development/releases.rst:3
+msgid "Release Process"
+msgstr "發行過程"
+
+#: ../../../development/releases.rst:5
+msgid ""
+"In order to allow for rapid, predictable releases, Setuptools uses a "
+"mechanical technique for releases, enacted on tagged commits by continuous "
+"integration."
+msgstr ""
+
+#: ../../../development/releases.rst:9
+msgid ""
+"To finalize a release, run ``tox -e finalize``, review, then push the "
+"changes."
+msgstr ""
+
+#: ../../../development/releases.rst:12
+msgid "If tests pass, the release will be uploaded to PyPI."
+msgstr ""
+
+#: ../../../development/releases.rst:15
+msgid "Release Frequency"
+msgstr ""
+
+#: ../../../development/releases.rst:17
+msgid ""
+"Some have asked why Setuptools is released so frequently. Because Setuptools "
+"uses a mechanical release process, it's very easy to make releases whenever "
+"the code is stable (tests are passing). As a result, the philosophy is to "
+"release early and often."
+msgstr ""
+
+#: ../../../development/releases.rst:22
+msgid ""
+"While some find the frequent releases somewhat surprising, they only empower "
+"the user. Although releases are made frequently, users can choose the "
+"frequency at which they use those releases. If instead Setuptools "
+"contributions were only released in batches, the user would be constrained "
+"to only use Setuptools when those official releases were made. With frequent "
+"releases, the user can govern exactly how often he wishes to update."
+msgstr ""
+
+#: ../../../development/releases.rst:29
+msgid ""
+"Frequent releases also then obviate the need for dev or beta releases in "
+"most cases. Because releases are made early and often, bugs are discovered "
+"and corrected quickly, in many cases before other users have yet to "
+"encounter them."
+msgstr ""
+
+#: ../../../development/releases.rst:34
+msgid "Release Managers"
+msgstr ""
+
+#: ../../../development/releases.rst:36
+msgid ""
+"Additionally, anyone with push access to the master branch has access to cut "
+"releases."
+msgstr ""

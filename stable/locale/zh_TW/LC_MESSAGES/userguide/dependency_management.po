@@ -29,10 +29,10 @@ msgstr ""
 
 #: ../../../userguide/dependency_management.rst:9
 msgid ""
-"Each dependency, regardless of type, needs to be specified according to :pep:"
-"`508` and :pep:`440`. This allows adding version :pep:`range restrictions "
-"<440#version-specifiers>` and :ref:`environment markers <environment-"
-"markers>`."
+"Each dependency, regardless of type, needs to be specified according "
+"to :pep:`508` and :pep:`440`. This allows adding version :pep:`range "
+"restrictions <440#version-specifiers>` and :ref:`environment markers "
+"<environment-markers>`."
 msgstr ""
 
 #: ../../../userguide/dependency_management.rst:18
@@ -58,9 +58,10 @@ msgstr ""
 
 #: ../../../userguide/dependency_management.rst:33
 msgid ""
-"Also include any other ``setuptools`` plugins (e.g., :pypi:"
-"`setuptools_scm`, :pypi:`setuptools-golang`, :pypi:`setuptools-rust`) or "
-"build-time dependency (e.g., :pypi:`Cython`, :pypi:`cppy`, :pypi:`pybind11`)."
+"Also include any other ``setuptools`` plugins "
+"(e.g., :pypi:`setuptools_scm`, :pypi:`setuptools-golang`, :pypi:`setuptools-"
+"rust`) or build-time dependency "
+"(e.g., :pypi:`Cython`, :pypi:`cppy`, :pypi:`pybind11`)."
 msgstr ""
 
 #: ../../../userguide/dependency_management.rst:37

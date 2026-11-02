@@ -89,8 +89,8 @@ msgid ""
 "introspection or source code manipulation, then there was an extremely solid "
 "chance the project will work when installed as a zipfile.  (And if the "
 "project used ``pkg_resources`` for all its data file access, then C "
-"extensions and other data files shouldn't be a problem at all. See the :ref:"
-"`Accessing Data Files at Runtime` section for more information.)"
+"extensions and other data files shouldn't be a problem at all. See "
+"the :ref:`Accessing Data Files at Runtime` section for more information.)"
 msgstr ""
 
 #: ../../../deprecated/zip_safe.rst:51
@@ -112,9 +112,9 @@ msgid ""
 "Currently, popular Python package installers (such as :pypi:`pip`) and "
 "package indexes (such as PyPI_) consider that distribution packages are "
 "always installed as a directory. It is however still possible to load "
-"packages from zip files added to :obj:`sys.path`, thanks to the :mod:"
-"`zipimport` module and the :mod:`importlib` machinery provided by Python "
-"standard library."
+"packages from zip files added to :obj:`sys.path`, thanks to "
+"the :mod:`zipimport` module and the :mod:`importlib` machinery provided by "
+"Python standard library."
 msgstr ""
 
 #: ../../../deprecated/zip_safe.rst:68

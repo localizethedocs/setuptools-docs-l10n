@@ -32,8 +32,8 @@ msgid ""
 "Since ``distutils`` was scheduled for removal from the standard library in "
 "Python 3.12, and ``setuptools`` started its adoption, these differences "
 "became less relevant. Please check :doc:`/references/keywords` for a "
-"complete list of keyword arguments that can be passed to the ``setuptools."
-"setup()`` function and a their full description."
+"complete list of keyword arguments that can be passed to the "
+"``setuptools.setup()`` function and a their full description."
 msgstr ""
 
 #: ../../../deprecated/changed_keywords.rst:16

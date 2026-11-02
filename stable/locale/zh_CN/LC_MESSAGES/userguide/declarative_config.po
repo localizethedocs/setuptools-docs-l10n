@@ -34,8 +34,9 @@ msgstr ""
 
 #: ../../../userguide/declarative_config.rst:14
 msgid ""
-"``Setuptools`` allows using configuration files (for example, :file:`setup."
-"cfg`) to define a package’s metadata and other options (declarative config)."
+"``Setuptools`` allows using configuration files (for "
+"example, :file:`setup.cfg`) to define a package’s metadata and other options "
+"(declarative config)."
 msgstr ""
 
 #: ../../../userguide/declarative_config.rst:17
@@ -267,8 +268,8 @@ msgid ""
 "(see :ref:`example on Python docs <python:importlib-examples>` about "
 "\"Importing a source file directly\"). Note however that importing the "
 "module is error prone since your package is not installed yet. You may also "
-"need to manually add the project directory to ``sys.path`` (via ``setup."
-"py``) in order to be able to do that."
+"need to manually add the project directory to ``sys.path`` (via "
+"``setup.py``) in order to be able to do that."
 msgstr ""
 
 #: ../../../userguide/declarative_config.rst:190
@@ -284,8 +285,8 @@ msgstr ""
 #: ../../../userguide/declarative_config.rst:197
 msgid ""
 "The ``file:`` directive is sandboxed and won't reach anything outside the "
-"project directory (i.e. the directory containing ``setup.cfg``/``pyproject."
-"toml``)."
+"project directory (i.e. the directory containing ``setup.cfg``/"
+"``pyproject.toml``)."
 msgstr ""
 
 #: ../../../userguide/declarative_config.rst:201
@@ -706,8 +707,9 @@ msgstr ""
 msgid ""
 "The ``find:`` and ``find_namespace:`` directive can be further configured in "
 "a dedicated subsection ``options.packages.find``. This subsection accepts "
-"the same keys as the ``setuptools.find_packages`` and the ``setuptools."
-"find_namespace_packages`` function: ``where``, ``include``, and ``exclude``."
+"the same keys as the ``setuptools.find_packages`` and the "
+"``setuptools.find_namespace_packages`` function: ``where``, ``include``, and "
+"``exclude``."
 msgstr ""
 
 #: ../../../userguide/declarative_config.rst:302

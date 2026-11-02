@@ -53,11 +53,11 @@ msgid ""
 "The example below illustrates how to write a ``pyproject.toml`` file that "
 "can be used with ``setuptools``. It contains two TOML tables (identified by "
 "the ``[table-header]`` syntax): ``build-system`` and ``project``. The "
-"``build-system`` table is used to tell the build frontend (e.g. :pypi:"
-"`build` or :pypi:`pip`) to use ``setuptools`` and any other plugins (e.g. "
-"``setuptools-scm``) to build the package. The ``project`` table contains "
-"metadata fields as described by the :doc:`PyPUG:guides/writing-pyproject-"
-"toml` guide."
+"``build-system`` table is used to tell the build frontend "
+"(e.g. :pypi:`build` or :pypi:`pip`) to use ``setuptools`` and any other "
+"plugins (e.g. ``setuptools-scm``) to build the package. The ``project`` "
+"table contains metadata fields as described by the :doc:`PyPUG:guides/"
+"writing-pyproject-toml` guide."
 msgstr ""
 
 #: ../../../userguide/pyproject_config.rst:37
@@ -164,8 +164,8 @@ msgstr ""
 #: ../../../userguide/pyproject_config.rst:99
 msgid ""
 "**Experimental** - Each item corresponds to a :class:`setuptools.Extension` "
-"object and may define the associated parameters in :wiki:`kebab-case`. See :"
-"doc:`/userguide/ext_modules`."
+"object and may define the associated parameters in :wiki:`kebab-case`. "
+"See :doc:`/userguide/ext_modules`."
 msgstr ""
 
 #: ../../../userguide/pyproject_config.rst:103
@@ -232,9 +232,9 @@ msgstr ""
 
 #: ../../../userguide/pyproject_config.rst:111
 msgid ""
-"**Deprecated** - use ``project.license-files`` instead. See :external+PyPUG:"
-"ref:`Writing your pyproject.toml <license-files>` (by default: "
-"``['LICEN[CS]E*', 'COPYING*', 'NOTICE*', 'AUTHORS*']``)"
+"**Deprecated** - use ``project.license-files`` instead. "
+"See :external+PyPUG:ref:`Writing your pyproject.toml <license-files>` (by "
+"default: ``['LICEN[CS]E*', 'COPYING*', 'NOTICE*', 'AUTHORS*']``)"
 msgstr ""
 
 #: ../../../userguide/pyproject_config.rst:114
@@ -324,8 +324,8 @@ msgstr ""
 msgid ""
 "When both ``py-modules`` and ``packages`` are left unspecified, "
 "``setuptools`` will attempt to perform :ref:`auto-discovery`, which should "
-"cover most popular project directory organization techniques, such as the :"
-"ref:`src-layout` and the :ref:`flat-layout`."
+"cover most popular project directory organization techniques, such as "
+"the :ref:`src-layout` and the :ref:`flat-layout`."
 msgstr ""
 
 #: ../../../userguide/pyproject_config.rst:147
@@ -399,8 +399,8 @@ msgid ""
 "Currently the following fields can be listed as dynamic: ``version``, "
 "``classifiers``, ``description``, ``entry-points``, ``scripts``, ``gui-"
 "scripts`` and ``readme``. When these fields are expected to be provided by "
-"``setuptools`` a corresponding entry is required in the ``tool.setuptools."
-"dynamic`` table [#entry-points]_. For example:"
+"``setuptools`` a corresponding entry is required in the "
+"``tool.setuptools.dynamic`` table [#entry-points]_. For example:"
 msgstr ""
 
 #: ../../../userguide/pyproject_config.rst:200
@@ -567,25 +567,25 @@ msgid ""
 "(see :ref:`example on Python docs <python:importlib-examples>` about "
 "\"Importing a source file directly\"). Note however that importing the "
 "module is error prone since your package is not installed yet. You may also "
-"need to manually add the project directory to ``sys.path`` (via ``setup."
-"py``) in order to be able to do that."
+"need to manually add the project directory to ``sys.path`` (via "
+"``setup.py``) in order to be able to do that."
 msgstr ""
 
 #: ../../../userguide/pyproject_config.rst:276
 msgid ""
-"``pip`` may allow editable install only with ``pyproject.toml`` and ``setup."
-"cfg``. However, this behavior may not be consistent over various ``pip`` "
-"versions and other packaging-related tools (``setup.py`` is more reliable on "
-"those scenarios)."
+"``pip`` may allow editable install only with ``pyproject.toml`` and "
+"``setup.cfg``. However, this behavior may not be consistent over various "
+"``pip`` versions and other packaging-related tools (``setup.py`` is more "
+"reliable on those scenarios)."
 msgstr ""
 
 #: ../../../userguide/pyproject_config.rst:281
 msgid ""
 "Dynamic ``scripts`` and ``gui-scripts`` are a special case. When resolving "
-"these metadata keys, ``setuptools`` will look for ``tool.setuptools.dynamic."
-"entry-points``, and use the values of the ``console_scripts`` and "
-"``gui_scripts`` :doc:`entry-point groups <PyPUG:specifications/entry-"
-"points>`."
+"these metadata keys, ``setuptools`` will look for "
+"``tool.setuptools.dynamic.entry-points``, and use the values of the "
+"``console_scripts`` and ``gui_scripts`` :doc:`entry-point groups "
+"<PyPUG:specifications/entry-points>`."
 msgstr ""
 
 #: ../../../userguide/pyproject_config.rst:287
